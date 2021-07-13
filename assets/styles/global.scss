@@ -1,6 +1,17 @@
 @import "./setup/mixins";
 @import "./setup/layout";
 
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe-UI.ttf"), url(~assets/fonts/Segoe-UI.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Segoe UI Bold";
+  src: local("Segoe-UI-Bold.ttf"),
+    url(~assets/fonts/Segoe-UI-Bold.ttf) format("truetype");
+}
+
 body {
   font-family: "Poppins", sans-serif;
   max-width: 100vw;

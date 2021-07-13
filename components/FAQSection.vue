@@ -126,9 +126,10 @@ export default {
         display: flex;
         flex-direction: column;
         border-radius: 5px;
-        background-color: #fff;
+        background-color: #feede3;
 
         &.hidden {
+          background-color: #fff;
           .answer {
             max-height: 0px;
           }
@@ -164,7 +165,7 @@ export default {
         .answer {
           margin: 0px 6px 6px;
           height: 100%;
-          background-color: #151629;
+          background-color: #feede3;
           max-height: 200px;
           overflow: hidden;
           transition: all 0.3s ease-out;
