@@ -1,0 +1,20 @@
+@import "./setup/mixins";
+@import "./setup/layout";
+
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 100vw;
+}
+
+.hide-small {
+  @include respond-below(md) {
+    display: none;
+  }
+}
+
+.no-extend {
+  @media (min-width: 1440px) {
+    max-width: 1440px;
+    margin: auto;
+  }
+}

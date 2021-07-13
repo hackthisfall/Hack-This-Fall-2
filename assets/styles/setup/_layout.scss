@@ -1,0 +1,46 @@
+html,
+body,
+#__nuxt,
+#__layout {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -o-user-select: none;
+  margin: auto;
+  background-color: #fff;
+
+  ::-webkit-scrollbar {
+    z-index: 101;
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    z-index: 101;
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    z-index: 101;
+    background: #7093ec;
+  }
+}
+
+.smooth-shadow {
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.primary-shadow {
+  -webkit-box-shadow: 0px 10px 30px rgba(10, 100, 219, 0.03);
+  -moz-box-shadow: 0px 10px 30px rgba(10, 100, 219, 0.03);
+  box-shadow: 0px 10px 30px rgba(10, 100, 219, 0.03);
+}
+
+*:focus {
+  outline: none;
+}
