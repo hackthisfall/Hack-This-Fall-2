@@ -1,30 +1,37 @@
 <template>
   <div id="about">
-    <section class="content-section">
-      <div class="contents">
-        <div class="img">
-          <img src="~/assets/HTF2/hero.svg" />
+    <Container>
+      <section class="content-section">
+        <div class="contents">
+          <div class="img">
+            <img src="~/assets/HTF2/hero.svg" />
+          </div>
+          <div class="about">
+            <img src="~/assets/HTF2/HTFLogo.svg" />
+            <span class="tagline"> Innovate For Good </span>
+            <span class="date"> 22 - 24 October 2021 </span>
+            <div class="cta-buttons">
+              <button class="cta-button register">
+                <img src="~/assets/HTF2/devpost.svg" />REGISTER NOW
+              </button>
+              <button class="cta-button discord">
+                <img src="~/assets/HTF2/discord.svg" />JOIN DISCORD
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="about">
-          <img src="~/assets/HTF2/logo-light.svg" />
-
-          Innovate For Good
-          <br />
-          22 - 24 October 2021
-
-          <button>REGISTER NOW</button>
-          <button>JOIN DISCORD</button>
-        </div>
-      </div>
-    </section>
+      </section>
+    </Container>
   </div>
 </template>
 
 <script>
 import HashHeader from "~/components/HashHeader";
+import Container from "~/components/Container";
 export default {
   components: {
     HashHeader,
+    Container,
   },
 };
 </script>
@@ -33,7 +40,9 @@ export default {
 .content-section {
   display: flex;
   flex-direction: column;
-  padding: 40px 0 10px;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  background-color: #feede3;
 
   .contents {
     display: grid;
@@ -47,50 +56,45 @@ export default {
     .about {
       display: flex;
       flex-direction: column;
-      padding: 10px 0;
       align-items: center;
-    }
-  }
 
-  .stats {
-    text-align: center;
-    justify-content: center;
-    padding: 30px 0 10px;
-
-    .gridLayout {
-      display: grid;
-      margin-top: 15px;
-      grid-template-columns: repeat(2, 180px);
-      column-gap: 10px;
-      row-gap: 10px;
-      justify-content: center;
-
-      @include respond-below(sm) {
-        grid-template-columns: repeat(2, 150px);
-      }
-    }
-
-    .statData {
-      height: 150px;
-      width: 150px;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      justify-content: center;
-      padding: 15px;
-      background: var(--color-secondary-light);
-      border-radius: 8px;
-
-      h4 {
-        font-size: 2rem;
+      .tagline {
+        font-family: "Poppins";
         font-weight: bold;
-        padding-bottom: 10px;
+        letter-spacing: 1.5px;
+        font-size: 2rem;
+        margin-top: 1rem;
       }
 
-      @include respond-below(sm) {
-        width: 120px;
-        height: 120px;
+      .date {
+        font-family: "Poppins";
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: rgba(226, 62, 37, 1);
+      }
+
+      .cta-buttons {
+        display: flex;
+        margin-top: 2rem;
+        .cta-button {
+          background-color: #e85325;
+          color: white;
+          border: none;
+          padding: 0.5rem 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-family: "Segoe UI Bold";
+          border-radius: 0.5rem;
+
+          img {
+            margin-right: 0.5rem;
+          }
+
+          &:nth-of-type(2) {
+            margin-left: 1rem;
+          }
+        }
       }
     }
   }

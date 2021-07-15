@@ -1,6 +1,6 @@
 <template>
   <div id="top">
-    <NavigationBar />
+    <!-- <NavigationBar /> -->
     <main>
       <Nuxt />
     </main>

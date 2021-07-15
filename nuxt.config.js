@@ -44,5 +44,9 @@ export default {
   build: {},
   styleResources: {
     scss: ["./assets/styles/setup/_mixins.scss"]
+  },
+
+  server: {
+    port: 8000 // default: 3000
   }
 };

@@ -28,28 +28,28 @@
         </div>
 
         <div class="panel">
-          <div class="title">Connect With Us</div>
+          <h4 class="title">Connect With Us</h4>
           <div class="socialLinks">
             <a
               rel="noopener noreferrer"
               target="_blank"
               href="https://www.linkedin.com/company/hackonhackathon"
             >
-              <img src="~/assets/Socials/linkedin.svg" alt="LinkedInLink" />
+              <img src="~/assets/Socials/discord.svg" alt="LinkedInLink" />
             </a>
             <a
               rel="noopener noreferrer"
               target="_blank"
               href="https://discord.hackon.tech/"
             >
-              <img src="~/assets/Socials/discord.svg" alt="DiscordLink" />
+              <img src="~/assets/Socials/twitter.svg" alt="DiscordLink" />
             </a>
             <a
               rel="noopener noreferrer"
               target="_blank"
               href="https://medium.com/hackonhackathon"
             >
-              <img src="~/assets/Socials/medium.svg" alt="MediumLink" />
+              <img src="~/assets/Socials/instagram.svg" alt="MediumLink" />
             </a>
           </div>
           <div class="socialLinks">
@@ -58,25 +58,26 @@
               target="_blank"
               href="https://twitter.com/hackonhackathon"
             >
-              <img src="~/assets/Socials/twitter.svg" alt="FacebookLink" />
+              <img src="~/assets/Socials/youtube.svg" alt="FacebookLink" />
             </a>
             <a
               rel="noopener noreferrer"
               target="_blank"
               href="https://youtube.com/playlist?list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli"
             >
-              <img src="~/assets/Socials/youtube.svg" alt="YoutubeLink" />
+              <img src="~/assets/Socials/mail.svg" alt="YoutubeLink" />
             </a>
             <a
               rel="noopener noreferrer"
               target="_blank"
               href="https://telegram.hackon.tech/"
             >
-              <img src="~/assets/Socials/telegram.svg" alt="TelegramLink" />
+              <img src="~/assets/Socials/linkedin.svg" alt="TelegramLink" />
             </a>
           </div>
         </div>
       </div>
+      <hr />
       <div class="attribution">
         <span>© 2021, Hack This Fall. All rights reserved. </span>
       </div>
@@ -114,7 +115,8 @@ export default {
   }
 
   .contents {
-    background: #feede3;
+    background-color: #feede3;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
   }
@@ -124,6 +126,7 @@ export default {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 100px;
     row-gap: 30px;
+    padding: 1rem 2rem;
 
     @include respond-between(md, lg) {
       column-gap: 50px;
