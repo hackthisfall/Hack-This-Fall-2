@@ -4,9 +4,7 @@
       <HashHeader title="TRACKS" />
       <div class="grid">
         <div class="panel text">
-          <div class="track-box healthcare">
-            <!-- <img src="~/assets/Tracks/healthcare.png" alt="Track Healthcare" /> -->
-          </div>
+          <div class="track-box healthcare"></div>
           <div class="texts">
             <h3 class="title">Siddharth Dayalwal</h3>
             <p class="description">Lorem ipsum dolor sit amet, vim quidam</p>
@@ -21,15 +19,7 @@
             <p class="description">Lorem ipsum dolor sit amet, vim quidam</p>
           </div>
         </div>
-        <div class="panel text">
-          <div class="track-box healthcare">
-            <!-- <img src="~/assets/Tracks/healthcare.png" alt="Track Healthcare" /> -->
-          </div>
-          <div class="texts">
-            <h3 class="title">Siddharth Dayalwal</h3>
-            <p class="description">Lorem ipsum dolor sit amet, vim quidam</p>
-          </div>
-        </div>
+
         <div class="panel text">
           <div class="track-box healthcare">
             <!-- <img src="~/assets/Tracks/healthcare.png" alt="Track Healthcare" /> -->
@@ -80,10 +70,12 @@ export default {
 
   .grid {
     padding: 10px 0;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 4rem;
     row-gap: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
 
     .panel {
       border: 1px solid red;

@@ -95,7 +95,7 @@ export default {
   font-family: "Segoe UI";
 
   .contents {
-    padding: 10px 0;
+    padding: 1rem 4rem;
     text-align: center;
 
     .speakers-grid {
@@ -116,6 +116,7 @@ export default {
         display: flex;
         flex-direction: column;
         border: 1px solid red;
+        border-radius: 1rem;
         // justify-content: center;
         align-items: center;
 
