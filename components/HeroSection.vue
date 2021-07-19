@@ -11,12 +11,12 @@
             <span class="tagline"> Innovate For Good </span>
             <span class="date"> 22 - 24 October 2021 </span>
             <div class="cta-buttons">
-              <button class="cta-button register">
+              <a target='_blank' href='https://hackthisfall.devpost.com/' class="cta-button register">
                 <img src="~/assets/HTF2/devpost.svg" />REGISTER NOW
-              </button>
-              <button class="cta-button discord">
+              </a>
+              <a target='_blank' href='https://discord.hackthisfall.tech/' class="cta-button discord">
                 <img src="~/assets/HTF2/discord.svg" />JOIN DISCORD
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -76,6 +76,11 @@ export default {
       .cta-buttons {
         display: flex;
         margin-top: 2rem;
+
+        a {
+          text-decoration: none;
+        }
+
         .cta-button {
           background-color: #e85325;
           color: white;
@@ -86,6 +91,7 @@ export default {
           justify-content: space-between;
           font-family: "Segoe UI Bold";
           border-radius: 0.5rem;
+          cursor: pointer;
 
           img {
             margin-right: 0.5rem;

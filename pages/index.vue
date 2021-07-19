@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <NavigationBar />
     <HeroSection />
     <AboutSection />
     <GlimpseSection />
@@ -14,6 +15,7 @@
 </template>
 
 <script>
+import NavigationBar from "~/components/NavigationBar";
 import HeroSection from "~/components/HeroSection";
 import AboutSection from "~/components/AboutSection";
 import GlimpseSection from "~/components/GlimpseSection";
@@ -27,6 +29,7 @@ import FooterSection from "~/components/FooterSection";
 
 export default {
   components: {
+    NavigationBar,
     HeroSection,
     AboutSection,
     GlimpseSection,

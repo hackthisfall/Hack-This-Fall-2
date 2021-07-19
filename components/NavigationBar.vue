@@ -5,21 +5,38 @@
         <!-- Branding area -->
         <div class="branding">
           <NuxtLink to="/">
-            Hello
-            <!-- <img src="~/assets/header-logo.svg" /> -->
+            <img class="headerImage" src="~/assets/HTF2/HTFLogo.svg" />
           </NuxtLink>
         </div>
         <!-- Menu area -->
         <div class="menu-area">
           <ul class="nav-links">
             <li>
-              <a href="/#responsibility">Responsibility</a>
+              <a href="/#about">ABOUT</a>
             </li>
             <li>
-              <a href="/#rewards">Rewards</a>
+              <a href="/#speakers">SPEAKERS</a>
             </li>
             <li>
-              <a href="/#testimonials">Testimonials</a>
+              <a href="/#timeline">TIMELINE</a>
+            </li>
+            <li>
+              <a href="/#schedule">SCHEDULE</a>
+            </li>
+            <li>
+              <a href="/#tracks">TRACKS</a>
+            </li>
+            <li>
+              <a href="/#sponsors">SPONSORS</a>
+            </li>
+            <li>
+              <a href="/#faq">FAQ</a>
+            </li>
+            <li>
+              <a href="/#team">TEAM</a>
+            </li>
+            <li>
+              <a href="https://s1.hackthisfall.tech/">SEASON 1</a>
             </li>
             <li v-if="showJoinButton">
               <NuxtLink to="/join">
@@ -37,47 +54,42 @@
 export default {
   data() {
     return {
-      showJoinButton: false,
+      showJoinButton: false
     };
-  },
-  // methods: {
-  //   hs(e) {
-  //     var element = document.getElementById("hero-image");
-  //     var topPos = element.getBoundingClientRect().top + window.scrollY;
-
-  //     if (topPos < -100) {
-  //       this.showJoinButton = true;
-  //     } else {
-  //       this.showJoinButton = false;
-  //     }
-  //   },
-  // },
-  // mounted() {
-  //   this.element = document.getElementById("__layout");
-  //   this.element.addEventListener("scroll", this.hs);
-  // },
+  }
 };
 </script>
 
 <style lang="scss" scoped>
 .navigation-bar {
-  background-color: #e4f7ff;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 15px 2px;
   z-index: 500;
-  padding: 0rem 4rem;
+  padding: 0rem 1.5rem;
   position: sticky;
   top: 0;
   position: -webkit-sticky;
+  width: 97%;
+  border-radius: 1rem;
+  margin: 1rem auto -3rem auto;
 
   .navigation-contents {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 0.75rem 0rem;
-    padding: 10px;
+    margin: 0.25rem 0rem;
 
     @include respond-below(sm) {
       justify-content: center;
+    }
+
+    .branding {
+      padding-top: 0.25rem;
+      .headerImage {
+        height: 2.5rem;
+        margin-bottom: -0.1rem;
+      }
     }
 
     .menu-area {
@@ -107,14 +119,14 @@ export default {
           list-style: none;
           a {
             color: #848484;
-            padding: 10px 15px;
+            padding: 10px 10px;
             transition: 0.2s all ease-in-out;
             text-decoration: none;
             font-size: 1.1rem;
             opacity: 0.95;
 
             &:hover {
-              color: #7c7979;
+              color: rgba(226, 62, 37, 1);
               opacity: 1;
             }
 
