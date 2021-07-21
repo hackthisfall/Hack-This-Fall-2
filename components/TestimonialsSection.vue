@@ -8,8 +8,8 @@
             <!-- <img src="~/assets/Tracks/healthcare.png" alt="Track Healthcare" /> -->
           </div>
           <div class="texts">
-            <h3 class="title">Siddharth Dayalwal</h3>
-            <p class="description">Lorem ipsum dolor sit amet, vim quidam</p>
+            <h3 class="title">Gita Alekhya Paul</h3>
+            <p class="description">Season 1 Winner</p>
           </div>
         </div>
         <div class="panel text">
@@ -17,8 +17,8 @@
             <!-- <img src="~/assets/Tracks/healthcare.png" alt="Track Healthcare" /> -->
           </div>
           <div class="texts">
-            <h3 class="title">Siddharth Dayalwal</h3>
-            <p class="description">Lorem ipsum dolor sit amet, vim quidam</p>
+            <h3 class="title">Praveen Kumar</h3>
+            <p class="description">Mentor and Speaker</p>
           </div>
         </div>
         <div class="panel text">
@@ -26,8 +26,8 @@
             <!-- <img src="~/assets/Tracks/healthcare.png" alt="Track Healthcare" /> -->
           </div>
           <div class="texts">
-            <h3 class="title">Siddharth Dayalwal</h3>
-            <p class="description">Lorem ipsum dolor sit amet, vim quidam</p>
+            <h3 class="title">Aditya Oberai</h3>
+            <p class="description">Mentor</p>
           </div>
         </div>
         <div class="panel text">
@@ -35,8 +35,8 @@
             <!-- <img src="~/assets/Tracks/healthcare.png" alt="Track Healthcare" /> -->
           </div>
           <div class="texts">
-            <h3 class="title">Siddharth Dayalwal</h3>
-            <p class="description">Lorem ipsum dolor sit amet, vim quidam</p>
+            <h3 class="title">Shivay Lamba</h3>
+            <p class="description">Speaker</p>
           </div>
         </div>
       </div>
@@ -60,7 +60,9 @@ export default {
 .content-section {
   display: flex;
   flex-direction: column;
-  padding: 20px 0;
+  padding: 2rem 6rem;
+  border-radius: 1rem;
+  background-color: #feede3;
 
   .track-box {
     border-radius: 20%;
@@ -86,13 +88,12 @@ export default {
     row-gap: 1em;
 
     .panel {
-      border: 1px solid red;
+      border-radius: 1rem;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      &.text {
-        justify-content: space-between;
-      }
+      background-color: white;
+      justify-content: flex-start;
+      align-items: center;
 
       .texts {
         margin-left: 1em;

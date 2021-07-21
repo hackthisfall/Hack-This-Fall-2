@@ -54,9 +54,9 @@
 export default {
   data() {
     return {
-      showJoinButton: false
+      showJoinButton: false,
     };
-  }
+  },
 };
 </script>
 

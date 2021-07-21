@@ -7,7 +7,7 @@
           <div
             v-for="(speaker, index) in speakers"
             :key="index"
-            class="speakers-card"
+            :class="['speakers-card', speaker.rotation]"
           >
             <a :href="speaker.url" target="_blank" rel="noopener noreferrer">
               <div class="picture-wrapper">
@@ -54,31 +54,34 @@ export default {
           description: "Program Manager",
           url: "https://twitter.com/",
           picture: require("~/assets/Speakers/Juan-Pablo.png"),
-          companyLogo: require("~/assets/Sponsors/github.svg"),
+          companyLogo: require("~/assets/Sponsors/github.png"),
           company: "GitHub",
+          rotation: "thirty",
         },
         {
           name: "Siddharth Dayalwal",
           description: "Program Manager",
           url: "https://twitter.com/",
           picture: require("~/assets/Speakers/Juan-Pablo.png"),
-          companyLogo: require("~/assets/Sponsors/github.svg"),
+          companyLogo: require("~/assets/Sponsors/github.png"),
           company: "GitHub Stars",
+          rotation: "sixty",
         },
         {
           name: "Siddharth Dayalwal",
           description: "Program Manager",
           url: "https://twitter.com/",
           picture: require("~/assets/Speakers/Juan-Pablo.png"),
-          companyLogo: require("~/assets/Sponsors/github.svg"),
+          companyLogo: require("~/assets/Sponsors/github.png"),
           company: "The Julia Language",
+          rotation: "ninety",
         },
         {
           name: "Siddharth Dayalwal",
           description: "Program Manager",
           url: "https://twitter.com/",
           picture: require("~/assets/Speakers/Juan-Pablo.png"),
-          companyLogo: require("~/assets/Sponsors/github.svg"),
+          companyLogo: require("~/assets/Sponsors/github.png"),
           company: "Postman",
         },
       ],
@@ -115,20 +118,51 @@ export default {
       .speakers-card {
         display: flex;
         flex-direction: column;
-        border: 1px solid red;
+        box-shadow: rgba(255, 107, 0, 0.07) 0px 0px 10px 2px;
         border-radius: 1rem;
         // justify-content: center;
         align-items: center;
 
+        &.thirty {
+          .picture-wrapper {
+            transform: rotate(30deg);
+            .profile-pic {
+              transform: rotate(-30deg);
+            }
+          }
+        }
+
+        &.sixty {
+          .picture-wrapper {
+            transform: rotate(60deg);
+            .profile-pic {
+              transform: rotate(-60deg);
+            }
+          }
+        }
+
+        &.ninety {
+          .picture-wrapper {
+            transform: rotate(90deg);
+            .profile-pic {
+              transform: rotate(-90deg);
+            }
+          }
+        }
+
         .picture-wrapper {
-          width: 160px;
-          height: 160px;
+          border-style: solid;
+          border-width: 2px;
+          border-color: red red white red;
+          // width: 160px;
+          // height: 160px;
           display: flex;
           align-items: center;
           justify-content: center;
           background: var(--colour-pink);
           border-radius: 50%;
           transition: 0.3s all ease-in-out;
+          margin-top: 1rem;
 
           &:hover {
             background: var(--gradient-blue);
@@ -138,7 +172,7 @@ export default {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            background: var(--color-secondary-light);
+            // background: var(red);
           }
 
           @include respond-below(md) {
@@ -163,7 +197,7 @@ export default {
         .title {
           font-size: 1.2rem;
           text-align: center;
-          margin-top: 20px;
+          margin-top: 1rem;
           color: rgba(233, 83, 34, 1);
 
           @include respond-below(sm) {
@@ -173,20 +207,22 @@ export default {
         }
 
         .description {
+          margin-top: 1rem;
           font-size: 0.8rem;
-          color: rgba(233, 83, 34, 1);
+          color: rgba(112, 112, 112, 1);
           text-align: center;
         }
 
         .company-logo {
+          margin: 1rem auto;
           font-size: 0.8rem;
-          margin-top: 5px;
           height: 20px;
         }
       }
     }
 
     .view-more {
+      display: none;
       cursor: pointer;
       color: var(--colour-pink);
 

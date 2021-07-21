@@ -85,6 +85,7 @@ export default {
       }
 
       .cta-buttons {
+        margin-top: 1rem;
         display: flex;
         .cta-button {
           background-color: white;
@@ -95,6 +96,7 @@ export default {
           font-family: "Segoe UI Bold";
           border-radius: 0.5rem;
           width: 50%;
+          box-shadow: rgba(255, 107, 0, 0.1) 0px 0px 10px 0px;
 
           img {
             margin-right: 0.5rem;
@@ -116,48 +118,9 @@ export default {
         }
       }
     }
-  }
 
-  .stats {
-    text-align: center;
-    justify-content: center;
-    padding: 30px 0 10px;
-
-    .gridLayout {
-      display: grid;
-      margin-top: 15px;
-      grid-template-columns: repeat(2, 180px);
-      column-gap: 10px;
-      row-gap: 10px;
-      justify-content: center;
-
-      @include respond-below(sm) {
-        grid-template-columns: repeat(2, 150px);
-      }
-    }
-
-    .statData {
-      height: 150px;
-      width: 150px;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      justify-content: center;
-      padding: 15px;
-      background: var(--color-secondary-light);
-      border-radius: 8px;
-
-      h4 {
-        font-size: 2rem;
-        font-weight: bold;
-        padding-bottom: 10px;
-      }
-
-      @include respond-below(sm) {
-        width: 120px;
-        height: 120px;
-      }
+    .img {
+      width: 50vw;
     }
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div id="about">
+  <div id="top">
     <Container>
       <section class="content-section">
         <div class="contents">
@@ -7,14 +7,22 @@
             <img src="~/assets/HTF2/hero.svg" />
           </div>
           <div class="about">
-            <img src="~/assets/HTF2/HTFLogo.svg" />
+            <img class="logo" src="~/assets/HTF2/HTFLogo.svg" />
             <span class="tagline"> Innovate For Good </span>
             <span class="date"> 22 - 24 October 2021 </span>
             <div class="cta-buttons">
-              <a target='_blank' href='https://hackthisfall.devpost.com/' class="cta-button register">
+              <a
+                target="_blank"
+                href="https://hackthisfall.devpost.com/"
+                class="cta-button register"
+              >
                 <img src="~/assets/HTF2/devpost.svg" />REGISTER NOW
               </a>
-              <a target='_blank' href='https://discord.hackthisfall.tech/' class="cta-button discord">
+              <a
+                target="_blank"
+                href="https://discord.hackthisfall.tech/"
+                class="cta-button discord"
+              >
                 <img src="~/assets/HTF2/discord.svg" />JOIN DISCORD
               </a>
             </div>
@@ -43,6 +51,9 @@ export default {
   padding: 2rem 3rem;
   border-radius: 1rem;
   background-color: #feede3;
+  @include respond-below(sm) {
+    padding: 2rem 1rem;
+  }
 
   .contents {
     display: grid;
@@ -53,10 +64,27 @@ export default {
       grid-template-columns: repeat(1, 1fr);
     }
 
+    .img {
+      margin-top: 2rem;
+      width: 38vw;
+      @include respond-below(sm) {
+        display: none;
+      }
+    }
     .about {
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-align: center;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+
+      .logo {
+        width: 38vw;
+        @include respond-below(sm) {
+          width: 80vw;
+        }
+      }
 
       .tagline {
         font-family: "Poppins";
@@ -91,6 +119,7 @@ export default {
           justify-content: space-between;
           font-family: "Segoe UI Bold";
           border-radius: 0.5rem;
+          box-shadow: #ff6b00 0px 0px 10px 0px;
           cursor: pointer;
 
           img {

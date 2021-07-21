@@ -1,5 +1,5 @@
 <template>
-  <Container>
+  <Container id="tracks">
     <section class="content-section">
       <HashHeader title="TRACKS" />
       <div class="grid">
@@ -51,7 +51,6 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 20px 0;
-
   .track-box {
     border-radius: 20%;
     display: inline-block;
@@ -69,6 +68,7 @@ export default {
   }
 
   .grid {
+    margin-top: 2rem;
     padding: 10px 0;
     display: flex;
     grid-template-columns: repeat(2, 1fr);
@@ -78,7 +78,7 @@ export default {
     flex-wrap: wrap;
 
     .panel {
-      border: 1px solid red;
+      box-shadow: rgba(255, 107, 0, 0.07) 0px 0px 10px 2px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
