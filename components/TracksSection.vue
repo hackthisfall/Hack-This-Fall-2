@@ -6,8 +6,12 @@
         <div class="panel text">
           <div class="track-box healthcare"></div>
           <div class="texts">
-            <h3 class="title">Siddharth Dayalwal</h3>
-            <p class="description">Lorem ipsum dolor sit amet, vim quidam</p>
+            <h3 class="title">CLIMATE CHANGE AND ENVIRONMENT</h3>
+            <p class="description">
+              Climate change is an ongoing problem with our planet, so we want
+              to encourage hackers to build solutions to tackle this issue and
+              come up with some innovative solutions.
+            </p>
           </div>
         </div>
         <div class="panel text">
@@ -15,8 +19,13 @@
             <!-- <img src="~/assets/Tracks/healthcare.png" alt="Track Healthcare" /> -->
           </div>
           <div class="texts">
-            <h3 class="title">Siddharth Dayalwal</h3>
-            <p class="description">Lorem ipsum dolor sit amet, vim quidam</p>
+            <h3 class="title">BLOCKCHAIN AND CRYPTO</h3>
+            <p class="description">
+              Blockchain, the next generation of the internet, is decentralized.
+              It'll be a great experience for the hackers to learn new
+              blockchain techs and work with various chains and come up with
+              unique ideas while learning.
+            </p>
           </div>
         </div>
 
@@ -25,8 +34,13 @@
             <!-- <img src="~/assets/Tracks/healthcare.png" alt="Track Healthcare" /> -->
           </div>
           <div class="texts">
-            <h3 class="title">Siddharth Dayalwal</h3>
-            <p class="description">Lorem ipsum dolor sit amet, vim quidam</p>
+            <h3 class="title">OPEN INNOVATION</h3>
+            <p class="description">
+              We don't want our hackers to limit their ideas, so we also have an
+              Open Innovation track where hackers can come up with their own
+              ideas, and make awesome innovative projects irrespective of any
+              theme.
+            </p>
           </div>
         </div>
       </div>
@@ -82,6 +96,12 @@ export default {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      width: 35%;
+
+      @include respond-below(sm) {
+        width: unset;
+      }
+
       &.text {
         justify-content: space-between;
       }

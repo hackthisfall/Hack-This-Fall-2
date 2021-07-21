@@ -39,14 +39,5 @@ export default {
     height: 1px;
     background: var(--colour-pink);
   }
-
-  @include respond-below(sm) {
-    flex-direction: column;
-    align-items: stretch;
-
-    .line {
-      height: 1px;
-    }
-  }
 }
 </style>

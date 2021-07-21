@@ -8,7 +8,11 @@
             <h2 class="section-title">{{ section.type }}</h2>
           </div>
           <div class="cards-grid">
-            <div v-for="(sponsor, index) in section.logos" :key="index">
+            <div
+              v-for="(sponsor, index) in section.logos"
+              :key="index"
+              :class="[sponsor.image ? null : 'hide-small']"
+            >
               <a :href="sponsor.url" rel="noopener noreferrer" target="_blank">
                 <div v-if="sponsor.image" class="card">
                   <img :src="sponsor.image" alt="sponsor" />
