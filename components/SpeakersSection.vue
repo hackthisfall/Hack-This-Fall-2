@@ -101,6 +101,10 @@ export default {
     padding: 1rem 4rem;
     text-align: center;
 
+    @include respond-below(sm) {
+      padding: 1rem 0rem;
+    }
+
     .speakers-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);

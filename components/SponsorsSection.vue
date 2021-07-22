@@ -78,6 +78,12 @@ export default {
   display: flex;
   padding: 1rem 4rem;
   flex-direction: column;
+  text-align: center;
+
+  @include respond-below(sm) {
+    padding: 1rem 1rem;
+  }
+
   .contents {
     .subheading {
       margin-top: 2rem;

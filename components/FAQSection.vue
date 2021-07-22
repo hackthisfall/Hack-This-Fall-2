@@ -50,61 +50,61 @@ export default {
           isOpen: false,
           title: "What is a hackathon?",
           content:
-            "A hackathon is an invention marathon where you can work with people around the globe to build a project related to technology! It isn't about hacking into a system, it's instead about hacking something together and learning a great deal in the process.",
+            "Hackathons are an incredible way to bring your community together to learn new skills, build amazing projects, and share ideas.",
         },
         {
           isOpen: false,
-          title: "What is an online hackathon?",
+          title: "Where and When is Hack This Fall?",
           content:
-            "It's an invention marathon like the traditional in-person hackathon, but held remotely!",
+            "Hack This Fall is a virtual 48-hours hackathon to be happening on 22nd to 24th October, 2021.",
         },
         {
           isOpen: false,
-          title: "How long will it be on for?",
+          title: "Who can attend a hackathon?",
           content:
-            "The event will be running for about 48 hours from 28th May to 30th May.",
+            "Anyone who has an interest in technology can attend a hackathon to learn, build & share. You  should also be of age of 13 and above.",
         },
         {
           isOpen: false,
-          title: "Who can participate?",
+          title: "Can beginners participate?",
           content:
-            "Everyone is welcome to participate, be it, students, professionals or aliens from different Planet!",
+            "Absolutely. We will have plenty of mentors and resources available, along with several workshops targeted for beginners. Come learn and experience your first hackathon at Hack This Fall.",
         },
         {
           isOpen: false,
-          title: "How will project submissions work?",
+          title: "Can we form teams?",
           content:
-            "To participate, register on <a rel='noopener noreferrer' href='//hackon.hackerearth.com' target= '_blank'>HackerEarth's platform</a>. You will then be able to create your project once the hackathon starts. To be eligible for the judging process you'll have to submit the project before the hackathon ends.",
+            "Most definitely! We believe in collaboration and encourage hackers to work in teams of up to minimum 2 and maximum 4 members. You may opt-in to team formation through our Discord Server. Every hacker must be a part of only one team and submit only one project.",
         },
         {
           isOpen: false,
-          title: "How will judging work?",
+          title: "Can I submit my previous project?",
           content:
-            "We'll be reviewing submissions on HackerEarth, and it will be judged by our team and judges mentioned on the page.",
+            "We apologize, but all hackathon's projects should be developed during the event from scratch. We want honest conditions for all hackers. That's why all code should be done during the hackathon.",
         },
         {
           isOpen: false,
-          title: "Do I need to be a student?",
+          title: "Where do I need to submit my project?",
           content:
-            "Absolutely not! The team behind HackOn is mostly made up of students, however, anyone age 13 and above can give it a go!",
+            "First register on our Devpost page. Once the hackathon starts, you will be able to create the project there. To become eligible for prizes, you must submit your project before the deadline.",
         },
         {
           isOpen: false,
-          title: "How much does it cost?",
+          title: "Who keeps ownership of the projects after the hackathon?",
           content:
-            "Zero. Zip. Zilch. Nada. Nothing. Admission to HackOn is completely free, thanks to our sponsors!",
+            "The hackers building the project will keep full ownership of the project as it is their intellectual property.",
         },
         {
           isOpen: false,
-          title: "Where can I find updates?",
+          title: "What is the Code of Conduct?",
           content:
-            "We have an active <a rel='noopener noreferrer' href='//discord.hackon.tech' target= '_blank'>Discord</a> for communication, along with a <a rel='noopener noreferrer' href='//telegram.hackon.tech' target= '_blank'>Telegram</a> ",
+            "We want to ensure a positive experience for all participants. We will be following MLH’s Code of Conduct, we encourage you to read it here.",
         },
         {
           isOpen: false,
-          title: "How big can a team be?",
+          title: "More Questions?",
           content:
-            "You can form teams of 2 to 4 people. Most teams aim to have a mix of people with both design and developer skills. Remember we won't accept project submissions from individual applicants.",
+            "Join our Hacker Community Discord Server here. Ask any other questions you have and connect with a larger community. Looking forward to welcoming you.",
         },
       ],
       expandedFAQs: new Set(),
@@ -135,6 +135,10 @@ export default {
   padding: 20px 0;
   .contents {
     padding: 1rem 4rem;
+
+    @include respond-below(sm) {
+      padding: 1rem 0rem;
+    }
 
     .cards-grid {
       display: grid;
