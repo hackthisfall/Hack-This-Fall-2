@@ -33,7 +33,7 @@
               <a href="/#faq">FAQ</a>
             </li>
             <li>
-              <a href="/#team">TEAM</a>
+              <a href="/team">TEAM</a>
             </li>
             <li>
               <a href="https://s1.hackthisfall.tech/">SEASON 1</a>
@@ -64,7 +64,7 @@
       <a href="/#faq">
         <span>FAQ</span>
       </a>
-      <a href="/#team">
+      <a href="/team">
         <span>TEAM</span>
       </a>
       <a target="_blank" href="https://s1.hackthisfall.tech/">

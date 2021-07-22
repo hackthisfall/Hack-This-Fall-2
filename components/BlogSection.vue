@@ -1,5 +1,5 @@
 <template>
-  <div id="top">
+  <div id="blog">
     <Container>
       <section class="content-section">
         <div class="contents">
