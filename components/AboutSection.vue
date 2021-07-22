@@ -36,7 +36,7 @@
               </button>
             </div>
           </div>
-          <div class="img">
+          <div class="img hide-small">
             <img src="~/assets/HTF2/about-us.svg" />
           </div>
         </div>

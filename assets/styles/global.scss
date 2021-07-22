@@ -18,7 +18,7 @@ body {
 }
 
 .hide-small {
-  @include respond-below(md) {
+  @include respond-below(sm) {
     display: none;
   }
 }

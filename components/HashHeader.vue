@@ -1,7 +1,6 @@
 <template>
   <div class="heading">
     <h2 class="section-title" v-html="title"></h2>
-    <div class="line"></div>
   </div>
 </template>
 
@@ -15,8 +14,9 @@ export default {
 
 <style lang="scss" scoped>
 .heading {
+  text-align: center;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   h2.section-title {
@@ -33,11 +33,6 @@ export default {
       display: block;
       margin-top: 0.2rem;
     }
-  }
-  .line {
-    flex: 1;
-    height: 1px;
-    background: var(--colour-pink);
   }
 }
 </style>

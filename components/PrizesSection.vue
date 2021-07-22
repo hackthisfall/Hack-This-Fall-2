@@ -68,11 +68,19 @@ export default {
   .contents {
     padding: 1rem 8rem;
     text-align: center;
-    background-image: url("~/assets/HTF2/prizes.svg");
+    // background-image: url("~/assets/HTF2/prizes.svg");
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: bottom;
+
+    @include respond-below(md) {
+      padding: 1rem 4rem;
+    }
+
+    @include respond-below(sm) {
+      padding: 1rem 1rem;
+    }
 
     .cards-grid {
       display: grid;

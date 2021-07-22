@@ -64,6 +64,10 @@ export default {
   border-radius: 1rem;
   background-color: #feede3;
 
+  @include respond-below(sm) {
+    padding: 2rem 1rem;
+  }
+
   .track-box {
     border-radius: 20%;
     display: inline-block;
@@ -93,6 +97,7 @@ export default {
       flex-direction: row;
       background-color: white;
       justify-content: flex-start;
+      box-shadow: rgba(255, 107, 0, 0.07) 0px 0px 10px 2px;
       align-items: center;
 
       .texts {
