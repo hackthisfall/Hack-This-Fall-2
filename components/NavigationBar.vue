@@ -38,29 +38,53 @@
             <li>
               <a href="https://s1.hackthisfall.tech/">SEASON 1</a>
             </li>
-            <li v-if="showJoinButton">
-              <NuxtLink to="/join">
-                <button class="btn">Join Now</button>
-              </NuxtLink>
-            </li>
           </ul>
         </div>
       </div>
     </div>
+    <Slide class="slidingDrawer" :closeOnNavigation="true">
+      <a href="/#about">
+        <span>ABOUT</span>
+      </a>
+      <a href="/#speakers">
+        <span>SPEAKERS</span>
+      </a>
+      <a href="/#timeline">
+        <span>TIMELINE</span>
+      </a>
+      <a href="/#schedule">
+        <span>SCHEDULE</span>
+      </a>
+      <a href="/#tracks">
+        <span>TRACK</span>
+      </a>
+      <a href="/#sponsors">
+        <span>SPONSORS</span>
+      </a>
+      <a href="/#faq">
+        <span>FAQ</span>
+      </a>
+      <a href="/#team">
+        <span>TEAM</span>
+      </a>
+      <a target="_blank" href="https://s1.hackthisfall.tech/">
+        <span>SEASON 1</span>
+      </a>
+    </Slide>
   </div>
 </template>
 
 <script>
+import { Slide } from "vue-burger-menu";
+
 export default {
-  data() {
-    return {
-      showJoinButton: false
-    };
+  components: {
+    Slide
   }
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .navigation-bar {
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 15px 2px;
@@ -72,6 +96,17 @@ export default {
   width: 97%;
   border-radius: 1rem;
   margin: 1rem auto -3rem auto;
+  height: auto;
+
+  @include respond-below(lg) {
+    height: 50px;
+  }
+
+  .slidingDrawer {
+    @include respond-above(lg) {
+      display: none;
+    }
+  }
 
   .navigation-contents {
     display: flex;
@@ -79,6 +114,10 @@ export default {
     align-items: center;
     justify-content: space-between;
     margin: 0.25rem 0rem;
+
+    @include respond-below(lg) {
+      display: none;
+    }
 
     @include respond-below(sm) {
       justify-content: center;
@@ -95,6 +134,10 @@ export default {
     .menu-area {
       display: flex;
       align-items: center;
+
+      @include respond-below(lg) {
+        display: none;
+      }
 
       @include respond-below(sm) {
         display: none;
@@ -160,6 +203,76 @@ export default {
         }
       }
     }
+  }
+}
+
+.bm-burger-button {
+  position: sticky;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  margin-top: 0.6rem;
+  cursor: pointer;
+}
+.bm-burger-bars {
+  background-color: #e85325;
+
+  @include respond-above(lg) {
+    display: none;
+  }
+}
+.line-style {
+  position: absolute;
+  height: 20%;
+  left: 0;
+  right: 0;
+}
+.cross-style {
+  position: absolute;
+  top: 12px;
+  right: 2px;
+  cursor: pointer;
+}
+.bm-cross {
+  background: #e85325;
+}
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+.bm-menu {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #feede3; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /*0.5 second transition effect to slide in the sidenav*/
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+.bm-item-list {
+  color: #848484;
+  margin-left: 10%;
+  font-size: 20px;
+}
+.bm-item-list > * {
+  display: flex;
+  text-decoration: none;
+  padding: 0.7em;
+}
+.bm-item-list > * > span {
+  margin-left: 10px;
+  font-weight: 700;
+  color: #848484;
+
+  &:hover {
+    color: #e85325;
   }
 }
 </style>
