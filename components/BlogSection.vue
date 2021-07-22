@@ -4,7 +4,7 @@
       <section class="content-section">
         <div class="contents">
           <div class="topSection">
-            <img src="~assets/HTF1/HTF-Logo.png" width="600" />
+            <img src="~/assets/HTF1/HTF-Logo.png" width="600" />
             <h3>
               BUILD AND SOLVE
             </h3>
@@ -39,7 +39,7 @@
                 with other hackers in a meaningful way.
                 <br />
                 <br />
-                <img src="~assets/HTF1/blogImage.png" width="100%" />
+                <img src="~/assets/HTF1/blogImage.png" width="100%" />
                 <br />
                 <br />
                 While we are talking about hackathons and especially about Hack
