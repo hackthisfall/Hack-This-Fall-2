@@ -1,37 +1,22 @@
 <template>
-  <Container id="speakers">
+  <Container id="prizes">
     <section class="content-section">
       <HashHeader title="PRIZES" />
       <div class="contents">
-        <div class="speakers-grid">
-          <div
-            v-for="(speaker, index) in speakers"
-            :key="index"
-            class="speakers-card"
-          >
-            <a :href="speaker.url" target="_blank" rel="noopener noreferrer">
-              <div class="picture-wrapper">
-                <img
-                  :src="speaker.picture"
-                  alt="profile picture"
-                  class="profile-pic"
-                />
+        <div class="cards-grid">
+          <div v-for="(prize, index) in prizes" :key="index">
+            <div class="card">
+              <div class="image">
+                <img :src="prize.image" :alt="prize.name" class="prizeImage" />
               </div>
-            </a>
-            <h4 class="title">{{ speaker.name }}</h4>
-            <p class="description">{{ speaker.description }}</p>
-            <img
-              v-if="speaker.companyLogo"
-              :src="speaker.companyLogo"
-              :title="speaker.company"
-              alt="company logo"
-              class="company-logo"
-            />
+              <div class="texts">
+                <p class="prizeName">{{ prize.name }}</p>
+                <h4 class="prizeAmount">{{ prize.amount }}</h4>
+              </div>
+            </div>
           </div>
         </div>
-        <a class="view-all" href="/speakers">
-          <button>VIEW ALL ></button>
-        </a>
+        <a class="view-all" href="/prizes"><button>VIEW ALL ></button></a>
       </div>
     </section>
   </Container>
@@ -48,24 +33,21 @@ export default {
   },
   data() {
     return {
-      speakers: [
+      prizes: [
         {
           name: "First Prize",
-          description: "Program Manager",
-          url: "https://twitter.com/",
-          picture: require("~/assets/Prizes/1st.svg"),
+          image: require("~/assets/Prizes/1st.svg"),
+          amount: "",
         },
         {
           name: "Second Prize",
-          description: "Program Manager",
-          url: "https://twitter.com/",
-          picture: require("~/assets/Prizes/2nd.svg"),
+          image: require("~/assets/Prizes/2nd.svg"),
+          amount: " ",
         },
         {
           name: "Third Prize",
-          description: "Program Manager",
-          url: "https://twitter.com/",
-          picture: require("~/assets/Prizes/3rd.svg"),
+          image: require("~/assets/Prizes/3rd.svg"),
+          amount: " ",
         },
       ],
     };
@@ -92,7 +74,7 @@ export default {
     background-position-x: center;
     background-position-y: bottom;
 
-    .speakers-grid {
+    .cards-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       column-gap: 4rem;
@@ -104,12 +86,14 @@ export default {
       }
 
       @include respond-below(sm) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
       }
 
-      .speakers-card {
+      .card {
         display: flex;
         flex-direction: column;
+        text-align: center;
+        justify-content: center;
         background-color: white;
         border-radius: 1rem;
         padding-top: 2rem;
@@ -117,69 +101,29 @@ export default {
         // justify-content: center;
         z-index: 200;
         align-items: center;
+        min-height: 275px;
 
-        .picture-wrapper {
-          width: 160px;
-          height: 160px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background: var(--colour-pink);
-          border-radius: 50%;
-          transition: 0.3s all ease-in-out;
-
-          &:hover {
-            background: var(--gradient-blue);
-          }
-
-          .profile-pic {
-            width: 150px;
+        .image {
+          img {
             height: 150px;
-            border-radius: 50%;
-            background: var(--color-secondary-light);
-          }
-
-          @include respond-below(md) {
-            width: 120px;
-            height: 120px;
-            .profile-pic {
-              width: 110px;
-              height: 110px;
-            }
-          }
-
-          @include respond-below(sm) {
-            width: 100px;
-            height: 100px;
-            .profile-pic {
-              width: 90px;
-              height: 90px;
-            }
+            width: 150px;
+            margin: 10px;
           }
         }
 
-        .title {
+        .texts {
           font-size: 1.2rem;
           text-align: center;
           margin-top: 20px;
           color: rgba(233, 83, 34, 1);
-
-          @include respond-below(sm) {
-            font-size: 1rem;
-            margin-top: 10px;
-          }
-        }
-
-        .description {
-          font-size: 0.8rem;
-          color: rgba(233, 83, 34, 1);
           text-align: center;
-        }
-
-        .company-logo {
-          font-size: 0.8rem;
-          margin-top: 5px;
-          height: 20px;
+          .prizeAmount {
+            color: rgba(128, 128, 128, 1);
+            font-size: 0.8rem;
+            text-align: center;
+            font-weight: bold;
+            padding-bottom: 10px;
+          }
         }
       }
     }

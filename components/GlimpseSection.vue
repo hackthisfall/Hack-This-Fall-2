@@ -113,10 +113,10 @@ export default {
     .gridLayout {
       display: grid;
       margin-top: 15px;
-      grid-template-columns: repeat(2, 180px);
+      grid-template-columns: repeat(2, 230px);
       column-gap: 10px;
       row-gap: 10px;
-      justify-content: center;
+      justify-content: right;
 
       @include respond-below(sm) {
         grid-template-columns: repeat(2, 150px);
@@ -125,7 +125,7 @@ export default {
 
     .statData {
       height: 150px;
-      width: 150px;
+      width: 200px;
       margin: 0;
       display: flex;
       flex-direction: column;

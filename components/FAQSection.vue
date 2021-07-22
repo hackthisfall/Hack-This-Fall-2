@@ -9,7 +9,7 @@
               v-for="(faq, index) in FAQs"
               :key="index"
               :data-card-id="index"
-              class="card hidden"
+              :class="['card', FAQs[index].isOpen ? null : 'hidden']"
             >
               <div class="texts" @click="toggleFAQItem(index)">
                 <h4 class="title">Q. {{ faq.title }}</h4>
@@ -77,6 +77,7 @@ export default {
             "To participate, register on <a rel='noopener noreferrer' href='//hackon.hackerearth.com' target= '_blank'>HackerEarth's platform</a>. You will then be able to create your project once the hackathon starts. To be eligible for the judging process you'll have to submit the project before the hackathon ends.",
         },
         {
+          isOpen: false,
           title: "How will judging work?",
           content:
             "We'll be reviewing submissions on HackerEarth, and it will be judged by our team and judges mentioned on the page.",
@@ -111,19 +112,16 @@ export default {
   },
   methods: {
     toggleFAQItem(index) {
-      const characterInfoElement = document.querySelectorAll(
-        '[data-card-id="' + index + '"]'
-      )[0];
       if (this.FAQs[index].isOpen) {
         this.FAQs[index].isOpen = false;
       } else {
-        this.FAQs[index].isOpen = true;
-      }
-      console.log(this.FAQs);
-      if (characterInfoElement.classList.contains("hidden")) {
-        characterInfoElement.classList.remove("hidden");
-      } else {
-        characterInfoElement.classList.add("hidden");
+        this.FAQs.forEach((faq, currentIndex) => {
+          if (currentIndex === index) {
+            faq.isOpen = true;
+          } else {
+            faq.isOpen = false;
+          }
+        });
       }
     },
   },
@@ -151,6 +149,7 @@ export default {
       .card {
         flex: 1;
         align-self: flex-start;
+        box-shadow: rgba(255, 107, 0, 0.1) 0px 0px 10px 0px;
         display: flex;
         flex-direction: column;
         border-radius: 5px;
