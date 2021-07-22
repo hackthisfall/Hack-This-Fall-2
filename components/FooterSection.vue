@@ -11,9 +11,7 @@
         <div class="panel">
           <h4 class="title">About</h4>
           <a href="/coc">Code Of Conduct</a>
-          <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
-            >Season 1 Blog</a
-          >
+          <a href="/blog">Season 1 Blog</a>
           <a href="/team">Know The Team</a>
           <a href="/team">HackOn Universe</a>
         </div>
@@ -92,8 +90,8 @@ import CopyLink from "~/components/CopyLink";
 export default {
   components: {
     Container,
-    CopyLink,
-  },
+    CopyLink
+  }
 };
 </script>
 
@@ -112,6 +110,11 @@ export default {
 
   @include respond-below(sm) {
     padding: 40px 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #848484;
   }
 
   .contents {
@@ -150,15 +153,9 @@ export default {
     flex-direction: column;
 
     .branding {
-      h1.brand-text {
-        font-family: var(--title-font);
-        font-weight: bold;
-        font-size: 1.2rem;
-
-        span {
-          color: var(--font-color-light);
-          margin-left: 10px;
-        }
+      img {
+        margin-top: 20px;
+        margin-bottom: -10px;
       }
     }
 
