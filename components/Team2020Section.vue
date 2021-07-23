@@ -1,7 +1,7 @@
 <template>
   <Container id="team">
     <section class="content-section">
-      <HashHeader title="Season 2 Team" />
+      <HashHeader title="Season 1 Team" />
       <div class="contents">
         <div class="team-grid">
           <div
@@ -45,62 +45,50 @@ export default {
           rotation: "thirty",
         },
         {
-          name: "Paras Gupta",
-          url: "https://www.linkedin.com/in/parasg1999/",
-          picture: require("~/assets/Team/paras.jpeg"),
+          name: "Dhvanan Kotecha",
+          url: "https://www.linkedin.com/in/dkots111/",
+          picture: require("~/assets/Team2020/dhvanan.webp"),
           rotation: "sixty",
         },
         {
-          name: "Ojasvi Khurana",
-          url: "https://www.linkedin.com/in/ojasvikhurana/",
-          picture: require("~/assets/Team/ojasvi.jpeg"),
+          name: "Naivedh Shah",
+          url: "https://www.linkedin.com/in/naivedh-shah/",
+          picture: require("~/assets/Team2020/naivedh.webp"),
           rotation: "ninety",
         },
         {
-          name: "Apoorv Dwivedi",
-          url: "https://www.linkedin.com/in/apoorvdwi",
-          picture: require("~/assets/Team/apoorv.jpeg"),
+          name: "Abhishek Doshi",
+          url: "https://www.linkedin.com/in/abhishek-doshi-520983199/",
+          picture: require("~/assets/Team2020/abhi.webp"),
         },
         {
-          name: "Shubhangi Gupta",
-          url: "https://www.linkedin.com/in/knowshubhangi/",
-          picture: require("~/assets/Team/shubhangi.jpeg"),
+          name: "Tushar",
+          url: "https://www.linkedin.com/in/tushar-ba401a136/",
+          picture: require("~/assets/Team2020/tushar.webp"),
           rotation: "thirty",
-        },
-        {
-          name: "Vaibhav Toshniwal",
-          url: "https://www.linkedin.com/in/vaibhav-vinay-toshniwal-252ba8187/",
-          picture: require("~/assets/Team/vaibhav.jpeg"),
-          rotation: "sixty",
-        },
-        {
-          name: "Sahil Bhatiya",
-          url: "https://www.linkedin.com/in/sahil-bhatiya-73790719a/",
-          picture: require("~/assets/Team/sahil.jpeg"),
-          rotation: "ninety",
-        },
-        {
-          name: "Dennis D'mello",
-          url: "https://www.linkedin.com/in/dendemello/",
-          picture: require("~/assets/Team/dennis.jpeg"),
         },
         {
           name: "Sahil Sen",
           url: "https://www.linkedin.com/in/sahil-sen-528647ba/",
           picture: require("~/assets/Team/sahilsen.webp"),
-          rotation: "thirty",
-        },
-        {
-          name: "Rishabh Bansal",
-          url: "https://www.linkedin.com/in/rishabhbansal97",
-          picture: require("~/assets/Team/rishabh.jpeg"),
           rotation: "sixty",
         },
         {
-          name: "Aaishika S Bhattacharya",
-          url: "https://www.linkedin.com/in/aaishika/",
-          picture: require("~/assets/Team/aaishika.png"),
+          name: "Tirthak Patel",
+          url: "https://www.linkedin.com/in/tirthakpatel/",
+          picture: require("~/assets/Team2020/tirthak.webp"),
           rotation: "ninety",
+        },
+        {
+          name: "Perin Shah",
+          url: "https://www.linkedin.com/in/shahperin/",
+          picture: require("~/assets/Team2020/perin.webp"),
+        },
+        {
+          name: "Sagar Parmar",
+          url: "https://www.linkedin.com/in/sagarparmar881/",
+          picture: require("~/assets/Team2020/sagar.jpeg"),
+          rotation: "thirty",
         },
       ],
     };

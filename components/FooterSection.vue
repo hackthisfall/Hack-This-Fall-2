@@ -143,7 +143,7 @@ export default {
       column-gap: 30px;
     }
 
-    @include respond-below(sm) {
+    @include respond-below(md) {
       grid-template-columns: 1fr;
     }
   }
@@ -156,6 +156,16 @@ export default {
       img {
         margin-top: 20px;
         margin-bottom: -10px;
+
+        @include respond-below(md) {
+          max-width: 50%;
+          margin-bottom: -60px;
+        }
+
+        @include respond-below(xxs) {
+          max-width: 100%;
+          margin-bottom: -40px;
+        }
       }
     }
 
