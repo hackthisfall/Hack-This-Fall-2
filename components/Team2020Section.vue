@@ -7,7 +7,7 @@
           <div
             v-for="(teamMember, index) in team"
             :key="index"
-            :class="['team-card', `rot-${teamMember.rotation}`]"
+            :class="['team-card', `rot-${Math.floor(Math.random() * 24) * 15}`]"
           >
             <a :href="teamMember.url" target="_blank" rel="noopener noreferrer">
               <div class="picture-wrapper">

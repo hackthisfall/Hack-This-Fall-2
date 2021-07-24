@@ -1,13 +1,13 @@
 <template>
   <Container id="speakers">
     <section class="content-section">
-      <HashHeader title="SPEAKERS" />
+      <HashHeader title="PREVIOUS SPEAKERS" />
       <div class="contents">
         <div class="speakers-grid">
           <div
             v-for="(speaker, index) in speakers"
             :key="index"
-            :class="['team-card', `rot-${speaker.rotation}`]"
+            :class="['team-card', `rot-${Math.floor(Math.random() * 24) * 15}`]"
           >
             <a :href="speaker.url" target="_blank" rel="noopener noreferrer">
               <div class="picture-wrapper">
@@ -50,37 +50,73 @@ export default {
     return {
       speakers: [
         {
-          name: "Siddharth Dayalwal",
-          description: "Program Manager",
-          url: "https://twitter.com/",
-          picture: require("~/assets/Speakers/Juan-Pablo.png"),
+          name: "Marc Cohen",
+          description: "Developer Advocate, GCP-Google",
+          url: "https://twitter.com/marcacohen",
+          picture: require("~/assets/Speakers/marc.jpg"),
           companyLogo: require("~/assets/Sponsors/github.png"),
           company: "GitHub",
           rotation: 30,
         },
         {
-          name: "Siddharth Dayalwal",
-          description: "Program Manager",
-          url: "https://twitter.com/",
-          picture: require("~/assets/Speakers/Juan-Pablo.png"),
+          name: "John Coghlan",
+          description: "Developer Evangelism, GitLab",
+          url: "https://twitter.com/john_cogs",
+          picture: require("~/assets/Speakers/john.jpeg"),
+          companyLogo: require("~/assets/Sponsors/github.png"),
+          company: "GitHub",
+          rotation: 30,
+        },
+        {
+          name: "Eddie Jaoude",
+          description: "GitHub Star of the Year",
+          url: "https://twitter.com/eddiejaoude",
+          picture: require("~/assets/Speakers/eddie.jpg"),
           companyLogo: require("~/assets/Sponsors/github.png"),
           company: "GitHub Stars",
           rotation: 60,
         },
         {
-          name: "Siddharth Dayalwal",
-          description: "Program Manager",
-          url: "https://twitter.com/",
-          picture: require("~/assets/Speakers/Juan-Pablo.png"),
+          name: "Dmitry Shklovsky",
+          description: "Co Founder, Quiknode",
+          url: "https://twitter.com/dimidj",
+          picture: require("~/assets/Speakers/dmitry.jpeg"),
           companyLogo: require("~/assets/Sponsors/github.png"),
           company: "The Julia Language",
           rotation: 90,
         },
         {
-          name: "Siddharth Dayalwal",
-          description: "Program Manager",
-          url: "https://twitter.com/",
-          picture: require("~/assets/Speakers/Juan-Pablo.png"),
+          name: "Aloon Grinshpoon",
+          description: "Founder & CEO, echoAR",
+          url: "https://twitter.com/alongrinshpoon",
+          picture: require("~/assets/Speakers/alon.webp"),
+          companyLogo: require("~/assets/Sponsors/github.png"),
+          company: "Postman",
+          rotation: 120,
+        },
+        {
+          name: "Akanksha Bhasin",
+          description: "Community Evangelist, Symbl.AI",
+          url: "https://twitter.com/Akii_20",
+          picture: require("~/assets/Speakers/akanksha.jpeg"),
+          companyLogo: require("~/assets/Sponsors/github.png"),
+          company: "GitHub",
+          rotation: 30,
+        },
+        {
+          name: "Aanisha Mishra",
+          description: "Engineer-II, Cisco",
+          url: "https://twitter.com/the_crazy_lady",
+          picture: require("~/assets/Speakers/aanisha.jpeg"),
+          companyLogo: require("~/assets/Sponsors/github.png"),
+          company: "Postman",
+          rotation: 120,
+        },
+        {
+          name: "Praveen Kumar",
+          description: "Full Stack JS Developer",
+          url: "https://twitter.com/praveenscience",
+          picture: require("~/assets/Speakers/praveen.webp"),
           companyLogo: require("~/assets/Sponsors/github.png"),
           company: "Postman",
           rotation: 120,
