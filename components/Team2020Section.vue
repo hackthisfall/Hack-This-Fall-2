@@ -7,7 +7,7 @@
           <div
             v-for="(teamMember, index) in team"
             :key="index"
-            :class="['team-card', teamMember.rotation]"
+            :class="['team-card', `rot-${teamMember.rotation}`]"
           >
             <a :href="teamMember.url" target="_blank" rel="noopener noreferrer">
               <div class="picture-wrapper">
@@ -42,42 +42,43 @@ export default {
           name: "Siddharth Dayalwal",
           url: "https://www.linkedin.com/in/siddharth-dayalwal/",
           picture: require("~/assets/Team/siddharth.png"),
-          rotation: "thirty",
+          rotation: 30,
         },
         {
           name: "Dhvanan Kotecha",
           url: "https://www.linkedin.com/in/dkots111/",
           picture: require("~/assets/Team2020/dhvanan.webp"),
-          rotation: "sixty",
+          rotation: 60,
         },
         {
           name: "Naivedh Shah",
           url: "https://www.linkedin.com/in/naivedh-shah/",
           picture: require("~/assets/Team2020/naivedh.webp"),
-          rotation: "ninety",
+          rotation: 90,
         },
         {
           name: "Abhishek Doshi",
           url: "https://www.linkedin.com/in/abhishek-doshi-520983199/",
           picture: require("~/assets/Team2020/abhi.webp"),
+          rotation: 180,
         },
         {
           name: "Tushar",
           url: "https://www.linkedin.com/in/tushar-ba401a136/",
           picture: require("~/assets/Team2020/tushar.webp"),
-          rotation: "thirty",
+          rotation: 210,
         },
         {
           name: "Sahil Sen",
           url: "https://www.linkedin.com/in/sahil-sen-528647ba/",
           picture: require("~/assets/Team/sahilsen.webp"),
-          rotation: "sixty",
+          rotation: 60,
         },
         {
           name: "Tirthak Patel",
           url: "https://www.linkedin.com/in/tirthakpatel/",
           picture: require("~/assets/Team2020/tirthak.webp"),
-          rotation: "ninety",
+          rotation: 45,
         },
         {
           name: "Perin Shah",
@@ -88,7 +89,7 @@ export default {
           name: "Sagar Parmar",
           url: "https://www.linkedin.com/in/sagarparmar881/",
           picture: require("~/assets/Team2020/sagar.jpeg"),
-          rotation: "thirty",
+          rotation: 75,
         },
       ],
     };
@@ -134,33 +135,6 @@ export default {
         // justify-content: center;
         align-items: center;
 
-        &.thirty {
-          .picture-wrapper {
-            transform: rotate(30deg);
-            .profile-pic {
-              transform: rotate(-30deg);
-            }
-          }
-        }
-
-        &.sixty {
-          .picture-wrapper {
-            transform: rotate(60deg);
-            .profile-pic {
-              transform: rotate(-60deg);
-            }
-          }
-        }
-
-        &.ninety {
-          .picture-wrapper {
-            transform: rotate(90deg);
-            .profile-pic {
-              transform: rotate(-90deg);
-            }
-          }
-        }
-
         .picture-wrapper {
           border-style: solid;
           border-width: 2px;
@@ -174,15 +148,10 @@ export default {
           transition: 0.3s all ease-in-out;
           margin-top: 1rem;
 
-          &:hover {
-            background: rgba(233, 83, 34, 1);
-          }
-
           .profile-pic {
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            // background: var(red);
           }
 
           @include respond-below(md) {

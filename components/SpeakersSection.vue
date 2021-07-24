@@ -7,7 +7,7 @@
           <div
             v-for="(speaker, index) in speakers"
             :key="index"
-            :class="['speakers-card', speaker.rotation]"
+            :class="['team-card', `rot-${speaker.rotation}`]"
           >
             <a :href="speaker.url" target="_blank" rel="noopener noreferrer">
               <div class="picture-wrapper">
@@ -56,7 +56,7 @@ export default {
           picture: require("~/assets/Speakers/Juan-Pablo.png"),
           companyLogo: require("~/assets/Sponsors/github.png"),
           company: "GitHub",
-          rotation: "thirty",
+          rotation: 30,
         },
         {
           name: "Siddharth Dayalwal",
@@ -65,7 +65,7 @@ export default {
           picture: require("~/assets/Speakers/Juan-Pablo.png"),
           companyLogo: require("~/assets/Sponsors/github.png"),
           company: "GitHub Stars",
-          rotation: "sixty",
+          rotation: 60,
         },
         {
           name: "Siddharth Dayalwal",
@@ -74,7 +74,7 @@ export default {
           picture: require("~/assets/Speakers/Juan-Pablo.png"),
           companyLogo: require("~/assets/Sponsors/github.png"),
           company: "The Julia Language",
-          rotation: "ninety",
+          rotation: 90,
         },
         {
           name: "Siddharth Dayalwal",
@@ -83,6 +83,7 @@ export default {
           picture: require("~/assets/Speakers/Juan-Pablo.png"),
           companyLogo: require("~/assets/Sponsors/github.png"),
           company: "Postman",
+          rotation: 120,
         },
       ],
     };
@@ -119,7 +120,7 @@ export default {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .speakers-card {
+      .team-card {
         display: flex;
         flex-direction: column;
         box-shadow: rgba(255, 107, 0, 0.07) 0px 0px 10px 2px;
@@ -127,50 +128,18 @@ export default {
         // justify-content: center;
         align-items: center;
 
-        &.thirty {
-          .picture-wrapper {
-            transform: rotate(30deg);
-            .profile-pic {
-              transform: rotate(-30deg);
-            }
-          }
-        }
-
-        &.sixty {
-          .picture-wrapper {
-            transform: rotate(60deg);
-            .profile-pic {
-              transform: rotate(-60deg);
-            }
-          }
-        }
-
-        &.ninety {
-          .picture-wrapper {
-            transform: rotate(90deg);
-            .profile-pic {
-              transform: rotate(-90deg);
-            }
-          }
-        }
-
         .picture-wrapper {
           border-style: solid;
           border-width: 2px;
           border-color: red red white red;
-          // width: 160px;
-          // height: 160px;
+          width: 160px;
+          height: 160px;
           display: flex;
           align-items: center;
           justify-content: center;
-          background: var(--colour-pink);
           border-radius: 50%;
           transition: 0.3s all ease-in-out;
           margin-top: 1rem;
-
-          &:hover {
-            background: var(--gradient-blue);
-          }
 
           .profile-pic {
             width: 150px;

@@ -33,3 +33,62 @@ body {
 .content-section {
   margin: 4rem 0 1rem 0;
 }
+
+$max: 24;
+
+@for $val from 0 to $max {
+  $degrees: $val * 15;
+  @keyframes spin-#{$degrees} {
+    from {
+      transform: rotate(#{$degrees}deg);
+    }
+    to {
+      transform: rotate(#{$degrees + 360}deg);
+    }
+  }
+
+  @keyframes neg-spin-#{$degrees} {
+    0% {
+      transform: rotate(-#{$degrees}deg);
+    }
+    100% {
+      transform: rotate(-#{$degrees + 360}deg);
+    }
+  }
+}
+
+@for $val from 0 to $max {
+  $degrees: $val * 15;
+  .rot-#{$degrees} {
+    &.team-card {
+      .picture-wrapper {
+        -webkit-transform: rotate(#{$degrees}deg);
+        -moz-transform: rotate(#{$degrees}deg);
+        -ms-transform: rotate(#{$degrees}deg);
+        -o-transform: rotate(#{$degrees}deg);
+        transform: rotate(#{$degrees}deg);
+
+        zoom: 1;
+
+        .profile-pic {
+          -webkit-transform: rotate(-#{$degrees}deg);
+          -moz-transform: rotate(-#{$degrees}deg);
+          -ms-transform: rotate(-#{$degrees}deg);
+          -o-transform: rotate(-#{$degrees}deg);
+          transform: rotate(-#{$degrees}deg);
+
+          zoom: 1;
+        }
+      }
+
+      &:hover {
+        .picture-wrapper {
+          animation: spin-#{$degrees} 3s infinite linear;
+          .profile-pic {
+            animation: neg-spin-#{$degrees} 3s infinite linear;
+          }
+        }
+      }
+    }
+  }
+}
