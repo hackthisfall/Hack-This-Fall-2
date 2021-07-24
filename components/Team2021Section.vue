@@ -148,7 +148,7 @@ export default {
 
         .picture-wrapper {
           border-style: solid;
-          border-width: 2px;
+          border-width: 3px;
           border-color: red red white red;
           width: 210px;
           height: 210px;

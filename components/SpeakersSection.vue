@@ -54,8 +54,8 @@ export default {
           description: "Developer Advocate, GCP-Google",
           url: "https://twitter.com/marcacohen",
           picture: require("~/assets/Speakers/marc.jpg"),
-          companyLogo: require("~/assets/Sponsors/github.png"),
-          company: "GitHub",
+          // companyLogo: require("~/assets/Sponsors/github.png"),
+          // company: "GitHub",
           rotation: 30,
         },
         {
@@ -63,8 +63,8 @@ export default {
           description: "Developer Evangelism, GitLab",
           url: "https://twitter.com/john_cogs",
           picture: require("~/assets/Speakers/john.jpeg"),
-          companyLogo: require("~/assets/Sponsors/github.png"),
-          company: "GitHub",
+          // companyLogo: require("~/assets/Sponsors/github.png"),
+          // company: "GitHub",
           rotation: 30,
         },
         {
@@ -72,8 +72,8 @@ export default {
           description: "GitHub Star of the Year",
           url: "https://twitter.com/eddiejaoude",
           picture: require("~/assets/Speakers/eddie.jpg"),
-          companyLogo: require("~/assets/Sponsors/github.png"),
-          company: "GitHub Stars",
+          // companyLogo: require("~/assets/Sponsors/github.png"),
+          // company: "GitHub Stars",
           rotation: 60,
         },
         {
@@ -81,8 +81,8 @@ export default {
           description: "Co Founder, Quiknode",
           url: "https://twitter.com/dimidj",
           picture: require("~/assets/Speakers/dmitry.jpeg"),
-          companyLogo: require("~/assets/Sponsors/github.png"),
-          company: "The Julia Language",
+          // companyLogo: require("~/assets/Sponsors/github.png"),
+          // company: "The Julia Language",
           rotation: 90,
         },
         {
@@ -90,8 +90,8 @@ export default {
           description: "Founder & CEO, echoAR",
           url: "https://twitter.com/alongrinshpoon",
           picture: require("~/assets/Speakers/alon.webp"),
-          companyLogo: require("~/assets/Sponsors/github.png"),
-          company: "Postman",
+          // companyLogo: require("~/assets/Sponsors/github.png"),
+          // company: "Postman",
           rotation: 120,
         },
         {
@@ -99,8 +99,8 @@ export default {
           description: "Community Evangelist, Symbl.AI",
           url: "https://twitter.com/Akii_20",
           picture: require("~/assets/Speakers/akanksha.jpeg"),
-          companyLogo: require("~/assets/Sponsors/github.png"),
-          company: "GitHub",
+          // companyLogo: require("~/assets/Sponsors/github.png"),
+          // company: "GitHub",
           rotation: 30,
         },
         {
@@ -108,8 +108,8 @@ export default {
           description: "Engineer-II, Cisco",
           url: "https://twitter.com/the_crazy_lady",
           picture: require("~/assets/Speakers/aanisha.jpeg"),
-          companyLogo: require("~/assets/Sponsors/github.png"),
-          company: "Postman",
+          // companyLogo: require("~/assets/Sponsors/github.png"),
+          // company: "Postman",
           rotation: 120,
         },
         {
@@ -117,8 +117,8 @@ export default {
           description: "Full Stack JS Developer",
           url: "https://twitter.com/praveenscience",
           picture: require("~/assets/Speakers/praveen.webp"),
-          companyLogo: require("~/assets/Sponsors/github.png"),
-          company: "Postman",
+          // companyLogo: require("~/assets/Sponsors/github.png"),
+          // company: "Postman",
           rotation: 120,
         },
       ],
@@ -161,12 +161,13 @@ export default {
         flex-direction: column;
         box-shadow: rgba(255, 107, 0, 0.07) 0px 0px 10px 2px;
         border-radius: 1rem;
+        padding-bottom: 1rem;
         // justify-content: center;
         align-items: center;
 
         .picture-wrapper {
           border-style: solid;
-          border-width: 2px;
+          border-width: 3px;
           border-color: red red white red;
           width: 160px;
           height: 160px;
@@ -223,7 +224,7 @@ export default {
         }
 
         .company-logo {
-          margin: 1rem auto;
+          margin-top: 1rem;
           font-size: 0.8rem;
           height: 20px;
         }
