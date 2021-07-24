@@ -4,7 +4,7 @@
       <HashHeader title="TRACKS" />
       <div class="grid">
         <div class="panel text">
-          <div class="track-box healthcare"></div>
+          <div class="track-box"></div>
           <div class="texts">
             <h3 class="title">CLIMATE CHANGE AND ENVIRONMENT</h3>
             <p class="description">
@@ -15,7 +15,7 @@
           </div>
         </div>
         <div class="panel text">
-          <div class="track-box healthcare">
+          <div class="track-box">
             <!-- <img src="~/assets/Tracks/healthcare.png" alt="Track Healthcare" /> -->
           </div>
           <div class="texts">
@@ -30,7 +30,7 @@
         </div>
 
         <div class="panel text">
-          <div class="track-box healthcare">
+          <div class="track-box">
             <!-- <img src="~/assets/Tracks/healthcare.png" alt="Track Healthcare" /> -->
           </div>
           <div class="texts">
@@ -70,7 +70,6 @@ export default {
     display: inline-block;
     padding: 1rem;
     height: 5.5rem;
-    margin-top: 1rem;
     width: 5.5rem;
     box-sizing: border-box;
   }
@@ -82,8 +81,7 @@ export default {
   }
 
   .grid {
-    margin-top: 2rem;
-    padding: 10px 0;
+    padding: 1rem 0;
     display: flex;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 4rem;
@@ -97,6 +95,7 @@ export default {
       flex-direction: row;
       justify-content: space-between;
       width: 35%;
+      border-radius: 0.5rem;
 
       @include respond-below(sm) {
         width: unset;

@@ -88,15 +88,11 @@ export default {
     }
 
     .about {
-      padding: 10px 0;
+      padding: 1rem 0;
+      align-self: center;
 
       p {
-        padding-top: 60px;
         font-size: 1.2rem;
-
-        @include respond-below(md) {
-          padding-top: 20px;
-        }
       }
     }
   }
@@ -104,7 +100,7 @@ export default {
   .stats {
     text-align: center;
     justify-content: center;
-    padding: 30px 0 10px;
+    padding: 1rem 0 10px;
 
     .gridLayout {
       display: grid;

@@ -1,7 +1,7 @@
 <template>
   <Container id="team">
     <section class="content-section">
-      <HashHeader title="Season 2 Team" />
+      <HashHeader title="SEASON 2 TEAM" />
       <div class="contents">
         <div class="team-grid">
           <div
@@ -138,12 +138,34 @@ export default {
       }
 
       .team-card {
+        padding-bottom: 1rem;
         display: flex;
         flex-direction: column;
         box-shadow: rgba(255, 107, 0, 0.07) 0px 0px 10px 2px;
         border-radius: 1rem;
         // justify-content: center;
         align-items: center;
+
+        &:hover {
+          .picture-wrapper {
+            animation: spin 3s infinite linear;
+            .profile-pic {
+              animation: neg-spin 3s infinite linear;
+            }
+          }
+        }
+
+        @keyframes spin {
+          100% {
+            transform: rotate(1turn);
+          }
+        }
+
+        @keyframes neg-spin {
+          100% {
+            transform: rotate(-1turn);
+          }
+        }
 
         &.thirty {
           .picture-wrapper {
@@ -185,10 +207,6 @@ export default {
           transition: 0.3s all ease-in-out;
           margin-top: 1rem;
 
-          &:hover {
-            background: rgba(233, 83, 34, 1);
-          }
-
           .profile-pic {
             width: 200px;
             height: 200px;
@@ -218,7 +236,7 @@ export default {
         .title {
           font-size: 1.2rem;
           text-align: center;
-          margin-top: 1rem;
+          margin: 1rem 0rem;
           color: rgba(233, 83, 34, 1);
 
           @include respond-below(sm) {

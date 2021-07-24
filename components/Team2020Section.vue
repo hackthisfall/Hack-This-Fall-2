@@ -1,7 +1,7 @@
 <template>
   <Container id="team">
     <section class="content-section">
-      <HashHeader title="Season 1 Team" />
+      <HashHeader title="SEASON 1 TEAM" />
       <div class="contents">
         <div class="team-grid">
           <div
@@ -126,6 +126,7 @@ export default {
       }
 
       .team-card {
+        padding-bottom: 1rem;
         display: flex;
         flex-direction: column;
         box-shadow: rgba(255, 107, 0, 0.07) 0px 0px 10px 2px;
@@ -206,7 +207,7 @@ export default {
         .title {
           font-size: 1.2rem;
           text-align: center;
-          margin-top: 1rem;
+          margin: 1rem 0rem;
           color: rgba(233, 83, 34, 1);
 
           @include respond-below(sm) {

@@ -89,9 +89,9 @@ export default {
       .tagline {
         font-family: "Poppins";
         font-weight: bold;
-        letter-spacing: 1.5px;
+        letter-spacing: 0.25rem;
         font-size: 2rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
       }
 
       .date {
@@ -103,7 +103,7 @@ export default {
 
       .cta-buttons {
         display: flex;
-        margin-top: 2rem;
+        margin-top: 3rem;
 
         a {
           text-decoration: none;
@@ -119,8 +119,12 @@ export default {
           justify-content: space-between;
           font-family: "Segoe UI Bold";
           border-radius: 0.5rem;
-          box-shadow: #ff6b00 0px 0px 10px 0px;
           cursor: pointer;
+
+          &:hover {
+            box-shadow: #ff6b00 0px 0px 10px 0px;
+            transition: all 0.2s ease-out;
+          }
 
           img {
             margin-right: 0.5rem;

@@ -60,7 +60,8 @@ export default {
 .content-section {
   display: flex;
   flex-direction: column;
-  padding: 40px 0 10px;
+  padding: 2rem 0 10px;
+  font-family: "Segoe UI";
 
   .contents {
     display: grid;
@@ -76,7 +77,9 @@ export default {
       padding: 10px 0;
 
       p {
-        padding-top: 60px;
+        color: rgba(112, 112, 112, 1);
+        font-weight: bold;
+        margin-top: 2rem;
         font-size: 1.2rem;
 
         @include respond-below(md) {
