@@ -90,6 +90,7 @@ export default {
       .cta-buttons {
         margin-top: 1rem;
         display: flex;
+
         .cta-button {
           background-color: white;
           border: none;
@@ -117,6 +118,19 @@ export default {
 
           &:nth-of-type(2) {
             margin-left: 1rem;
+          }
+        }
+
+        @include respond-below(xs) {
+          flex-direction: column;
+          justify-content: center;
+          .cta-button {
+            width: 100%;
+
+            &:nth-of-type(2) {
+              margin-top: 1rem;
+              margin-left: 0rem;
+            }
           }
         }
       }

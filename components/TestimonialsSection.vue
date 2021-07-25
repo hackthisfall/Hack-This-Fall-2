@@ -120,6 +120,10 @@ export default {
       }
     }
 
+    @include respond-below(md) {
+      grid-column-gap: 4rem;
+    }
+
     @include respond-below(sm) {
       grid-template-columns: repeat(1, 1fr);
 

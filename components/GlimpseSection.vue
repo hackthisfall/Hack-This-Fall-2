@@ -108,10 +108,15 @@ export default {
       grid-template-columns: repeat(2, 200px);
       column-gap: 3rem;
       row-gap: 3rem;
-      justify-content: right;
+      justify-content: center;
 
       @include respond-below(sm) {
         grid-template-columns: repeat(2, 120px);
+      }
+
+      @include respond-below(xs) {
+        column-gap: 1rem;
+        row-gap: 1rem;
       }
     }
 
@@ -123,7 +128,7 @@ export default {
       flex-direction: column;
       text-align: center;
       justify-content: center;
-      padding: 15px;
+      padding: 1rem;
       border-radius: 8px;
       background-color: rgb(253, 250, 245);
       h4 {
@@ -133,7 +138,7 @@ export default {
 
       @include respond-below(sm) {
         width: 120px;
-        height: 120px;
+        height: 150px;
       }
     }
   }
