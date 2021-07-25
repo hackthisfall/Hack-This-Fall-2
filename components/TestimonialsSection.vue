@@ -88,8 +88,8 @@ export default {
     padding: 10px 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 4rem;
-    row-gap: 1em;
+    grid-column-gap: 6rem;
+    row-gap: 2rem;
 
     .panel {
       border-radius: 1rem;

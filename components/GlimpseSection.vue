@@ -105,13 +105,13 @@ export default {
     .gridLayout {
       display: grid;
       margin-top: 15px;
-      grid-template-columns: repeat(2, 230px);
-      column-gap: 10px;
-      row-gap: 10px;
+      grid-template-columns: repeat(2, 200px);
+      column-gap: 3rem;
+      row-gap: 3rem;
       justify-content: right;
 
       @include respond-below(sm) {
-        grid-template-columns: repeat(2, 150px);
+        grid-template-columns: repeat(2, 120px);
       }
     }
 
@@ -125,7 +125,7 @@ export default {
       justify-content: center;
       padding: 15px;
       border-radius: 8px;
-      background-color: white;
+      background-color: rgb(253, 250, 245);
       h4 {
         font-size: 2rem;
         font-weight: bold;
