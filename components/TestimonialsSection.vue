@@ -26,7 +26,7 @@
             </div>
             <div class="texts">
               <h3 class="title">Praveen Kumar</h3>
-              <p class="description">Mentor and Speaker</p>
+              <p class="description">Season 1 Mentor and Speaker</p>
             </div>
           </div>
         </a>
@@ -38,7 +38,7 @@
             </div>
             <div class="texts">
               <h3 class="title">Aditya Oberai</h3>
-              <p class="description">Mentor</p>
+              <p class="description">Season 1 Mentor</p>
             </div>
           </div>
         </a>
@@ -50,7 +50,7 @@
             </div>
             <div class="texts">
               <h3 class="title">Shivay Lamba</h3>
-              <p class="description">Speaker</p>
+              <p class="description">Season 1 Speaker</p>
             </div>
           </div>
         </a>
@@ -110,7 +110,7 @@ export default {
           padding: 0.6rem;
           padding-left: 0.65rem;
           border-radius: 0.5rem;
-          margin-right: 1rem;
+          margin-right: 1.5rem;
           background-color: #e85325;
           @include respond-below(xxs) {
             display: none;
