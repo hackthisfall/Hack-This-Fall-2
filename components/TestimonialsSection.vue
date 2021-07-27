@@ -113,6 +113,9 @@ export default {
           border-radius: 0.5rem;
           margin: 0.7rem;
           background-color: #e85325;
+          @include respond-below(xxs) {
+            display: none;
+          }
         }
 
         .person {
