@@ -107,11 +107,10 @@ export default {
         .link-img {
           position: absolute;
           right: 0;
-          top: 0;
           padding: 0.6rem;
           padding-left: 0.65rem;
           border-radius: 0.5rem;
-          margin: 0.7rem;
+          margin-right: 1rem;
           background-color: #e85325;
           @include respond-below(xxs) {
             display: none;
