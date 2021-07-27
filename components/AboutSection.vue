@@ -137,7 +137,11 @@ export default {
     }
 
     .img {
-      width: 50vw;
+      justify-self: center;
+      img {
+        width: 50vw;
+        max-width: 600px;
+      }
     }
   }
 }
