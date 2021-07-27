@@ -169,5 +169,13 @@ export default {
       }
     }
   }
+
+  @include respond-above(xl) {
+    padding: 2rem 8rem;
+
+    .grid {
+      grid-column-gap: 8rem;
+    }
+  }
 }
 </style>
