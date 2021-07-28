@@ -184,7 +184,6 @@ export default {
 
         &:hover {
           filter: unset;
-          transition: cubic-bezier(0.075, 0.82, 0.165, 1);
         }
 
         @include respond-below(sm) {
