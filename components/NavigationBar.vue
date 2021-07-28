@@ -71,10 +71,15 @@ export default {
 
   @include respond-below(lg) {
     height: 50px;
-    left: 1.1%;
+    margin: unset;
+    width: 80px;
+    height: 60px;
+    padding: 4px 22px;
+    left: 1rem;
   }
 
   .slidingDrawer {
+    min-height: 100vh !important;
     @include respond-above(lg) {
       display: none;
     }
@@ -209,11 +214,13 @@ export default {
   background: #e85325;
 }
 .bm-cross-button {
+  margin-top: 4px;
   height: 24px;
   width: 24px;
 }
 .bm-menu {
-  height: 100%; /* 100% Full-height */
+  height: 95vh; /* 100% Full-height */
+  border-radius: 1rem;
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1000; /* Stay on top */
