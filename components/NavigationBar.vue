@@ -14,16 +14,16 @@
             <li
               v-for="(navlink, index) in navlinks"
               :key="index"
-              :class="[navlink.isActive ? 'active' : '']"
+              :class="[navlink.isActive ? 'active' : null]"
             >
-              <a href="/#about">{{ navlink.text }}</a>
+              <a :href="navlink.link">{{ navlink.text }}</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
     <Slide class="slidingDrawer" :closeOnNavigation="true">
-      <a v-for="(navlink, index) in navlinks" :key="index" href="/#about">
+      <a v-for="(navlink, index) in navlinks" :key="index" :href="navlink.link">
         <span>{{ navlink.text }}</span>
       </a>
     </Slide>
