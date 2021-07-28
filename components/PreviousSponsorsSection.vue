@@ -158,6 +158,8 @@ export default {
       grid-template-columns: repeat(4, 1fr);
       column-gap: 30px;
       row-gap: 30px;
+      justify-content: center;
+    flex-wrap: wrap;
 
       @include respond-below(md) {
         grid-template-columns: repeat(3, 1fr);

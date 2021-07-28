@@ -99,6 +99,7 @@ export default {
 .footer {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 
   @include respond-between(md, lg) {
     padding: 40px 20px;
@@ -137,20 +138,24 @@ export default {
 
     @include respond-below(md) {
       column-gap: 50px;
+      grid-template-columns: 1fr 1fr;
+      margin: auto;
     }
 
     @include respond-between(sm, md) {
       column-gap: 30px;
     }
 
-    @include respond-below(md) {
+    @include respond-below(xs) {
       grid-template-columns: 1fr;
+      margin: auto;
     }
   }
 
   .panel {
     display: flex;
     flex-direction: column;
+    line-height: 2;
 
     .branding {
       img {
@@ -158,12 +163,12 @@ export default {
         margin-bottom: -10px;
 
         @include respond-below(md) {
-          max-width: 50%;
-          margin-bottom: -60px;
+          max-width: 100%;
+          margin-top: 60px;
         }
 
         @include respond-below(xxs) {
-          max-width: 100%;
+          width: 100%;
           margin-bottom: -40px;
         }
       }
@@ -177,7 +182,7 @@ export default {
         padding: 10px;
         margin: 5px;
         background: #e85325;
-        border-radius: 50%;
+        border-radius: 49%;
         text-align: center;
 
         &:hover {

@@ -39,31 +39,16 @@ export default {
     return {
       sponsors: [
         {
-          type: "PLATINUM SPONSORS",
-          logos: [
-            {},
-            {
-              image: require("~/assets/Sponsors/github.png"),
-            },
-            {
-              image: require("~/assets/Sponsors/github.png"),
-            },
-          ],
-        },
-        {
-          type: "GOLD SPONSORS",
+          type: "",
           logos: [
             {
               image: require("~/assets/Sponsors/github.png"),
             },
             {
-              image: require("~/assets/Sponsors/github.png"),
+              image: require("~/assets/Sponsors/hackclub.png"),
             },
             {
-              image: require("~/assets/Sponsors/github.png"),
-            },
-            {
-              image: require("~/assets/Sponsors/github.png"),
+              image: require("~/assets/Sponsors/stickermule.png"),
             },
           ],
         },

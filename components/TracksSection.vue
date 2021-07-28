@@ -102,8 +102,7 @@ export default {
         margin-left: 1.5rem;
         img {
           float: left;
-          width: 4rem;
-          width: 4rem;
+          width: 7rem;
           align-content: center;
         }
       }

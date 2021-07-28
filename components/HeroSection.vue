@@ -67,7 +67,7 @@ export default {
     .img {
       margin-top: 2rem;
       width: 38vw;
-      @include respond-below(sm) {
+      @include respond-below(md) {
         display: none;
       }
     }
