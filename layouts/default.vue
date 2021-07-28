@@ -1,6 +1,5 @@
 <template>
   <div id="top">
-    <!-- <NavigationBar /> -->
     <main>
       <Nuxt />
     </main>

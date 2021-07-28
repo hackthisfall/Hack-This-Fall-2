@@ -14,7 +14,7 @@
               :class="[sponsor.image ? null : 'hide-small']"
             >
               <a :href="sponsor.url" rel="noopener noreferrer" target="_blank">
-                <div v-if="sponsor.image" class="card">
+                <div v-if="sponsor.image" class="card smooth-transition">
                   <img :src="sponsor.image" alt="sponsor" />
                 </div>
               </a>
@@ -42,12 +42,15 @@ export default {
           type: "",
           logos: [
             {
+              url: "https://github.com/",
               image: require("~/assets/Sponsors/github.png"),
             },
             {
+              url: "https://hackclub.com/",
               image: require("~/assets/Sponsors/hackclub.png"),
             },
             {
+              url: "https://www.stickermule.com/",
               image: require("~/assets/Sponsors/stickermule.png"),
             },
           ],
@@ -69,11 +72,27 @@ export default {
     padding: 1rem 1rem;
   }
 
+  .subheading {
+    &.with-spacing {
+      margin-top: 2rem;
+    }
+    font-family: "Poppins";
+    font-style: bold;
+    justify-content: space-around;
+    display: flex;
+    align-self: center;
+    color: rgba(128, 128, 128, 1);
+
+    h2.section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 20px 10px 20px 0;
+    }
+  }
+
   .contents {
     .subheading {
-      &.with-spacing {
-        margin-top: 2rem;
-      }
+      margin-top: 2rem;
       // padding: 20px 0px;
       font-family: "Poppins";
       font-style: bold;
@@ -89,10 +108,12 @@ export default {
       }
     }
     .cards-grid {
-      display: grid;
+      display: flex;
       grid-template-columns: repeat(4, 1fr);
       column-gap: 30px;
       row-gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
 
       @include respond-below(md) {
         grid-template-columns: repeat(3, 1fr);
@@ -110,19 +131,23 @@ export default {
         text-align: center;
         justify-content: center;
         box-shadow: rgba(255, 107, 0, 0.07) 0px 0px 10px 2px;
-        // padding: 20px;
+        height: 100px;
+        padding: 2rem 4rem;
         border-radius: 0.5rem;
-        // border-radius: 5px;
-        height: 90px;
+        filter: saturate(0);
+
+        &:hover {
+          filter: unset;
+          transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
 
         @include respond-below(sm) {
           height: 120px;
         }
 
         img {
-          width: 100px;
+          width: 130px;
           margin: auto;
-
           @include respond-below(sm) {
             width: 60px;
           }

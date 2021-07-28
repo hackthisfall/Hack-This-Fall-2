@@ -10,7 +10,7 @@
             :class="[sponsor.image ? null : 'hide-small']"
           >
             <a :href="sponsor.url" rel="noopener noreferrer" target="_blank">
-              <div v-if="sponsor.image" class="card">
+              <div v-if="sponsor.image" class="card smooth-transition">
                 <img :src="sponsor.image" alt="sponsor" />
               </div>
             </a>
@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="subheading with-spacing">
-        <h2 class="section-title ">AND MORE</h2>
+        <h2 class="section-title">AND MORE</h2>
       </div>
     </section>
   </Container>
@@ -31,7 +31,7 @@ import HashHeader from "~/components/HashHeader";
 export default {
   components: {
     Container,
-    HashHeader
+    HashHeader,
   },
 
   data() {
@@ -39,71 +39,71 @@ export default {
       sponsors: [
         {
           url: "https://github.com/",
-          image: require("~/assets/PreviousSponsors/github.png")
+          image: require("~/assets/PreviousSponsors/github.png"),
         },
         {
           url: "https://www.devfolio.co/",
-          image: require("~/assets/PreviousSponsors/devfolio.png")
+          image: require("~/assets/PreviousSponsors/devfolio.png"),
         },
         {
           url: "https://matic.network/",
-          image: require("~/assets/PreviousSponsors/matic.png")
+          image: require("~/assets/PreviousSponsors/matic.png"),
         },
         {
           url: "https://quiknode.io/",
-          image: require("~/assets/PreviousSponsors/quickNode.png")
+          image: require("~/assets/PreviousSponsors/quickNode.png"),
         },
         {
           url: "https://www.portis.io/",
-          image: require("~/assets/PreviousSponsors/portis.png")
+          image: require("~/assets/PreviousSponsors/portis.png"),
         },
         {
           url: "https://fold.money/",
-          image: require("~/assets/PreviousSponsors/fold.png")
+          image: require("~/assets/PreviousSponsors/fold.png"),
         },
         {
           url: "https://tezos.com/",
-          image: require("~/assets/PreviousSponsors/tezos.png")
+          image: require("~/assets/PreviousSponsors/tezos.png"),
         },
         {
           url: "https://codingblocks.com/",
-          image: require("~/assets/PreviousSponsors/codingBlocks.png")
+          image: require("~/assets/PreviousSponsors/codingBlocks.png"),
         },
         {
           url: "https://balsamiq.com/",
-          image: require("~/assets/PreviousSponsors/balsamiq.png")
+          image: require("~/assets/PreviousSponsors/balsamiq.png"),
         },
         {
           url: "https://replit.com/",
-          image: require("~/assets/PreviousSponsors/replit.png")
+          image: require("~/assets/PreviousSponsors/replit.png"),
         },
         {
           url: "https://www.wolfram.com/",
-          image: require("~/assets/PreviousSponsors/wolfram.png")
+          image: require("~/assets/PreviousSponsors/wolfram.png"),
         },
         {
           url: "https://www.voiceflow.com/",
-          image: require("~/assets/PreviousSponsors/voiceflow.png")
+          image: require("~/assets/PreviousSponsors/voiceflow.png"),
         },
         {
           url: "https://www.echoar.xyz/",
-          image: require("~/assets/PreviousSponsors/echoAR.png")
+          image: require("~/assets/PreviousSponsors/echoAR.png"),
         },
         {
           url: "https://1password.com/",
-          image: require("~/assets/PreviousSponsors/1Password.png")
+          image: require("~/assets/PreviousSponsors/1Password.png"),
         },
         {
           url: "https://www.taskade.com/",
-          image: require("~/assets/PreviousSponsors/taskade.png")
+          image: require("~/assets/PreviousSponsors/taskade.png"),
         },
         {
           url: "https://www.axure.com/",
-          image: require("~/assets/PreviousSponsors/axure.png")
-        }
-      ]
+          image: require("~/assets/PreviousSponsors/axure.png"),
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -154,12 +154,12 @@ export default {
       }
     }
     .cards-grid {
-      display: grid;
+      display: flex;
       grid-template-columns: repeat(4, 1fr);
       column-gap: 30px;
       row-gap: 30px;
       justify-content: center;
-    flex-wrap: wrap;
+      flex-wrap: wrap;
 
       @include respond-below(md) {
         grid-template-columns: repeat(3, 1fr);
@@ -177,7 +177,9 @@ export default {
         text-align: center;
         justify-content: center;
         box-shadow: rgba(255, 107, 0, 0.07) 0px 0px 10px 2px;
-        height: 130px;
+        height: 100px;
+        padding: 2rem 4rem;
+        border-radius: 0.5rem;
         filter: saturate(0);
 
         &:hover {
@@ -190,8 +192,11 @@ export default {
         }
 
         img {
-          width: 55%;
+          width: 130px;
           margin: auto;
+          @include respond-below(sm) {
+            width: 60px;
+          }
         }
       }
     }

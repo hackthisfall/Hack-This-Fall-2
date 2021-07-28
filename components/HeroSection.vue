@@ -14,14 +14,14 @@
               <a
                 target="_blank"
                 href="https://hackthisfall.devpost.com/"
-                class="cta-button register"
+                class="cta-button smooth-transition register"
               >
                 <img src="~/assets/HTF2/devpost.svg" />REGISTER NOW
               </a>
               <a
                 target="_blank"
                 href="https://discord.hackthisfall.tech/"
-                class="cta-button discord"
+                class="cta-button smooth-transition discord"
               >
                 <img src="~/assets/HTF2/discord.svg" />JOIN DISCORD
               </a>
@@ -123,7 +123,6 @@ export default {
 
           &:hover {
             box-shadow: #ff6b00 0px 0px 10px 0px;
-            transition: all 0.2s ease-out;
           }
 
           img {
