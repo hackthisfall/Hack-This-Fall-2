@@ -66,8 +66,8 @@ import HashHeader from "~/components/HashHeader";
 export default {
   components: {
     Container,
-    HashHeader,
-  },
+    HashHeader
+  }
 };
 </script>
 
@@ -112,6 +112,12 @@ export default {
           border-radius: 0.5rem;
           margin-right: 1.5rem;
           background-color: #e85325;
+
+          &:hover {
+            box-shadow: #ff6b00 0px 0px 10px 0px;
+            transition: all 0.2s ease-out;
+          }
+
           @include respond-below(xxs) {
             display: none;
           }
