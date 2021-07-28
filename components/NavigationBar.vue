@@ -11,67 +11,20 @@
         <!-- Menu area -->
         <div class="menu-area">
           <ul class="nav-links">
-            <li>
-              <a href="/#about">ABOUT</a>
-            </li>
-            <li>
-              <a href="/#tracks">TRACKS</a>
-            </li>
-            <li>
-              <a href="/#speakers">SPEAKERS</a>
-            </li>
-            <!-- <li>
-              <a href="/#timeline">TIMELINE</a>
-            </li> -->
-            <!-- <li>
-              <a href="/#schedule">SCHEDULE</a>
-            </li> -->
-            <li>
-              <a href="/#sponsors">SPONSORS</a>
-            </li>
-            <li>
-              <a href="/#testimonials">TESTIMONIALS</a>
-            </li>
-            <li>
-              <a href="/#faq">FAQ</a>
-            </li>
-            <li>
-              <a href="/team">TEAM</a>
-            </li>
-            <li>
-              <a href="https://s1.hackthisfall.tech/">SEASON 1</a>
+            <li
+              v-for="(navlink, index) in navlinks"
+              :key="index"
+              :class="[navlink.isActive ? 'active' : null]"
+            >
+              <a :href="navlink.link">{{ navlink.text }}</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
     <Slide class="slidingDrawer" :closeOnNavigation="true">
-      <a href="/#about">
-        <span>ABOUT</span>
-      </a>
-      <a href="/#speakers">
-        <span>SPEAKERS</span>
-      </a>
-      <a href="/#timeline">
-        <span>TIMELINE</span>
-      </a>
-      <a href="/#schedule">
-        <span>SCHEDULE</span>
-      </a>
-      <a href="/#tracks">
-        <span>TRACK</span>
-      </a>
-      <a href="/#sponsors">
-        <span>SPONSORS</span>
-      </a>
-      <a href="/#faq">
-        <span>FAQ</span>
-      </a>
-      <a href="/team">
-        <span>TEAM</span>
-      </a>
-      <a target="_blank" href="https://s1.hackthisfall.tech/">
-        <span>SEASON 1</span>
+      <a v-for="(navlink, index) in navlinks" :key="index" :href="navlink.link">
+        <span>{{ navlink.text }}</span>
       </a>
     </Slide>
   </div>
@@ -81,6 +34,20 @@
 import { Slide } from "vue-burger-menu";
 
 export default {
+  data() {
+    return {
+      navlinks: [
+        { link: "/#about", text: "ABOUT" },
+        { link: "/#tracks", text: "TRACKS" },
+        { link: "/#speakers", text: "SPEAKERS" },
+        { link: "/#sponsors", text: "SPONSORS" },
+        { link: "/#testimonials", text: "TESTIMONIALS" },
+        { link: "/#faq", text: "FAQ" },
+        { link: "/team", text: "TEAM" },
+        { link: "https://s1.hackthisfall.tech/", text: "SEASON 1" },
+      ],
+    };
+  },
   components: {
     Slide,
   },
