@@ -10,19 +10,19 @@
 
         <div class="panel">
           <h4 class="title">About</h4>
-          <a href="/coc">Code Of Conduct</a>
+          <a href="https://hackon.tech/universe">Code Of Conduct</a>
           <a href="/blog">Season 1 Blog</a>
           <a href="/team">Know The Team</a>
-          <a href="/team">HackOn Universe</a>
+          <a href="https://hackon.tech/universe">HackOn Universe</a>
         </div>
 
         <div class="panel">
           <h4 class="title">Explore</h4>
-          <a href="/coc">Sponsors</a>
-          <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+          <a href="/#sponsors">Sponsors</a>
+          <a href="/#speakers"
             >Speakers</a
           >
-          <a href="/team">FAQ</a>
+          <a href="/#faq">FAQ</a>
         </div>
 
         <div class="panel">
