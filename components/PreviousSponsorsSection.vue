@@ -35,171 +35,171 @@ export default {
     return {
       sponsors: [
         {
-          url: "",
+          url: "https://1password.com/",
           image: require("~/assets/PreviousSponsors/1Password.png")
         },
         {
-          url: "",
+          url: "https://www.axure.com/",
           image: require("~/assets/PreviousSponsors/axure.png")
         },
         {
-          url: "",
+          url: "https://balsamiq.com/",
           image: require("~/assets/PreviousSponsors/balsamiq.png")
         },
         {
-          url: "",
+          url: "https://www.clerky.com/",
           image: require("~/assets/PreviousSponsors/clerky.png")
         },
         {
-          url: "",
+          url: "https://www.codeasylums.com/",
           image: require("~/assets/PreviousSponsors/codeAsylum.png")
         },
         {
-          url: "",
+          url: "https://codezoned.com/",
           image: require("~/assets/PreviousSponsors/codezoned.png")
         },
         {
-          url: "",
+          url: "https://codingblocks.com/",
           image: require("~/assets/PreviousSponsors/codingBlocks.png")
         },
         {
-          url: "",
+          url: "https://defhacks.co/",
           image: require("~/assets/PreviousSponsors/defHacks.png")
         },
         {
-          url: "",
+          url: "https://www.devfolio.co/",
           image: require("~/assets/PreviousSponsors/devfolio.png")
         },
         {
-          url: "",
+          url: "http://devhood.tech/",
           image: require("~/assets/PreviousSponsors/devHood.png")
         },
         {
-          url: "",
+          url: "https://www.echoar.xyz/",
           image: require("~/assets/PreviousSponsors/echoAR.png")
         },
         {
-          url: "",
+          url: "https://egghead.io/",
           image: require("~/assets/PreviousSponsors/eggHead.png")
         },
         {
-          url: "",
+          url: "https://www.meetup.com/fluttervadodara/",
           image: require("~/assets/PreviousSponsors/flutter.png")
         },
         {
-          url: "",
+          url: "https://fold.money/",
           image: require("~/assets/PreviousSponsors/fold.png")
         },
         {
-          url: "",
+          url: "https://www.framer.com/",
           image: require("~/assets/PreviousSponsors/framer.png")
         },
         {
-          url: "",
+          url: "https://gdgahmedabad.com/",
           image: require("~/assets/PreviousSponsors/gdgca.png")
         },
         {
-          url: "",
+          url: "https://github.com/",
           image: require("~/assets/PreviousSponsors/github.png")
         },
         {
-          url: "",
+          url: "https://www.joinglimpse.com/",
           image: require("~/assets/PreviousSponsors/glimpse.png")
         },
         {
-          url: "",
+          url: "https://givemycertificate.com/",
           image: require("~/assets/PreviousSponsors/gmc.png")
         },
         {
-          url: "",
+          url: "https://hackcbs.tech/",
           image: require("~/assets/PreviousSponsors/hackcbs.png")
         },
         {
-          url: "",
+          url: "https://interwebs.host/",
           image: require("~/assets/PreviousSponsors/interwebshost.png")
         },
         {
-          url: "",
+          url: "https://matic.network/",
           image: require("~/assets/PreviousSponsors/matic.png")
         },
         {
-          url: "",
+          url: "https://mehdev.club/",
           image: require("~/assets/PreviousSponsors/mdc.png")
         },
         {
-          url: "",
+          url: "https://studentambassadors.microsoft.com/",
           image: require("~/assets/PreviousSponsors/mlsa.png")
         },
         {
-          url: "",
+          url: "https://www.mozguj.org/",
           image: require("~/assets/PreviousSponsors/mozguj.png")
         },
         {
-          url: "",
+          url: "https://www.portis.io/",
           image: require("~/assets/PreviousSponsors/portis.png")
         },
         {
-          url: "",
+          url: "https://progate.com/",
           image: require("~/assets/PreviousSponsors/progate.png")
         },
         {
-          url: "",
+          url: "https://www.meetup.com/PyData-Ahmedabad/",
           image: require("~/assets/PreviousSponsors/pyData.png")
         },
         {
-          url: "",
+          url: "https://quiknode.io/",
           image: require("~/assets/PreviousSponsors/quickNode.png")
         },
         {
-          url: "",
+          url: "https://replit.com/",
           image: require("~/assets/PreviousSponsors/replit.png")
         },
         {
-          url: "",
+          url: "https://rosenfeldmedia.com/",
           image: require("~/assets/PreviousSponsors/rosenfeld.png")
         },
         {
-          url: "",
+          url: "https://www.sashido.io/en/",
           image: require("~/assets/PreviousSponsors/sashido.png")
         },
         {
-          url: "",
+          url: "https://www.sli.do/",
           image: require("~/assets/PreviousSponsors/slido.png")
         },
         {
-          url: "",
+          url: "https://streamyard.com/",
           image: require("~/assets/PreviousSponsors/streamyard.png")
         },
         {
-          url: "",
+          url: "https://www.taskade.com/",
           image: require("~/assets/PreviousSponsors/taskade.png")
         },
         {
-          url: "",
+          url: "https://tezos.com/",
           image: require("~/assets/PreviousSponsors/tezos.png")
         },
         {
-          url: "",
+          url: "https://tupweb.codes/",
           image: require("~/assets/PreviousSponsors/upw.png")
         },
         {
-          url: "",
+          url: "https://www.voiceflow.com/",
           image: require("~/assets/PreviousSponsors/voiceflow.png")
         },
         {
-          url: "",
+          url: "https://www.linkedin.com/company/witech-india/",
           image: require("~/assets/PreviousSponsors/witechindia.png")
         },
         {
-          url: "",
+          url: "https://www.wolfram.com/",
           image: require("~/assets/PreviousSponsors/wolfram.png")
         },
         {
-          url: "",
+          url: "https://www.facebook.com/wtmbaroda/about/",
           image: require("~/assets/PreviousSponsors/wtmb.jpeg")
         },
         {
-          url: "",
+          url: "https://xinfin.org/",
           image: require("~/assets/PreviousSponsors/xdc.png")
         }
       ]
@@ -258,21 +258,21 @@ export default {
         text-align: center;
         justify-content: center;
         box-shadow: rgba(255, 107, 0, 0.07) 0px 0px 10px 2px;
-        // padding: 20px;
-        // border-radius: 5px;
-        height: 90px;
+        height: 130px;
+        filter: saturate(0);
+
+        &:hover {
+            filter: unset;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+          }
 
         @include respond-below(sm) {
           height: 120px;
         }
 
         img {
-          width: 100px;
+          width: 55%;
           margin: auto;
-
-          @include respond-below(sm) {
-            width: 60px;
-          }
         }
       }
     }

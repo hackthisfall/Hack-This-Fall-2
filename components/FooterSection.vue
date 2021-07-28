@@ -169,14 +169,6 @@ export default {
       }
     }
 
-    .hackonUniverse {
-      color: white;
-
-      &:hover {
-        color: var(--colour-pink);
-      }
-    }
-
     .socialLinks {
       padding: 20px 0 10px;
       margin-left: -5px;
@@ -184,12 +176,12 @@ export default {
       a {
         padding: 10px;
         margin: 5px;
-        background: #252638;
+        background: #e85325;
         border-radius: 50%;
         text-align: center;
 
         &:hover {
-          filter: invert(100%);
+          filter: saturate(0);
         }
 
         img {
