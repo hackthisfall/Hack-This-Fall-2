@@ -89,7 +89,7 @@ export default {
 
 <style lang="scss">
 .navigation-bar {
-  // background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
   box-shadow: rgba(157, 157, 157, 0.26) 0px 0px 40px;
   z-index: 500;
   padding: 0rem 1.5rem;
