@@ -4,34 +4,42 @@
       <HashHeader title="TRACKS" />
       <div class="grid">
         <div class="panel text">
-          <div class="track-box healthcare"></div>
+          <div class="track-box">
+            <img
+              src="~/assets/Tracks/climate.png"
+              alt="Track Climate Change and Environment"
+            />
+          </div>
           <div class="texts">
             <h3 class="title">CLIMATE CHANGE AND ENVIRONMENT</h3>
             <p class="description">
-              Climate change is an ongoing problem with our planet, so we want
-              to encourage hackers to build solutions to tackle this issue and
-              come up with some innovative solutions.
+              Climate change is an ongoing problem with our planet and one that
+              must be dealt with, so we encourage hackers to build solutions to
+              tackle this issue and come up with some innovative solutions.
             </p>
           </div>
         </div>
         <div class="panel text">
-          <div class="track-box healthcare">
-            <!-- <img src="~/assets/Tracks/healthcare.png" alt="Track Healthcare" /> -->
+          <div class="track-box">
+            <img
+              src="~/assets/Tracks/blockchain.png"
+              alt="Track Blockchain and Crypto"
+            />
           </div>
           <div class="texts">
             <h3 class="title">BLOCKCHAIN AND CRYPTO</h3>
             <p class="description">
               Blockchain, the next generation of the internet, is decentralized.
               It'll be a great experience for the hackers to learn new
-              blockchain techs and work with various chains and come up with
-              unique ideas while learning.
+              blockchain techs, work with various chains and come up with unique
+              ideas.
             </p>
           </div>
         </div>
 
         <div class="panel text">
-          <div class="track-box healthcare">
-            <!-- <img src="~/assets/Tracks/healthcare.png" alt="Track Healthcare" /> -->
+          <div class="track-box">
+            <img src="~/assets/Tracks/open.png" alt="Track Open Innovation" />
           </div>
           <div class="texts">
             <h3 class="title">OPEN INNOVATION</h3>
@@ -65,29 +73,13 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 20px 0;
-  .track-box {
-    border-radius: 20%;
-    display: inline-block;
-    padding: 1rem;
-    height: 5.5rem;
-    margin-top: 1rem;
-    width: 5.5rem;
-    box-sizing: border-box;
-  }
-
-  img {
-    float: left;
-    width: 3rem;
-    align-content: center;
-  }
 
   .grid {
-    margin-top: 2rem;
-    padding: 10px 0;
+    padding: 1rem 0;
     display: flex;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 4rem;
-    row-gap: 1em;
+    row-gap: 3rem;
     justify-content: center;
     flex-wrap: wrap;
 
@@ -96,10 +88,24 @@ export default {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      width: 35%;
+      width: 38%;
+      border-radius: 0.5rem;
+      align-items: center;
 
       @include respond-below(sm) {
         width: unset;
+      }
+
+      .track-box {
+        display: inline-block;
+        box-sizing: border-box;
+        margin-left: 1.5rem;
+        img {
+          float: left;
+          width: 4rem;
+          width: 4rem;
+          align-content: center;
+        }
       }
 
       &.text {

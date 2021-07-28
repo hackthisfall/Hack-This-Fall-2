@@ -15,19 +15,22 @@
               <a href="/#about">ABOUT</a>
             </li>
             <li>
-              <a href="/#speakers">SPEAKERS</a>
-            </li>
-            <li>
-              <a href="/#timeline">TIMELINE</a>
-            </li>
-            <li>
-              <a href="/#schedule">SCHEDULE</a>
-            </li>
-            <li>
               <a href="/#tracks">TRACKS</a>
             </li>
             <li>
+              <a href="/#speakers">SPEAKERS</a>
+            </li>
+            <!-- <li>
+              <a href="/#timeline">TIMELINE</a>
+            </li> -->
+            <!-- <li>
+              <a href="/#schedule">SCHEDULE</a>
+            </li> -->
+            <li>
               <a href="/#sponsors">SPONSORS</a>
+            </li>
+            <li>
+              <a href="/#testimonials">TESTIMONIALS</a>
             </li>
             <li>
               <a href="/#faq">FAQ</a>
@@ -79,8 +82,8 @@ import { Slide } from "vue-burger-menu";
 
 export default {
   components: {
-    Slide
-  }
+    Slide,
+  },
 };
 </script>
 

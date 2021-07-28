@@ -60,7 +60,8 @@ export default {
 .content-section {
   display: flex;
   flex-direction: column;
-  padding: 40px 0 10px;
+  padding: 2rem 0 10px;
+  font-family: "Segoe UI";
 
   .contents {
     display: grid;
@@ -76,7 +77,9 @@ export default {
       padding: 10px 0;
 
       p {
-        padding-top: 60px;
+        color: rgba(112, 112, 112, 1);
+        font-weight: bold;
+        margin-top: 2rem;
         font-size: 1.2rem;
 
         @include respond-below(md) {
@@ -87,6 +90,7 @@ export default {
       .cta-buttons {
         margin-top: 1rem;
         display: flex;
+
         .cta-button {
           background-color: white;
           border: none;
@@ -116,11 +120,28 @@ export default {
             margin-left: 1rem;
           }
         }
+
+        @include respond-below(xs) {
+          flex-direction: column;
+          justify-content: center;
+          .cta-button {
+            width: 100%;
+
+            &:nth-of-type(2) {
+              margin-top: 1rem;
+              margin-left: 0rem;
+            }
+          }
+        }
       }
     }
 
     .img {
-      width: 50vw;
+      justify-self: center;
+      img {
+        width: 50vw;
+        max-width: 600px;
+      }
     }
   }
 }

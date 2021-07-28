@@ -1,13 +1,13 @@
 <template>
   <Container id="team">
     <section class="content-section">
-      <HashHeader title="Season 2 Team" />
+      <HashHeader title="SEASON 2 TEAM" />
       <div class="contents">
         <div class="team-grid">
           <div
             v-for="(teamMember, index) in team"
             :key="index"
-            :class="['team-card', teamMember.rotation]"
+            :class="['team-card', `rot-${Math.floor(Math.random() * 24) * 15}`]"
           >
             <a :href="teamMember.url" target="_blank" rel="noopener noreferrer">
               <div class="picture-wrapper">
@@ -42,19 +42,19 @@ export default {
           name: "Siddharth Dayalwal",
           url: "https://www.linkedin.com/in/siddharth-dayalwal/",
           picture: require("~/assets/Team/siddharth.png"),
-          rotation: "thirty",
+          rotation: 30,
         },
         {
           name: "Paras Gupta",
           url: "https://www.linkedin.com/in/parasg1999/",
           picture: require("~/assets/Team/paras.jpeg"),
-          rotation: "sixty",
+          rotation: 75,
         },
         {
           name: "Ojasvi Khurana",
           url: "https://www.linkedin.com/in/ojasvikhurana/",
           picture: require("~/assets/Team/ojasvi.jpeg"),
-          rotation: "ninety",
+          rotation: 90,
         },
         {
           name: "Apoorv Dwivedi",
@@ -65,19 +65,19 @@ export default {
           name: "Shubhangi Gupta",
           url: "https://www.linkedin.com/in/knowshubhangi/",
           picture: require("~/assets/Team/shubhangi.jpeg"),
-          rotation: "thirty",
+          rotation: 45,
         },
         {
           name: "Vaibhav Toshniwal",
           url: "https://www.linkedin.com/in/vaibhav-vinay-toshniwal-252ba8187/",
           picture: require("~/assets/Team/vaibhav.jpeg"),
-          rotation: "sixty",
+          rotation: 90,
         },
         {
           name: "Sahil Bhatiya",
           url: "https://www.linkedin.com/in/sahil-bhatiya-73790719a/",
           picture: require("~/assets/Team/sahil.jpeg"),
-          rotation: "ninety",
+          rotation: 120,
         },
         {
           name: "Dennis D'mello",
@@ -88,19 +88,19 @@ export default {
           name: "Sahil Sen",
           url: "https://www.linkedin.com/in/sahil-sen-528647ba/",
           picture: require("~/assets/Team/sahilsen.webp"),
-          rotation: "thirty",
+          rotation: 150,
         },
         {
           name: "Rishabh Bansal",
           url: "https://www.linkedin.com/in/rishabhbansal97",
           picture: require("~/assets/Team/rishabh.jpeg"),
-          rotation: "sixty",
+          rotation: 210,
         },
         {
           name: "Aaishika S Bhattacharya",
           url: "https://www.linkedin.com/in/aaishika/",
           picture: require("~/assets/Team/aaishika.png"),
-          rotation: "ninety",
+          rotation: 45,
         },
       ],
     };
@@ -138,6 +138,7 @@ export default {
       }
 
       .team-card {
+        padding-bottom: 1rem;
         display: flex;
         flex-direction: column;
         box-shadow: rgba(255, 107, 0, 0.07) 0px 0px 10px 2px;
@@ -145,36 +146,9 @@ export default {
         // justify-content: center;
         align-items: center;
 
-        &.thirty {
-          .picture-wrapper {
-            transform: rotate(30deg);
-            .profile-pic {
-              transform: rotate(-30deg);
-            }
-          }
-        }
-
-        &.sixty {
-          .picture-wrapper {
-            transform: rotate(60deg);
-            .profile-pic {
-              transform: rotate(-60deg);
-            }
-          }
-        }
-
-        &.ninety {
-          .picture-wrapper {
-            transform: rotate(90deg);
-            .profile-pic {
-              transform: rotate(-90deg);
-            }
-          }
-        }
-
         .picture-wrapper {
           border-style: solid;
-          border-width: 2px;
+          border-width: 3px;
           border-color: red red white red;
           width: 210px;
           height: 210px;
@@ -184,10 +158,6 @@ export default {
           border-radius: 50%;
           transition: 0.3s all ease-in-out;
           margin-top: 1rem;
-
-          &:hover {
-            background: rgba(233, 83, 34, 1);
-          }
 
           .profile-pic {
             width: 200px;
@@ -218,7 +188,7 @@ export default {
         .title {
           font-size: 1.2rem;
           text-align: center;
-          margin-top: 1rem;
+          margin: 1rem 0rem;
           color: rgba(233, 83, 34, 1);
 
           @include respond-below(sm) {

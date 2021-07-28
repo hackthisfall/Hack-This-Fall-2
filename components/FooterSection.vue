@@ -90,8 +90,8 @@ import CopyLink from "~/components/CopyLink";
 export default {
   components: {
     Container,
-    CopyLink
-  }
+    CopyLink,
+  },
 };
 </script>
 
@@ -215,8 +215,7 @@ export default {
   }
 
   .attribution {
-    padding: 10px 0;
-    border-top: 1px solid var(--color-secondary);
+    padding: 10px 20px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;

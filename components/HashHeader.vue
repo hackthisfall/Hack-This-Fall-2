@@ -25,6 +25,7 @@ export default {
     font-weight: bold;
     padding: 10px;
     color: rgba(214, 93, 32, 1);
+    margin-bottom: 2rem;
 
     &:after {
       content: "";

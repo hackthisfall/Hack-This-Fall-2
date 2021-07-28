@@ -161,14 +161,18 @@ export default {
 
         &.hidden {
           background-color: #fff;
+          transition: background-color 0s ease-out 0.3s;
           .texts {
             .title {
               color: initial;
+              transition: color 0s ease-out 0.3s;
             }
           }
           .answer {
             background-color: #fff;
             max-height: 0px;
+            transition: max-height 0.3s ease-out,
+              background-color 0s ease-out 0.3s;
           }
 
           img {
@@ -206,7 +210,7 @@ export default {
           background-color: #feede3;
           max-height: 200px;
           overflow: hidden;
-          transition: all 0.3s ease-out;
+          transition: max-height 0.3s ease-out;
 
           div {
             padding: 16px 24px;

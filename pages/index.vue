@@ -5,7 +5,7 @@
     <AboutSection />
     <GlimpseSection />
     <TracksSection />
-    <PrizesSection />
+    <!-- <PrizesSection /> -->
     <SpeakersSection />
     <SponsorsSection />
     <PreviousSponsorsSection />

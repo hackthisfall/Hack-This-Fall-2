@@ -4,7 +4,7 @@
       <HashHeader title="EVENT SPONSORS" />
       <div class="contents">
         <div v-for="(section, index) in sponsors" :key="index">
-          <div class="subheading">
+          <div :class="['subheading', index !== 0 ? 'with-spacing' : null]">
             <h2 class="section-title">{{ section.type }}</h2>
           </div>
           <div class="cards-grid">
@@ -86,7 +86,9 @@ export default {
 
   .contents {
     .subheading {
-      margin-top: 2rem;
+      &.with-spacing {
+        margin-top: 2rem;
+      }
       // padding: 20px 0px;
       font-family: "Poppins";
       font-style: bold;
@@ -124,6 +126,7 @@ export default {
         justify-content: center;
         box-shadow: rgba(255, 107, 0, 0.07) 0px 0px 10px 2px;
         // padding: 20px;
+        border-radius: 0.5rem;
         // border-radius: 5px;
         height: 90px;
 
