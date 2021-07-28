@@ -87,16 +87,17 @@ export default {
 <style lang="scss">
 .navigation-bar {
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 15px 2px;
+  box-shadow: rgba(157, 157, 157, 0.26) 0px 0px 40px;
   z-index: 500;
   padding: 0rem 1.5rem;
-  position: sticky;
+  position: fixed;
   top: 0;
-  position: -webkit-sticky;
+  left: 1rem;
   width: 97%;
   border-radius: 1rem;
   margin: 1rem auto -3rem auto;
   height: auto;
+  backdrop-filter: blur(30px);
 
   @include respond-below(lg) {
     height: 50px;

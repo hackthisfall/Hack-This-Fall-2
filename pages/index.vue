@@ -8,6 +8,7 @@
     <PrizesSection />
     <SpeakersSection />
     <SponsorsSection />
+    <PreviousSponsorsSection />
     <TestimonialsSection />
     <FAQSection />
     <FooterSection />
@@ -23,6 +24,7 @@ import TracksSection from "~/components/TracksSection";
 import PrizesSection from "~/components/PrizesSection";
 import SpeakersSection from "~/components/SpeakersSection";
 import SponsorsSection from "~/components/SponsorsSection";
+import PreviousSponsorsSection from "~/components/PreviousSponsorsSection";
 import TestimonialsSection from "~/components/TestimonialsSection";
 import FAQSection from "~/components/FAQSection";
 import FooterSection from "~/components/FooterSection";
@@ -37,6 +39,7 @@ export default {
     PrizesSection,
     SpeakersSection,
     SponsorsSection,
+    PreviousSponsorsSection,
     TestimonialsSection,
     FAQSection,
     FooterSection,
