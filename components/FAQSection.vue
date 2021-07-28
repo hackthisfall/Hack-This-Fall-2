@@ -170,6 +170,7 @@ export default {
             .title {
               color: initial;
               transition: color 0s ease 0.3s;
+              padding-right: 16px;
             }
           }
           .answer {

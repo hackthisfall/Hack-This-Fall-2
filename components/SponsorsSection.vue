@@ -14,7 +14,10 @@
               :class="[sponsor.image ? null : 'hide-small']"
             >
               <a :href="sponsor.url" rel="noopener noreferrer" target="_blank">
-                <div v-if="sponsor.image" class="card smooth-transition">
+                <div
+                  v-if="sponsor.image"
+                  class="card smooth-transition-sponsor"
+                >
                   <img :src="sponsor.image" alt="sponsor" />
                 </div>
               </a>
