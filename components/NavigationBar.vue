@@ -11,35 +11,12 @@
         <!-- Menu area -->
         <div class="menu-area">
           <ul class="nav-links">
-            <li>
-              <a href="/#about">ABOUT</a>
-            </li>
-            <li>
-              <a href="/#tracks">TRACKS</a>
-            </li>
-            <li>
-              <a href="/#speakers">SPEAKERS</a>
-            </li>
-            <!-- <li>
-              <a href="/#timeline">TIMELINE</a>
-            </li> -->
-            <!-- <li>
-              <a href="/#schedule">SCHEDULE</a>
-            </li> -->
-            <li>
-              <a href="/#sponsors">SPONSORS</a>
-            </li>
-            <li>
-              <a href="/#testimonials">TESTIMONIALS</a>
-            </li>
-            <li>
-              <a href="/#faq">FAQ</a>
-            </li>
-            <li>
-              <a href="/team">TEAM</a>
-            </li>
-            <li>
-              <a href="https://s1.hackthisfall.tech/">SEASON 1</a>
+            <li
+              v-for="(navlink, index) in navlinks"
+              :key="index"
+              :class="[navlink.isActive ? 'active' : '']"
+            >
+              <a href="/#about">{navlink.text}</a>
             </li>
           </ul>
         </div>
@@ -81,6 +58,20 @@
 import { Slide } from "vue-burger-menu";
 
 export default {
+  data() {
+    return {
+      navlinks: [
+        { link: "/#about", text: "ABOUT" },
+        { link: "/#tracks", text: "TRACKS" },
+        { link: "/#speakers", text: "SPEAKERS" },
+        { link: "/#sponsors", text: "SPONSORS" },
+        { link: "/#testimonials", text: "TESTIMONIALS" },
+        { link: "/#faq", text: "FAQ" },
+        { link: "/team", text: "TEAM" },
+        { link: "https://s1.hackthisfall.tech/", text: "SEASON 1" },
+      ],
+    };
+  },
   components: {
     Slide,
   },
