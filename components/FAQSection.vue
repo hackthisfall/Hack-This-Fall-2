@@ -165,7 +165,7 @@ export default {
 
         &.hidden {
           background-color: #fff;
-          transition: background-color 0s ease 0.3s;
+          transition: max-height 0.3s ease, background-color 0s ease 0.3s;
           .texts {
             .title {
               color: initial;
