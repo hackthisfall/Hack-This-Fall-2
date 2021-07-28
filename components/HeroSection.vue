@@ -120,10 +120,11 @@ export default {
           font-family: "Segoe UI Bold";
           border-radius: 0.5rem;
           cursor: pointer;
+          box-shadow: #ff6b00 0px 0px 10px 0px;
+            transition: all 0.2s ease-out;
 
           &:hover {
-            box-shadow: #ff6b00 0px 0px 10px 0px;
-            transition: all 0.2s ease-out;
+            box-shadow: #e8522581 0px 0px 6px 5px;
           }
 
           img {

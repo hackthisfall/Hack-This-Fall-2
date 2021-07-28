@@ -110,22 +110,21 @@ export default {
         text-align: center;
         justify-content: center;
         box-shadow: rgba(255, 107, 0, 0.07) 0px 0px 10px 2px;
-        // padding: 20px;
-        border-radius: 0.5rem;
-        // border-radius: 5px;
-        height: 90px;
+        height: 130px;
+        filter: saturate(0);
+
+        &:hover {
+          filter: unset;
+          transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
 
         @include respond-below(sm) {
           height: 120px;
         }
 
         img {
-          width: 100px;
+          width: 55%;
           margin: auto;
-
-          @include respond-below(sm) {
-            width: 60px;
-          }
         }
       }
     }

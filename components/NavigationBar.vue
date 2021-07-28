@@ -60,8 +60,8 @@ export default {
   box-shadow: rgba(157, 157, 157, 0.26) 0px 0px 40px;
   z-index: 500;
   padding: 0rem 1.5rem;
-  position: fixed;
-  top: 0;
+  position: sticky;
+  top: 1rem;
   left: 1rem;
   width: 97%;
   border-radius: 1rem;
