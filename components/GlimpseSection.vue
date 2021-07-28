@@ -17,22 +17,22 @@
           </div>
           <div class="stats">
             <div class="gridLayout">
-              <div class="statData">
+              <div class="statData smooth-transition">
                 <img src="~/assets/HTF2/timer.svg" />
                 <h4>48</h4>
                 <p>Hours</p>
               </div>
-              <div class="statData">
+              <div class="statData smooth-transition">
                 <img src="~/assets/HTF2/project.svg" />
                 <h4>24+</h4>
                 <p>Projects</p>
               </div>
-              <div class="statData">
+              <div class="statData smooth-transition">
                 <img src="~/assets/HTF2/user.svg" />
                 <h4>400+</h4>
                 <p>Hackers</p>
               </div>
-              <div class="statData">
+              <div class="statData smooth-transition">
                 <img src="~/assets/HTF2/globe.svg" />
                 <h4>170+</h4>
                 <p>Cities</p>
@@ -131,6 +131,11 @@ export default {
       padding: 1rem;
       border-radius: 8px;
       background-color: rgb(253, 250, 245);
+
+      &:hover {
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+      }
+      
       h4 {
         font-size: 2rem;
         font-weight: bold;
