@@ -19,9 +19,7 @@
         <div class="panel">
           <h4 class="title">Explore</h4>
           <a href="/#sponsors">Sponsors</a>
-          <a href="/#speakers"
-            >Speakers</a
-          >
+          <a href="/#speakers">Speakers</a>
           <a href="/#faq">FAQ</a>
         </div>
 
@@ -90,8 +88,8 @@ import CopyLink from "~/components/CopyLink";
 export default {
   components: {
     Container,
-    CopyLink
-  }
+    CopyLink,
+  },
 };
 </script>
 
@@ -130,7 +128,7 @@ export default {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 100px;
     row-gap: 30px;
-    padding: 1rem 2rem;
+    padding: 2rem;
 
     @include respond-between(md, lg) {
       column-gap: 50px;
@@ -179,6 +177,7 @@ export default {
       margin-left: -5px;
 
       a {
+        position: relative;
         padding: 10px;
         margin: 5px;
         background: #e85325;
@@ -191,6 +190,7 @@ export default {
         }
 
         img {
+          position: absolute;
           height: 20px;
           width: 20px;
           position: relative;
@@ -206,28 +206,24 @@ export default {
     .title {
       padding: 10px 0;
     }
-
-    a {
-      color: var(--colour-pink);
-    }
   }
 
   .attribution {
     padding: 10px 20px;
     margin-top: 20px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    text-align: center;
+    font-weight: 600;
 
     span {
       margin-top: -10px;
       @include respond-below(sm) {
         margin-bottom: 1em;
-      }
-      a {
-        color: var(--color-accent);
       }
     }
 

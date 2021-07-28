@@ -133,7 +133,7 @@ export default {
         box-shadow: rgba(255, 107, 0, 0.07) 0px 0px 10px 2px;
         height: 100px;
         padding: 2rem 4rem;
-        border-radius: 0.5rem;
+        border-radius: 1rem;
         filter: saturate(0);
 
         &:hover {

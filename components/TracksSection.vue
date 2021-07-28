@@ -89,7 +89,7 @@ export default {
       flex-direction: row;
       justify-content: space-between;
       width: 38%;
-      border-radius: 0.5rem;
+      border-radius: 1rem;
       align-items: center;
 
       @include respond-below(sm) {

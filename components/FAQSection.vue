@@ -160,7 +160,7 @@ export default {
         box-shadow: rgba(255, 107, 0, 0.1) 0px 0px 10px 0px;
         display: flex;
         flex-direction: column;
-        border-radius: 5px;
+        border-radius: 1rem;
         background-color: #feede3;
 
         &.hidden {
