@@ -45,6 +45,7 @@ export default {
   },
   data() {
     return {
+      currentIndex: 0,
       FAQs: [
         {
           isOpen: false,
@@ -115,13 +116,16 @@ export default {
       if (this.FAQs[index].isOpen) {
         this.FAQs[index].isOpen = false;
       } else {
-        this.FAQs.forEach((faq, currentIndex) => {
-          if (currentIndex === index) {
-            faq.isOpen = true;
-          } else {
-            faq.isOpen = false;
-          }
-        });
+        this.FAQs[this.currentIndex].isOpen = false;
+        this.FAQs[index].isOpen = true;
+        this.currentIndex = index;
+        // this.FAQs.forEach((faq, currentIndex) => {
+        //   if (currentIndex === index) {
+        //     faq.isOpen = true;
+        //   } else {
+        //     faq.isOpen = false;
+        //   }
+        // });
       }
     },
   },
@@ -161,18 +165,17 @@ export default {
 
         &.hidden {
           background-color: #fff;
-          transition: background-color 0s ease-out 0.3s;
+          transition: background-color 0s ease 0.3s;
           .texts {
             .title {
               color: initial;
-              transition: color 0s ease-out 0.3s;
+              transition: color 0s ease 0.3s;
             }
           }
           .answer {
             background-color: #fff;
             max-height: 0px;
-            transition: max-height 0.3s ease-out,
-              background-color 0s ease-out 0.3s;
+            transition: max-height 0.3s ease, background-color 0s ease 0.3s;
           }
 
           img {
@@ -208,9 +211,9 @@ export default {
           margin: 0px 6px 6px;
           height: 100%;
           background-color: #feede3;
-          max-height: 200px;
+          max-height: 300px;
           overflow: hidden;
-          transition: max-height 0.3s ease-out;
+          transition: max-height 0.3s ease;
 
           div {
             padding: 16px 24px;
