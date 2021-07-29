@@ -16,25 +16,32 @@
             </p>
           </div>
           <div class="stats">
-            <div class="gridLayout">
+            <div
+              class="gridLayout"
+              v-waypoint="{
+                active: true,
+                callback: onWaypoint,
+                options: intersectionOptions,
+              }"
+            >
               <div class="statData smooth-transition">
                 <img src="~/assets/HTF2/timer.svg" />
-                <h4>48</h4>
+                <h4>{{ numberOfHours.value }}</h4>
                 <p>Hours</p>
               </div>
               <div class="statData smooth-transition">
                 <img src="~/assets/HTF2/project.svg" />
-                <h4>24+</h4>
+                <h4>{{ projects.value }}+</h4>
                 <p>Projects</p>
               </div>
               <div class="statData smooth-transition">
                 <img src="~/assets/HTF2/user.svg" />
-                <h4>400+</h4>
+                <h4>{{ hackers.value }}+</h4>
                 <p>Hackers</p>
               </div>
               <div class="statData smooth-transition">
                 <img src="~/assets/HTF2/globe.svg" />
-                <h4>170+</h4>
+                <h4>{{ cities.value }}+</h4>
                 <p>Cities</p>
               </div>
             </div>
@@ -52,6 +59,42 @@ export default {
   components: {
     HashHeader,
     Container,
+  },
+  data() {
+    return {
+      incrementCalled: false,
+      numberOfHours: { value: 0, max: 48 },
+      projects: { value: 0, max: 50 },
+      hackers: { value: 0, max: 500 },
+      cities: { value: 0, max: 170 },
+      intersectionOptions: {
+        root: null,
+        rootMargin: "0px 0px 0px 0px",
+        threshold: [0.5, 0.75],
+      },
+    };
+  },
+  methods: {
+    onWaypoint({ going }) {
+      if (going === this.$waypointMap.GOING_IN && !this.incrementCalled) {
+        this.incrementCalled = true;
+        this.increment(this.numberOfHours);
+        this.increment(this.projects);
+        this.increment(this.hackers);
+        this.increment(this.cities);
+      }
+    },
+    increment(e, diff = 0) {
+      if (!diff) {
+        diff = parseInt((e.max - e.value) / 100, 10) + 1;
+      }
+      if (e.value + diff < e.max) {
+        e.value += diff;
+        setTimeout(() => this.increment(e, diff), 10);
+      } else {
+        e.value = e.final || e.max;
+      }
+    },
   },
 };
 </script>
@@ -135,7 +178,7 @@ export default {
       &:hover {
         box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
       }
-      
+
       h4 {
         font-size: 2rem;
         font-weight: bold;
