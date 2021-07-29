@@ -3,7 +3,12 @@
     <section class="content-section">
       <HashHeader title="TESTIMONIALS" />
       <div class="grid">
-        <a href="https://www.youtube.com/watch?v=wJsQ_1AWZhA" class="anchor">
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://www.youtube.com/watch?v=wJsQ_1AWZhA"
+          class="anchor"
+        >
           <div class="panel text">
             <img src="~/assets/Testimonials/link.svg" class="link-img" />
             <div class="person">
@@ -18,7 +23,12 @@
             </div>
           </div>
         </a>
-        <a href="https://www.youtube.com/watch?v=r1KZf2kWX0o" class="anchor">
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://www.youtube.com/watch?v=r1KZf2kWX0o"
+          class="anchor"
+        >
           <div class="panel text">
             <img src="~/assets/Testimonials/link.svg" class="link-img" />
             <div class="person">
@@ -30,7 +40,12 @@
             </div>
           </div>
         </a>
-        <a href="https://www.youtube.com/watch?v=PEQKT8iPxe4" class="anchor">
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://www.youtube.com/watch?v=PEQKT8iPxe4"
+          class="anchor"
+        >
           <div class="panel text">
             <img src="~/assets/Testimonials/link.svg" class="link-img" />
             <div class="person">
@@ -42,7 +57,12 @@
             </div>
           </div>
         </a>
-        <a href="https://www.youtube.com/watch?v=FA73HA6NBzc" class="anchor">
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://www.youtube.com/watch?v=FA73HA6NBzc"
+          class="anchor"
+        >
           <div class="panel text">
             <img src="~/assets/Testimonials/link.svg" class="link-img" />
             <div class="person">

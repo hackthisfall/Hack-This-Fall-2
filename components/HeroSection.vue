@@ -121,7 +121,6 @@ export default {
           border-radius: 0.5rem;
           cursor: pointer;
           box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
-          transition: all 0.2s ease-out;
 
           &:hover {
             box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;

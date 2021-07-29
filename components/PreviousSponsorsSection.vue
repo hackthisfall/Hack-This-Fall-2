@@ -187,14 +187,18 @@ export default {
         }
 
         @include respond-below(sm) {
-          height: 120px;
+          height: unset;
+        }
+
+        @include respond-below(md) {
+          filter: unset;
         }
 
         img {
           width: 130px;
           margin: auto;
-          @include respond-below(sm) {
-            width: 60px;
+          @include respond-below(xs) {
+            width: 50vw;
           }
         }
       }
