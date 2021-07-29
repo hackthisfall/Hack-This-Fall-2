@@ -74,6 +74,10 @@ export default {
     {
       src: "~/plugins/v-waypoint.js",
       mode: "client"
+    },
+    {
+      src: "~/plugins/v-waves.js",
+      mode: "client"
     }
   ],
 

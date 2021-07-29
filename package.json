@@ -17,6 +17,7 @@
     "nuxt": "^2.15.7",
     "nuxt-webfontloader": "^1.1.0",
     "vue-burger-menu": "^2.0.5",
+    "vue-waves-effect": "^1.0.0",
     "vue-waypoint": "^3.5.2"
   },
   "devDependencies": {
