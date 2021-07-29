@@ -1,5 +1,5 @@
 <template>
-  <Container id="tracks">
+  <Container id="tracks" name="tracks">
     <section class="content-section">
       <HashHeader title="TRACKS" />
       <div class="grid">

@@ -14,7 +14,7 @@
             <li
               v-for="(navlink, index) in navlinks"
               :key="index"
-              :class="[navlink.isActive ? 'active' : null]"
+              :id="'nav-link-' + navlink.text"
             >
               <a :href="navlink.link">{{ navlink.text }}</a>
             </li>
@@ -37,14 +37,14 @@ export default {
   data() {
     return {
       navlinks: [
-        { link: "/#about", text: "ABOUT" },
-        { link: "/#tracks", text: "TRACKS" },
-        { link: "/#speakers", text: "SPEAKERS" },
-        { link: "/#sponsors", text: "SPONSORS" },
-        { link: "/#testimonials", text: "TESTIMONIALS" },
-        { link: "/#faq", text: "FAQ" },
-        { link: "/team", text: "TEAM" },
-        { link: "https://s1.hackthisfall.tech/", text: "SEASON 1" },
+        { link: "/#about", text: "about" },
+        { link: "/#tracks", text: "tracks" },
+        { link: "/#speakers", text: "speakers" },
+        { link: "/#sponsors", text: "sponsors" },
+        { link: "/#testimonials", text: "testimonials" },
+        { link: "/#faq", text: "faq" },
+        { link: "/team", text: "team" },
+        { link: "https://s1.hackthisfall.tech/", text: "season 1" },
       ],
     };
   },
@@ -82,6 +82,11 @@ export default {
     min-height: 100vh !important;
     @include respond-above(lg) {
       display: none;
+    }
+    a {
+      span {
+        text-transform: uppercase;
+      }
     }
   }
 
@@ -137,6 +142,18 @@ export default {
             margin-right: 0;
           }
           list-style: none;
+
+          &.active::before {
+            content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+            color: red; /* Change the color */
+            font-weight: bold; /* If you want it to be bold */
+            font-size: 1.2rem;
+            display: inline-block; /* Needed to add space between the bullet and the text */
+            width: 1em; /* Also needed for space (tweak if needed) */
+            margin-left: -0.4rem; /* Also needed for space (tweak if needed) */
+            margin-right: -0.8rem; /* Also needed for space (tweak if needed) */
+          }
+
           a {
             color: #848484;
             padding: 10px 10px;
@@ -144,6 +161,7 @@ export default {
             text-decoration: none;
             font-size: 1.1rem;
             opacity: 0.95;
+            text-transform: uppercase;
 
             &:hover {
               color: rgba(226, 62, 37, 1);

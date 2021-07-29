@@ -1,5 +1,5 @@
 <template>
-  <Container id="speakers">
+  <Container id="speakers" name="speakers">
     <section class="content-section">
       <HashHeader title="PREVIOUS SPEAKERS" />
       <div class="contents">
@@ -34,7 +34,7 @@
         </a>
       </div>
       <div class="subheading with-spacing">
-        <h2 class="section-title ">AND MORE</h2>
+        <h2 class="section-title">AND MORE</h2>
       </div>
     </section>
   </Container>
@@ -47,7 +47,7 @@ import HashHeader from "~/components/HashHeader";
 export default {
   components: {
     Container,
-    HashHeader
+    HashHeader,
   },
   data() {
     return {
@@ -59,7 +59,7 @@ export default {
           picture: require("~/assets/Speakers/marc.jpg"),
           // companyLogo: require("~/assets/Sponsors/github.png"),
           // company: "GitHub",
-          rotation: 30
+          rotation: 30,
         },
         {
           name: "John Coghlan",
@@ -68,7 +68,7 @@ export default {
           picture: require("~/assets/Speakers/john.jpeg"),
           // companyLogo: require("~/assets/Sponsors/github.png"),
           // company: "GitHub",
-          rotation: 30
+          rotation: 30,
         },
         {
           name: "Eddie Jaoude",
@@ -77,7 +77,7 @@ export default {
           picture: require("~/assets/Speakers/eddie.jpg"),
           // companyLogo: require("~/assets/Sponsors/github.png"),
           // company: "GitHub Stars",
-          rotation: 60
+          rotation: 60,
         },
         {
           name: "Dmitry Shklovsky",
@@ -86,7 +86,7 @@ export default {
           picture: require("~/assets/Speakers/dmitry.jpeg"),
           // companyLogo: require("~/assets/Sponsors/github.png"),
           // company: "The Julia Language",
-          rotation: 90
+          rotation: 90,
         },
         {
           name: "Aloon Grinshpoon",
@@ -95,7 +95,7 @@ export default {
           picture: require("~/assets/Speakers/alon.webp"),
           // companyLogo: require("~/assets/Sponsors/github.png"),
           // company: "Postman",
-          rotation: 120
+          rotation: 120,
         },
         {
           name: "Akanksha Bhasin",
@@ -104,7 +104,7 @@ export default {
           picture: require("~/assets/Speakers/akanksha.jpeg"),
           // companyLogo: require("~/assets/Sponsors/github.png"),
           // company: "GitHub",
-          rotation: 30
+          rotation: 30,
         },
         {
           name: "Aanisha Mishra",
@@ -113,7 +113,7 @@ export default {
           picture: require("~/assets/Speakers/aanisha.jpeg"),
           // companyLogo: require("~/assets/Sponsors/github.png"),
           // company: "Postman",
-          rotation: 120
+          rotation: 120,
         },
         {
           name: "Praveen Kumar",
@@ -122,11 +122,11 @@ export default {
           picture: require("~/assets/Speakers/praveen.webp"),
           // companyLogo: require("~/assets/Sponsors/github.png"),
           // company: "Postman",
-          rotation: 120
-        }
-      ]
+          rotation: 120,
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 

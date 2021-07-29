@@ -1,5 +1,5 @@
 <template>
-  <Container id="team">
+  <Container>
     <section class="content-section">
       <HashHeader title="SEASON 2 TEAM" />
       <div class="contents">

@@ -1,5 +1,5 @@
 <template>
-  <Container id="testimonials">
+  <Container id="testimonials" name="testimonials">
     <section class="content-section">
       <HashHeader title="TESTIMONIALS" />
       <div class="grid">
@@ -66,8 +66,8 @@ import HashHeader from "~/components/HashHeader";
 export default {
   components: {
     Container,
-    HashHeader
-  }
+    HashHeader,
+  },
 };
 </script>
 

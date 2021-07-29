@@ -1,6 +1,6 @@
 <template>
   <div id="about">
-    <Container>
+    <Container name="about">
       <section class="content-section">
         <HashHeader title="ABOUT US" />
         <div class="contents">

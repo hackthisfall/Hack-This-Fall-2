@@ -1,6 +1,6 @@
 <template>
   <div id="faq">
-    <Container>
+    <Container name="faq">
       <section class="content-section">
         <HashHeader title="FREQUENTLY ASKED QUESTIONS" />
         <div class="contents">

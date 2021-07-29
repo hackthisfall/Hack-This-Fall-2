@@ -1,6 +1,6 @@
 <template>
   <div id="top">
-    <Container>
+    <Container name="hero">
       <section class="content-section">
         <div class="contents">
           <div class="img">
