@@ -90,7 +90,7 @@ export default {
       }
       if (e.value + diff < e.max) {
         e.value += diff;
-        setTimeout(() => this.increment(e, diff), 10);
+        setTimeout(() => this.increment(e, diff), 20);
       } else {
         e.value = e.final || e.max;
       }
