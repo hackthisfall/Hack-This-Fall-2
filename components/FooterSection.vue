@@ -10,10 +10,20 @@
 
         <div class="panel">
           <h4 class="title">About</h4>
-          <a href="https://hackon.tech/universe">Code Of Conduct</a>
+          <a
+            href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Code Of Conduct</a
+          >
           <a href="/blog">Season 1 Blog</a>
           <a href="/team">Know The Team</a>
-          <a href="https://hackon.tech/universe">HackOn Universe</a>
+          <a
+            href="https://hackon.tech/universe"
+            rel="noopener noreferrer"
+            target="_blank"
+            >HackOn Universe</a
+          >
         </div>
 
         <div class="panel">
