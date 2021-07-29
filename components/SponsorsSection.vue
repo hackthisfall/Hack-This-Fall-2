@@ -143,15 +143,19 @@ export default {
           filter: unset;
         }
 
-        @include respond-below(sm) {
-          height: 120px;
+        @include respond-below(md) {
+          filter: unset;
+        }
+
+        @include respond-below(xs) {
+          height: unset;
         }
 
         img {
           width: 130px;
           margin: auto;
-          @include respond-below(sm) {
-            width: 60px;
+          @include respond-below(xs) {
+            width: 50vw;
           }
         }
       }

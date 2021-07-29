@@ -11,17 +11,17 @@
         <div class="panel">
           <h4 class="title">About</h4>
           <a
-            href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
             rel="noopener noreferrer"
             target="_blank"
+            href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
             >Code Of Conduct</a
           >
           <a href="/blog">Season 1 Blog</a>
           <a href="/team">Know The Team</a>
           <a
-            href="https://hackon.tech/universe"
             rel="noopener noreferrer"
             target="_blank"
+            href="https://hackon.tech/universe"
             >HackOn Universe</a
           >
         </div>
@@ -37,6 +37,7 @@
           <h4 class="title">Connect With Us</h4>
           <div class="socialLinks">
             <a
+              class="smooth-transition"
               rel="noopener noreferrer"
               target="_blank"
               href="https://www.linkedin.com/company/hackonhackathon"
@@ -44,6 +45,7 @@
               <img src="~/assets/Socials/discord.svg" alt="LinkedInLink" />
             </a>
             <a
+              class="smooth-transition"
               rel="noopener noreferrer"
               target="_blank"
               href="https://discord.hackon.tech/"
@@ -51,6 +53,7 @@
               <img src="~/assets/Socials/twitter.svg" alt="DiscordLink" />
             </a>
             <a
+              class="smooth-transition"
               rel="noopener noreferrer"
               target="_blank"
               href="https://medium.com/hackonhackathon"
@@ -60,6 +63,7 @@
           </div>
           <div class="socialLinks">
             <a
+              class="smooth-transition"
               rel="noopener noreferrer"
               target="_blank"
               href="https://twitter.com/hackonhackathon"
@@ -67,6 +71,7 @@
               <img src="~/assets/Socials/youtube.svg" alt="FacebookLink" />
             </a>
             <a
+              class="smooth-transition"
               rel="noopener noreferrer"
               target="_blank"
               href="https://youtube.com/playlist?list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli"
@@ -74,6 +79,7 @@
               <img src="~/assets/Socials/mail.svg" alt="YoutubeLink" />
             </a>
             <a
+              class="smooth-transition"
               rel="noopener noreferrer"
               target="_blank"
               href="https://telegram.hackon.tech/"
@@ -98,8 +104,8 @@ import CopyLink from "~/components/CopyLink";
 export default {
   components: {
     Container,
-    CopyLink,
-  },
+    CopyLink
+  }
 };
 </script>
 
@@ -165,6 +171,14 @@ export default {
     flex-direction: column;
     line-height: 2;
 
+    a {
+      transition: all 0.2s ease-out;
+      &:hover {
+        color: #e85325;
+        transition: all 0.2s ease-out;
+      }
+    }
+
     .branding {
       img {
         margin-top: 20px;
@@ -193,10 +207,10 @@ export default {
         background: #e85325;
         border-radius: 49%;
         text-align: center;
+        box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
 
         &:hover {
-          box-shadow: #ff6b00 0px 0px 10px 0px;
-          transition: all 0.2s ease-out;
+          box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
         }
 
         img {
