@@ -16,7 +16,8 @@
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
     "nuxt-webfontloader": "^1.1.0",
-    "vue-burger-menu": "^2.0.5"
+    "vue-burger-menu": "^2.0.5",
+    "vue-waypoint": "^3.5.2"
   },
   "devDependencies": {
     "node-sass": "^6.0.1",

@@ -13,6 +13,7 @@
             <div class="cta-buttons">
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://hackthisfall.devpost.com/"
                 class="cta-button smooth-transition register"
               >
@@ -20,6 +21,7 @@
               </a>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://discord.hackthisfall.tech/"
                 class="cta-button smooth-transition discord"
               >
