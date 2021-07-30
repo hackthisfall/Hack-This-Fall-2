@@ -6,6 +6,7 @@
         <div class="panel text">
           <div class="track-box">
             <img
+              class="smooth-transition"
               src="~/assets/Tracks/climate.png"
               alt="Track Climate Change and Environment"
             />
@@ -22,6 +23,7 @@
         <div class="panel text">
           <div class="track-box">
             <img
+              class="smooth-transition"
               src="~/assets/Tracks/blockchain.png"
               alt="Track Blockchain and Crypto"
             />
@@ -39,7 +41,11 @@
 
         <div class="panel text">
           <div class="track-box">
-            <img src="~/assets/Tracks/open.png" alt="Track Open Innovation" />
+            <img
+              class="smooth-transition"
+              src="~/assets/Tracks/open.png"
+              alt="Track Open Innovation"
+            />
           </div>
           <div class="texts">
             <h3 class="title">OPEN INNOVATION</h3>
@@ -63,8 +69,8 @@ import HashHeader from "~/components/HashHeader";
 export default {
   components: {
     Container,
-    HashHeader,
-  },
+    HashHeader
+  }
 };
 </script>
 
@@ -102,8 +108,16 @@ export default {
         margin-left: 1.5rem;
         img {
           float: left;
-          width: 7rem;
+          width: 6rem;
           align-content: center;
+          filter: sepia(var(--value, 100%));
+          --value:40%;
+
+          &:hover {
+            width: 8rem;
+            filter: sepia(var(--value, 100%));
+          --value:0%;
+          }
         }
       }
 

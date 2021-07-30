@@ -44,13 +44,13 @@ export default {
         { link: "/#testimonials", text: "testimonials" },
         { link: "/#faq", text: "faq" },
         { link: "/team", text: "team" },
-        { link: "https://s1.hackthisfall.tech/", text: "season 1" },
-      ],
+        { link: "https://s1.hackthisfall.tech/", text: "season 1" }
+      ]
     };
   },
   components: {
-    Slide,
-  },
+    Slide
+  }
 };
 </script>
 
@@ -143,15 +143,20 @@ export default {
           }
           list-style: none;
 
-          &.active::before {
-            content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-            color: red; /* Change the color */
-            font-weight: bold; /* If you want it to be bold */
-            font-size: 1.2rem;
-            display: inline-block; /* Needed to add space between the bullet and the text */
-            width: 1em; /* Also needed for space (tweak if needed) */
-            margin-left: -0.4rem; /* Also needed for space (tweak if needed) */
-            margin-right: -0.8rem; /* Also needed for space (tweak if needed) */
+          &.active {
+            a {
+              color: rgba(226, 62, 37, 1);
+            }
+            &::before {
+              content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+              color: rgba(226, 62, 37, 1); /* Change the color */
+              font-weight: bold; /* If you want it to be bold */
+              font-size: 1.2rem;
+              display: inline-block; /* Needed to add space between the bullet and the text */
+              width: 1em; /* Also needed for space (tweak if needed) */
+              margin-left: -0.4rem; /* Also needed for space (tweak if needed) */
+              margin-right: -0.8rem; /* Also needed for space (tweak if needed) */
+            }
           }
 
           a {
