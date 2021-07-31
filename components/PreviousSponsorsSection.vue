@@ -168,7 +168,7 @@ export default {
       @include respond-below(sm) {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 10px;
-        row-gap: 10px;
+        row-gap: 30px;
       }
 
       .card {
@@ -198,7 +198,7 @@ export default {
           width: 130px;
           margin: auto;
           @include respond-below(xs) {
-            width: 50vw;
+            width: 45vw;
           }
         }
       }

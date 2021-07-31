@@ -9,7 +9,7 @@
           href="https://www.youtube.com/watch?v=wJsQ_1AWZhA"
           class="anchor"
         >
-          <div v-waves:hover class="panel text">
+          <div class="panel text">
             <img src="~/assets/Testimonials/link.svg" class="link-img" />
             <div class="person">
               <img
@@ -29,7 +29,7 @@
           href="https://www.youtube.com/watch?v=r1KZf2kWX0o"
           class="anchor"
         >
-          <div v-waves:hover class="panel text">
+          <div class="panel text">
             <img src="~/assets/Testimonials/link.svg" class="link-img" />
             <div class="person">
               <img src="~/assets/Testimonials/praveen.webp" alt="Praveen" />
@@ -46,7 +46,7 @@
           href="https://www.youtube.com/watch?v=PEQKT8iPxe4"
           class="anchor"
         >
-          <div v-waves:hover class="panel text">
+          <div class="panel text">
             <img src="~/assets/Testimonials/link.svg" class="link-img" />
             <div class="person">
               <img src="~/assets/Testimonials/aditya.jpg" alt="Aditya Oberai" />
@@ -63,7 +63,7 @@
           href="https://www.youtube.com/watch?v=FA73HA6NBzc"
           class="anchor"
         >
-          <div v-waves:hover class="panel text">
+          <div class="panel text">
             <img src="~/assets/Testimonials/link.svg" class="link-img" />
             <div class="person">
               <img src="~/assets/Testimonials/shivay.jpeg" alt="Shivay Lamba" />
@@ -113,6 +113,10 @@ export default {
     .anchor {
       text-decoration: none;
       color: initial;
+
+      &:hover {
+        box-shadow: 0 12px 200px 0 rgba(214,93,32,22%);
+      }
 
       .panel {
         border-radius: 1rem;

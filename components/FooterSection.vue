@@ -118,6 +118,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
+  text-align: center;
 
   @include respond-between(md, lg) {
     padding: 40px 20px;
@@ -185,8 +186,8 @@ export default {
 
     .branding {
       img {
-        margin-top: 20px;
-        margin-bottom: -10px;
+        margin-top: 40px;
+        margin-bottom: -30px;
 
         @include respond-below(md) {
           max-width: 100%;
