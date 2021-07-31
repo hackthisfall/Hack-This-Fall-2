@@ -26,22 +26,22 @@
             >
               <div class="statData smooth-transition">
                 <img src="~/assets/HTF2/timer.svg" />
-                <h4>{{ numberOfHours.value }}</h4>
+                <span>{{ numberOfHours.value }}</span>
                 <p>Hours</p>
               </div>
               <div class="statData smooth-transition">
                 <img src="~/assets/HTF2/project.svg" />
-                <h4>{{ projects.value }}+</h4>
+                <span>{{ projects.value }}+</span>
                 <p>Projects</p>
               </div>
               <div class="statData smooth-transition">
                 <img src="~/assets/HTF2/user.svg" />
-                <h4>{{ hackers.value }}+</h4>
+                <span>{{ hackers.value }}+</span>
                 <p>Hackers</p>
               </div>
               <div class="statData smooth-transition">
                 <img src="~/assets/HTF2/globe.svg" />
-                <h4>{{ cities.value }}+</h4>
+                <span>{{ cities.value }}+</span>
                 <p>Cities</p>
               </div>
             </div>
@@ -164,7 +164,7 @@ export default {
     }
 
     .statData {
-      height: 150px;
+      height: 160px;
       width: 200px;
       margin: 0;
       display: flex;
@@ -174,14 +174,21 @@ export default {
       padding: 1rem;
       border-radius: 8px;
       background-color: rgb(253, 250, 245);
+      color: rgba(233, 83, 34, 1);
 
       &:hover {
-        box-shadow: 0 48px 100px 0 rgba(214,93,32,22%);
+        box-shadow: 0 48px 100px 0 rgba(214, 93, 32, 22%);
       }
 
-      h4 {
+      img {
+        height: 3rem;
+      }
+
+      span {
+        margin-top: 0.7rem;
+        margin-bottom: -0.5rem;
         font-size: 2rem;
-        font-weight: bold;
+        font-weight: 600;
       }
 
       @include respond-below(sm) {

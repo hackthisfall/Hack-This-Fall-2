@@ -44,13 +44,13 @@ export default {
         { link: "/#testimonials", text: "testimonials" },
         { link: "/#faq", text: "faq" },
         { link: "/team", text: "team" },
-        { link: "https://s1.hackthisfall.tech/", text: "season 1" }
-      ]
+        { link: "https://s1.hackthisfall.tech/", text: "season 1" },
+      ],
     };
   },
   components: {
-    Slide
-  }
+    Slide,
+  },
 };
 </script>
 
@@ -131,7 +131,7 @@ export default {
         font-weight: 600;
 
         li {
-          margin-right: 1rem;
+          margin-right: 1.7rem;
           @media (max-width: 850px) {
             margin-right: 0.5rem;
           }
