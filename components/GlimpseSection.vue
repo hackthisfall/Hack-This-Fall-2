@@ -176,7 +176,7 @@ export default {
       background-color: rgb(253, 250, 245);
 
       &:hover {
-        box-shadow: 0 48px 100px 0 rgba(214,93,32,22%);
+        box-shadow: 0 48px 70px 0 rgba(214,93,32,0.25);
       }
 
       h4 {
