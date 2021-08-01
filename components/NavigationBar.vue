@@ -70,11 +70,10 @@ export default {
   backdrop-filter: blur(30px);
 
   @include respond-below(lg) {
-    height: 50px;
     margin: unset;
-    width: 80px;
-    height: 60px;
-    padding: 4px 22px;
+    width: 60px;
+    height: 45px;
+    padding: 0px 15px;
     left: 1rem;
   }
 
@@ -208,8 +207,8 @@ export default {
 
 .bm-burger-button {
   position: sticky;
-  width: 36px;
-  height: 30px;
+  width: 30px;
+  height: 25px;
   left: 36px;
   margin-top: 0.6rem;
   cursor: pointer;

@@ -61,12 +61,12 @@ export default {
           url: "https://www.linkedin.com/in/apoorvdwi",
           picture: require("~/assets/Team/apoorv.jpeg"),
         },
-        {
-          name: "Shubhangi Gupta",
-          url: "https://www.linkedin.com/in/knowshubhangi/",
-          picture: require("~/assets/Team/shubhangi.jpeg"),
-          rotation: 45,
-        },
+        // {
+        //   name: "Shubhangi Gupta",
+        //   url: "https://www.linkedin.com/in/knowshubhangi/",
+        //   picture: require("~/assets/Team/shubhangi.jpeg"),
+        //   rotation: 45,
+        // },
         {
           name: "Vaibhav Toshniwal",
           url: "https://www.linkedin.com/in/vaibhav-vinay-toshniwal-252ba8187/",
@@ -90,12 +90,12 @@ export default {
           picture: require("~/assets/Team/sahilsen.webp"),
           rotation: 150,
         },
-        {
-          name: "Rishabh Bansal",
-          url: "https://www.linkedin.com/in/rishabhbansal97",
-          picture: require("~/assets/Team/rishabh.jpeg"),
-          rotation: 210,
-        },
+        // {
+        //   name: "Rishabh Bansal",
+        //   url: "https://www.linkedin.com/in/rishabhbansal97",
+        //   picture: require("~/assets/Team/rishabh.jpeg"),
+        //   rotation: 210,
+        // },
         {
           name: "Aaishika S Bhattacharya",
           url: "https://www.linkedin.com/in/aaishika/",
@@ -135,6 +135,10 @@ export default {
 
       @include respond-below(sm) {
         grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include respond-below(xs) {
+        grid-template-columns: repeat(1, 1fr);
       }
 
       .team-card {

@@ -55,6 +55,7 @@ export default {
   background-color: #feede3;
   @include respond-below(sm) {
     padding: 2rem 1rem;
+    margin: 2rem 0 1rem 0;
   }
 
   .contents {

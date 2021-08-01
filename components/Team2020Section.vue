@@ -126,6 +126,10 @@ export default {
         grid-template-columns: repeat(2, 1fr);
       }
 
+      @include respond-below(xs) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
       .team-card {
         padding-bottom: 1rem;
         display: flex;
