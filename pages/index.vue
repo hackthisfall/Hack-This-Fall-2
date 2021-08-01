@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <NavigationBar />
+    <ScrollTopArrow />
     <HeroSection
       data-aos="fade-left"
       data-aos-delay="100"
@@ -73,6 +74,7 @@ import GlimpseSection from "~/components/GlimpseSection";
 import TracksSection from "~/components/TracksSection";
 import PrizesSection from "~/components/PrizesSection";
 import SpeakersSection from "~/components/SpeakersSection";
+import ScrollTopArrow from "~/components/ScrollTopArrow";
 import SponsorsSection from "~/components/SponsorsSection";
 import PreviousSponsorsSection from "~/components/PreviousSponsorsSection";
 import TestimonialsSection from "~/components/TestimonialsSection";
@@ -93,9 +95,9 @@ export default {
     PreviousSponsorsSection,
     TestimonialsSection,
     FAQSection,
-    FooterSection
+    FooterSection,
   },
-  mixins: [aosMixin]
+  mixins: [aosMixin],
 };
 </script>
 

@@ -118,17 +118,18 @@ export default {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
-  text-align: center;
 
   @include respond-between(md, lg) {
     padding: 40px 20px;
   }
 
   @include respond-between(sm, md) {
+    text-align: center;
     padding: 40px 20px;
   }
 
   @include respond-below(sm) {
+    text-align: center;
     padding: 40px 10px;
   }
 
@@ -157,7 +158,7 @@ export default {
     padding: 2rem;
 
     @include respond-above(lg) {
-       padding: 2rem 6rem;
+      padding: 2rem 6rem;
     }
 
     @include respond-between(md, lg) {
@@ -224,6 +225,7 @@ export default {
         box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
 
         &:hover {
+          background: #e85325;
           box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
         }
 
