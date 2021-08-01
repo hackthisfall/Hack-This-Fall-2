@@ -1,17 +1,67 @@
 <template>
   <div class="container">
     <NavigationBar />
-    <HeroSection />
-    <AboutSection />
-    <GlimpseSection />
-    <TracksSection />
+    <HeroSection
+      data-aos="fade-left"
+      data-aos-delay="100"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    />
+    <AboutSection
+      data-aos="fade-right"
+      data-aos-delay="500"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    />
+    <GlimpseSection
+      data-aos="fade-left"
+      data-aos-delay="500"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    />
+    <TracksSection
+      data-aos="fade-right"
+      data-aos-delay="500"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    />
     <!-- <PrizesSection /> -->
-    <SpeakersSection />
-    <SponsorsSection />
-    <PreviousSponsorsSection />
-    <TestimonialsSection />
-    <FAQSection />
-    <FooterSection />
+    <SpeakersSection
+      data-aos="fade-left"
+      data-aos-delay="500"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    />
+    <SponsorsSection
+      data-aos="fade-right"
+      data-aos-delay="500"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    />
+    <PreviousSponsorsSection
+      data-aos="fade-left"
+      data-aos-delay="500"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    />
+    <TestimonialsSection
+      data-aos="fade-right"
+      data-aos-delay="500"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    />
+    <FAQSection
+      data-aos="fade-left"
+      data-aos-delay="500"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    />
+    <FooterSection
+      data-aos="fade-right"
+      data-aos-delay="500"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    />
   </div>
 </template>
 
@@ -28,6 +78,7 @@ import PreviousSponsorsSection from "~/components/PreviousSponsorsSection";
 import TestimonialsSection from "~/components/TestimonialsSection";
 import FAQSection from "~/components/FAQSection";
 import FooterSection from "~/components/FooterSection";
+import aosMixin from "~/mixins/aos";
 
 export default {
   components: {
@@ -42,8 +93,9 @@ export default {
     PreviousSponsorsSection,
     TestimonialsSection,
     FAQSection,
-    FooterSection,
+    FooterSection
   },
+  mixins: [aosMixin]
 };
 </script>
 
