@@ -20,14 +20,14 @@
               sessions.
             </p>
             <div class="cta-buttons">
-              <button class="cta-button register">
+              <button class="cta-button smooth-transition">
                 <img src="~/assets/HTF2/about-where.svg" />
                 <div>
                   <span class="title">WHERE</span
                   ><span class="desc">Virtual Event</span>
                 </div>
               </button>
-              <button class="cta-button discord">
+              <button class="cta-button smooth-transition">
                 <img src="~/assets/HTF2/about-when.svg" />
                 <div>
                   <span class="title">WHEN</span
@@ -66,7 +66,7 @@ export default {
   .contents {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;
+    column-gap: 5rem;
     align-items: flex-end;
 
     @include respond-below(md) {
@@ -97,13 +97,12 @@ export default {
           padding: 0.5rem 1rem;
           display: flex;
           align-items: center;
-          font-family: "Segoe UI Bold";
           border-radius: 0.5rem;
-          width: 50%;
+          width: 45%;
           box-shadow: rgba(255, 107, 0, 0.1) 0px 0px 10px 0px;
 
           img {
-            margin-right: 0.5rem;
+            margin-right: 0.7rem;
           }
 
           div {
@@ -112,12 +111,24 @@ export default {
             align-items: flex-start;
 
             .title {
+              font-size: 1.1rem;
+              font-family: "Segoe UI Bold";
               color: rgba(233, 83, 34, 1);
+            }
+
+            .desc {
+              opacity: 0.6;
+              font-size: 0.95rem;
+              margin-top: 0.5rem;
             }
           }
 
           &:nth-of-type(2) {
-            margin-left: 1rem;
+            margin-left: 2rem;
+          }
+
+          &:hover {
+            background-color: #feede3;
           }
         }
 

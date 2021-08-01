@@ -7,10 +7,13 @@
           rel="noopener noreferrer"
           target="_blank"
           href="https://www.youtube.com/watch?v=wJsQ_1AWZhA"
-          class="anchor"
+          class="anchor smooth-transition"
         >
           <div class="panel text">
-            <img src="~/assets/Testimonials/link.svg" class="link-img" />
+            <img
+              src="~/assets/Testimonials/link.svg"
+              class="link-img smooth-transition"
+            />
             <div class="person">
               <img
                 src="~/assets/Testimonials/alekhya.jpg"
@@ -27,10 +30,13 @@
           rel="noopener noreferrer"
           target="_blank"
           href="https://www.youtube.com/watch?v=r1KZf2kWX0o"
-          class="anchor"
+          class="anchor smooth-transition"
         >
           <div class="panel text">
-            <img src="~/assets/Testimonials/link.svg" class="link-img" />
+            <img
+              src="~/assets/Testimonials/link.svg"
+              class="link-img smooth-transition"
+            />
             <div class="person">
               <img src="~/assets/Testimonials/praveen.webp" alt="Praveen" />
             </div>
@@ -44,10 +50,13 @@
           rel="noopener noreferrer"
           target="_blank"
           href="https://www.youtube.com/watch?v=PEQKT8iPxe4"
-          class="anchor"
+          class="anchor smooth-transition"
         >
           <div class="panel text">
-            <img src="~/assets/Testimonials/link.svg" class="link-img" />
+            <img
+              src="~/assets/Testimonials/link.svg"
+              class="link-img smooth-transition"
+            />
             <div class="person">
               <img src="~/assets/Testimonials/aditya.jpg" alt="Aditya Oberai" />
             </div>
@@ -61,10 +70,13 @@
           rel="noopener noreferrer"
           target="_blank"
           href="https://www.youtube.com/watch?v=FA73HA6NBzc"
-          class="anchor"
+          class="anchor smooth-transition"
         >
           <div class="panel text">
-            <img src="~/assets/Testimonials/link.svg" class="link-img" />
+            <img
+              src="~/assets/Testimonials/link.svg"
+              class="link-img smooth-transition"
+            />
             <div class="person">
               <img src="~/assets/Testimonials/shivay.jpeg" alt="Shivay Lamba" />
             </div>
@@ -137,7 +149,6 @@ export default {
           margin-right: 1.5rem;
           background-color: #e85325;
           box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
-          transition: all 0.2s ease-out;
 
           &:hover {
             box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;

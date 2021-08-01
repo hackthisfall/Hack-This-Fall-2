@@ -108,8 +108,8 @@ import CopyLink from "~/components/CopyLink";
 export default {
   components: {
     Container,
-    CopyLink
-  }
+    CopyLink,
+  },
 };
 </script>
 
@@ -177,10 +177,10 @@ export default {
     line-height: 2;
 
     a {
-      transition: all 0.2s ease-out;
+      transition: all 0.3s ease;
       &:hover {
         color: #e85325;
-        transition: all 0.2s ease-out;
+        transition: all 0.3s ease;
       }
     }
 

@@ -5,11 +5,13 @@
       <div class="grid">
         <div class="panel text">
           <div class="track-box">
-            <img
-              class="smooth-transition"
-              src="~/assets/Tracks/climate.png"
-              alt="Track Climate Change and Environment"
-            />
+            <div class="image">
+              <img
+                class="smooth-transition"
+                src="~/assets/Tracks/climate.png"
+                alt="Track Climate Change and Environment"
+              />
+            </div>
           </div>
           <div class="texts">
             <h3 class="title">CLIMATE CHANGE AND ENVIRONMENT</h3>
@@ -22,11 +24,13 @@
         </div>
         <div class="panel text">
           <div class="track-box">
-            <img
-              class="smooth-transition"
-              src="~/assets/Tracks/blockchain.png"
-              alt="Track Blockchain and Crypto"
-            />
+            <div class="image">
+              <img
+                class="smooth-transition"
+                src="~/assets/Tracks/blockchain.png"
+                alt="Track Blockchain and Crypto"
+              />
+            </div>
           </div>
           <div class="texts">
             <h3 class="title">BLOCKCHAIN AND CRYPTO</h3>
@@ -41,11 +45,13 @@
 
         <div class="panel text">
           <div class="track-box">
-            <img
-              class="smooth-transition"
-              src="~/assets/Tracks/open.png"
-              alt="Track Open Innovation"
-            />
+            <div class="image">
+              <img
+                class="smooth-transition"
+                src="~/assets/Tracks/open.png"
+                alt="Track Open Innovation"
+              />
+            </div>
           </div>
           <div class="texts">
             <h3 class="title">OPEN INNOVATION</h3>
@@ -69,8 +75,8 @@ import HashHeader from "~/components/HashHeader";
 export default {
   components: {
     Container,
-    HashHeader
-  }
+    HashHeader,
+  },
 };
 </script>
 
@@ -93,6 +99,7 @@ export default {
       box-shadow: rgba(255, 107, 0, 0.07) 0px 0px 10px 2px;
       display: flex;
       flex-direction: row;
+      overflow: hidden;
       justify-content: space-between;
       width: 38%;
       border-radius: 1rem;
@@ -106,17 +113,19 @@ export default {
         display: inline-block;
         box-sizing: border-box;
         margin-left: 1.5rem;
-        img {
-          float: left;
+        .image {
+          position: relative;
           width: 6rem;
-          align-content: center;
+          // align-content: center;
           filter: sepia(var(--value, 100%));
-          --value:40%;
+          --value: 40%;
 
-          &:hover {
-            width: 8rem;
-            filter: sepia(var(--value, 100%));
-          --value:0%;
+          img {
+            position: absolute;
+
+            width: 6rem;
+            top: 0rem;
+            left: -2rem;
           }
         }
       }
@@ -126,7 +135,6 @@ export default {
       }
 
       .texts {
-        margin-left: 1em;
         display: flex;
         flex-direction: column;
         padding: 10px;
@@ -141,6 +149,19 @@ export default {
           font-family: "Segoe UI";
           margin-top: 0.5em;
           opacity: 0.7;
+        }
+      }
+
+      &:hover {
+        .track-box {
+          .image {
+            filter: sepia(var(--value, 100%));
+            --value: 0%;
+
+            img {
+              top: -3rem;
+            }
+          }
         }
       }
     }

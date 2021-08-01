@@ -10,7 +10,7 @@
             :class="['team-card', `rot-${Math.floor(Math.random() * 24) * 15}`]"
           >
             <a :href="teamMember.url" target="_blank" rel="noopener noreferrer">
-              <div class="picture-wrapper">
+              <div class="picture-wrapper smooth-transition">
                 <img
                   :src="teamMember.picture"
                   alt="profile picture"
@@ -145,7 +145,6 @@ export default {
           align-items: center;
           justify-content: center;
           border-radius: 50%;
-          transition: 0.3s all ease-in-out;
           margin-top: 1rem;
 
           .profile-pic {
