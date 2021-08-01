@@ -209,7 +209,7 @@ export default {
         position: relative;
         padding: 10px;
         margin: 5px;
-        background: #e85325;
+        background: #231f20;
         border-radius: 49%;
         text-align: center;
         box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
