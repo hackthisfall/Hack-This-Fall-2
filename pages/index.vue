@@ -9,56 +9,56 @@
     />
     <AboutSection
       data-aos="fade-right"
-      data-aos-delay="300"
+      data-aos-delay="200"
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
     />
     <GlimpseSection
       data-aos="fade-left"
-      data-aos-delay="300"
+      data-aos-delay="200"
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
     />
     <TracksSection
       data-aos="fade-right"
-      data-aos-delay="300"
+      data-aos-delay="200"
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
     />
     <!-- <PrizesSection /> -->
     <SpeakersSection
       data-aos="fade-left"
-      data-aos-delay="300"
+      data-aos-delay="200"
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
     />
     <SponsorsSection
       data-aos="fade-right"
-      data-aos-delay="300"
+      data-aos-delay="200"
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
     />
     <PreviousSponsorsSection
       data-aos="fade-left"
-      data-aos-delay="300"
+      data-aos-delay="200"
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
     />
     <TestimonialsSection
       data-aos="fade-right"
-      data-aos-delay="300"
+      data-aos-delay="200"
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
     />
     <FAQSection
       data-aos="fade-left"
-      data-aos-delay="300"
+      data-aos-delay="200"
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
     />
     <FooterSection
       data-aos="fade-right"
-      data-aos-delay="300"
+      data-aos-delay="200"
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
     />
