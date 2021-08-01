@@ -132,6 +132,11 @@ export default {
     padding: 40px 10px;
   }
 
+  hr {
+    width: 80%;
+    margin: auto;
+  }
+
   a {
     text-decoration: none;
     color: #848484;
@@ -150,6 +155,10 @@ export default {
     column-gap: 100px;
     row-gap: 30px;
     padding: 2rem;
+
+    @include respond-above(lg) {
+       padding: 2rem 6rem;
+    }
 
     @include respond-between(md, lg) {
       column-gap: 50px;
