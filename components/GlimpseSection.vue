@@ -177,11 +177,7 @@ export default {
       color: rgba(233, 83, 34, 1);
 
       &:hover {
-<<<<<<< HEAD
         box-shadow: 0 48px 70px 0 rgba(214,93,32,0.25);
-=======
-        box-shadow: 0 48px 100px 0 rgba(214, 93, 32, 22%);
->>>>>>> 003201100891649e35b4a565863d93af62e40b8d
       }
 
       img {
