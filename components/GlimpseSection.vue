@@ -177,7 +177,7 @@ export default {
       color: rgba(233, 83, 34, 1);
 
       &:hover {
-        box-shadow: 0 48px 70px 0 rgba(214,93,32,0.25);
+        box-shadow: 0 15px 30px 0 rgba(214, 93, 32, 0.25);
       }
 
       img {

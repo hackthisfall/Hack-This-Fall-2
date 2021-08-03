@@ -127,7 +127,7 @@ export default {
       color: initial;
 
       &:hover {
-        box-shadow: 0 24px 200px 0 rgba(214,93,32,0.28);
+        box-shadow: 0 15px 30px 0 rgba(214, 93, 32, 0.28);
       }
 
       .panel {
