@@ -6,23 +6,18 @@
         <div class="contents">
           <div class="about">
             <p>
-              Hack This Fall Season 1 was a 24 Hours Virtual Hackathon organized
-              on Oct 31st - Nov 1st, 2020. We organized this event during the
-              global COVID19 crisis, where the entire world was suffering from a
-              pandemic. The event allowed participants to join from the safety
-              and comfort of their homes.
-
+              Hack This Fall is a 48 Hours Virtual Hackathon where we aim to
+              promote hackers and help them nurture their new ideas and
+              prototypes in various domains. Our motto is also to involve more
+              beginner hackers and support everyone to solve the shared problems
+              of our society to bring a change in a revolutionary way.
               <br />
               <br />
-              In Season 1, we were joined by 500+ superb hackers from 170+
-              cities, who all were motivated to build towards solving society’s
-              everyday problems, and ended up building 50+ projects, which was
-              in line with our motto i.e. “Build &amp; Solve”. Hackers truly
-              understood the value of our motto and showed their excellent piece
-              of innovation and problem-solving skills. Not only this, we found
-              hackers hacking individually and collaborating in a team, but this
-              didn’t stop them from engaging with other hackers in a meaningful
-              way.
+              For season 2, we are focussing on creating more learning
+              opportunities along with building and solving. We will talk about
+              various technologies, create awareness, encourage others, hack to
+              contribute, and participate in many more exciting events &amp;
+              sessions.
             </p>
             <div class="cta-buttons">
               <button class="cta-button smooth-transition">

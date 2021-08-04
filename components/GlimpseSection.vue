@@ -7,12 +7,22 @@
           <img src="~/assets/HTF2/glimpse-leaves.svg" class="leaves" />
           <div class="about">
             <p>
-              Season 1 was a 24 Hours Virtual Hackathon organized on October
-              31st - November 1st, 2020. We were joined by 500+ superb hackers
-              from 170+ different cities, who all were motivated to build
-              towards solving society’s everyday problems, and ended up building
-              50+ projects, which was in line with our motto i.e. “Build &amp;
-              Solve”.
+              Hack This Fall Season 1 was a 24 Hours Virtual Hackathon organized
+              on Oct 31st - Nov 1st, 2020. We organized this event during the
+              global COVID19 crisis, where the entire world was suffering from a
+              pandemic. The event allowed participants to join from the safety
+              and comfort of their homes.
+              <br />
+              <br />
+              In Season 1, we were joined by 500+ superb hackers from 170+
+              cities, who all were motivated to build towards solving society’s
+              everyday problems, and ended up building 50+ projects, which was
+              in line with our motto i.e. “Build &amp; Solve”. Hackers truly
+              understood the value of our motto and showed their excellent piece
+              of innovation and problem-solving skills. Not only this, we found
+              hackers hacking individually and collaborating in a team, but this
+              didn’t stop them from engaging with other hackers in a meaningful
+              way.
             </p>
           </div>
           <div class="stats">
@@ -135,7 +145,7 @@ export default {
       align-self: center;
 
       p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
     }
   }
