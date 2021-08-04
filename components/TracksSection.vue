@@ -508,11 +508,17 @@
                   class="svg-track-1 smooth-transition-1"
                 >
                   <defs>
-                    <Style>
-                      .panel:hover .color-change-2{ fill: #ec7d6a; }
-                      .panel:hover .color-change-1{ fill: #ec7d6a; }
-                      .panel:hover .color-change-inverse{ fill: #f9d4cb; }
-                    </Style>
+                    <style>
+                      .panel:hover .color-change-2 {
+                        fill: #ec7d6a;
+                      }
+                      .panel:hover .color-change-1 {
+                        fill: #ec7d6a;
+                      }
+                      .panel:hover .color-change-inverse {
+                        fill: #f9d4cb;
+                      }
+                    </style>
                   </defs>
 
                   <rect
@@ -633,7 +639,7 @@
                     class="col-12 font-weight-bold my-2 font-size-18"
                     style="color: #e38333"
                   >
-                    DIVERSITY & INCLUSION
+                    DIVERSITY &amp; INCLUSION
                   </div>
                   <div class="col-12 mb-2">
                     Build a hack that helps communicate the importance of
