@@ -213,7 +213,7 @@ export default {
 
     .socialLinks {
       padding: 20px 0 10px;
-      margin-left: -5px;
+      margin-left: 5px;
 
       a {
         position: relative;
