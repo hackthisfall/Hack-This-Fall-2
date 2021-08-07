@@ -32,9 +32,10 @@
 
         <div class="panel">
           <h4 class="title">Explore</h4>
-          <a href="/#sponsors">Sponsors</a>
+          <a href="/#tracks">Tracks</a>
           <a href="/#speakers">Speakers</a>
-          <a href="/#faq">FAQ</a>
+          <a href="/#sponsors">Sponsors</a>
+          <a href="/#testimonials">Testimonials</a>
         </div>
 
         <div class="panel">
@@ -44,25 +45,25 @@
               class="smooth-transition"
               rel="noopener noreferrer"
               target="_blank"
-              href="https://www.linkedin.com/company/hackonhackathon"
+              href="https://discord.hackthisfall.tech"
             >
-              <img src="~/assets/Socials/discord.svg" alt="LinkedInLink" />
+              <img src="~/assets/Socials/discord.svg" alt="discord" />
             </a>
             <a
               class="smooth-transition"
               rel="noopener noreferrer"
               target="_blank"
-              href="https://discord.hackon.tech/"
+              href="https://twitter.com/hackthisfall/"
             >
-              <img src="~/assets/Socials/twitter.svg" alt="DiscordLink" />
+              <img src="~/assets/Socials/twitter.svg" alt="twitter" />
             </a>
             <a
               class="smooth-transition"
               rel="noopener noreferrer"
               target="_blank"
-              href="https://medium.com/hackonhackathon"
+              href="https://instagram.com/hackthisfall"
             >
-              <img src="~/assets/Socials/instagram.svg" alt="MediumLink" />
+              <img src="~/assets/Socials/instagram.svg" alt="instagram" />
             </a>
           </div>
           <div class="socialLinks">
@@ -70,25 +71,25 @@
               class="smooth-transition"
               rel="noopener noreferrer"
               target="_blank"
-              href="https://twitter.com/hackonhackathon"
+              href="https://www.youtube.com/channel/UCpdsmUIkLpfopjURSYF1gaA"
             >
-              <img src="~/assets/Socials/youtube.svg" alt="FacebookLink" />
+              <img src="~/assets/Socials/youtube.svg" alt="youtube" />
             </a>
             <a
               class="smooth-transition"
               rel="noopener noreferrer"
               target="_blank"
-              href="https://youtube.com/playlist?list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli"
+              href="mailto:contact@hackthisfall.tech"
             >
-              <img src="~/assets/Socials/mail.svg" alt="YoutubeLink" />
+              <img src="~/assets/Socials/mail.svg" alt="email" />
             </a>
             <a
               class="smooth-transition"
               rel="noopener noreferrer"
               target="_blank"
-              href="https://telegram.hackon.tech/"
+              href="https://www.linkedin.com/company/hackthisfall/"
             >
-              <img src="~/assets/Socials/linkedin.svg" alt="TelegramLink" />
+              <img src="~/assets/Socials/linkedin.svg" alt="linkedin" />
             </a>
           </div>
         </div>
