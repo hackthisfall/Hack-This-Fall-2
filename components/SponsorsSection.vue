@@ -1,7 +1,7 @@
 <template>
   <Container id="sponsors" name="sponsors">
     <section class="content-section">
-      <HashHeader title="EVENT SPONSORS" />
+      <HashHeader title="SPONSORS &amp; PARTNERS" />
       <div class="contents">
         <div v-for="(section, index) in sponsors" :key="index">
           <div :class="['subheading', index !== 0 ? 'with-spacing' : null]">
@@ -25,6 +25,16 @@
           </div>
         </div>
       </div>
+      <div class="cta-buttons">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://bit.ly/htf2-sponsor"
+          class="cta-button smooth-transition discord"
+        >
+          SPONSOR US
+        </a>
+      </div>
     </section>
   </Container>
 </template>
@@ -42,19 +52,81 @@ export default {
     return {
       sponsors: [
         {
-          type: "",
+          type: "TITLE SPONSOR",
           logos: [
             {
-              url: "https://github.com/",
-              image: require("~/assets/Sponsors/github.png"),
+              url: "https://wrx.gg/htf",
+              image: require("~/assets/Sponsors/wazirx.png"),
+            },
+          ],
+        },
+        {
+          type: "SILVER SPONSOR",
+          logos: [
+            {
+              url: "https://education.github.com/discount_requests/student_application?utm_source=2021-10-22-hackthisfall",
+              image: require("~/assets/Sponsors/github.svg"),
+            },
+            {
+              url: "https://defhacks.co/",
+              image: require("~/assets/Sponsors/defhacks.png"),
+            },
+            {
+              url: "https://www.stickermule.com/",
+              image: require("~/assets/Sponsors/stickermule.png"),
+            },
+            {
+              url: "https://sawolabs.com/",
+              image: require("~/assets/Sponsors/sawolabs.png"),
             },
             {
               url: "https://hackclub.com/",
               image: require("~/assets/Sponsors/hackclub.png"),
             },
             {
-              url: "https://www.stickermule.com/",
-              image: require("~/assets/Sponsors/stickermule.png"),
+              url: "https://devhero.shop/",
+              image: require("~/assets/Sponsors/devhero.png"),
+            },
+          ],
+        },
+        {
+          type: "BRONZE SPONSOR",
+          logos: [
+            {
+              url: "https://www.twilio.com/",
+              image: require("~/assets/Sponsors/twilio.png"),
+            },
+            {
+              url: "https://symbl.ai/",
+              image: require("~/assets/Sponsors/symbl.svg"),
+            },
+            {
+              url: "https://www.digitalocean.com/",
+              image: require("~/assets/Sponsors/digitalocean.svg"),
+            },
+            {
+              url: "https://sketch.com",
+              image: require("~/assets/Sponsors/sketch.png"),
+            },
+            {
+              url: "https://www.wolfram.com/",
+              image: require("~/assets/Sponsors/wolfram.png"),
+            },
+            {
+              url: "https://draftbit.com/",
+              image: require("~/assets/Sponsors/draftbit.png"),
+            },
+            {
+              url: "https://balsamiq.com/",
+              image: require("~/assets/Sponsors/balsamiq.png"),
+            },
+            {
+              url: "https://replit.com/",
+              image: require("~/assets/Sponsors/replit.png"),
+            },
+            {
+              url: "https://coil.com/",
+              image: require("~/assets/Sponsors/coil.jpg"),
             },
           ],
         },
@@ -157,6 +229,54 @@ export default {
           @include respond-below(xs) {
             width: 45vw;
           }
+        }
+      }
+    }
+  }
+
+  .cta-buttons {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+
+    a {
+      text-decoration: none;
+    }
+
+    .cta-button {
+      background-color: #e85325;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: "Segoe UI Bold";
+      border-radius: 0.5rem;
+      cursor: pointer;
+      box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
+
+      &:hover {
+        box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
+      }
+
+      img {
+        margin-right: 0.5rem;
+      }
+
+      &:nth-of-type(2) {
+        margin-left: 1rem;
+      }
+    }
+
+    @include respond-below(xxs) {
+      flex-direction: column;
+      width: 80%;
+
+      .cta-button {
+        &:nth-of-type(2) {
+          margin-top: 1rem;
+          margin-left: 0rem;
         }
       }
     }

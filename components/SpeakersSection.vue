@@ -33,8 +33,15 @@
           <button>VIEW ALL</button>
         </a>
       </div>
-      <div class="subheading with-spacing">
-        <h2 class="section-title">AND MORE</h2>
+      <div class="cta-buttons">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://bit.ly/htf2-cfp"
+          class="cta-button smooth-transition discord"
+        >
+          APPLY TO BE A SPEAKER
+        </a>
       </div>
     </section>
   </Container>
@@ -258,6 +265,54 @@ export default {
 
       img {
         transform: rotate(90deg);
+      }
+    }
+  }
+
+  .cta-buttons {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+
+    a {
+      text-decoration: none;
+    }
+
+    .cta-button {
+      background-color: #e85325;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: "Segoe UI Bold";
+      border-radius: 0.5rem;
+      cursor: pointer;
+      box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
+
+      &:hover {
+        box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
+      }
+
+      img {
+        margin-right: 0.5rem;
+      }
+
+      &:nth-of-type(2) {
+        margin-left: 1rem;
+      }
+    }
+
+    @include respond-below(xxs) {
+      flex-direction: column;
+      width: 80%;
+
+      .cta-button {
+        &:nth-of-type(2) {
+          margin-top: 1rem;
+          margin-left: 0rem;
+        }
       }
     }
   }

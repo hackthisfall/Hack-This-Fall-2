@@ -39,12 +39,6 @@
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
     />
-    <PreviousSponsorsSection
-      data-aos="fade-left"
-      data-aos-delay="200"
-      data-aos-duration="800"
-      data-aos-easing="ease-in-out"
-    />
     <TestimonialsSection
       data-aos="fade-right"
       data-aos-delay="200"
@@ -76,7 +70,6 @@ import PrizesSection from "~/components/PrizesSection";
 import SpeakersSection from "~/components/SpeakersSection";
 import ScrollTopArrow from "~/components/ScrollTopArrow";
 import SponsorsSection from "~/components/SponsorsSection";
-import PreviousSponsorsSection from "~/components/PreviousSponsorsSection";
 import TestimonialsSection from "~/components/TestimonialsSection";
 import FAQSection from "~/components/FAQSection";
 import FooterSection from "~/components/FooterSection";
@@ -92,9 +85,9 @@ export default {
     PrizesSection,
     SpeakersSection,
     SponsorsSection,
-    PreviousSponsorsSection,
     TestimonialsSection,
     FAQSection,
+    ScrollTopArrow,
     FooterSection,
   },
   mixins: [aosMixin],
