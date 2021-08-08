@@ -72,12 +72,12 @@ export default {
               image: require("~/assets/Sponsors/defhacks.png"),
             },
             {
-              url: "https://www.stickermule.com/",
-              image: require("~/assets/Sponsors/stickermule.png"),
-            },
-            {
               url: "https://sawolabs.com/",
               image: require("~/assets/Sponsors/sawolabs.png"),
+            },
+            {
+              url: "https://www.stickermule.com/",
+              image: require("~/assets/Sponsors/stickermule.png"),
             },
             {
               url: "https://hackclub.com/",
@@ -109,16 +109,29 @@ export default {
               image: require("~/assets/Sponsors/sketch.png"),
             },
             {
-              url: "https://www.wolfram.com/",
-              image: require("~/assets/Sponsors/wolfram.png"),
-            },
-            {
               url: "https://draftbit.com/",
               image: require("~/assets/Sponsors/draftbit.png"),
             },
             {
+              url: "https://www.echoar.xyz/",
+              image: require("~/assets/Sponsors/echoar.png"),
+            },
+          ],
+        },
+        {
+          type: "SPONSOR",
+          logos: [
+            {
               url: "https://balsamiq.com/",
               image: require("~/assets/Sponsors/balsamiq.png"),
+            },
+            {
+              url: "https://www.wolfram.com/",
+              image: require("~/assets/Sponsors/wolfram.png"),
+            },
+            {
+              url: "https://www.linode.com/",
+              image: require("~/assets/Sponsors/linode.svg"),
             },
             {
               url: "https://replit.com/",
@@ -262,22 +275,6 @@ export default {
 
       img {
         margin-right: 0.5rem;
-      }
-
-      &:nth-of-type(2) {
-        margin-left: 1rem;
-      }
-    }
-
-    @include respond-below(xxs) {
-      flex-direction: column;
-      width: 80%;
-
-      .cta-button {
-        &:nth-of-type(2) {
-          margin-top: 1rem;
-          margin-left: 0rem;
-        }
       }
     }
   }

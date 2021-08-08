@@ -87,7 +87,7 @@ export default {
           isOpen: false,
           title: "Where do I need to submit my project?",
           content:
-            "First register on our <a href='https://hackthisfall.devpost.com/' rel='noopener noreferrer' target='_blank'>Devpost page</a>. Once the hackathon starts, you will be able to create the project there. To become eligible for prizes, you must submit your project before the deadline.",
+            "First register on our <a style='color: rgba(233, 83, 34, 1);' href='https://hackthisfall.devpost.com/' rel='noopener noreferrer' target='_blank'>Devpost page</a>. Once the hackathon starts, you will be able to create the project there. To become eligible for prizes, you must submit your project before the deadline.",
         },
         {
           isOpen: false,
@@ -99,13 +99,13 @@ export default {
           isOpen: false,
           title: "What is the Code of Conduct?",
           content:
-            "We want to ensure a positive experience for all participants. We will be following MLH’s Code of Conduct, we encourage you to read it <a href='https://static.mlh.io/docs/mlh-code-of-conduct.pdf' rel='noopener noreferrer' target='_blank'>here</a>.",
+            "We want to ensure a positive experience for all participants. We will be following MLH’s Code of Conduct, we encourage you to read it <a color: rgba(233, 83, 34, 1); href='https://static.mlh.io/docs/mlh-code-of-conduct.pdf' rel='noopener noreferrer' target='_blank'>here</a>.",
         },
         {
           isOpen: false,
           title: "More Questions?",
           content:
-            "Join our Hacker Community Discord Server <a href='https://discord.hackon.tech/' rel='noopener noreferrer' target='_blank'>here</a>. Ask any other questions you have and connect with a larger community. Looking forward to welcoming you.",
+            "Join our Hacker Community Discord Server <a color: rgba(233, 83, 34, 1); href='https://discord.hackon.tech/' rel='noopener noreferrer' target='_blank'>here</a>. Ask any other questions you have and connect with a larger community. Looking forward to welcoming you.",
         },
       ],
       expandedFAQs: new Set(),

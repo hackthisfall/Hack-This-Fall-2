@@ -4,7 +4,6 @@
       <section class="content-section">
         <HashHeader title="GLIMPSE OF SEASON 1" />
         <div class="contents">
-          <img src="~/assets/HTF2/glimpse-leaves.svg" class="leaves" />
           <div class="about">
             <p>
               Hack This Fall Season 1 was a 24 Hours Virtual Hackathon organized
@@ -127,14 +126,6 @@ export default {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
-
-    .leaves {
-      position: absolute;
-      top: -1rem;
-      left: -3.75rem;
-      height: 8rem;
-      transform: rotate(135deg);
-    }
 
     @include respond-below(md) {
       grid-template-columns: repeat(1, 1fr);

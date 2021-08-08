@@ -298,22 +298,6 @@ export default {
       img {
         margin-right: 0.5rem;
       }
-
-      &:nth-of-type(2) {
-        margin-left: 1rem;
-      }
-    }
-
-    @include respond-below(xxs) {
-      flex-direction: column;
-      width: 80%;
-
-      .cta-button {
-        &:nth-of-type(2) {
-          margin-top: 1rem;
-          margin-left: 0rem;
-        }
-      }
     }
   }
 }

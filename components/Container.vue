@@ -21,7 +21,7 @@ export default {
       intersectionOptions: {
         root: null,
         rootMargin: "0px 0px 0px 0px",
-        threshold: [0.6, 1],
+        threshold: [0.4, 1],
       },
     };
   },
