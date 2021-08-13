@@ -119,7 +119,7 @@ export default {
           padding: 0.5rem 1rem;
           display: flex;
           align-items: center;
-          justify-content: space-between;
+          // justify-content: space-between;
           font-family: "Segoe UI Bold";
           border-radius: 0.5rem;
           cursor: pointer;
@@ -140,7 +140,7 @@ export default {
 
         @include respond-below(xxs) {
           flex-direction: column;
-          width: 80%;
+          width: auto;
 
           .cta-button {
             &:nth-of-type(2) {

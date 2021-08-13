@@ -62,7 +62,7 @@ export default {
         {
           name: "Marc Cohen",
           description: "Developer Advocate, GCP-Google",
-          url: "https://twitter.com/marcacohen",
+          url: "https://twitter.com/mco_dev",
           picture: require("~/assets/Speakers/marc.jpg"),
           // companyLogo: require("~/assets/Sponsors/github.png"),
           // company: "GitHub",
