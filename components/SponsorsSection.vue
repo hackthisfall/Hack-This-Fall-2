@@ -52,6 +52,23 @@ export default {
     return {
       sponsors: [
         {
+          type: "HACKATHON PARTNER",
+          logos: [
+            {
+              url: "https://mlh.io/",
+              image: require("~/assets/Sponsors/mlh.svg"),
+            },
+            {
+              url: "https://devpost.com/",
+              image: require("~/assets/Sponsors/devpost.svg"),
+            },
+            {
+              url: "https://raahee.in/",
+              image: require("~/assets/Sponsors/raahee.png"),
+            },
+          ],
+        },
+        {
           type: "TITLE SPONSOR",
           logos: [
             {
@@ -113,8 +130,8 @@ export default {
               image: require("~/assets/Sponsors/draftbit.png"),
             },
             {
-              url: "https://www.echoar.xyz/",
-              image: require("~/assets/Sponsors/echoar.png"),
+              url: "https://dev.to/",
+              image: require("~/assets/Sponsors/devto.png"),
             },
           ],
         },
@@ -140,6 +157,10 @@ export default {
             {
               url: "https://coil.com/",
               image: require("~/assets/Sponsors/coil.jpg"),
+            },
+            {
+              url: "https:/gen.xyz/",
+              image: require("~/assets/Sponsors/xyz.svg"),
             },
           ],
         },
@@ -220,6 +241,7 @@ export default {
         justify-content: center;
         box-shadow: rgba(255, 107, 0, 0.07) 0px 0px 10px 2px;
         height: 100px;
+        min-width: 250px;
         padding: 2rem 4rem;
         border-radius: 1rem;
         filter: saturate(0);
@@ -234,13 +256,17 @@ export default {
 
         @include respond-below(xs) {
           height: unset;
+          min-width: 100px;
         }
 
         img {
-          width: 130px;
+          max-width: 130px;
+          max-height: 70px;
+          height: auto;
+          width: auto;
           margin: auto;
           @include respond-below(xs) {
-            width: 45vw;
+            max-width: 45vw;
           }
         }
       }
