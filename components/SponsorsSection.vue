@@ -52,6 +52,15 @@ export default {
     return {
       sponsors: [
         {
+          type: "TITLE SPONSOR",
+          logos: [
+            {
+              url: "https://wrx.gg/htf",
+              image: require("~/assets/Sponsors/wazirx.png"),
+            },
+          ],
+        },
+        {
           type: "HACKATHON PARTNER",
           logos: [
             {
@@ -65,15 +74,6 @@ export default {
             {
               url: "https://raahee.in/",
               image: require("~/assets/Sponsors/raahee.png"),
-            },
-          ],
-        },
-        {
-          type: "TITLE SPONSOR",
-          logos: [
-            {
-              url: "https://wrx.gg/htf",
-              image: require("~/assets/Sponsors/wazirx.png"),
             },
           ],
         },
