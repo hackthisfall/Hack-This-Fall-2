@@ -95,6 +95,7 @@ export default {
     align-items: center;
     justify-content: space-between;
     margin: 0.25rem 0rem;
+    padding-right: 7rem;
 
     @include respond-below(lg) {
       display: none;

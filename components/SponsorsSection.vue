@@ -256,7 +256,7 @@ export default {
 
         @include respond-below(xs) {
           height: unset;
-          min-width: 100px;
+          min-width: 70vw;
         }
 
         img {
@@ -266,7 +266,7 @@ export default {
           width: auto;
           margin: auto;
           @include respond-below(xs) {
-            max-width: 45vw;
+            max-width: 80px;
           }
         }
       }
