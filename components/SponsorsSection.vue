@@ -89,7 +89,7 @@ export default {
               image: require("~/assets/Sponsors/defhacks.png"),
             },
             {
-              url: "https://sawolabs.com/",
+              url: "https://sawolabs.com/hackathon/redeemnow/?hackathon_name=HackThisFall2.0",
               image: require("~/assets/Sponsors/sawolabs.png"),
             },
             {
