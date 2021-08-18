@@ -92,17 +92,10 @@ export default {
               url: "https://sawolabs.com/hackathon/redeemnow/?hackathon_name=HackThisFall2.0",
               image: require("~/assets/Sponsors/sawolabs.png"),
             },
-            {
-              url: "https://www.stickermule.com/",
-              image: require("~/assets/Sponsors/stickermule.png"),
-            },
+
             {
               url: "https://hackclub.com/",
               image: require("~/assets/Sponsors/hackclub.png"),
-            },
-            {
-              url: "https://devhero.shop/",
-              image: require("~/assets/Sponsors/devhero.png"),
             },
           ],
         },
@@ -128,10 +121,6 @@ export default {
             {
               url: "https://draftbit.com/",
               image: require("~/assets/Sponsors/draftbit.png"),
-            },
-            {
-              url: "https://dev.to/",
-              image: require("~/assets/Sponsors/devto.png"),
             },
           ],
         },
@@ -161,6 +150,23 @@ export default {
             {
               url: "https:/gen.xyz/",
               image: require("~/assets/Sponsors/xyz.svg"),
+            },
+          ],
+        },
+        {
+          type: "MERCHANDISE PARTNER",
+          logos: [
+            {
+              url: "https://devhero.shop/",
+              image: require("~/assets/Sponsors/devhero.png"),
+            },
+            {
+              url: "https://www.stickermule.com/",
+              image: require("~/assets/Sponsors/stickermule.png"),
+            },
+            {
+              url: "https://dev.to/",
+              image: require("~/assets/Sponsors/devto.png"),
             },
           ],
         },
