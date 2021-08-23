@@ -33,7 +33,7 @@
           <button>VIEW ALL</button>
         </a>
       </div>
-      <div class="cta-buttons">
+      <!-- <div class="cta-buttons">
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -42,7 +42,7 @@
         >
           APPLY TO BE A SPEAKER
         </a>
-      </div>
+      </div> -->
     </section>
   </Container>
 </template>
