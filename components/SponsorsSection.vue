@@ -25,7 +25,7 @@
           </div>
         </div>
       </div>
-      <div class="cta-buttons">
+      <!-- <div class="cta-buttons">
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -34,7 +34,7 @@
         >
           SPONSOR US
         </a>
-      </div>
+      </div> -->
     </section>
   </Container>
 </template>
@@ -54,6 +54,10 @@ export default {
         {
           type: "TITLE SPONSOR",
           logos: [
+            {
+              url: "https://www.storyblok.com/",
+              image: require("~/assets/Sponsors/storyblok.svg"),
+            },
             {
               url: "https://wrx.gg/htf",
               image: require("~/assets/Sponsors/wazirx.png"),
@@ -279,36 +283,36 @@ export default {
     }
   }
 
-  .cta-buttons {
-    display: flex;
-    margin-top: 3rem;
-    justify-content: center;
+  // .cta-buttons {
+  //   display: flex;
+  //   margin-top: 3rem;
+  //   justify-content: center;
 
-    a {
-      text-decoration: none;
-    }
+  //   a {
+  //     text-decoration: none;
+  //   }
 
-    .cta-button {
-      background-color: #e85325;
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-family: "Segoe UI Bold";
-      border-radius: 0.5rem;
-      cursor: pointer;
-      box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
+  //   .cta-button {
+  //     background-color: #e85325;
+  //     color: white;
+  //     border: none;
+  //     padding: 0.5rem 1rem;
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: space-between;
+  //     font-family: "Segoe UI Bold";
+  //     border-radius: 0.5rem;
+  //     cursor: pointer;
+  //     box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
 
-      &:hover {
-        box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
-      }
+  //     &:hover {
+  //       box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
+  //     }
 
-      img {
-        margin-right: 0.5rem;
-      }
-    }
-  }
+  //     img {
+  //       margin-right: 0.5rem;
+  //     }
+  //   }
+  // }
 }
 </style>
