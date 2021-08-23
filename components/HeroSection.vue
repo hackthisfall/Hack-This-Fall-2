@@ -4,7 +4,7 @@
       <section class="content-section">
         <div class="contents">
           <div class="img">
-            <img src="~/assets/HTF2/hero.svg" />
+            <img height="90%" src="~/assets/HTF2/hero.svg" />
           </div>
           <div class="about">
             <img class="logo" src="~/assets/HTF2/HTFLogo.svg" />
