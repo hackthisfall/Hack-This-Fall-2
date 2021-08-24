@@ -28,6 +28,12 @@
             href="https://hackon.tech/universe"
             >HackOn Universe</a
           >
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://dev.to/hackthisfall"
+            >Dev.to Page</a
+          >
         </div>
 
         <div class="panel">
@@ -64,14 +70,6 @@
               href="https://instagram.com/hackthisfall"
             >
               <img src="~/assets/Socials/instagram.svg" alt="instagram" />
-            </a>
-            <a
-              class="smooth-transition dev"
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://dev.to/hackthisfall"
-            >
-              <img src="~/assets/Socials/dev-badge.svg" alt="dev.to" />
             </a>
             <a
               class="smooth-transition"
@@ -141,7 +139,7 @@ export default {
   }
 
   hr {
-    width: 80%;
+    width: 85%;
     margin: auto;
   }
 
@@ -243,14 +241,6 @@ export default {
           width: 20px;
           position: relative;
           top: 4px;
-        }
-
-        &.dev {
-          padding: 1px 5px;
-          img {
-            height: 30px;
-            width: 30px;
-          }
         }
       }
     }
