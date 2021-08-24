@@ -39,7 +39,7 @@
         </div>
 
         <div class="panel">
-          <h4 class="title">Connect With Us</h4>
+          <h4 class="title online">Find Us Online</h4>
           <div class="socialLinks">
             <a
               class="smooth-transition"
@@ -65,8 +65,14 @@
             >
               <img src="~/assets/Socials/instagram.svg" alt="instagram" />
             </a>
-          </div>
-          <div class="socialLinks">
+            <a
+              class="smooth-transition dev"
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://dev.to/hackthisfall"
+            >
+              <img src="~/assets/Socials/dev-badge.svg" alt="dev.to" />
+            </a>
             <a
               class="smooth-transition"
               rel="noopener noreferrer"
@@ -153,7 +159,7 @@ export default {
 
   .content-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 100px;
     row-gap: 30px;
     padding: 2rem;
@@ -213,12 +219,14 @@ export default {
     }
 
     .socialLinks {
-      padding: 20px 0 10px;
-      margin-left: 5px;
+      padding: 20px 5px 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
 
       a {
         position: relative;
-        padding: 10px;
+        padding: 5px 10px;
         margin: 5px;
         background: #231f20;
         border-radius: 49%;
@@ -231,11 +239,18 @@ export default {
         }
 
         img {
-          position: absolute;
           height: 20px;
           width: 20px;
           position: relative;
           top: 4px;
+        }
+
+        &.dev {
+          padding: 1px 5px;
+          img {
+            height: 30px;
+            width: 30px;
+          }
         }
       }
     }
@@ -246,6 +261,10 @@ export default {
 
     .title {
       padding: 10px 0;
+
+      &.online {
+        align-self: center;
+      }
     }
   }
 
