@@ -59,6 +59,10 @@ export default {
               image: require("~/assets/Sponsors/storyblok.svg"),
             },
             {
+              url: "https://agoric.com/",
+              image: require("~/assets/Sponsors/agoric.svg"),
+            },
+            {
               url: "https://wrx.gg/htf",
               image: require("~/assets/Sponsors/wazirx.png"),
             },
@@ -254,15 +258,6 @@ export default {
         min-width: 250px;
         padding: 2rem 4rem;
         border-radius: 1rem;
-        filter: saturate(0);
-
-        &:hover {
-          filter: unset;
-        }
-
-        @include respond-below(md) {
-          filter: unset;
-        }
 
         @include respond-below(xs) {
           height: unset;
