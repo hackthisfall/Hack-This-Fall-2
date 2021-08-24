@@ -259,6 +259,10 @@ export default {
         padding: 2rem 4rem;
         border-radius: 1rem;
 
+        &:hover {
+          background-color: #feede3;
+        }
+
         @include respond-below(xs) {
           height: unset;
           min-width: 70vw;

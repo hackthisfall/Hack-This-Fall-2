@@ -117,9 +117,9 @@
                 <div class="row">
                   <div
                     class="col-12 font-weight-bold my-2 font-size-18"
-                    style="color: #e38333"
+                    style="color: rgba(233, 83, 34, 1)"
                   >
-                    CLIMATE CHANGE & ENVIRONMENT
+                    CLIMATE CHANGE &amp; ENVIRONMENT
                   </div>
                   <div class="col-12 mb-2">
                     Climate change is an ongoing problem with our planet and one
@@ -366,7 +366,7 @@
                 <div class="row">
                   <div
                     class="col-12 font-weight-bold my-2 font-size-18"
-                    style="color: #e38333"
+                    style="color: rgba(233, 83, 34, 1)"
                   >
                     BLOCKCHAIN & CRYPTO
                   </div>
@@ -474,7 +474,7 @@
                 <div class="row">
                   <div
                     class="col-12 font-weight-bold my-2 font-size-18"
-                    style="color: #e38333"
+                    style="color: rgba(233, 83, 34, 1)"
                   >
                     OPEN INNOVATION
                   </div>
@@ -637,7 +637,7 @@
                 <div class="row">
                   <div
                     class="col-12 font-weight-bold my-2 font-size-18"
-                    style="color: #e38333"
+                    style="color: rgba(233, 83, 34, 1)"
                   >
                     DIVERSITY &amp; INCLUSION
                   </div>
