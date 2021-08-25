@@ -1,0 +1,465 @@
+<template>
+  <div id="swag">
+    <Container name="swag">
+      <section class="content-section">
+        <HashHeader title="SWAG STORE" />
+        <div class="contents">
+          <div class="about">
+            <p>
+              Hack This Fall is a 48 Hours Virtual Hackathon where we aim to
+              promote hackers and help them nurture their new ideas and
+              prototypes in various domains. Our motto is also to involve more
+              beginner hackers and support everyone to solve the shared problems
+              of our society to bring a change in a revolutionary way. For
+              season 2, we are focussing on creating more learning opportunities
+              along with building and solving. We will talk about various
+              technologies, create awareness, encourage others, hack to
+              contribute, and participate in many more exciting events &amp;
+              sessions.
+            </p>
+          </div>
+          <div class="virtualBadge">
+            <div class="cornerHeading">
+              <img
+                style="margin-bottom: -1px;"
+                src="~/assets/icons/user.svg"
+                height="13px"
+              />
+              Virtual Badge
+            </div>
+            <div class="info">
+              <input type="file" />
+              <h5>CLEAR</h5>
+            </div>
+            <img class="displayImage" src="~/assets/dummy/2.png" />
+            <img class="displayImage" src="~/assets/dummy/3.png" />
+            <div class="buttons">
+              <button class="cta-button">
+                LANDSCAPE&nbsp;&nbsp;&nbsp;
+                <img
+                  style="margin-bottom: -1px;"
+                  src="~/assets/icons/download.svg"
+                  height="15px"
+                />
+              </button>
+              <button class="cta-button">
+                SQUARE&nbsp;&nbsp;&nbsp;
+                <img
+                  style="margin-bottom: -1px;"
+                  src="~/assets/icons/download.svg"
+                  height="15px"
+                />
+              </button>
+              <button class="cta-button">
+                SHARE ON&nbsp;&nbsp;&nbsp;
+                <img
+                  style="margin-bottom: -1px;"
+                  src="~/assets/icons/twitter.svg"
+                  height="15px"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="wallpapers">
+            <VueSlickCarousel style="max-width: 500px;" v-bind="settings">
+              <div>
+                <img src="~/assets/dummy/1.png" width="500px" />
+                <div class="cornerHeading">
+                  <img src="~/assets/icons/user.svg" height="15px" />
+                  Wallpaper
+                </div>
+              </div>
+              <div>
+                <img src="~/assets/dummy/1.png" width="500px" />
+              </div>
+              <div>
+                <img src="~/assets/dummy/1.png" width="500px" />
+              </div>
+              <div>
+                <img src="~/assets/dummy/1.png" width="500px" />
+              </div>
+            </VueSlickCarousel>
+            <VueSlickCarousel style="max-width: 500px;" v-bind="settings">
+              <div>
+                <img src="~/assets/dummy/1.png" width="500px" />
+                <div class="cornerHeading">
+                  <img src="~/assets/icons/user.svg" height="15px" />
+                  Zoom Background
+                </div>
+              </div>
+              <div>
+                <img src="~/assets/dummy/1.png" width="500px" />
+              </div>
+              <div>
+                <img src="~/assets/dummy/1.png" width="500px" />
+              </div>
+              <div>
+                <img src="~/assets/dummy/1.png" width="500px" />
+              </div>
+            </VueSlickCarousel>
+          </div>
+          <div class="story">
+            <div class="storyWallpaper">
+              <img class="bg" src="~/assets/dummy/4.png" />
+              <button class="cta-button">
+                DOWNLOAD&nbsp;&nbsp;&nbsp;
+                <img
+                  style="margin-bottom: -1px;"
+                  src="~/assets/icons/download.svg"
+                  height="15px"
+                />
+              </button>
+              <div class="cornerHeading">
+                <img src="~/assets/icons/user.svg" height="15px" />
+                Wallpaper
+              </div>
+            </div>
+            <div class="storyWallpaper">
+              <img class="bg" src="~/assets/dummy/4.png" />
+              <button class="cta-button">
+                DOWNLOAD&nbsp;&nbsp;&nbsp;
+                <img
+                  style="margin-bottom: -1px;"
+                  src="~/assets/icons/download.svg"
+                  height="15px"
+                />
+              </button>
+              <button class="cta-button share">
+                SHARE&nbsp;&nbsp;&nbsp;
+                <img
+                  style="margin-bottom: -1px;"
+                  src="~/assets/icons/insta.svg"
+                  height="15px"
+                />
+              </button>
+              <div class="cornerHeading">
+                <img src="~/assets/icons/insta.svg" height="15px" />
+                Story
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Container>
+  </div>
+</template>
+
+<script>
+import HashHeader from "~/components/HashHeader";
+import Container from "~/components/Container";
+import VueSlickCarousel from "vue-slick-carousel";
+import "vue-slick-carousel/dist/vue-slick-carousel.css";
+import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+export default {
+  components: {
+    HashHeader,
+    Container,
+    VueSlickCarousel
+  },
+  data() {
+    return {
+      settings: {
+        edgeFriction: 0.35,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    };
+  }
+};
+</script>
+
+<style lang="scss">
+.slick-prev,
+.slick-next {
+  background: #e85325 !important;
+  border-radius: 1rem;
+}
+
+.slick-prev {
+  left: 40px;
+  top: 270px;
+  z-index: 99;
+}
+
+.slick-next {
+  left: 70px;
+  top: 270px;
+  z-index: 99;
+}
+</style>
+
+<style lang="scss" scoped>
+.content-section {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  font-family: "Segoe UI";
+
+  .contents {
+    .about {
+      padding: 10px;
+      background-color: #feeee5;
+      text-align: center;
+      border-radius: 1rem;
+
+      p {
+        color: rgba(112, 112, 112, 1);
+        font-weight: bold;
+        margin: 2rem 1rem;
+        font-size: 1rem;
+
+        @include respond-below(md) {
+          padding-top: 20px;
+        }
+      }
+
+      img {
+        margin-right: 0.7rem;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .title {
+          font-size: 1.1rem;
+          font-family: "Segoe UI Bold";
+          color: rgba(233, 83, 34, 1);
+        }
+
+        .desc {
+          opacity: 0.6;
+          font-size: 0.95rem;
+          margin-top: 0.5rem;
+        }
+      }
+
+      &:nth-of-type(2) {
+        margin-left: 2rem;
+      }
+
+      &:hover {
+        background-color: #feede3;
+      }
+    }
+
+    @include respond-below(xs) {
+      flex-direction: column;
+      justify-content: center;
+      .cta-button {
+        width: 100%;
+
+        &:nth-of-type(2) {
+          margin-top: 1rem;
+          margin-left: 0rem;
+        }
+      }
+    }
+  }
+
+  .virtualBadge {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding: 3rem 2rem;
+    background-color: #feeee5;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+
+    .cornerHeading {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background: #e85325;
+      color: #fff;
+      font-weight: 600;
+      padding: 10px;
+      border-top-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+    }
+
+    .info {
+      padding: 4rem 0;
+      margin-left: -1rem;
+      min-width: 15rem;
+      position: relative;
+
+      h5 {
+        color: #e85325;
+        font-weight: 600;
+        margin-top: 0.5rem;
+        position: absolute;
+        left: 47%;
+        margin-top: 2.5rem;
+      }
+
+      input {
+        left: 35%;
+        position: absolute;
+        color: transparent;
+
+        &::-webkit-file-upload-button {
+          visibility: hidden;
+        }
+
+        &::before {
+          content: "UPLOAD";
+          background: #e85325;
+          display: inline-block;
+          border-radius: 3px;
+          outline: none;
+          padding: 0.6rem 1.2rem;
+          border-radius: 10px;
+          white-space: nowrap;
+          cursor: pointer;
+          text-shadow: 1px 1px #fff;
+          font-weight: 700;
+          font-size: 10pt;
+        }
+      }
+    }
+
+    .displayImage {
+      height: 200px;
+      margin: 0 2rem;
+    }
+
+    .buttons {
+      text-align: center !important;
+      padding-left: 2rem;
+      padding-top: 2rem;
+    }
+
+    .cta-button {
+      background-color: #e85325;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      min-width: 8.1rem;
+      margin: 0 auto 0.8rem;
+      font-family: "Segoe UI Bold";
+      border-radius: 0.5rem;
+      cursor: pointer;
+      box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
+
+      &:hover {
+        box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
+      }
+    }
+
+    .img {
+      justify-self: center;
+      img {
+        width: 50vw;
+        max-width: 600px;
+      }
+    }
+  }
+
+  .wallpapers {
+    display: flex;
+    margin-left: -1.5rem;
+    margin-bottom: 2rem;
+
+    .cornerHeading {
+      position: absolute;
+      z-index: 99;
+      top: 25px;
+      left: 25px;
+      background: #e85325;
+      color: #fff;
+      font-weight: 600;
+      padding: 8px 10px;
+      border-top-left-radius: 0.4rem;
+      border-bottom-right-radius: 0.4rem;
+
+      img {
+        display: inline-block;
+        margin-bottom: -2px;
+      }
+    }
+
+    .cta-button {
+      background-color: #e85325;
+      color: white;
+      border: none;
+      position: absolute;
+      top: 250px;
+      left: 325px;
+      z-index: 999;
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      min-width: 8.1rem;
+      margin: 0 auto 0.8rem;
+      font-family: "Segoe UI Bold";
+      border-radius: 0.5rem;
+      cursor: pointer;
+      box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
+
+      &:hover {
+        box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
+      }
+    }
+  }
+
+  .story {
+    display: flex;
+    margin-bottom: 2rem;
+
+    .share {
+        top: 310px !important;
+    }
+
+    .cta-button {
+      background-color: #e85325;
+      color: white;
+      border: none;
+      position: absolute;
+      top: 355px;
+      left: 105px;
+      z-index: 999;
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      min-width: 8.5rem;
+      margin: 0 auto 0.8rem;
+      font-family: "Segoe UI Bold";
+      border-radius: 0.5rem;
+      cursor: pointer;
+      box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
+
+      &:hover {
+        box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
+      }
+    }
+
+    .cornerHeading {
+      position: absolute;
+      z-index: 99;
+      top: 0px;
+      left: 1px;
+      background: #e85325;
+      color: #fff;
+      font-weight: 600;
+      padding: 8px 10px;
+      border-top-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+
+      img {
+        display: inline-block;
+        margin-bottom: -2px;
+      }
+    }
+    .storyWallpaper {
+      position: relative;
+      margin-right: 2rem;
+    }
+  }
+}
+</style>
