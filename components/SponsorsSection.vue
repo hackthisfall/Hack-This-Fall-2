@@ -63,6 +63,10 @@ export default {
               image: require("~/assets/Sponsors/agoric.svg"),
             },
             {
+              url: "https://www.inspiritai.com/",
+              image: require("~/assets/Sponsors/InspiritAI.png"),
+            },
+            {
               url: "https://wrx.gg/htf",
               image: require("~/assets/Sponsors/wazirx.png"),
             },
@@ -100,10 +104,13 @@ export default {
               url: "https://sawolabs.com/hackathon/redeemnow/?hackathon_name=HackThisFall2.0",
               image: require("~/assets/Sponsors/sawolabs.png"),
             },
-
             {
               url: "https://hackclub.com/",
               image: require("~/assets/Sponsors/hackclub.png"),
+            },
+            {
+              url: "https://www.quicknode.com/",
+              image: require("~/assets/Sponsors/quicknode.png"),
             },
           ],
         },
