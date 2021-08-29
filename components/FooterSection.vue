@@ -71,6 +71,8 @@
             >
               <img src="~/assets/Socials/instagram.svg" alt="instagram" />
             </a>
+          </div>
+          <div class="socialLinks">
             <a
               class="smooth-transition"
               rel="noopener noreferrer"
@@ -113,8 +115,8 @@ import CopyLink from "~/components/CopyLink";
 export default {
   components: {
     Container,
-    CopyLink,
-  },
+    CopyLink
+  }
 };
 </script>
 
@@ -217,14 +219,12 @@ export default {
     }
 
     .socialLinks {
-      padding: 20px 5px 10px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      padding: 20px 0 10px;
+      margin-left: 5px;
 
       a {
         position: relative;
-        padding: 5px 10px;
+        padding: 10px;
         margin: 5px;
         background: #231f20;
         border-radius: 49%;
