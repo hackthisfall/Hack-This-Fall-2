@@ -18,6 +18,43 @@
               sessions.
             </p>
           </div>
+          <div class="challenges">
+            <HashHeader title="DAILY &amp; WEEKDAY CHALLENGES" />
+            <div class="container-fluid">
+              <div
+                class="
+            row
+            justify-content-center
+            text-center text-lg-left
+          "
+              >
+                <div v-for="(challenge, index) in challenges" :key="index" class="col-10 col-md-5 col-lg-3 mx-3 my-3">
+                  <div
+                    class="
+                panel
+                shadow-1
+                row
+                justify-content-center
+                py-3
+                smooth-transition-1
+              "
+                  >
+                    <div class="row">
+                      <div
+                        class="col-12 font-weight-bold my-2 font-size-18"
+                        style="color: #e38333"
+                      >
+                        {{challenge.heading}}
+                      </div>
+                      <div class="col-12 mb-2">
+                        {{challenge.content}}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="virtualBadge">
             <div class="cornerHeading">
               <img
@@ -62,20 +99,20 @@
           </div>
           <div class="wallpapers">
             <VueSlickCarousel style="max-width: 500px;" v-bind="settings">
-              <div>
+              <div style="max-width: 80vw;">
                 <img src="~/assets/dummy/1.png" width="500px" />
                 <div class="cornerHeading">
                   <img src="~/assets/icons/user.svg" height="15px" />
                   Wallpaper
                 </div>
               </div>
-              <div>
+              <div style="max-width: 80vw;">
                 <img src="~/assets/dummy/1.png" width="500px" />
               </div>
-              <div>
+              <div style="max-width: 80vw;">
                 <img src="~/assets/dummy/1.png" width="500px" />
               </div>
-              <div>
+              <div style="max-width: 80vw;">
                 <img src="~/assets/dummy/1.png" width="500px" />
               </div>
             </VueSlickCarousel>
@@ -164,12 +201,45 @@ export default {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1
-      }
+      },
+      challenges: [
+        {
+          heading: "DIVERSITY & INCLUSION",
+          content:
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
+        },
+        {
+          heading: "DIVERSITY & INCLUSION",
+          content:
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
+        },
+        {
+          heading: "DIVERSITY & INCLUSION",
+          content:
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
+        },
+        {
+          heading: "DIVERSITY & INCLUSION",
+          content:
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
+        },
+        {
+          heading: "DIVERSITY & INCLUSION",
+          content:
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
+        },
+        {
+          heading: "DIVERSITY & INCLUSION",
+          content:
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
+        }
+      ]
     };
   }
 };
 </script>
 
+<style scoped src="~/assets/styles/bootstrap.css"></style>
 <style lang="scss">
 .slick-prev,
 .slick-next {
@@ -197,12 +267,47 @@ export default {
   padding: 2rem 0;
   font-family: "Segoe UI";
 
+  .shadow-1 {
+    box-shadow: 0 0 10px 2px rgba(255, 107, 0, 0.07) !important;
+    min-width: 100%;
+    max-width: 500px;
+    border-radius: 16px;
+  }
+
+  .panel {
+    padding: 0 30px;
+    font-family: "Poppins";
+  }
+
+  .panel:hover {
+    box-shadow: 0px 15px 30px 0px rgba(223, 117, 64, 0.15) !important;
+  }
+
+  .smooth-transition {
+    -webkit-transition: all 1.1s ease;
+    -moz-transition: all 1.1s ease;
+    -o-transition: all 1.1s ease;
+    transition: all 1.1s ease;
+  }
+
+  .smooth-transition-1 {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+  .font-size-18 {
+    font-size: 18px;
+  }
+
   .contents {
     .about {
       padding: 10px;
       background-color: #feeee5;
       text-align: center;
       border-radius: 1rem;
+      margin-bottom: 2rem;
 
       p {
         color: rgba(112, 112, 112, 1);
@@ -263,7 +368,8 @@ export default {
   .virtualBadge {
     margin-top: 4rem;
     margin-bottom: 2rem;
-    padding: 3rem 2rem;
+    padding: 3rem 0;
+    flex-wrap: wrap;
     background-color: #feeee5;
     border-radius: 1rem;
     position: relative;
@@ -284,7 +390,7 @@ export default {
     .info {
       padding: 4rem 0;
       margin-left: -1rem;
-      min-width: 15rem;
+      min-width: 13rem;
       position: relative;
 
       h5 {
@@ -363,8 +469,9 @@ export default {
 
   .wallpapers {
     display: flex;
+    flex-wrap: wrap;
     margin-left: -1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     .cornerHeading {
       position: absolute;
@@ -410,10 +517,15 @@ export default {
 
   .story {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 2rem;
 
     .share {
-        top: 310px !important;
+      top: 305px !important;
+
+      @include respond-below(xs) {
+        top: 290px !important;
+      }
     }
 
     .cta-button {
@@ -421,13 +533,13 @@ export default {
       color: white;
       border: none;
       position: absolute;
-      top: 355px;
-      left: 105px;
+      top: 350px;
+      left: 85px;
       z-index: 999;
       padding: 0.5rem 1rem;
       display: flex;
       align-items: center;
-      min-width: 8.5rem;
+      width: unset;
       margin: 0 auto 0.8rem;
       font-family: "Segoe UI Bold";
       border-radius: 0.5rem;
@@ -459,6 +571,7 @@ export default {
     .storyWallpaper {
       position: relative;
       margin-right: 2rem;
+      margin-top: 1rem;
     }
   }
 }
