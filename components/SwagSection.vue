@@ -63,10 +63,12 @@
             <div class="leftColumn">
               <!-- add canvas or badge here -->
               <div class="dummy">
-                <canvas id="myCanvas" width="270" height="270" />
+                <canvas id="myCanvas" width="1620" height="1620" />
                 <!-- <img src="~/assets/HTF2/badge.png" width="270px" /> -->
               </div>
-              <button class="cta-button">Download</button>
+              <button @click="downloadImage" class="cta-button">
+                Download
+              </button>
             </div>
             <div class="rightColumn">
               <h1>Hack This Fall Badge</h1>
@@ -230,7 +232,7 @@ export default {
     const ctx = canvas.getContext("2d");
     var img = new Image();
     img.onload = function () {
-      ctx.drawImage(img, 0, 0, 270, 270);
+      ctx.drawImage(img, 0, 0, 1620, 1620);
     };
     img.src = "/badge.png";
 
@@ -244,6 +246,7 @@ export default {
           var myImage = new Image(); // Creates image object
           myImage.src = e.target.result; // Assigns converted image to image object
           myImage.onload = function (ev) {
+            ctx.clearRect(0, 0, 1620, 1620);
             const inputWidth = myImage.naturalWidth;
             const inputHeight = myImage.naturalHeight;
             const smallerSide = Math.min(inputWidth, inputHeight);
@@ -264,15 +267,24 @@ export default {
               smallerSide,
               0,
               0,
-              270,
-              270
+              1620,
+              1620
             ); // Draws the image on canvas
-            ctx.drawImage(img, 0, 0, 270, 270);
+            ctx.drawImage(img, 0, 0, 1620, 1620);
             let imgData = canvas.toDataURL("image/jpeg", 1); // Assigns image base64 string in jpeg format to a variable
           };
         };
       }
     });
+  },
+  methods: {
+    downloadImage() {
+      var image = document.getElementById("myCanvas").toDataURL("image/png");
+      var link = document.createElement("a");
+      link.download = "my-image.png";
+      link.href = image;
+      link.click();
+    },
   },
 };
 </script>
@@ -446,6 +458,11 @@ export default {
         width: 270px;
         margin: 0.2rem auto 1.3rem;
         background: #fff;
+
+        canvas {
+          height: 270px;
+          width: 270px;
+        }
       }
 
       button {
