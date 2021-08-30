@@ -84,42 +84,48 @@
             </div>
           </div>
           <div class="wallpapers">
-            <VueSlickCarousel style="max-width: 500px;" v-bind="settings">
-              <div style="max-width: 80vw;">
-                <img src="~/assets/dummy/1.png" width="500px" />
-                <div class="cornerHeading">
-                  <img src="~/assets/icons/user.svg" height="15px" />
-                  Wallpaper
+            <div class="carouselWrapper">
+              <div class="cornerHeading">
+                <img src="~/assets/icons/user.svg" height="15px" />
+                Wallpaper
+              </div>
+              <button class="cta-button">Download</button>
+              <VueSlickCarousel style="max-width: 500px;" v-bind="settings">
+                <div style="max-width: 80vw;">
+                  <img src="~/assets/dummy/1.png" width="500px" />
                 </div>
-              </div>
-              <div style="max-width: 80vw;">
-                <img src="~/assets/dummy/1.png" width="500px" />
-              </div>
-              <div style="max-width: 80vw;">
-                <img src="~/assets/dummy/1.png" width="500px" />
-              </div>
-              <div style="max-width: 80vw;">
-                <img src="~/assets/dummy/1.png" width="500px" />
-              </div>
-            </VueSlickCarousel>
-            <VueSlickCarousel style="max-width: 500px;" v-bind="settings">
-              <div>
-                <img src="~/assets/dummy/1.png" width="500px" />
-                <div class="cornerHeading">
-                  <img src="~/assets/icons/user.svg" height="15px" />
-                  Zoom Background
+                <div style="max-width: 80vw;">
+                  <img src="~/assets/dummy/1.png" width="500px" />
                 </div>
+                <div style="max-width: 80vw;">
+                  <img src="~/assets/dummy/1.png" width="500px" />
+                </div>
+                <div style="max-width: 80vw;">
+                  <img src="~/assets/dummy/1.png" width="500px" />
+                </div>
+              </VueSlickCarousel>
+            </div>
+            <div class="carouselWrapper">
+              <div class="cornerHeading">
+                <img src="~/assets/icons/user.svg" height="15px" />
+                Zoom Background
               </div>
-              <div>
-                <img src="~/assets/dummy/1.png" width="500px" />
-              </div>
-              <div>
-                <img src="~/assets/dummy/1.png" width="500px" />
-              </div>
-              <div>
-                <img src="~/assets/dummy/1.png" width="500px" />
-              </div>
-            </VueSlickCarousel>
+              <button class="cta-button">Download</button>
+              <VueSlickCarousel style="max-width: 500px;" v-bind="settings">
+                <div>
+                  <img src="~/assets/dummy/1.png" width="500px" />
+                </div>
+                <div>
+                  <img src="~/assets/dummy/1.png" width="500px" />
+                </div>
+                <div>
+                  <img src="~/assets/dummy/1.png" width="500px" />
+                </div>
+                <div>
+                  <img src="~/assets/dummy/1.png" width="500px" />
+                </div>
+              </VueSlickCarousel>
+            </div>
           </div>
           <div class="story">
             <div class="storyWallpaper">
@@ -474,6 +480,32 @@ export default {
     margin-left: -1.5rem;
     margin-bottom: 1rem;
 
+    .carouselWrapper {
+      position: relative;
+
+      .cta-button {
+        background-color: #e85325;
+        color: white;
+        border: none;
+        position: absolute;
+        top: 250px;
+        left: 355px;
+        z-index: 999;
+        padding: 0.5rem 1rem;
+        display: flex;
+        align-items: center;
+        margin: 0 auto 1rem;
+        font-family: "Segoe UI Bold";
+        border-radius: 0.5rem;
+        cursor: pointer;
+        box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
+
+        &:hover {
+          box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
+        }
+      }
+    }
+
     .cornerHeading {
       position: absolute;
       z-index: 99;
@@ -489,29 +521,6 @@ export default {
       img {
         display: inline-block;
         margin-bottom: -2px;
-      }
-    }
-
-    .cta-button {
-      background-color: #e85325;
-      color: white;
-      border: none;
-      position: absolute;
-      top: 250px;
-      left: 325px;
-      z-index: 999;
-      padding: 0.5rem 1rem;
-      display: flex;
-      align-items: center;
-      min-width: 8.1rem;
-      margin: 0 auto 0.8rem;
-      font-family: "Segoe UI Bold";
-      border-radius: 0.5rem;
-      cursor: pointer;
-      box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
-
-      &:hover {
-        box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
       }
     }
   }
