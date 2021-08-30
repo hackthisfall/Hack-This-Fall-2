@@ -20,13 +20,7 @@
           </div>
           <div class="challenges">
             <HashHeader title="DAILY &amp; WEEKDAY CHALLENGES" />
-            <div
-              class="
-            row
-            justify-content-center
-            text-center text-lg-left
-          "
-            >
+            <div class="row justify-content-center text-center text-lg-left">
               <div
                 v-for="(challenge, index) in challenges"
                 :key="index"
@@ -34,13 +28,13 @@
               >
                 <div
                   class="
-                panel
-                shadow-1
-                row
-                justify-content-center
-                py-3
-                smooth-transition-1
-              "
+                    panel
+                    shadow-1
+                    row
+                    justify-content-center
+                    py-3
+                    smooth-transition-1
+                  "
                 >
                   <div class="row">
                     <div
@@ -60,7 +54,7 @@
           <div class="virtualBadge">
             <div class="cornerHeading">
               <img
-                style="margin-bottom: -1px;"
+                style="margin-bottom: -1px"
                 src="~/assets/icons/user.svg"
                 height="13px"
               />
@@ -68,7 +62,10 @@
             </div>
             <div class="leftColumn">
               <!-- add canvas or badge here -->
-              <div class="dummy" />
+              <div class="dummy">
+                <canvas id="myCanvas" width="270" height="270" />
+                <!-- <img src="~/assets/HTF2/badge.png" width="270px" /> -->
+              </div>
               <button class="cta-button">Download</button>
             </div>
             <div class="rightColumn">
@@ -80,7 +77,7 @@
                 #DevFestIndia on different social platforms.
               </p>
               <h4>Select a Image</h4>
-              <input type="file" />
+              <input type="file" id="imageInput" accept="image/*" />
             </div>
           </div>
           <div class="wallpapers">
@@ -90,17 +87,17 @@
                 Wallpaper
               </div>
               <button class="cta-button">Download</button>
-              <VueSlickCarousel style="max-width: 500px;" v-bind="settings">
-                <div style="max-width: 80vw;">
+              <VueSlickCarousel style="max-width: 500px" v-bind="settings">
+                <div style="max-width: 80vw">
                   <img src="~/assets/dummy/1.png" width="500px" />
                 </div>
-                <div style="max-width: 80vw;">
+                <div style="max-width: 80vw">
                   <img src="~/assets/dummy/1.png" width="500px" />
                 </div>
-                <div style="max-width: 80vw;">
+                <div style="max-width: 80vw">
                   <img src="~/assets/dummy/1.png" width="500px" />
                 </div>
-                <div style="max-width: 80vw;">
+                <div style="max-width: 80vw">
                   <img src="~/assets/dummy/1.png" width="500px" />
                 </div>
               </VueSlickCarousel>
@@ -111,7 +108,7 @@
                 Zoom Background
               </div>
               <button class="cta-button">Download</button>
-              <VueSlickCarousel style="max-width: 500px;" v-bind="settings">
+              <VueSlickCarousel style="max-width: 500px" v-bind="settings">
                 <div>
                   <img src="~/assets/dummy/1.png" width="500px" />
                 </div>
@@ -133,7 +130,7 @@
               <button class="cta-button">
                 DOWNLOAD&nbsp;&nbsp;&nbsp;
                 <img
-                  style="margin-bottom: -1px;"
+                  style="margin-bottom: -1px"
                   src="~/assets/icons/download.svg"
                   height="15px"
                 />
@@ -148,7 +145,7 @@
               <button class="cta-button">
                 DOWNLOAD&nbsp;&nbsp;&nbsp;
                 <img
-                  style="margin-bottom: -1px;"
+                  style="margin-bottom: -1px"
                   src="~/assets/icons/download.svg"
                   height="15px"
                 />
@@ -156,7 +153,7 @@
               <button class="cta-button share">
                 SHARE&nbsp;&nbsp;&nbsp;
                 <img
-                  style="margin-bottom: -1px;"
+                  style="margin-bottom: -1px"
                   src="~/assets/icons/insta.svg"
                   height="15px"
                 />
@@ -183,7 +180,7 @@ export default {
   components: {
     HashHeader,
     Container,
-    VueSlickCarousel
+    VueSlickCarousel,
   },
   data() {
     return {
@@ -192,42 +189,91 @@ export default {
         infinite: false,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
       },
       challenges: [
         {
           heading: "DIVERSITY & INCLUSION",
           content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups.",
         },
         {
           heading: "DIVERSITY & INCLUSION",
           content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups.",
         },
         {
           heading: "DIVERSITY & INCLUSION",
           content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups.",
         },
         {
           heading: "DIVERSITY & INCLUSION",
           content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups.",
         },
         {
           heading: "DIVERSITY & INCLUSION",
           content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups.",
         },
         {
           heading: "DIVERSITY & INCLUSION",
           content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
-        }
-      ]
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups.",
+        },
+      ],
     };
-  }
+  },
+  mounted() {
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    var img = new Image();
+    img.onload = function () {
+      ctx.drawImage(img, 0, 0, 270, 270);
+    };
+    img.src = "/badge.png";
+
+    let imgInput = document.getElementById("imageInput");
+    imgInput.addEventListener("change", function (e) {
+      if (e.target.files) {
+        let imageFile = e.target.files[0]; //here we get the image file
+        var reader = new FileReader();
+        reader.readAsDataURL(imageFile);
+        reader.onloadend = function (e) {
+          var myImage = new Image(); // Creates image object
+          myImage.src = e.target.result; // Assigns converted image to image object
+          myImage.onload = function (ev) {
+            const inputWidth = myImage.naturalWidth;
+            const inputHeight = myImage.naturalHeight;
+            const smallerSide = Math.min(inputWidth, inputHeight);
+            let startX = 0;
+            let startY = 0;
+
+            if (inputWidth < inputHeight) {
+              startY = (inputHeight - inputWidth) / 2;
+            } else if (inputWidth > inputHeight) {
+              startX = (inputWidth - inputHeight) / 2;
+            }
+
+            ctx.drawImage(
+              myImage,
+              startX,
+              startY,
+              smallerSide,
+              smallerSide,
+              0,
+              0,
+              270,
+              270
+            ); // Draws the image on canvas
+            ctx.drawImage(img, 0, 0, 270, 270);
+            let imgData = canvas.toDataURL("image/jpeg", 1); // Assigns image base64 string in jpeg format to a variable
+          };
+        };
+      }
+    });
+  },
 };
 </script>
 
