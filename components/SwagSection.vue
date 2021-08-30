@@ -20,17 +20,20 @@
           </div>
           <div class="challenges">
             <HashHeader title="DAILY &amp; WEEKDAY CHALLENGES" />
-            <div class="container-fluid">
-              <div
-                class="
+            <div
+              class="
             row
             justify-content-center
             text-center text-lg-left
           "
+            >
+              <div
+                v-for="(challenge, index) in challenges"
+                :key="index"
+                class="col-10 col-md-5 col-lg-auto mx-3 my-3"
               >
-                <div v-for="(challenge, index) in challenges" :key="index" class="col-10 col-md-5 col-lg-3 mx-3 my-3">
-                  <div
-                    class="
+                <div
+                  class="
                 panel
                 shadow-1
                 row
@@ -38,17 +41,16 @@
                 py-3
                 smooth-transition-1
               "
-                  >
-                    <div class="row">
-                      <div
-                        class="col-12 font-weight-bold my-2 font-size-18"
-                        style="color: #e38333"
-                      >
-                        {{challenge.heading}}
-                      </div>
-                      <div class="col-12 mb-2">
-                        {{challenge.content}}
-                      </div>
+                >
+                  <div class="row">
+                    <div
+                      class="col-12 font-weight-bold my-2 font-size-18"
+                      style="color: #e38333"
+                    >
+                      {{ challenge.heading }}
+                    </div>
+                    <div class="col-12 mb-2">
+                      {{ challenge.content }}
                     </div>
                   </div>
                 </div>
@@ -64,37 +66,21 @@
               />
               Virtual Badge
             </div>
-            <div class="info">
-              <input type="file" />
-              <h5>CLEAR</h5>
+            <div class="leftColumn">
+              <!-- add canvas or badge here -->
+              <div class="dummy" />
+              <button class="cta-button">Download</button>
             </div>
-            <img class="displayImage" src="~/assets/dummy/2.png" />
-            <img class="displayImage" src="~/assets/dummy/3.png" />
-            <div class="buttons">
-              <button class="cta-button">
-                LANDSCAPE&nbsp;&nbsp;&nbsp;
-                <img
-                  style="margin-bottom: -1px;"
-                  src="~/assets/icons/download.svg"
-                  height="15px"
-                />
-              </button>
-              <button class="cta-button">
-                SQUARE&nbsp;&nbsp;&nbsp;
-                <img
-                  style="margin-bottom: -1px;"
-                  src="~/assets/icons/download.svg"
-                  height="15px"
-                />
-              </button>
-              <button class="cta-button">
-                SHARE ON&nbsp;&nbsp;&nbsp;
-                <img
-                  style="margin-bottom: -1px;"
-                  src="~/assets/icons/twitter.svg"
-                  height="15px"
-                />
-              </button>
+            <div class="rightColumn">
+              <h1>Hack This Fall Badge</h1>
+              <p>
+                Now that you are here, how about personalising your DevFest 2021
+                profile? Upload an image and generate a personalised badge with
+                the DevFest 2021 frame. Also share your image using
+                #DevFestIndia on different social platforms.
+              </p>
+              <h4>Select a Image</h4>
+              <input type="file" />
             </div>
           </div>
           <div class="wallpapers">
@@ -368,12 +354,25 @@ export default {
   .virtualBadge {
     margin-top: 4rem;
     margin-bottom: 2rem;
-    padding: 3rem 0;
-    flex-wrap: wrap;
+    padding: 4rem 2rem 3rem;
     background-color: #feeee5;
     border-radius: 1rem;
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include respond-below(md) {
+      grid-template-columns: repeat(1, 1fr);
+
+      .leftColumn {
+        margin-right: unset;
+        margin-bottom: 2rem;
+
+        button {
+          margin-top: 2rem;
+        }
+      }
+    }
 
     .cornerHeading {
       position: absolute;
@@ -387,24 +386,45 @@ export default {
       border-bottom-right-radius: 1rem;
     }
 
-    .info {
-      padding: 4rem 0;
-      margin-left: -1rem;
-      min-width: 13rem;
-      position: relative;
+    .leftColumn {
+      margin-right: 1rem;
 
-      h5 {
-        color: #e85325;
-        font-weight: 600;
-        margin-top: 0.5rem;
-        position: absolute;
-        left: 47%;
-        margin-top: 2.5rem;
+      .dummy {
+        height: 270px;
+        width: 270px;
+        margin: 0.2rem auto 1.3rem;
+        background: #fff;
+      }
+
+      button {
+        margin-bottom: 0rem;
+      }
+    }
+
+    .rightColumn {
+      margin-left: 1rem;
+      h1 {
+        font-size: 2.1rem;
+        font-family: "Segoe UI Bold";
+        color: rgba(233, 83, 34, 1);
+      }
+
+      p {
+        opacity: 0.6;
+        font-size: 1.4rem;
+        margin: 2rem 0;
+        justify-content: center;
+      }
+
+      h4 {
+        opacity: 0.6;
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+        font-weight: bold;
+        color: rgba(233, 83, 34, 1);
       }
 
       input {
-        left: 35%;
-        position: absolute;
         color: transparent;
 
         &::-webkit-file-upload-button {
@@ -412,57 +432,38 @@ export default {
         }
 
         &::before {
-          content: "UPLOAD";
+          content: "Upload Image";
           background: #e85325;
           display: inline-block;
-          border-radius: 3px;
+          border-radius: 2rem;
           outline: none;
-          padding: 0.6rem 1.2rem;
-          border-radius: 10px;
+          padding: 0.6rem 1.2rem 0.8rem;
           white-space: nowrap;
           cursor: pointer;
-          text-shadow: 1px 1px #fff;
+          color: #fff;
           font-weight: 700;
-          font-size: 10pt;
+          font-size: 12pt;
         }
       }
-    }
-
-    .displayImage {
-      height: 200px;
-      margin: 0 2rem;
-    }
-
-    .buttons {
-      text-align: center !important;
-      padding-left: 2rem;
-      padding-top: 2rem;
     }
 
     .cta-button {
       background-color: #e85325;
       color: white;
       border: none;
-      padding: 0.5rem 1rem;
+      padding: 0.6rem 1rem 0.8rem;
+      font-size: 1.1rem;
       display: flex;
+      width: unset !important;
       align-items: center;
-      min-width: 8.1rem;
       margin: 0 auto 0.8rem;
       font-family: "Segoe UI Bold";
-      border-radius: 0.5rem;
+      border-radius: 1.5rem;
       cursor: pointer;
       box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
 
       &:hover {
         box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
-      }
-    }
-
-    .img {
-      justify-self: center;
-      img {
-        width: 50vw;
-        max-width: 600px;
       }
     }
   }
