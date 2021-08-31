@@ -81,27 +81,85 @@
               <!-- add canvas or badge here -->
               <div class="dummy">
                 <canvas id="myCanvas" width="1620" height="1620" />
-                <!-- <img src="~/assets/HTF2/badge.png" width="270px" /> -->
               </div>
-              <button @click="downloadImage" class="cta-button">
-                Download
-              </button>
-              <a
-                v-if="!addedImage"
-                href="https://twitter.com/intent/tweet?text=custom share text"
-                ><button class="cta-button">Twitter</button></a
-              >
             </div>
             <div class="rightColumn">
               <h1>Hack This Fall Badge</h1>
-              <p>
-                Now that you are here, how about personalising your DevFest 2021
-                profile? Upload an image and generate a personalised badge with
-                the DevFest 2021 frame. Also share your image using
-                #DevFestIndia on different social platforms.
-              </p>
-              <h4>Select a Image</h4>
-              <input type="file" id="imageInput" accept="image/*" />
+              <div class="rightContent">
+                Here is your place to flex and show off your presence at Hack
+                This Fall.
+                <br />
+                <div style="margin-top: 1rem">
+                  Upload your image below to get a personalized Hack This Fall
+                  Badge.
+                </div>
+                <div style="margin-top: 1rem">
+                  Download it and Share it on socials using
+                  <a
+                    style="color: rgba(233, 83, 34, 1)"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://twitter.com/hashtag/hackthisfall"
+                    >#HackThisFall</a
+                  >
+                  and tag
+                  <a
+                    style="color: rgba(233, 83, 34, 1)"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://twitter.com/hackthisfall"
+                  >
+                    @hackthisfall</a
+                  >
+                </div>
+                <div
+                  style="
+                    color: rgba(233, 83, 34, 1);
+                    font-style: italic;
+                    font-size: 0.8rem;
+                    margin-top: 1rem;
+                  "
+                >
+                  * We respect your privacy and are not storing your pictures on
+                  our servers.
+                </div>
+              </div>
+              <div class="cta-buttons">
+                <input
+                  type="file"
+                  id="imageInput"
+                  accept="image/*"
+                  class="cta-button"
+                  style="display: none"
+                />
+                <button @click="uploadImage" class="cta-button">
+                  <img
+                    src="https://img.icons8.com/material-rounded/24/ffffff/upload--v1.png"
+                  />
+                  UPLOAD IMAGE
+                </button>
+                <button
+                  v-show="addedImage"
+                  @click="downloadImage"
+                  class="cta-button"
+                >
+                  <img
+                    src="https://img.icons8.com/material-rounded/24/ffffff/download--v1.png"
+                  />
+                  DOWNLOAD
+                </button>
+                <a
+                  v-show="addedImage"
+                  href="https://twitter.com/intent/tweet?text=Hey folks!👋%0A%0AExcited to share that I'm attending @hackthisfall 2.0🥳 %26 absolutely can't wait to learn, build %26 share with the community!🚀%0A%0AJoin me %26 register now: hackthisfall.devpost.com%0AGet a personal badge for yourself: hackthisfall.tech/swag%0A%0A%23HackThisFall %23InnovateForGood"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-button"
+                >
+                  <img
+                    src="https://img.icons8.com/material-rounded/24/ffffff/share.png"
+                  />SHARE
+                </a>
+              </div>
             </div>
           </div>
           <div class="wallpapers">
@@ -204,7 +262,7 @@ export default {
   components: {
     HashHeader,
     Container,
-    VueSlickCarousel
+    VueSlickCarousel,
   },
   data() {
     return {
@@ -213,7 +271,7 @@ export default {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
       },
       addedImage: false,
       challenges: [
@@ -292,21 +350,21 @@ export default {
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");
     var img = new Image();
-    img.onload = function() {
+    img.onload = function () {
       ctx.drawImage(img, 0, 0, 1620, 1620);
     };
     img.src = "/badge.png";
 
     let imgInput = document.getElementById("imageInput");
-    imgInput.addEventListener("change", function(e) {
+    imgInput.addEventListener("change", (e) => {
       if (e.target.files) {
         let imageFile = e.target.files[0];
         var reader = new FileReader();
         reader.readAsDataURL(imageFile);
-        reader.onloadend = function(e) {
+        reader.onloadend = (e) => {
           var myImage = new Image();
           myImage.src = e.target.result;
-          myImage.onload = function(ev) {
+          myImage.onload = (ev) => {
             ctx.clearRect(0, 0, 1620, 1620);
             const inputWidth = myImage.naturalWidth;
             const inputHeight = myImage.naturalHeight;
@@ -332,21 +390,27 @@ export default {
               1620
             );
             ctx.drawImage(img, 0, 0, 1620, 1620);
-            this.addedImage = true;
+            this.toggleImageAdded();
           };
         };
       }
     });
   },
   methods: {
+    uploadImage() {
+      document.getElementById("imageInput").click();
+    },
     downloadImage() {
       var image = document.getElementById("myCanvas").toDataURL("image/png");
       var link = document.createElement("a");
       link.download = "my-image.png";
       link.href = image;
       link.click();
-    }
-  }
+    },
+    toggleImageAdded() {
+      this.addedImage = true;
+    },
+  },
 };
 </script>
 
@@ -519,7 +583,7 @@ export default {
   .virtualBadge {
     margin-top: 1rem;
     margin-bottom: 2rem;
-    padding: 4rem 2rem 3rem;
+    padding: 4rem 4rem 3rem 0rem;
     background-color: #feeee5;
     border-radius: 1rem;
     position: relative;
@@ -540,15 +604,15 @@ export default {
     }
 
     @include respond-below(xs) {
-      padding: 4rem 2rem 3rem;
+      padding: 4rem 2rem 3rem 2rem;
     }
 
     @media screen and (max-width: 375px) {
-      padding: 4rem 0.5rem 3rem;
+      padding: 4rem 0.5rem 3rem 0.5rem;
     }
 
     @media screen and (max-width: 360px) {
-      padding: 4rem 0 3rem;
+      padding: 4rem 0 3rem 0rem;
     }
 
     .cornerHeading {
@@ -564,77 +628,30 @@ export default {
     }
 
     .leftColumn {
-      margin-right: 1rem;
-
-      @include respond-below(xs) {
-        margin-right: unset;
-      }
-
       .dummy {
-        height: 270px;
-        width: 270px;
+        height: 400px;
+        width: 400px;
         margin: 0.2rem auto 1.3rem;
         background: #fff;
 
         canvas {
-          height: 270px;
-          width: 270px;
+          height: 400px;
+          width: 400px;
+        }
+
+        @include respond-below(xs) {
+          height: 300px;
+          width: 300px;
+
+          canvas {
+            height: 300px;
+            width: 300px;
+          }
         }
       }
 
       button {
         margin-bottom: 0rem;
-      }
-    }
-
-    .rightColumn {
-      margin-left: 1rem;
-
-      @include respond-below(xs) {
-        margin-left: unset;
-      }
-
-      h1 {
-        font-size: 2.1rem;
-        font-family: "Segoe UI Bold";
-        color: rgba(233, 83, 34, 1);
-      }
-
-      p {
-        opacity: 0.6;
-        font-size: 1.4rem;
-        margin: 2rem 0;
-        justify-content: center;
-      }
-
-      h4 {
-        opacity: 0.6;
-        font-size: 1.2rem;
-        margin-bottom: 1.2rem;
-        font-weight: bold;
-        color: rgba(233, 83, 34, 1);
-      }
-
-      input {
-        color: transparent;
-
-        &::-webkit-file-upload-button {
-          visibility: hidden;
-        }
-
-        &::before {
-          content: "Upload Image";
-          background: #e85325;
-          display: inline-block;
-          border-radius: 2rem;
-          outline: none;
-          padding: 0.6rem 1.2rem 0.8rem;
-          white-space: nowrap;
-          cursor: pointer;
-          color: #fff;
-          font-weight: 700;
-          font-size: 12pt;
-        }
       }
     }
 
@@ -655,6 +672,84 @@ export default {
 
       &:hover {
         box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
+      }
+    }
+
+    .rightColumn {
+      margin-left: 1rem;
+      @include respond-below(xs) {
+        margin-left: unset;
+      }
+
+      h1 {
+        font-size: 2.1rem;
+        font-family: "Segoe UI Bold";
+        color: rgba(233, 83, 34, 1);
+      }
+
+      .rightContent {
+        opacity: 0.6;
+        font-size: 1.4rem;
+        margin: 2rem 0;
+        justify-content: center;
+      }
+
+      h4 {
+        opacity: 0.6;
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+        font-weight: bold;
+        color: rgba(233, 83, 34, 1);
+      }
+
+      .cta-buttons {
+        display: flex;
+        margin-top: 2rem;
+        justify-content: flex-start;
+
+        a {
+          text-decoration: none;
+        }
+
+        input {
+          display: none;
+        }
+
+        .cta-button {
+          border: none;
+          display: flex;
+          align-items: center;
+          border-radius: 2rem;
+          outline: none;
+          padding: 0.6rem 1.2rem 0.8rem;
+          white-space: nowrap;
+          cursor: pointer;
+          color: #fff;
+          font-weight: 700;
+          font-size: 12pt;
+          background-color: #e85325;
+          margin-left: 0;
+          box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
+
+          &:hover {
+            box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
+          }
+
+          img {
+            margin-right: 0.5rem;
+          }
+        }
+
+        @include respond-below(sm) {
+          flex-direction: column;
+
+          .cta-button {
+            margin: auto;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 0.5rem;
+          }
+        }
       }
     }
   }
