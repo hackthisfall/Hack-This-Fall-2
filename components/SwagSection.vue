@@ -69,6 +69,11 @@
               <button @click="downloadImage" class="cta-button">
                 Download
               </button>
+              <a
+                v-if="!addedImage"
+                href="https://twitter.com/intent/tweet?text=custom share text"
+                ><button class="cta-button">Twitter</button></a
+              >
             </div>
             <div class="rightColumn">
               <h1>Hack This Fall Badge</h1>
@@ -188,11 +193,12 @@ export default {
     return {
       settings: {
         edgeFriction: 0.35,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
       },
+      addedImage: false,
       challenges: [
         {
           heading: "DIVERSITY & INCLUSION",
@@ -239,12 +245,12 @@ export default {
     let imgInput = document.getElementById("imageInput");
     imgInput.addEventListener("change", function (e) {
       if (e.target.files) {
-        let imageFile = e.target.files[0]; //here we get the image file
+        let imageFile = e.target.files[0];
         var reader = new FileReader();
         reader.readAsDataURL(imageFile);
         reader.onloadend = function (e) {
-          var myImage = new Image(); // Creates image object
-          myImage.src = e.target.result; // Assigns converted image to image object
+          var myImage = new Image();
+          myImage.src = e.target.result;
           myImage.onload = function (ev) {
             ctx.clearRect(0, 0, 1620, 1620);
             const inputWidth = myImage.naturalWidth;
@@ -269,9 +275,9 @@ export default {
               0,
               1620,
               1620
-            ); // Draws the image on canvas
+            );
             ctx.drawImage(img, 0, 0, 1620, 1620);
-            let imgData = canvas.toDataURL("image/jpeg", 1); // Assigns image base64 string in jpeg format to a variable
+            this.addedImage = true;
           };
         };
       }
