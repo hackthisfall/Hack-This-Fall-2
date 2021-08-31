@@ -94,6 +94,15 @@ export default {
           ],
         },
         {
+          type: "DIAMOND SPONSOR",
+          logos: [
+            {
+              url: "https://filebase.com/",
+              image: require("~/assets/Sponsors/filebase.svg"),
+            },
+          ],
+        },
+        {
           type: "SILVER SPONSOR",
           logos: [
             {
