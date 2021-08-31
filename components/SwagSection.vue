@@ -6,25 +6,39 @@
         <div class="contents">
           <div class="about">
             <p>
-              Hack This Fall is a 48 Hours Virtual Hackathon where we aim to
-              promote hackers and help them nurture their new ideas and
-              prototypes in various domains. Our motto is also to involve more
-              beginner hackers and support everyone to solve the shared problems
-              of our society to bring a change in a revolutionary way. For
-              season 2, we are focussing on creating more learning opportunities
-              along with building and solving. We will talk about various
-              technologies, create awareness, encourage others, hack to
-              contribute, and participate in many more exciting events &amp;
-              sessions.
+              Everyone love swags so that they can brag about it. We at Hack
+              This Fall love swags too. What if we tell you that you can earn
+              cool swags just by doing some interesting and fun challenges?
+              <br /><br />
+              We have designed various challenges specially for you and by
+              completing it, you can earn points for yourself. All the
+              challenges are listed below with their descriptions. Read them out
+              carefully. New challenges will be added with time and
+              announcements for the same will be done in our
+              <a target="_blank" href="https://discord.hackthisfall.tech/"
+                >Discord</a
+              >, so make sure you join us there. <br /><br />
+              Once you complete a Challenge, make sure you fill out our
+              <a target="_blank" href="https://bit.ly/htf2-points"
+                >Points Form</a
+              >, you can edit the form responses so feel free to submit one task
+              and return to edit the form to submit another task. Every task
+              have points and Top-3 people on the leaderboard after the
+              hackathon ends will stand a chance to win an outstanding exlusive
+              Hack This Fall Merchandise Swag Pack delivered at your doorstep.
             </p>
           </div>
-          <div class="challenges">
+          <div
+            v-for="(challenge, index) in challenges"
+            :key="index"
+            class="challenges"
+          >
             <div class="subHeading">
-              <h2 class="section-title">DAILY &amp; WEEKDAY CHALLENGES</h2>
+              <h2 class="section-title">{{challenge.heading}}</h2>
             </div>
             <div class="row justify-content-center text-center text-lg-left">
               <div
-                v-for="(challenge, index) in challenges"
+                v-for="(task, index) in challenge.tasks"
                 :key="index"
                 class="col-10 col-md-5 col-lg-auto mx-3 my-3"
               >
@@ -43,10 +57,10 @@
                       class="col-12 font-weight-bold my-2 font-size-18"
                       style="color: rgb(233, 83, 34)"
                     >
-                      {{ challenge.heading }}
+                      {{ task.heading }}
                     </div>
-                    <div class="col-12 mb-2">
-                      {{ challenge.content }}
+                    <div class="col-12 mb-2" v-html="task.content">
+                      {{}}
                     </div>
                   </div>
                 </div>
@@ -204,34 +218,72 @@ export default {
       addedImage: false,
       challenges: [
         {
-          heading: "DIVERSITY & INCLUSION",
-          content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
+          heading: "Hack This Fall Challenges",
+          tasks: [
+            {
+              heading: "Register for Hack This Fall",
+              content:
+                "First things first, we want to get you registered! <a target='_blank' href='https://hackthisfall.devpost.com/'>Register now here</a> to earn yourself your first points. It's as easy as that! Send us a screenshot on our <a target='_blank' href=\"https://bit.ly/htf2-points\">Points Form</a> after you register."
+            },
+            {
+              heading: "Follow HTF on Social Media",
+              content:
+                "Hack This Fall has an engaging social media presence where we share opportunities for the community. You can follow us on <a target='_blank' href='https://www.instagram.com/hackthisfall/'>Instagram</a>, <a target='_blank' href='https://twitter.com/hackthisfall'>Twitter</a>, <a target='_blank' href='https://www.linkedin.com/company/hackthisfall/'>LinkedIn</a>, <a target='_blank' href='https://dev.to/hackthisfall'>Dev.to</a> or <a target='_blank' href='https://www.youtube.com/c/HackThisFall'>Youtube</a> for a point each! Send us a screenshot on our <a target='_blank' href='https://bit.ly/htf2-points'>Points Form</a> after you follow."
+            },
+            {
+              heading: "Join the HTF Community Discord",
+              content:
+                "Join us on <a target='_blank' href='https://discord.hackthisfall.tech/'>Discord</a> and be a part of our awesome community. Send us a screenshot on our <a target='_blank' href='https://bit.ly/htf2-points'>Points Form</a> after you join."
+            },
+            {
+              heading: "Submit a project on Devpost",
+              content:
+                "Build something during the hackathon duration and submit a project on devpost. Submit your project link after the hackathon to our <a target='_blank' href='https://bit.ly/htf2-points'>Points Form</a> after you register."
+            },
+            {
+              heading: "[Repeatable] Post about HTF on Socials",
+              content:
+                "Share anything about us and use #HackThisFall and tag @hackthisfall on your Twitter, Instagram, and LinkedIn posts to earn points! This challenge is repeatable once daily. Submit a link to your post on our <a target='_blank' href='https://bit.ly/htf2-points'>Points Form</a>."
+            },
+            {
+              heading: "[Repeatable] Refer your friend",
+              content:
+                'Refer your friends and community members to register for Hack This Fall and ask them to enter your Email under the "Referral Email" field while registering on Devpost. Earn 1 point for 1 referral.'
+            }
+          ]
         },
         {
-          heading: "DIVERSITY & INCLUSION",
-          content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
-        },
-        {
-          heading: "DIVERSITY & INCLUSION",
-          content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
-        },
-        {
-          heading: "DIVERSITY & INCLUSION",
-          content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
-        },
-        {
-          heading: "DIVERSITY & INCLUSION",
-          content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
-        },
-        {
-          heading: "DIVERSITY & INCLUSION",
-          content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
+          heading: "Community Challenges",
+          tasks: [
+            {
+              heading: "Share a coffee with a hacker",
+              content: "Interact with our community members over coffee and network with others. Tweet the screenshot of your video call and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-points'>Points Form</a>."
+            },
+            {
+              heading: "Design a Mascot for Hack This Fall",
+              content: "Bring in your creativity and show it to us by designing a Mascot for Hack This Fall. Tweet your design and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-points'>Points Form</a>."
+            },
+            {
+              heading: "Best memory with Hack This Fall",
+              content: "We would love to hear from you your best memory at Hack This Fall. Tweet your favorite memory and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-points'>Points Form</a>."
+            },
+            {
+              heading: "[Repeatable] Attend a Live Session",
+              content: "Attend any of the live speaker sessions happening the entire September on our <a target=\"_blank\" href=\"https://www.youtube.com/c/HackThisFall\"></a>YouTube Channel and tweet your learnings from the session. Share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-points'>Points Form</a>."
+            }
+          ]
+        }, {
+          heading: "Sponsor Challenges",
+          tasks: [
+            {
+              heading: "Sign up for a WazirX account",
+              content: "Head to <a target='_blank' href='https://wrx.gg/htf'>wrx.gg/htf</a> and sign up. WazirX is India’s most trusted bitcoin & cryptocurrency exchange platform. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-points/'>Points Form</a>."
+            },
+            {
+              heading: "Sign up on SAWO Labs landing page",
+              content: "Head to <a target='_blank href='https://sawolabs.com/hackathon/redeemnow/?hackathon_name=HackThisFall2.0'>SAWO Labs</a> and sign up. Say goodbye to OTPs and Passwords. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-points'>Points Form</a>."
+            }
+          ]
         }
       ]
     };
@@ -342,6 +394,10 @@ export default {
   flex-direction: column;
   padding: 2rem 0;
   font-family: "Segoe UI";
+
+  a {
+    color: rgba(233, 83, 34, 1);
+  }
 
   .subHeading {
     font-family: "Poppins";
