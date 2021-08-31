@@ -185,6 +185,15 @@ export default {
             },
           ],
         },
+        {
+          type: "STREAMING PARTNER",
+          logos: [
+            {
+              url: "https://streamyard.com/about",
+              image: require("~/assets/Sponsors/streamyard.png"),
+            },
+          ],
+        },
       ],
     };
   },
