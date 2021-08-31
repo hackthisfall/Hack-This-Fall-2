@@ -37,7 +37,7 @@
             </div>
           </div>
           <div class="img hide-small">
-            <img src="~/assets/HTF2/about-us.svg" />
+            <img src="~/assets/HTF2/about.svg" />
           </div>
         </div>
       </section>
@@ -88,7 +88,7 @@ export default {
       }
 
       .cta-buttons {
-        margin-top: 1rem;
+        margin-top: 1.75rem;
         display: flex;
 
         .cta-button {

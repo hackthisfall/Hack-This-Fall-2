@@ -126,10 +126,6 @@ export default {
       text-decoration: none;
       color: initial;
 
-      &:hover {
-        box-shadow: 0 15px 30px 0 rgba(214, 93, 32, 0.28);
-      }
-
       .panel {
         border-radius: 1rem;
         display: flex;
@@ -139,6 +135,10 @@ export default {
         box-shadow: rgba(255, 107, 0, 0.07) 0px 0px 10px 2px;
         align-items: center;
         position: relative;
+
+        &:hover {
+          box-shadow: 0 15px 30px 0 rgba(214, 93, 32, 0.28);
+        }
 
         .link-img {
           position: absolute;

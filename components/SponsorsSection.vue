@@ -25,7 +25,7 @@
           </div>
         </div>
       </div>
-      <div class="cta-buttons">
+      <!-- <div class="cta-buttons">
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -34,7 +34,7 @@
         >
           SPONSOR US
         </a>
-      </div>
+      </div> -->
     </section>
   </Container>
 </template>
@@ -54,6 +54,18 @@ export default {
         {
           type: "TITLE SPONSOR",
           logos: [
+            {
+              url: "https://www.storyblok.com/",
+              image: require("~/assets/Sponsors/storyblok.svg"),
+            },
+            {
+              url: "https://agoric.com/",
+              image: require("~/assets/Sponsors/agoric.svg"),
+            },
+            {
+              url: "https://www.inspiritai.com/",
+              image: require("~/assets/Sponsors/InspiritAI.png"),
+            },
             {
               url: "https://wrx.gg/htf",
               image: require("~/assets/Sponsors/wazirx.png"),
@@ -92,10 +104,13 @@ export default {
               url: "https://sawolabs.com/hackathon/redeemnow/?hackathon_name=HackThisFall2.0",
               image: require("~/assets/Sponsors/sawolabs.png"),
             },
-
             {
               url: "https://hackclub.com/",
               image: require("~/assets/Sponsors/hackclub.png"),
+            },
+            {
+              url: "https://www.quicknode.com/",
+              image: require("~/assets/Sponsors/quicknode.png"),
             },
           ],
         },
@@ -167,6 +182,15 @@ export default {
             {
               url: "https://dev.to/",
               image: require("~/assets/Sponsors/devto.png"),
+            },
+          ],
+        },
+        {
+          type: "STREAMING PARTNER",
+          logos: [
+            {
+              url: "https://streamyard.com/about",
+              image: require("~/assets/Sponsors/streamyard.png"),
             },
           ],
         },
@@ -250,14 +274,9 @@ export default {
         min-width: 250px;
         padding: 2rem 4rem;
         border-radius: 1rem;
-        filter: saturate(0);
 
         &:hover {
-          filter: unset;
-        }
-
-        @include respond-below(md) {
-          filter: unset;
+          background-color: #feede3;
         }
 
         @include respond-below(xs) {
@@ -279,36 +298,36 @@ export default {
     }
   }
 
-  .cta-buttons {
-    display: flex;
-    margin-top: 3rem;
-    justify-content: center;
+  // .cta-buttons {
+  //   display: flex;
+  //   margin-top: 3rem;
+  //   justify-content: center;
 
-    a {
-      text-decoration: none;
-    }
+  //   a {
+  //     text-decoration: none;
+  //   }
 
-    .cta-button {
-      background-color: #e85325;
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-family: "Segoe UI Bold";
-      border-radius: 0.5rem;
-      cursor: pointer;
-      box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
+  //   .cta-button {
+  //     background-color: #e85325;
+  //     color: white;
+  //     border: none;
+  //     padding: 0.5rem 1rem;
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: space-between;
+  //     font-family: "Segoe UI Bold";
+  //     border-radius: 0.5rem;
+  //     cursor: pointer;
+  //     box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
 
-      &:hover {
-        box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
-      }
+  //     &:hover {
+  //       box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
+  //     }
 
-      img {
-        margin-right: 0.5rem;
-      }
-    }
-  }
+  //     img {
+  //       margin-right: 0.5rem;
+  //     }
+  //   }
+  // }
 }
 </style>
