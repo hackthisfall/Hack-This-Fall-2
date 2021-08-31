@@ -71,29 +71,45 @@
             </div>
             <div class="rightColumn">
               <h1>Hack This Fall Badge</h1>
-              <p>
+              <div class="rightContent">
                 Here is your place to flex and show off your presence at Hack
-                This Fall.<br /><br />
-                Upload your image below to get a personalized Hack This Fall
-                Badge.<br /><br />
-                Download it and Share it on socials using
-                <a
-                  style="color: rgba(233, 83, 34, 1)"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://twitter.com/hashtag/hackthisfall"
-                  >#HackThisFall</a
+                This Fall.
+                <br />
+                <div style="margin-top: 1rem">
+                  Upload your image below to get a personalized Hack This Fall
+                  Badge.
+                </div>
+                <div style="margin-top: 1rem">
+                  Download it and Share it on socials using
+                  <a
+                    style="color: rgba(233, 83, 34, 1)"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://twitter.com/hashtag/hackthisfall"
+                    >#HackThisFall</a
+                  >
+                  and tag
+                  <a
+                    style="color: rgba(233, 83, 34, 1)"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://twitter.com/hackthisfall"
+                  >
+                    @hackthisfall</a
+                  >
+                </div>
+                <div
+                  style="
+                    color: rgba(233, 83, 34, 1);
+                    font-style: italic;
+                    font-size: 0.8rem;
+                    margin-top: 1rem;
+                  "
                 >
-                and tag
-                <a
-                  style="color: rgba(233, 83, 34, 1)"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://twitter.com/hackthisfall"
-                >
-                  @hackthisfall</a
-                >
-              </p>
+                  * We respect your privacy and are not storing your pictures on
+                  our servers.
+                </div>
+              </div>
               <div class="cta-buttons">
                 <input
                   type="file"
@@ -120,7 +136,9 @@
                 </button>
                 <a
                   v-show="addedImage"
-                  href="https://twitter.com/intent/tweet?text=custom share text"
+                  href="https://twitter.com/intent/tweet?text=Hey folks!👋%0A%0AExcited to share that I'm attending @hackthisfall 2.0🥳 %26 absolutely can't wait to learn, build %26 share with the community!🚀%0A%0AJoin me %26 register now: hackthisfall.devpost.com%0AGet a personal badge for yourself: hackthisfall.tech/swag%0A%0A%23HackThisFall %23InnovateForGood"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   class="cta-button"
                 >
                   <img
@@ -555,19 +573,49 @@ export default {
 
     .leftColumn {
       .dummy {
-        height: 380px;
-        width: 380px;
+        height: 400px;
+        width: 400px;
         margin: 0.2rem auto 1.3rem;
         background: #fff;
 
         canvas {
-          height: 380px;
-          width: 380px;
+          height: 400px;
+          width: 400px;
+        }
+
+        @include respond-below(xs) {
+          height: 300px;
+          width: 300px;
+
+          canvas {
+            height: 300px;
+            width: 300px;
+          }
         }
       }
 
       button {
         margin-bottom: 0rem;
+      }
+    }
+
+    .cta-button {
+      background-color: #e85325;
+      color: white;
+      border: none;
+      padding: 0.6rem 1rem 0.8rem;
+      font-size: 1.1rem;
+      display: flex;
+      width: unset !important;
+      align-items: center;
+      margin: 0 auto 0.8rem;
+      font-family: "Segoe UI Bold";
+      border-radius: 1.5rem;
+      cursor: pointer;
+      box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
+
+      &:hover {
+        box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
       }
     }
 
@@ -583,7 +631,7 @@ export default {
         color: rgba(233, 83, 34, 1);
       }
 
-      p {
+      .rightContent {
         opacity: 0.6;
         font-size: 1.4rem;
         margin: 2rem 0;
@@ -597,6 +645,7 @@ export default {
         font-weight: bold;
         color: rgba(233, 83, 34, 1);
       }
+
       .cta-buttons {
         display: flex;
         margin-top: 2rem;
@@ -635,37 +684,16 @@ export default {
           }
         }
 
-        @include respond-below(xxs) {
+        @include respond-below(sm) {
           flex-direction: column;
-          width: auto;
 
           .cta-button {
-            &:nth-of-type(2) {
-              margin-top: 1rem;
-              margin-left: 0rem;
-            }
+            margin: auto;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 0.5rem;
           }
         }
-      }
-    }
-
-    .cta-button {
-      background-color: #e85325;
-      color: white;
-      border: none;
-      padding: 0.6rem 1rem 0.8rem;
-      font-size: 1.1rem;
-      display: flex;
-      width: unset !important;
-      align-items: center;
-      margin: 0 auto 0.8rem;
-      font-family: "Segoe UI Bold";
-      border-radius: 1.5rem;
-      cursor: pointer;
-      box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
-
-      &:hover {
-        box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
       }
     }
   }
