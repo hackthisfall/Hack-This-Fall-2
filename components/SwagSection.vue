@@ -19,7 +19,9 @@
             </p>
           </div>
           <div class="challenges">
-            <HashHeader title="DAILY &amp; WEEKDAY CHALLENGES" />
+            <div class="subHeading">
+              <h2 class="section-title">DAILY &amp; WEEKDAY CHALLENGES</h2>
+            </div>
             <div class="row justify-content-center text-center text-lg-left">
               <div
                 v-for="(challenge, index) in challenges"
@@ -39,7 +41,7 @@
                   <div class="row">
                     <div
                       class="col-12 font-weight-bold my-2 font-size-18"
-                      style="color: #e38333"
+                      style="color: rgb(233, 83, 34)"
                     >
                       {{ challenge.heading }}
                     </div>
@@ -51,6 +53,7 @@
               </div>
             </div>
           </div>
+          <HashHeader title="DIGITAL SWAG" />
           <div class="virtualBadge">
             <div class="cornerHeading">
               <img
@@ -340,6 +343,21 @@ export default {
   padding: 2rem 0;
   font-family: "Segoe UI";
 
+  .subHeading {
+    font-family: "Poppins";
+    font-style: bold;
+    justify-content: space-around;
+    display: flex;
+    align-self: center;
+    color: rgba(128, 128, 128, 1);
+
+    h2.section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 20px 10px 20px 0;
+    }
+  }
+
   .shadow-1 {
     box-shadow: 0 0 10px 2px rgba(255, 107, 0, 0.07) !important;
     min-width: 100%;
@@ -424,6 +442,10 @@ export default {
       }
     }
 
+    .challenges {
+      margin-bottom: 1rem;
+    }
+
     @include respond-below(xs) {
       flex-direction: column;
       justify-content: center;
@@ -439,7 +461,7 @@ export default {
   }
 
   .virtualBadge {
-    margin-top: 4rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     padding: 4rem 2rem 3rem;
     background-color: #feeee5;
@@ -584,6 +606,7 @@ export default {
   .wallpapers {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 0.4rem;
     margin-bottom: 1rem;
 
     @include respond-below(xs) {
@@ -681,6 +704,11 @@ export default {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 2rem;
+    margin-left: 25%;
+
+    @include respond-below(xs) {
+      margin-left: 17%;
+    }
 
     .share {
       display: none !important;
