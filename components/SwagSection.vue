@@ -94,18 +94,18 @@
                 Wallpaper
               </div>
               <button class="cta-button">Download</button>
-              <VueSlickCarousel style="max-width: 500px" v-bind="settings">
-                <div style="max-width: 80vw">
-                  <img src="~/assets/dummy/1.png" width="500px" />
+              <VueSlickCarousel class="carousel" v-bind="settings">
+                <div>
+                  <img src="~/assets/dummy/1.png" class="carouselImg" />
                 </div>
-                <div style="max-width: 80vw">
-                  <img src="~/assets/dummy/1.png" width="500px" />
+                <div>
+                  <img src="~/assets/dummy/1.png" class="carouselImg" />
                 </div>
-                <div style="max-width: 80vw">
-                  <img src="~/assets/dummy/1.png" width="500px" />
+                <div>
+                  <img src="~/assets/dummy/1.png" class="carouselImg" />
                 </div>
-                <div style="max-width: 80vw">
-                  <img src="~/assets/dummy/1.png" width="500px" />
+                <div>
+                  <img src="~/assets/dummy/1.png" class="carouselImg" />
                 </div>
               </VueSlickCarousel>
             </div>
@@ -115,18 +115,18 @@
                 Zoom Background
               </div>
               <button class="cta-button">Download</button>
-              <VueSlickCarousel style="max-width: 500px" v-bind="settings">
+              <VueSlickCarousel class="carousel" v-bind="settings">
                 <div>
-                  <img src="~/assets/dummy/1.png" width="500px" />
+                  <img src="~/assets/dummy/1.png" class="carouselImg" />
                 </div>
                 <div>
-                  <img src="~/assets/dummy/1.png" width="500px" />
+                  <img src="~/assets/dummy/1.png" class="carouselImg" />
                 </div>
                 <div>
-                  <img src="~/assets/dummy/1.png" width="500px" />
+                  <img src="~/assets/dummy/1.png" class="carouselImg" />
                 </div>
                 <div>
-                  <img src="~/assets/dummy/1.png" width="500px" />
+                  <img src="~/assets/dummy/1.png" class="carouselImg" />
                 </div>
               </VueSlickCarousel>
             </div>
@@ -187,7 +187,7 @@ export default {
   components: {
     HashHeader,
     Container,
-    VueSlickCarousel,
+    VueSlickCarousel
   },
   data() {
     return {
@@ -196,62 +196,62 @@ export default {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToScroll: 1
       },
       addedImage: false,
       challenges: [
         {
           heading: "DIVERSITY & INCLUSION",
           content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups.",
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
         },
         {
           heading: "DIVERSITY & INCLUSION",
           content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups.",
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
         },
         {
           heading: "DIVERSITY & INCLUSION",
           content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups.",
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
         },
         {
           heading: "DIVERSITY & INCLUSION",
           content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups.",
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
         },
         {
           heading: "DIVERSITY & INCLUSION",
           content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups.",
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
         },
         {
           heading: "DIVERSITY & INCLUSION",
           content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups.",
-        },
-      ],
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
+        }
+      ]
     };
   },
   mounted() {
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");
     var img = new Image();
-    img.onload = function () {
+    img.onload = function() {
       ctx.drawImage(img, 0, 0, 1620, 1620);
     };
     img.src = "/badge.png";
 
     let imgInput = document.getElementById("imageInput");
-    imgInput.addEventListener("change", function (e) {
+    imgInput.addEventListener("change", function(e) {
       if (e.target.files) {
         let imageFile = e.target.files[0];
         var reader = new FileReader();
         reader.readAsDataURL(imageFile);
-        reader.onloadend = function (e) {
+        reader.onloadend = function(e) {
           var myImage = new Image();
           myImage.src = e.target.result;
-          myImage.onload = function (ev) {
+          myImage.onload = function(ev) {
             ctx.clearRect(0, 0, 1620, 1620);
             const inputWidth = myImage.naturalWidth;
             const inputHeight = myImage.naturalHeight;
@@ -290,8 +290,8 @@ export default {
       link.download = "my-image.png";
       link.href = image;
       link.click();
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -305,14 +305,24 @@ export default {
 
 .slick-prev {
   left: 40px;
-  top: 270px;
+  top: 305px;
   z-index: 99;
+
+  @include respond-below(xs) {
+    top: 310px;
+    left: 50px;
+  }
 }
 
 .slick-next {
   left: 70px;
-  top: 270px;
+  top: 305px;
   z-index: 99;
+
+  @include respond-below(xs) {
+    top: 310px;
+    left: 80px;
+  }
 }
 </style>
 
@@ -549,16 +559,37 @@ export default {
     margin-left: -1.5rem;
     margin-bottom: 1rem;
 
+    @include respond-below(xs) {
+      margin-left: -1rem;
+    }
+
     .carouselWrapper {
       position: relative;
+
+      .carousel {
+        width: 550px;
+
+        @include respond-below(xs) {
+          width: 100vw !important;
+          margin-bottom: -20px;
+        }
+
+        .carouselImg {
+          width: 550px;
+
+          @include respond-below(xs) {
+            width: 100vw !important;
+          }
+        }
+      }
 
       .cta-button {
         background-color: #e85325;
         color: white;
         border: none;
         position: absolute;
-        top: 250px;
-        left: 355px;
+        top: 275px;
+        left: 400px;
         z-index: 999;
         padding: 0.5rem 1rem;
         display: flex;
@@ -571,6 +602,12 @@ export default {
 
         &:hover {
           box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
+        }
+
+        @include respond-below(xs) {
+          top: 290px;
+          left: 420px;
+          width: unset;
         }
       }
     }
@@ -586,6 +623,11 @@ export default {
       padding: 8px 10px;
       border-top-left-radius: 0.4rem;
       border-bottom-right-radius: 0.4rem;
+
+      @include respond-below(xs) {
+        top: 29px;
+        left: 29px;
+      }
 
       img {
         display: inline-block;
