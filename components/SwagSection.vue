@@ -67,27 +67,67 @@
               <!-- add canvas or badge here -->
               <div class="dummy">
                 <canvas id="myCanvas" width="1620" height="1620" />
-                <!-- <img src="~/assets/HTF2/badge.png" width="270px" /> -->
               </div>
-              <button @click="downloadImage" class="cta-button">
-                Download
-              </button>
-              <a
-                v-if="!addedImage"
-                href="https://twitter.com/intent/tweet?text=custom share text"
-                ><button class="cta-button">Twitter</button></a
-              >
             </div>
             <div class="rightColumn">
               <h1>Hack This Fall Badge</h1>
               <p>
-                Now that you are here, how about personalising your DevFest 2021
-                profile? Upload an image and generate a personalised badge with
-                the DevFest 2021 frame. Also share your image using
-                #DevFestIndia on different social platforms.
+                Here is your place to flex and show off your presence at Hack
+                This Fall.<br /><br />
+                Upload your image below to get a personalized Hack This Fall
+                Badge.<br /><br />
+                Download it and Share it on socials using
+                <a
+                  style="color: rgba(233, 83, 34, 1)"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://twitter.com/hashtag/hackthisfall"
+                  >#HackThisFall</a
+                >
+                and tag
+                <a
+                  style="color: rgba(233, 83, 34, 1)"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://twitter.com/hackthisfall"
+                >
+                  @hackthisfall</a
+                >
               </p>
-              <h4>Select a Image</h4>
-              <input type="file" id="imageInput" accept="image/*" />
+              <div class="cta-buttons">
+                <input
+                  type="file"
+                  id="imageInput"
+                  accept="image/*"
+                  class="cta-button"
+                  style="display: none"
+                />
+                <button @click="uploadImage" class="cta-button">
+                  <img
+                    src="https://img.icons8.com/material-rounded/24/ffffff/upload--v1.png"
+                  />
+                  UPLOAD IMAGE
+                </button>
+                <button
+                  v-show="addedImage"
+                  @click="downloadImage"
+                  class="cta-button"
+                >
+                  <img
+                    src="https://img.icons8.com/material-rounded/24/ffffff/download--v1.png"
+                  />
+                  DOWNLOAD
+                </button>
+                <a
+                  v-show="addedImage"
+                  href="https://twitter.com/intent/tweet?text=custom share text"
+                  class="cta-button"
+                >
+                  <img
+                    src="https://img.icons8.com/material-rounded/24/ffffff/share.png"
+                  />SHARE
+                </a>
+              </div>
             </div>
           </div>
           <div class="wallpapers">
@@ -190,7 +230,7 @@ export default {
   components: {
     HashHeader,
     Container,
-    VueSlickCarousel
+    VueSlickCarousel,
   },
   data() {
     return {
@@ -199,62 +239,62 @@ export default {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
       },
       addedImage: false,
       challenges: [
         {
           heading: "DIVERSITY & INCLUSION",
           content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups.",
         },
         {
           heading: "DIVERSITY & INCLUSION",
           content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups.",
         },
         {
           heading: "DIVERSITY & INCLUSION",
           content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups.",
         },
         {
           heading: "DIVERSITY & INCLUSION",
           content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups.",
         },
         {
           heading: "DIVERSITY & INCLUSION",
           content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups.",
         },
         {
           heading: "DIVERSITY & INCLUSION",
           content:
-            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups."
-        }
-      ]
+            "Build a hack that helps communicate the importance of managing bias and make it more diverse and inclusive. With this track, we aim to promote the development and advancement of underrepresented groups.",
+        },
+      ],
     };
   },
   mounted() {
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");
     var img = new Image();
-    img.onload = function() {
+    img.onload = function () {
       ctx.drawImage(img, 0, 0, 1620, 1620);
     };
     img.src = "/badge.png";
 
     let imgInput = document.getElementById("imageInput");
-    imgInput.addEventListener("change", function(e) {
+    imgInput.addEventListener("change", (e) => {
       if (e.target.files) {
         let imageFile = e.target.files[0];
         var reader = new FileReader();
         reader.readAsDataURL(imageFile);
-        reader.onloadend = function(e) {
+        reader.onloadend = (e) => {
           var myImage = new Image();
           myImage.src = e.target.result;
-          myImage.onload = function(ev) {
+          myImage.onload = (ev) => {
             ctx.clearRect(0, 0, 1620, 1620);
             const inputWidth = myImage.naturalWidth;
             const inputHeight = myImage.naturalHeight;
@@ -280,21 +320,27 @@ export default {
               1620
             );
             ctx.drawImage(img, 0, 0, 1620, 1620);
-            this.addedImage = true;
+            this.toggleImageAdded();
           };
         };
       }
     });
   },
   methods: {
+    uploadImage() {
+      document.getElementById("imageInput").click();
+    },
     downloadImage() {
       var image = document.getElementById("myCanvas").toDataURL("image/png");
       var link = document.createElement("a");
       link.download = "my-image.png";
       link.href = image;
       link.click();
-    }
-  }
+    },
+    toggleImageAdded() {
+      this.addedImage = true;
+    },
+  },
 };
 </script>
 
@@ -463,7 +509,7 @@ export default {
   .virtualBadge {
     margin-top: 1rem;
     margin-bottom: 2rem;
-    padding: 4rem 2rem 3rem;
+    padding: 4rem 4rem 3rem 0rem;
     background-color: #feeee5;
     border-radius: 1rem;
     position: relative;
@@ -484,15 +530,15 @@ export default {
     }
 
     @include respond-below(xs) {
-      padding: 4rem 2rem 3rem;
+      padding: 4rem 2rem 3rem 2rem;
     }
 
     @media screen and (max-width: 375px) {
-      padding: 4rem 0.5rem 3rem;
+      padding: 4rem 0.5rem 3rem 0.5rem;
     }
 
     @media screen and (max-width: 360px) {
-      padding: 4rem 0 3rem;
+      padding: 4rem 0 3rem 0rem;
     }
 
     .cornerHeading {
@@ -508,21 +554,15 @@ export default {
     }
 
     .leftColumn {
-      margin-right: 1rem;
-
-      @include respond-below(xs) {
-        margin-right: unset;
-      }
-
       .dummy {
-        height: 270px;
-        width: 270px;
+        height: 380px;
+        width: 380px;
         margin: 0.2rem auto 1.3rem;
         background: #fff;
 
         canvas {
-          height: 270px;
-          width: 270px;
+          height: 380px;
+          width: 380px;
         }
       }
 
@@ -533,7 +573,6 @@ export default {
 
     .rightColumn {
       margin-left: 1rem;
-
       @include respond-below(xs) {
         margin-left: unset;
       }
@@ -558,18 +597,23 @@ export default {
         font-weight: bold;
         color: rgba(233, 83, 34, 1);
       }
+      .cta-buttons {
+        display: flex;
+        margin-top: 2rem;
+        justify-content: flex-start;
 
-      input {
-        color: transparent;
-
-        &::-webkit-file-upload-button {
-          visibility: hidden;
+        a {
+          text-decoration: none;
         }
 
-        &::before {
-          content: "Upload Image";
-          background: #e85325;
-          display: inline-block;
+        input {
+          display: none;
+        }
+
+        .cta-button {
+          border: none;
+          display: flex;
+          align-items: center;
           border-radius: 2rem;
           outline: none;
           padding: 0.6rem 1.2rem 0.8rem;
@@ -578,6 +622,29 @@ export default {
           color: #fff;
           font-weight: 700;
           font-size: 12pt;
+          background-color: #e85325;
+          margin-left: 0;
+          box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
+
+          &:hover {
+            box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
+          }
+
+          img {
+            margin-right: 0.5rem;
+          }
+        }
+
+        @include respond-below(xxs) {
+          flex-direction: column;
+          width: auto;
+
+          .cta-button {
+            &:nth-of-type(2) {
+              margin-top: 1rem;
+              margin-left: 0rem;
+            }
+          }
         }
       }
     }
