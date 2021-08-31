@@ -25,6 +25,12 @@
           <a rel="noopener noreferrer" target="_blank" href="/schedule"
             >Schedule</a
           >
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://dev.to/hackthisfall"
+            >Dev.to Page</a
+          >
         </div>
 
         <div class="panel">
@@ -36,7 +42,7 @@
         </div>
 
         <div class="panel">
-          <h4 class="title">Connect With Us</h4>
+          <h4 class="title online">Find Us Online</h4>
           <div class="socialLinks">
             <a
               class="smooth-transition"
@@ -106,8 +112,8 @@ import CopyLink from "~/components/CopyLink";
 export default {
   components: {
     Container,
-    CopyLink,
-  },
+    CopyLink
+  }
 };
 </script>
 
@@ -132,7 +138,7 @@ export default {
   }
 
   hr {
-    width: 80%;
+    width: 85%;
     margin: auto;
   }
 
@@ -150,7 +156,7 @@ export default {
 
   .content-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 100px;
     row-gap: 30px;
     padding: 2rem;
@@ -228,7 +234,6 @@ export default {
         }
 
         img {
-          position: absolute;
           height: 20px;
           width: 20px;
           position: relative;
@@ -243,6 +248,10 @@ export default {
 
     .title {
       padding: 10px 0;
+
+      &.online {
+        align-self: center;
+      }
     }
   }
 

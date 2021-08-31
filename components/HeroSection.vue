@@ -4,7 +4,7 @@
       <section class="content-section">
         <div class="contents">
           <div class="img">
-            <img src="~/assets/HTF2/hero.svg" />
+            <img height="90%" src="~/assets/HTF2/hero.svg" />
           </div>
           <div class="about">
             <img class="logo" src="~/assets/HTF2/HTFLogo.svg" />
@@ -50,7 +50,7 @@ export default {
 .content-section {
   display: flex;
   flex-direction: column;
-  padding: 2rem 3rem;
+  padding: 2rem 3rem -2rem;
   border-radius: 1rem;
   background-color: #feede3;
   @include respond-below(sm) {
@@ -70,6 +70,8 @@ export default {
     .img {
       margin-top: 2rem;
       width: 38vw;
+      margin-left: 50px;
+      margin-bottom: -20px;
       @include respond-below(md) {
         display: none;
       }
@@ -80,7 +82,8 @@ export default {
       align-items: center;
       text-align: center;
       margin-bottom: 2rem;
-      margin-top: 2rem;
+      margin-top: 3.5rem;
+      margin-right: 2rem;
 
       .logo {
         width: 38vw;
@@ -106,7 +109,7 @@ export default {
 
       .cta-buttons {
         display: flex;
-        margin-top: 3rem;
+        margin-top: 2rem;
 
         a {
           text-decoration: none;
