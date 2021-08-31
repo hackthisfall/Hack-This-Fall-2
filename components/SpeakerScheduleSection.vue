@@ -11,20 +11,43 @@
           >
             <div class="details">
               <h4 class="title">{{ speaker.title }}</h4>
-              <p class="name">{{ speaker.name }}</p>
-              <p class="description">{{ speaker.date }}</p>
+              <span
+                ><p class="name">
+                  <span v-if="speaker.name2">{{ ` ${speaker.name2}` }}</span>
+                  <span v-if="speaker.name2">{{ ` and` }}</span>
+                  <br v-if="speaker.name2" />
+                  {{ speaker.name }}
+                </p>
+                <p class="description">{{ speaker.date }}</p>
+              </span>
               <div class="cta-buttons">
                 <a
+                  v-if="speaker.buttonText"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://bit.ly/htf2-cfp"
+                  href="https://www.youtube.com/c/HackThisFall"
                   class="cta-button smooth-transition discord"
                 >
-                  WATCH NOW
+                  {{ speaker.buttonText }}
                 </a>
               </div>
             </div>
             <div class="speaker-img">
+              <a
+                v-if="speaker.name2"
+                :href="speaker.url2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="picture-wrapper smooth-transition">
+                  <img
+                    :src="speaker.picture2"
+                    alt="profile picture"
+                    class="profile-pic"
+                  />
+                </div>
+              </a>
+              <br />
               <a :href="speaker.url" target="_blank" rel="noopener noreferrer">
                 <div class="picture-wrapper smooth-transition">
                   <img
@@ -38,16 +61,6 @@
           </div>
         </div>
       </div>
-      <div class="cta-buttons center">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://bit.ly/htf2-cfp"
-          class="cta-button smooth-transition discord"
-        >
-          APPLY TO BE A SPEAKER
-        </a>
-      </div>
     </section>
   </Container>
 </template>
@@ -55,6 +68,7 @@
 <script>
 import Container from "~/components/Container";
 import HashHeader from "~/components/HashHeader";
+import dayjs from "dayjs";
 
 export default {
   components: {
@@ -65,21 +79,180 @@ export default {
     return {
       speakers: [
         {
+          title: "Dear performant app,",
+          name: "Nishu Goel",
+          buttonText: "WATCH NOW",
+          date: "2 Sep 2021 20:30",
+          endDate: "2 Sep 2021 21:30",
+          url: "https://twitter.com/TheNishuGoel",
+          picture: require("~/assets/Speakers/nishu.png"),
+          rotation: 30,
+        },
+        {
+          title: "Build a Twitter UI Clone using React JS",
+          name: "Praveen Kumar",
+          buttonText: "WATCH NOW",
+          date: "4 Sep 2021 18:00",
+          endDate: "4 Sep 2021 19:30",
+          url: "https://praveen.science/",
+          picture: require("~/assets/Speakers/praveen.jpeg"),
+          rotation: 30,
+        },
+        {
+          title: "Sailing With Containers",
+          name: "Gourav Sharma",
+          buttonText: "WATCH NOW",
+          date: "7 Sep 2021 19:00",
+          endDate: "7 Sep 2021 20:00",
+          url: "https://twitter.com/rhcasharma",
+          picture: require("~/assets/Speakers/gourav.jpg"),
+          rotation: 30,
+        },
+        {
+          title: "Living on the edge until your 30s",
+          name: "Narayanan S",
+          buttonText: "WATCH NOW",
+          date: "9 Sep 2021 18:00",
+          endDate: "9 Sep 2021 19:00",
+          url: "https://www.linkedin.com/in/chalkmeout/",
+          picture: require("~/assets/Speakers/narayanan.png"),
+          rotation: 30,
+        },
+        {
+          title: "Integrating SAWO API In Your Project",
+          name: "Soumaya Ranjan",
+          buttonText: "WATCH NOW",
+          date: "11 Sep 2021 19:00",
+          endDate: "11 Sep 2021 20:00",
+          url: "https://www.linkedin.com/in/soumayaranjan/",
+          picture: require("~/assets/Speakers/soumaya.jpeg"),
+          rotation: 30,
+        },
+        {
+          title: "How AI Visual Recognition Works",
+          name: "Noah Anderson",
+          buttonText: "WATCH NOW",
+          date: "14 Sep 2021 20:00",
+          endDate: "14 Sep 2021 21:00",
+          url: "https://twitter.com/hackthisfall",
+          picture: require("~/assets/Speakers/noah.png"),
+          rotation: 30,
+        },
+        {
+          title: "Crash Course into the Jamstack with Next.js & Storyblok",
+          name: "Facundo Giuliani",
+          buttonText: "WATCH NOW",
+          date: "16 Sep 2021 19:00",
+          endDate: "16 Sep 2021 20:30",
+          url: "https://twitter.com/facundozurdo",
+          picture: require("~/assets/Speakers/facundo.jpg"),
+          rotation: 30,
+          name2: "Samuel Snopko",
+          url2: "https://twitter.com/samuelsnopko",
+          picture2: require("~/assets/Speakers/samuel.jpg"),
+        },
+        {
+          title: "Azure Services for Your Hacks",
+          name: "Sashrika Kaur",
+          buttonText: "WATCH NOW",
+          date: "18 Sep 2021 17:00",
+          endDate: "18 Sep 2021 18:00",
+          url: "https://twitter.com/SashrikaKaur",
+          picture: require("~/assets/Speakers/sashrika.jpeg"),
+          rotation: 30,
+        },
+        {
+          title: "Building Modern CMS Driven Web Application",
+          name: "Daniel Phiri",
+          buttonText: "WATCH NOW",
+          date: "21 Sep 2021 20:00",
+          endDate: "21 Sep 2021 21:00",
+          url: "https://twitter.com/malgamves",
+          picture: require("~/assets/Speakers/daniel.jpg"),
+          rotation: 30,
+        },
+        {
           title: "Getting started with Symbl.ai",
-          name: "Mark Cohen",
-          date: "2 Jan 2021 15:00",
-          url: "https://twitter.com/mco_dev",
-          picture: require("~/assets/Speakers/marc.jpg"),
+          name: "Akanksha Bhasin",
+          buttonText: "WATCH NOW",
+          date: "23 Sep 2021 21:00",
+          endDate: "23 Sep 2021 22:00",
+          url: "https://www.linkedin.com/in/akankshabhasin",
+          picture: require("~/assets/Speakers/akanksha.jpeg"),
+          rotation: 30,
+          name2: "Eric Giannini",
+          url2: "https://www.linkedin.com/in/unicornmobile",
+          picture2: require("~/assets/Speakers/eric.jpeg"),
+        },
+        {
+          title: "Dockerizing your Discord bot",
+          name: "Harshil Agrawal",
+          buttonText: "WATCH NOW",
+          date: "25 Sep 2021 18:00",
+          endDate: "25 Sep 2021 19:00",
+          url: "https://twitter.com/harshil1712",
+          picture: require("~/assets/Speakers/harshil.jpeg"),
+          rotation: 30,
+        },
+        {
+          title: "Unleashing the Power of Communities",
+          name: "Khushboo Verma",
+          buttonText: "WATCH NOW",
+          date: "26 Sep 2021 17:30",
+          endDate: "26 Sep 2021 18:00",
+          url: "https://twitter.com/khushbooverma_",
+          picture: require("~/assets/Speakers/khushboo.jpg"),
+          rotation: 30,
+        },
+        {
+          title: "Using GitHub to win hackathons",
+          name: "Eddie Jaoude",
+          buttonText: "WATCH NOW",
+          date: "27 Sep 2021 18:30",
+          endDate: "27 Sep 2021 19:30",
+          url: "https://twitter.com/eddiejaoude/",
+          picture: require("~/assets/Speakers/eddie.jpg"),
+          rotation: 30,
+        },
+        {
+          title: "Move your local development environment to the cloud",
+          name: "Pauline Narvas",
+          buttonText: "WATCH NOW",
+          date: "30 Sep 2021 16:00",
+          endDate: "30 Sep 2021 16:30",
+          url: "https://twitter.com/paulienuh",
+          picture: require("~/assets/Speakers/pauline.jpg"),
           rotation: 30,
         },
       ],
     };
   },
   mounted() {
-    let i = 5;
-    while (i--) {
-      this.speakers.push(this.speakers[0]);
-    }
+    const now = dayjs();
+    const alreadyDone = [];
+    const toBeLive = [];
+    const currentlyLive = [];
+    this.speakers.forEach((speaker) => {
+      const startDate = dayjs(speaker.date, "D MMM YYYY HH:mm");
+      const endDate = dayjs(speaker.endDate, "D MMM YYYY HH:mm");
+
+      if (endDate.isBefore(now)) {
+        speaker.buttonText = "WATCH NOW";
+        alreadyDone.push(speaker);
+      }
+
+      if (startDate.isAfter(now)) {
+        speaker.buttonText = "TO BE LIVE";
+        toBeLive.push(speaker);
+      }
+
+      if (startDate.isBefore(now) && endDate.isAfter(now)) {
+        speaker.buttonText = "LIVE";
+        currentlyLive.push(speaker);
+      }
+    });
+
+    this.speakers = [...currentlyLive, ...toBeLive, ...alreadyDone];
   },
 };
 </script>
@@ -123,6 +296,7 @@ export default {
         background-color: #feede3;
 
         .details {
+          height: 100%;
           flex-direction: column;
           display: flex;
           justify-content: space-between;
@@ -139,13 +313,13 @@ export default {
           .name {
             font-family: "Segoe UI Bold";
             margin-top: 1rem;
-            font-size: 0.9rem;
+            font-size: 1rem;
             color: #707070;
           }
 
           .description {
             margin-top: 0.4rem;
-            font-size: 0.9rem;
+            font-size: 1rem;
             color: #707070;
           }
 
@@ -216,6 +390,7 @@ export default {
   .cta-buttons {
     display: flex;
     margin-top: 3rem;
+    margin-bottom: 0px;
 
     &.center {
       justify-content: center;
