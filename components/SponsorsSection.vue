@@ -87,6 +87,10 @@ export default {
               url: "https://raahee.in/",
               image: require("~/assets/Sponsors/raahee.png"),
             },
+            {
+              url: "https://hackon.tech/universe",
+              image: require("~/assets/Sponsors/hackon.png"),
+            },
           ],
         },
         {

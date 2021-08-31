@@ -22,11 +22,8 @@
           <a rel="noopener noreferrer" target="_blank" href="/team"
             >Know The Team</a
           >
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://hackon.tech/universe"
-            >HackOn Universe</a
+          <a rel="noopener noreferrer" target="_blank" href="/schedule"
+            >Schedule</a
           >
           <a
             rel="noopener noreferrer"

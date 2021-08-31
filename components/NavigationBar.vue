@@ -41,10 +41,9 @@ export default {
         { link: "/#tracks", text: "tracks" },
         { link: "/#speakers", text: "speakers" },
         { link: "/#sponsors", text: "sponsors" },
-        { link: "/#testimonials", text: "testimonials" },
+        { link: "/schedule", text: "Schedule" },
         { link: "/#faq", text: "faq" },
         { link: "/team", text: "team" },
-        { link: "https://s1.hackthisfall.tech/", text: "season 1" },
       ],
     };
   },
