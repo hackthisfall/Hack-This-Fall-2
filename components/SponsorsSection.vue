@@ -89,7 +89,7 @@ export default {
             },
             {
               url: "https://hackon.tech/universe",
-              image: require("~/assets/Sponsors/hackon.png"),
+              image: require("~/assets/Sponsors/hackon.svg"),
             },
           ],
         },
