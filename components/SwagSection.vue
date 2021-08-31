@@ -461,6 +461,18 @@ export default {
       }
     }
 
+    @include respond-below(xs) {
+      padding: 4rem 2rem 3rem;
+    }
+
+    @media screen and (max-width: 375px) {
+      padding: 4rem 0.5rem 3rem;
+    }
+
+    @media screen and (max-width: 360px) {
+      padding: 4rem 0 3rem;
+    }
+
     .cornerHeading {
       position: absolute;
       top: 0px;
@@ -475,6 +487,10 @@ export default {
 
     .leftColumn {
       margin-right: 1rem;
+
+      @include respond-below(xs) {
+        margin-right: unset;
+      }
 
       .dummy {
         height: 270px;
@@ -495,6 +511,11 @@ export default {
 
     .rightColumn {
       margin-left: 1rem;
+
+      @include respond-below(xs) {
+        margin-left: unset;
+      }
+
       h1 {
         font-size: 2.1rem;
         font-family: "Segoe UI Bold";
@@ -563,7 +584,6 @@ export default {
   .wallpapers {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -1.5rem;
     margin-bottom: 1rem;
 
     @include respond-below(xs) {
@@ -663,6 +683,7 @@ export default {
     margin-bottom: 2rem;
 
     .share {
+      display: none !important;
       top: 305px !important;
 
       @include respond-below(xs) {
