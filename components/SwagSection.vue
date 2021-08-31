@@ -309,8 +309,9 @@ export default {
   z-index: 99;
 
   @include respond-below(xs) {
-    top: 310px;
-    left: 50px;
+    top: unset;
+    left: 8%;
+    bottom: 10%;
   }
 }
 
@@ -320,8 +321,14 @@ export default {
   z-index: 99;
 
   @include respond-below(xs) {
-    top: 310px;
-    left: 80px;
+    top: unset;
+    left: 14%;
+    bottom: 10%;
+  }
+
+  @include respond-below(xxs) {
+    top: unset;
+    left: 16%;
   }
 }
 </style>
@@ -588,7 +595,7 @@ export default {
         color: white;
         border: none;
         position: absolute;
-        top: 275px;
+        top: 277px;
         left: 400px;
         z-index: 999;
         padding: 0.5rem 1rem;
@@ -605,9 +612,18 @@ export default {
         }
 
         @include respond-below(xs) {
-          top: 290px;
-          left: 420px;
+          bottom: 2%;
+          right: 8%;
+          left: unset;
+          top: unset;
           width: unset;
+        }
+
+        @include respond-below(xxs) {
+          top: unset;
+          left: unset;
+          width: unset;
+          bottom: -2%;
         }
       }
     }
@@ -615,8 +631,8 @@ export default {
     .cornerHeading {
       position: absolute;
       z-index: 99;
-      top: 25px;
-      left: 25px;
+      top: 27px;
+      left: 27px;
       background: #e85325;
       color: #fff;
       font-weight: 600;
@@ -625,8 +641,13 @@ export default {
       border-bottom-right-radius: 0.4rem;
 
       @include respond-below(xs) {
-        top: 29px;
-        left: 29px;
+        top: 8%;
+        left: 5%;
+      }
+
+      @include respond-below(xxs) {
+        top: 16px;
+        left: 17px;
       }
 
       img {
