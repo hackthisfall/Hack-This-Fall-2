@@ -18,7 +18,7 @@
                   <br v-if="speaker.name2" />
                   {{ speaker.name }}
                 </p>
-                <p class="description">{{ speaker.date }}</p>
+                <p class="description">{{ `${speaker.date} IST` }}</p>
               </span>
               <div class="cta-buttons">
                 <a
@@ -79,7 +79,7 @@ export default {
     return {
       speakers: [
         {
-          title: "Dear performant app,",
+          title: "Dear Performant App,",
           name: "Nishu Goel",
           buttonText: "WATCH NOW",
           date: "2 Sep 2021 20:30",
@@ -99,7 +99,7 @@ export default {
           rotation: 30,
         },
         {
-          title: "Sailing With Containers",
+          title: "Sailing with Containers",
           name: "Gourav Sharma",
           buttonText: "WATCH NOW",
           date: "7 Sep 2021 19:00",
@@ -172,7 +172,7 @@ export default {
           rotation: 30,
         },
         {
-          title: "Getting started with Symbl.ai",
+          title: "Getting started with Symbl.AI",
           name: "Akanksha Bhasin",
           buttonText: "WATCH NOW",
           date: "23 Sep 2021 21:00",
@@ -185,7 +185,7 @@ export default {
           picture2: require("~/assets/Speakers/eric.jpeg"),
         },
         {
-          title: "Dockerizing your Discord bot",
+          title: "Dockerizing your Discord Bot",
           name: "Harshil Agrawal",
           buttonText: "WATCH NOW",
           date: "25 Sep 2021 18:00",
@@ -205,7 +205,7 @@ export default {
           rotation: 30,
         },
         {
-          title: "Using GitHub to win hackathons",
+          title: "Using GitHub to win Hackathons",
           name: "Eddie Jaoude",
           buttonText: "WATCH NOW",
           date: "27 Sep 2021 18:30",
@@ -215,7 +215,7 @@ export default {
           rotation: 30,
         },
         {
-          title: "Move your local development environment to the cloud",
+          title: "Move your Local Development Environment to the Cloud",
           name: "Pauline Narvas",
           buttonText: "WATCH NOW",
           date: "30 Sep 2021 16:00",
