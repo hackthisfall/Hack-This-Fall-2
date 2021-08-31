@@ -45,7 +45,7 @@
         </div>
 
         <div class="panel">
-          <h4 class="title online">Find Us Online</h4>
+          <h4 class="title">Find Us Online</h4>
           <div class="socialLinks">
             <a
               class="smooth-transition"
@@ -115,8 +115,8 @@ import CopyLink from "~/components/CopyLink";
 export default {
   components: {
     Container,
-    CopyLink
-  }
+    CopyLink,
+  },
 };
 </script>
 
@@ -251,10 +251,6 @@ export default {
 
     .title {
       padding: 10px 0;
-
-      &.online {
-        align-self: center;
-      }
     }
   }
 
