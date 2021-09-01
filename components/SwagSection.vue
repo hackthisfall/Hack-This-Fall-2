@@ -19,8 +19,8 @@
                 >Discord</a
               >, so make sure you join us there. <br /><br />
               Once you complete a Challenge, make sure you fill out our
-              <a target="_blank" href="https://bit.ly/htf2-points"
-                >Points Form</a
+              <a target="_blank" href="https://bit.ly/htf2-challenge"
+                >Challenge Form</a
               >, you can edit the form responses so feel free to submit one task
               and return to edit the form to submit another task. Every task
               have points and Top-3 people on the leaderboard after the
@@ -34,40 +34,47 @@
             class="challenges"
           >
             <div class="subHeading">
-              <h2 class="section-title">{{challenge.heading}}</h2>
+              <h2 class="section-title">{{ challenge.heading }}</h2>
             </div>
-            <div class="row justify-content-center text-center text-lg-left">
+            <div
+              class="row m-lg-3 m-0 justify-content-xl-around justify-content-lg-around justify-content-center text-center text-lg-left"
+            >
               <div
                 v-for="(task, index) in challenge.tasks"
                 :key="index"
-                class="col-10 col-md-5 col-lg-auto mx-3 my-3"
+                class="col-10 col-md-5 col-lg-3 m-3 panel shadow-1  smooth-transition-1"
               >
-                <div
-                  class="
-                    panel
-                    shadow-1
-                    row
-                    justify-content-center
-                    py-3
-                    smooth-transition-1
-                  "
-                >
-                  <div class="row">
-                    <div
-                      class="col-12 font-weight-bold my-2 font-size-18"
-                      style="color: rgb(233, 83, 34)"
-                    >
-                      {{ task.heading }}
-                    </div>
-                    <div class="col-12 mb-2" v-html="task.content">
-                      {{}}
-                    </div>
+                <div class="row justify-content-center p-3">
+                  <div
+                    class="col-12 font-weight-bold my-2 font-size-18"
+                    style="color: rgb(233, 83, 34)"
+                  >
+                    {{ task.heading }}
+                  </div>
+                  <div class="col-12 mb-2" v-html="task.content">
+                    {{}}
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <HashHeader title="DIGITAL SWAG" />
+          <div class="about">
+            <p>
+              Hack This Fall 2.0 is a virtual hackathon so get yourself equipped
+              with some amazing official Hack This Fall Digital Swags, and flex
+              it by owning them. We have a Digital Badge where you can upload
+              your photo and make it personalised. Get our cool Hack This Fall
+              wallpapaers for your desktop computers and mobile phones. Don't
+              forget to use the zoom/meet wallpapers in your meetings. Also, to
+              have fun and enjoy, we have an Instagram Bingo Story for you,
+              which you can share on your stories, tag
+              <a target="_blank" href="https://www.instagram.com/hackthisfall/"
+                >@hackthisfall</a
+              >
+              and nominate your friends for the same.
+            </p>
+          </div>
           <div class="virtualBadge">
             <div class="cornerHeading">
               <img
@@ -168,7 +175,14 @@
                 <img src="~/assets/icons/user.svg" height="15px" />
                 Wallpaper
               </div>
-              <button class="cta-button">Download</button>
+              <button class="cta-button">
+                DOWNLOAD&nbsp;&nbsp;&nbsp;
+                <img
+                  style="margin-bottom: -1px"
+                  src="~/assets/icons/download.svg"
+                  height="15px"
+                />
+              </button>
               <VueSlickCarousel class="carousel" v-bind="settings">
                 <div>
                   <img src="~/assets/dummy/1.png" class="carouselImg" />
@@ -189,7 +203,14 @@
                 <img src="~/assets/icons/user.svg" height="15px" />
                 Zoom Background
               </div>
-              <button class="cta-button">Download</button>
+              <button class="cta-button">
+                DOWNLOAD&nbsp;&nbsp;&nbsp;
+                <img
+                  style="margin-bottom: -1px"
+                  src="~/assets/icons/download.svg"
+                  height="15px"
+                />
+              </button>
               <VueSlickCarousel class="carousel" v-bind="settings">
                 <div>
                   <img src="~/assets/dummy/1.png" class="carouselImg" />
@@ -262,7 +283,7 @@ export default {
   components: {
     HashHeader,
     Container,
-    VueSlickCarousel,
+    VueSlickCarousel
   },
   data() {
     return {
@@ -271,7 +292,7 @@ export default {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToScroll: 1
       },
       addedImage: false,
       challenges: [
@@ -279,32 +300,32 @@ export default {
           heading: "Hack This Fall Challenges",
           tasks: [
             {
-              heading: "Register for Hack This Fall",
+              heading: "1. Register for Hack This Fall",
               content:
-                "First things first, we want to get you registered! <a target='_blank' href='https://hackthisfall.devpost.com/'>Register now here</a> to earn yourself your first points. It's as easy as that! Send us a screenshot on our <a target='_blank' href=\"https://bit.ly/htf2-points\">Points Form</a> after you register."
+                "First things first, we want to get you registered! <a target='_blank' href='https://hackthisfall.devpost.com/'>Register now here</a> to earn yourself your first points. It's as easy as that! Send us a screenshot on our <a target='_blank' href=\"https://bit.ly/htf2-challenge\">Challenge Form</a> after you register."
             },
             {
-              heading: "Follow HTF on Social Media",
+              heading: "2. Follow HTF on Social Media",
               content:
-                "Hack This Fall has an engaging social media presence where we share opportunities for the community. You can follow us on <a target='_blank' href='https://www.instagram.com/hackthisfall/'>Instagram</a>, <a target='_blank' href='https://twitter.com/hackthisfall'>Twitter</a>, <a target='_blank' href='https://www.linkedin.com/company/hackthisfall/'>LinkedIn</a>, <a target='_blank' href='https://dev.to/hackthisfall'>Dev.to</a> or <a target='_blank' href='https://www.youtube.com/c/HackThisFall'>Youtube</a> for a point each! Send us a screenshot on our <a target='_blank' href='https://bit.ly/htf2-points'>Points Form</a> after you follow."
+                "Hack This Fall has an engaging social media presence where we share opportunities for the community. You can follow us on <a target='_blank' href='https://www.instagram.com/hackthisfall/'>Instagram</a>, <a target='_blank' href='https://twitter.com/hackthisfall'>Twitter</a>, <a target='_blank' href='https://www.linkedin.com/company/hackthisfall/'>LinkedIn</a>, <a target='_blank' href='https://dev.to/hackthisfall'>Dev.to</a> or <a target='_blank' href='https://www.youtube.com/c/HackThisFall'>Youtube</a> for a point each! Send us a screenshot on our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a> after you follow."
             },
             {
-              heading: "Join the HTF Community Discord",
+              heading: "3. Join the HTF Community Discord",
               content:
-                "Join us on <a target='_blank' href='https://discord.hackthisfall.tech/'>Discord</a> and be a part of our awesome community. Send us a screenshot on our <a target='_blank' href='https://bit.ly/htf2-points'>Points Form</a> after you join."
+                "Join us on <a target='_blank' href='https://discord.hackthisfall.tech/'>Discord</a> and be a part of our awesome community. Send us a screenshot on our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a> after you join."
             },
             {
-              heading: "Submit a project on Devpost",
+              heading: "4. Submit a project on Devpost",
               content:
-                "Build something during the hackathon duration and submit a project on devpost. Submit your project link after the hackathon to our <a target='_blank' href='https://bit.ly/htf2-points'>Points Form</a> after you register."
+                "Build something during the hackathon duration and submit a project on devpost. Submit your project link after the hackathon to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a> after you register."
             },
             {
-              heading: "[Repeatable] Post about HTF on Socials",
+              heading: "5. [Repeatable] Post about HTF on Socials",
               content:
-                "Share anything about us and use #HackThisFall and tag @hackthisfall on your Twitter, Instagram, and LinkedIn posts to earn points! This challenge is repeatable once daily. Submit a link to your post on our <a target='_blank' href='https://bit.ly/htf2-points'>Points Form</a>."
+                "Share anything about us and use #HackThisFall and tag @hackthisfall on your Twitter, Instagram, and LinkedIn posts to earn points! This challenge is repeatable once daily. Submit a link to your post on our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
             },
             {
-              heading: "[Repeatable] Refer your friend",
+              heading: "6. [Repeatable] Refer your friend",
               content:
                 'Refer your friends and community members to register for Hack This Fall and ask them to enter your Email under the "Referral Email" field while registering on Devpost. Earn 1 point for 1 referral.'
             }
@@ -314,32 +335,39 @@ export default {
           heading: "Community Challenges",
           tasks: [
             {
-              heading: "Share a coffee with a hacker",
-              content: "Interact with our community members over coffee and network with others. Tweet the screenshot of your video call and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-points'>Points Form</a>."
+              heading: "1. Share a coffee with a hacker",
+              content:
+                "Interact with our community members over coffee and network with others. Tweet the screenshot of your video call and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
             },
             {
-              heading: "Design a Mascot for Hack This Fall",
-              content: "Bring in your creativity and show it to us by designing a Mascot for Hack This Fall. Tweet your design and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-points'>Points Form</a>."
+              heading: "2. Design a Mascot for Hack This Fall",
+              content:
+                "Bring in your creativity and show it to us by designing a Mascot for Hack This Fall. Tweet your design and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
             },
             {
-              heading: "Best memory with Hack This Fall",
-              content: "We would love to hear from you your best memory at Hack This Fall. Tweet your favorite memory and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-points'>Points Form</a>."
+              heading: "3. Best memory with Hack This Fall",
+              content:
+                "We would love to hear from you your best memory at Hack This Fall. Tweet your favorite memory and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
             },
             {
-              heading: "[Repeatable] Attend a Live Session",
-              content: "Attend any of the live speaker sessions happening the entire September on our <a target=\"_blank\" href=\"https://www.youtube.com/c/HackThisFall\"></a>YouTube Channel and tweet your learnings from the session. Share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-points'>Points Form</a>."
+              heading: "4. [Repeatable] Attend a Live Session",
+              content:
+                "Attend any of the live speaker sessions happening the entire September on our <a target=\"_blank\" href=\"https://www.youtube.com/c/HackThisFall\"></a>YouTube Channel and tweet your learnings from the session. Share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
             }
           ]
-        }, {
+        },
+        {
           heading: "Sponsor Challenges",
           tasks: [
             {
-              heading: "Sign up for a WazirX account",
-              content: "Head to <a target='_blank' href='https://wrx.gg/htf'>wrx.gg/htf</a> and sign up. WazirX is India’s most trusted bitcoin & cryptocurrency exchange platform. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-points/'>Points Form</a>."
+              heading: "1. Sign up for a WazirX account",
+              content:
+                "Head to <a target='_blank' href='https://wrx.gg/htf'>wrx.gg/htf</a> and sign up. WazirX is India’s most trusted bitcoin & cryptocurrency exchange platform. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge/'>Challenge Form</a>."
             },
             {
-              heading: "Sign up on SAWO Labs landing page",
-              content: "Head to <a target='_blank href='https://sawolabs.com/hackathon/redeemnow/?hackathon_name=HackThisFall2.0'>SAWO Labs</a> and sign up. Say goodbye to OTPs and Passwords. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-points'>Points Form</a>."
+              heading: "2. Sign up on SAWO Labs landing page",
+              content:
+                "Head to <a target='_blank href='https://sawolabs.com/hackathon/redeemnow/?hackathon_name=HackThisFall2.0'>SAWO Labs</a> and sign up. Say goodbye to OTPs and Passwords. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
             }
           ]
         }
@@ -350,21 +378,21 @@ export default {
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");
     var img = new Image();
-    img.onload = function () {
+    img.onload = function() {
       ctx.drawImage(img, 0, 0, 1620, 1620);
     };
     img.src = "/badge.png";
 
     let imgInput = document.getElementById("imageInput");
-    imgInput.addEventListener("change", (e) => {
+    imgInput.addEventListener("change", e => {
       if (e.target.files) {
         let imageFile = e.target.files[0];
         var reader = new FileReader();
         reader.readAsDataURL(imageFile);
-        reader.onloadend = (e) => {
+        reader.onloadend = e => {
           var myImage = new Image();
           myImage.src = e.target.result;
-          myImage.onload = (ev) => {
+          myImage.onload = ev => {
             ctx.clearRect(0, 0, 1620, 1620);
             const inputWidth = myImage.naturalWidth;
             const inputHeight = myImage.naturalHeight;
@@ -403,19 +431,28 @@ export default {
     downloadImage() {
       var image = document.getElementById("myCanvas").toDataURL("image/png");
       var link = document.createElement("a");
-      link.download = "my-image.png";
+      link.download = "htf-badge.png";
       link.href = image;
       link.click();
     },
     toggleImageAdded() {
       this.addedImage = true;
-    },
-  },
+    }
+  }
 };
 </script>
 
 <style scoped src="~/assets/styles/bootstrap.css"></style>
 <style lang="scss">
+a {
+  color: rgba(233, 83, 34, 1);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .slick-prev,
 .slick-next {
   background: #e85325 !important;
@@ -461,6 +498,12 @@ export default {
 
   a {
     color: rgba(233, 83, 34, 1);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      color: rgba(233, 83, 34, 1);
+    }
   }
 
   .subHeading {
@@ -472,6 +515,7 @@ export default {
     color: rgba(128, 128, 128, 1);
 
     h2.section-title {
+      text-transform: uppercase;
       font-size: 1.5rem;
       font-weight: 600;
       padding: 20px 10px 20px 0;
@@ -480,8 +524,6 @@ export default {
 
   .shadow-1 {
     box-shadow: 0 0 10px 2px rgba(255, 107, 0, 0.07) !important;
-    min-width: 100%;
-    max-width: 500px;
     border-radius: 16px;
   }
 
@@ -790,7 +832,7 @@ export default {
         border: none;
         position: absolute;
         top: 277px;
-        left: 400px;
+        left: 355px;
         z-index: 999;
         padding: 0.5rem 1rem;
         display: flex;
@@ -861,6 +903,10 @@ export default {
       margin-left: 17%;
     }
 
+    @media screen and (max-width: 390px) {
+      margin-left: 1%;
+    }
+
     .share {
       display: none !important;
       top: 305px !important;
@@ -891,6 +937,13 @@ export default {
       &:hover {
         box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
       }
+
+      @media screen and (max-width: 390px) {
+      top: unset;
+      left: unset;
+      bottom: -1%;
+      right: 3%;
+    }
     }
 
     .cornerHeading {
@@ -914,6 +967,12 @@ export default {
       position: relative;
       margin-right: 2rem;
       margin-top: 1rem;
+
+      .bg {
+        @media screen and (max-width: 390px) {
+          width: 90vw;
+        }
+      }
     }
   }
 }
