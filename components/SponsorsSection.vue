@@ -59,6 +59,14 @@ export default {
               image: require("~/assets/Sponsors/storyblok.svg"),
             },
             {
+              url: "https://agoric.com/",
+              image: require("~/assets/Sponsors/agoric.svg"),
+            },
+            {
+              url: "https://www.inspiritai.com/",
+              image: require("~/assets/Sponsors/InspiritAI.png"),
+            },
+            {
               url: "https://wrx.gg/htf",
               image: require("~/assets/Sponsors/wazirx.png"),
             },
@@ -79,6 +87,19 @@ export default {
               url: "https://raahee.in/",
               image: require("~/assets/Sponsors/raahee.png"),
             },
+            {
+              url: "https://hackon.tech/universe",
+              image: require("~/assets/Sponsors/hackon.svg"),
+            },
+          ],
+        },
+        {
+          type: "DIAMOND SPONSOR",
+          logos: [
+            {
+              url: "https://filebase.com/",
+              image: require("~/assets/Sponsors/filebase.svg"),
+            },
           ],
         },
         {
@@ -96,10 +117,13 @@ export default {
               url: "https://sawolabs.com/hackathon/redeemnow/?hackathon_name=HackThisFall2.0",
               image: require("~/assets/Sponsors/sawolabs.png"),
             },
-
             {
               url: "https://hackclub.com/",
               image: require("~/assets/Sponsors/hackclub.png"),
+            },
+            {
+              url: "https://www.quicknode.com/",
+              image: require("~/assets/Sponsors/quicknode.png"),
             },
           ],
         },
@@ -171,6 +195,15 @@ export default {
             {
               url: "https://dev.to/",
               image: require("~/assets/Sponsors/devto.png"),
+            },
+          ],
+        },
+        {
+          type: "STREAMING PARTNER",
+          logos: [
+            {
+              url: "https://streamyard.com/about",
+              image: require("~/assets/Sponsors/streamyard.png"),
             },
           ],
         },
@@ -254,14 +287,9 @@ export default {
         min-width: 250px;
         padding: 2rem 4rem;
         border-radius: 1rem;
-        filter: saturate(0);
 
         &:hover {
-          filter: unset;
-        }
-
-        @include respond-below(md) {
-          filter: unset;
+          background-color: #feede3;
         }
 
         @include respond-below(xs) {

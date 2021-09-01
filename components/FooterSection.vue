@@ -22,11 +22,14 @@
           <a rel="noopener noreferrer" target="_blank" href="/team"
             >Know The Team</a
           >
+          <a rel="noopener noreferrer" target="_blank" href="/schedule"
+            >Schedule</a
+          >
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://hackon.tech/universe"
-            >HackOn Universe</a
+            href="https://dev.to/hackthisfall"
+            >Dev.to Page</a
           >
         </div>
 
@@ -39,7 +42,7 @@
         </div>
 
         <div class="panel">
-          <h4 class="title">Connect With Us</h4>
+          <h4 class="title">Find Us Online</h4>
           <div class="socialLinks">
             <a
               class="smooth-transition"
@@ -135,7 +138,7 @@ export default {
   }
 
   hr {
-    width: 80%;
+    width: 85%;
     margin: auto;
   }
 
@@ -153,7 +156,7 @@ export default {
 
   .content-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 100px;
     row-gap: 30px;
     padding: 2rem;
@@ -231,7 +234,6 @@ export default {
         }
 
         img {
-          position: absolute;
           height: 20px;
           width: 20px;
           position: relative;

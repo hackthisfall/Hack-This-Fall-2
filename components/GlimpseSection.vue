@@ -72,7 +72,7 @@ export default {
   data() {
     return {
       incrementCalled: false,
-      numberOfHours: { value: 0, max: 48 },
+      numberOfHours: { value: 0, max: 24 },
       projects: { value: 0, max: 50 },
       hackers: { value: 0, max: 500 },
       cities: { value: 0, max: 170 },

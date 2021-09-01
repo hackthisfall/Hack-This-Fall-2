@@ -75,7 +75,7 @@ export default {
           isOpen: false,
           title: "Can we form teams?",
           content:
-            "Most definitely! We believe in collaboration and encourage hackers to work in teams of up to minimum 2 and maximum 4 members. You may opt-in to team formation through our Discord Server. Every hacker must be a part of only one team and submit only one project.",
+            "Most definitely! We believe in collaboration and encourage hackers to work in teams of up to minimum 2 and maximum 4 members. You may opt-in to team formation through our <a style='color: rgba(233, 83, 34, 1);' href='https://discord.hackthisfall.tech/' rel='noopener noreferrer' target='_blank'>Discord Server</a>. Every hacker must be a part of only one team and submit only one project.",
         },
         {
           isOpen: false,
@@ -99,13 +99,13 @@ export default {
           isOpen: false,
           title: "What is the Code of Conduct?",
           content:
-            "We want to ensure a positive experience for all participants. We will be following MLH’s Code of Conduct, we encourage you to read it <a color: rgba(233, 83, 34, 1); href='https://static.mlh.io/docs/mlh-code-of-conduct.pdf' rel='noopener noreferrer' target='_blank'>here</a>.",
+            "We want to ensure a positive experience for all participants. We will be following MLH’s Code of Conduct, we encourage you to read it <a style='color: rgba(233, 83, 34, 1);' href='https://static.mlh.io/docs/mlh-code-of-conduct.pdf' rel='noopener noreferrer' target='_blank'>here</a>.",
         },
         {
           isOpen: false,
           title: "More Questions?",
           content:
-            "Join our Hacker Community Discord Server <a color: rgba(233, 83, 34, 1); href='https://discord.hackon.tech/' rel='noopener noreferrer' target='_blank'>here</a>. Ask any other questions you have and connect with a larger community. Looking forward to welcoming you.",
+            "Join our Hacker Community Discord Server <a style='color: rgba(233, 83, 34, 1);' href='https://discord.hackthisfall.tech/' rel='noopener noreferrer' target='_blank'>here</a>. Ask any other questions you have and connect with a larger community. Looking forward to welcoming you.",
         },
       ],
       expandedFAQs: new Set(),

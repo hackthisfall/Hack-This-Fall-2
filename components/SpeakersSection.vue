@@ -1,7 +1,7 @@
 <template>
   <Container id="speakers" name="speakers">
     <section class="content-section">
-      <HashHeader title="PREVIOUS SPEAKERS" />
+      <HashHeader title="SPEAKERS" />
       <div class="contents">
         <div class="speakers-grid">
           <div
@@ -60,79 +60,114 @@ export default {
     return {
       speakers: [
         {
-          name: "Marc Cohen",
-          description: "Developer Advocate, GCP-Google",
-          url: "https://twitter.com/mco_dev",
-          picture: require("~/assets/Speakers/marc.jpg"),
-          // companyLogo: require("~/assets/Sponsors/github.png"),
-          // company: "GitHub",
-          rotation: 30,
+          description: "Engineer,Web DataWorks",
+          name: "Nishu Goel",
+          url: "https://twitter.com/TheNishuGoel",
+          picture: require("~/assets/Speakers/nishu.png"),
         },
         {
-          name: "John Coghlan",
-          description: "Developer Evangelism, GitLab",
-          url: "https://twitter.com/john_cogs",
-          picture: require("~/assets/Speakers/john.jpeg"),
-          // companyLogo: require("~/assets/Sponsors/github.png"),
-          // company: "GitHub",
-          rotation: 30,
-        },
-        {
-          name: "Eddie Jaoude",
-          description: "GitHub Star of the Year",
-          url: "https://twitter.com/eddiejaoude",
-          picture: require("~/assets/Speakers/eddie.jpg"),
-          // companyLogo: require("~/assets/Sponsors/github.png"),
-          // company: "GitHub Stars",
-          rotation: 60,
-        },
-        {
-          name: "Dmitry Shklovsky",
-          description: "Co Founder, Quiknode",
-          url: "https://twitter.com/dimidj",
-          picture: require("~/assets/Speakers/dmitry.jpeg"),
-          // companyLogo: require("~/assets/Sponsors/github.png"),
-          // company: "The Julia Language",
-          rotation: 90,
-        },
-        {
-          name: "Aloon Grinshpoon",
-          description: "Founder & CEO, echoAR",
-          url: "https://twitter.com/alongrinshpoon",
-          picture: require("~/assets/Speakers/alon.webp"),
-          // companyLogo: require("~/assets/Sponsors/github.png"),
-          // company: "Postman",
-          rotation: 120,
-        },
-        {
-          name: "Akanksha Bhasin",
-          description: "Community Evangelist, Symbl.AI",
-          url: "https://twitter.com/Akii_20",
-          picture: require("~/assets/Speakers/akanksha.jpeg"),
-          // companyLogo: require("~/assets/Sponsors/github.png"),
-          // company: "GitHub",
-          rotation: 30,
-        },
-        {
-          name: "Aanisha Mishra",
-          description: "Engineer-II, Cisco",
-          url: "https://twitter.com/the_crazy_lady",
-          picture: require("~/assets/Speakers/aanisha.jpeg"),
-          // companyLogo: require("~/assets/Sponsors/github.png"),
-          // company: "Postman",
-          rotation: 120,
-        },
-        {
+          description: "JS Full stack developer",
           name: "Praveen Kumar",
-          description: "Full Stack JS Developer",
-          url: "https://twitter.com/praveenscience",
-          picture: require("~/assets/Speakers/praveen.webp"),
-          // companyLogo: require("~/assets/Sponsors/github.png"),
-          // company: "Postman",
-          rotation: 120,
+          url: "https://praveen.science/",
+          picture: require("~/assets/Speakers/praveen.jpeg"),
+        },
+        {
+          description: "Associate Solution Architect, Red Hat",
+          name: "Gourav Sharma",
+          url: "https://twitter.com/rhcasharma",
+          picture: require("~/assets/Speakers/gourav.jpg"),
+        },
+        {
+          description: "Chief Business Officer, Unschool",
+          name: "Narayanan S",
+          url: "https://www.linkedin.com/in/chalkmeout/",
+          picture: require("~/assets/Speakers/narayanan.png"),
+        },
+        {
+          description: "Lead-Engineering, SAWO Labs",
+          name: "Soumaya Ranjan",
+          url: "https://www.linkedin.com/in/soumayaranjan/",
+          picture: require("~/assets/Speakers/soumaya.jpeg"),
+        },
+        {
+          description: "Program Manager, InspiritAI",
+          name: "Noah Anderson",
+          url: "https://twitter.com/hackthisfall",
+          picture: require("~/assets/Speakers/noah.png"),
+        },
+        {
+          description: "Developer Relations Engineer, Storyblok",
+          name: "Facundo Giuliani",
+          url: "https://twitter.com/facundozurdo",
+          picture: require("~/assets/Speakers/facundo.jpg"),
+        },
+        {
+          description: "Head of Developer Relations, Storyblok",
+          name: "Samuel Snopko",
+          url: "https://twitter.com/samuelsnopko",
+          picture: require("~/assets/Speakers/samuel.jpg"),
+        },
+        {
+          description: "Software Engineer, Microsoft",
+          name: "Sashrika Kaur",
+          url: "https://twitter.com/SashrikaKaur",
+          picture: require("~/assets/Speakers/sashrika.jpg"),
+        },
+        {
+          description: "Developer Relations Lead, Strapi",
+          name: "Daniel Phiri",
+          url: "https://twitter.com/malgamves",
+          picture: require("~/assets/Speakers/daniel.jpg"),
+        },
+        {
+          description: "Community Evangelist, SymblAI",
+          name: "Akanksha Bhasin",
+          url: "https://www.linkedin.com/in/akankshabhasin",
+          picture: require("~/assets/Speakers/akanksha.jpeg"),
+        },
+        {
+          description: "Lead Developer Advocate, SymblAI",
+          name: "Eric Giannini",
+          url: "https://www.linkedin.com/in/unicornmobile",
+          picture: require("~/assets/Speakers/eric.jpeg"),
+        },
+        {
+          description: "Jr. Developer Advocate, n8n",
+          name: "Harshil Agrawal",
+          url: "https://twitter.com/harshil1712",
+          picture: require("~/assets/Speakers/harshil.jpeg"),
+        },
+        {
+          description: "Software Engineer, Microsoft",
+          name: "Khushboo Verma",
+          url: "https://twitter.com/khushbooverma_",
+          picture: require("~/assets/Speakers/khushboo.jpg"),
+        },
+        {
+          description: "Founder, EddieHub",
+          name: "Eddie Jaoude",
+          url: "https://twitter.com/eddiejaoude/",
+          picture: require("~/assets/Speakers/eddie.jpg"),
+        },
+        {
+          description: "Senior Community Engineer, Gitpod",
+          name: "Pauline Narvas",
+          url: "https://twitter.com/paulienuh",
+          picture: require("~/assets/Speakers/pauline.jpg"),
         },
       ],
     };
+  },
+  mounted() {
+    this.speakers.sort((a, b) => {
+      if (a.name < b.name) {
+        return -1;
+      }
+      if (a.name > b.name) {
+        return 1;
+      }
+      return 0;
+    });
   },
 };
 </script>
