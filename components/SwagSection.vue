@@ -6,12 +6,12 @@
         <div class="contents">
           <div class="about">
             <p>
-              Everyone love swags so that they can brag about it. We at Hack
+              Everyone loves swags so that they can brag about them. We at Hack
               This Fall love swags too. What if we tell you that you can earn
               cool swags just by doing some interesting and fun challenges?
               <br /><br />
-              We have designed various challenges specially for you and by
-              completing it, you can earn points for yourself. All the
+              We have designed various challenges especially for you and by
+              completing them, you can earn points for yourself. All the
               challenges are listed below with their descriptions. Read them out
               carefully. New challenges will be added with time and
               announcements for the same will be done in our
@@ -22,10 +22,13 @@
               <a target="_blank" href="https://bit.ly/htf2-challenge"
                 >Challenge Form</a
               >, you can edit the form responses so feel free to submit one task
-              and return to edit the form to submit another task. Every task
-              have points and Top-3 people on the leaderboard after the
-              hackathon ends will stand a chance to win an outstanding exlusive
-              Hack This Fall Merchandise Swag Pack delivered at your doorstep.
+              and return to edit the form to submit another task. Every task has
+              points and Top-3 people on the leaderboard after the hackathon
+              ends will stand a chance to win an outstanding exclusive
+              <span style="color: rgb(233, 83, 34)"
+                >Hack This Fall Merchandise Swag Pack</span
+              >
+              delivered at your doorstep.
             </p>
           </div>
           <div
@@ -64,15 +67,14 @@
               Hack This Fall 2.0 is a virtual hackathon so get yourself equipped
               with some amazing official Hack This Fall Digital Swags, and flex
               it by owning them. We have a Digital Badge where you can upload
-              your photo and make it personalised. Get our cool Hack This Fall
-              wallpapaers for your desktop computers and mobile phones. Don't
+              your photo and make it personalized. Get our cool Hack This Fall
+              wallpapers for your desktop computers and mobile phones. Don't
               forget to use the zoom/meet wallpapers in your meetings. Also, to
               have fun and enjoy, we have an Instagram Bingo Story for you,
               which you can share on your stories, tag
               <a target="_blank" href="https://www.instagram.com/hackthisfall/"
                 >@hackthisfall</a
-              >
-              and nominate your friends for the same.
+              >, and nominate your friends for the same.
             </p>
           </div>
           <div class="virtualBadge">
@@ -614,6 +616,14 @@ a {
       font-size: 1.5rem;
       font-weight: 600;
       padding: 20px 10px 20px 0;
+
+      &:after {
+        content: "";
+        height: 1.5px;
+        background: #ccc;
+        display: block;
+        margin-top: 0.2rem;
+      }
     }
   }
 
@@ -661,7 +671,7 @@ a {
       p {
         color: rgba(112, 112, 112, 1);
         font-weight: bold;
-        margin: 2rem 1rem;
+        margin: 1rem 1rem 2rem;
         font-size: 1rem;
 
         @include respond-below(md) {
@@ -923,7 +933,7 @@ a {
       }
 
       @include respond-below(xs) {
-        margin: unset;
+        margin: 1rem 0;
         margin-left: 2.5%;
       }
 
