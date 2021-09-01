@@ -111,7 +111,7 @@ export default {
           description: "Software Engineer, Microsoft",
           name: "Sashrika Kaur",
           url: "https://twitter.com/SashrikaKaur",
-          picture: require("~/assets/Speakers/sashrika.jpeg"),
+          picture: require("~/assets/Speakers/sashrika.jpg"),
         },
         {
           description: "Developer Relations Lead, Strapi",

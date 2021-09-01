@@ -158,7 +158,7 @@ export default {
           date: "18 Sep 2021 17:00",
           endDate: "18 Sep 2021 18:00",
           url: "https://twitter.com/SashrikaKaur",
-          picture: require("~/assets/Speakers/sashrika.jpeg"),
+          picture: require("~/assets/Speakers/sashrika.jpg"),
           rotation: 30,
         },
         {
