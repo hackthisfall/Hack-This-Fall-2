@@ -172,7 +172,7 @@
           <div class="wallpapers">
             <div class="carouselWrapper">
               <div class="cornerHeading">
-                <img src="~/assets/icons/user.svg" height="15px" />
+                <img src="~/assets/icons/wallpaper.svg" height="15px" />
                 Wallpaper
               </div>
               <button @click="desktopWallpaper" class="cta-button">
@@ -206,7 +206,7 @@
             </div>
             <div class="carouselWrapper">
               <div class="cornerHeading">
-                <img src="~/assets/icons/user.svg" height="15px" />
+                <img src="~/assets/icons/wallpaper.svg" height="15px" />
                 Zoom Background
               </div>
               <button @click="zoomBackground" class="cta-button">
@@ -242,7 +242,7 @@
           <div class="story">
             <div class="StoryCarouselWrapper">
               <div class="cornerHeading">
-                <img src="~/assets/icons/user.svg" height="15px" />
+                <img src="~/assets/icons/mobile.svg" height="15px" />
                 Wallpaper
               </div>
               <button @click="mobileWallpaper" class="cta-button story-button">

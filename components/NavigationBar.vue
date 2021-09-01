@@ -42,14 +42,15 @@ export default {
         { link: "/#speakers", text: "speakers" },
         { link: "/#sponsors", text: "sponsors" },
         { link: "/schedule", text: "Schedule" },
+        { link: "/swag", text: "swag" },
         { link: "/#faq", text: "faq" },
-        { link: "/team", text: "team" },
-      ],
+        { link: "/team", text: "team" }
+      ]
     };
   },
   components: {
-    Slide,
-  },
+    Slide
+  }
 };
 </script>
 
