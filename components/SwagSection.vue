@@ -175,7 +175,7 @@
                 <img src="~/assets/icons/user.svg" height="15px" />
                 Wallpaper
               </div>
-              <button class="cta-button">
+              <button @click="desktopWallpaper" class="cta-button">
                 DOWNLOAD&nbsp;&nbsp;&nbsp;
                 <img
                   style="margin-bottom: -1px"
@@ -185,16 +185,22 @@
               </button>
               <VueSlickCarousel class="carousel" v-bind="settings">
                 <div>
-                  <img src="~/assets/dummy/1.png" class="carouselImg" />
+                  <img
+                    src="~/assets/DigitalSwags/desktop3.jpg"
+                    class="carouselImg"
+                  />
                 </div>
                 <div>
-                  <img src="~/assets/dummy/1.png" class="carouselImg" />
+                  <img
+                    src="~/assets/DigitalSwags/desktop1.png"
+                    class="carouselImg"
+                  />
                 </div>
                 <div>
-                  <img src="~/assets/dummy/1.png" class="carouselImg" />
-                </div>
-                <div>
-                  <img src="~/assets/dummy/1.png" class="carouselImg" />
+                  <img
+                    src="~/assets/DigitalSwags/desktop2.png"
+                    class="carouselImg"
+                  />
                 </div>
               </VueSlickCarousel>
             </div>
@@ -203,7 +209,7 @@
                 <img src="~/assets/icons/user.svg" height="15px" />
                 Zoom Background
               </div>
-              <button class="cta-button">
+              <button @click="zoomBackground" class="cta-button">
                 DOWNLOAD&nbsp;&nbsp;&nbsp;
                 <img
                   style="margin-bottom: -1px"
@@ -213,24 +219,33 @@
               </button>
               <VueSlickCarousel class="carousel" v-bind="settings">
                 <div>
-                  <img src="~/assets/dummy/1.png" class="carouselImg" />
+                  <img
+                    src="~/assets/DigitalSwags/zbg3.png"
+                    class="carouselImg"
+                  />
                 </div>
                 <div>
-                  <img src="~/assets/dummy/1.png" class="carouselImg" />
+                  <img
+                    src="~/assets/DigitalSwags/zbg1.png"
+                    class="carouselImg"
+                  />
                 </div>
                 <div>
-                  <img src="~/assets/dummy/1.png" class="carouselImg" />
-                </div>
-                <div>
-                  <img src="~/assets/dummy/1.png" class="carouselImg" />
+                  <img
+                    src="~/assets/DigitalSwags/zbg2.png"
+                    class="carouselImg"
+                  />
                 </div>
               </VueSlickCarousel>
             </div>
           </div>
           <div class="story">
-            <div class="storyWallpaper">
-              <img class="bg" src="~/assets/dummy/4.png" />
-              <button class="cta-button">
+            <div class="StoryCarouselWrapper">
+              <div class="cornerHeading">
+                <img src="~/assets/icons/user.svg" height="15px" />
+                Wallpaper
+              </div>
+              <button @click="mobileWallpaper" class="cta-button story-button">
                 DOWNLOAD&nbsp;&nbsp;&nbsp;
                 <img
                   style="margin-bottom: -1px"
@@ -238,14 +253,30 @@
                   height="15px"
                 />
               </button>
-              <div class="cornerHeading">
-                <img src="~/assets/icons/user.svg" height="15px" />
-                Wallpaper
-              </div>
+              <VueSlickCarousel class="StoryCarousel" v-bind="settings">
+                <div>
+                  <img
+                    src="~/assets/DigitalSwags/mobile2.png"
+                    class="StorycarouselImg"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="~/assets/DigitalSwags/mobile1.png"
+                    class="StorycarouselImg"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="~/assets/DigitalSwags/mobile3.jpg"
+                    class="StorycarouselImg"
+                  />
+                </div>
+              </VueSlickCarousel>
             </div>
             <div class="storyWallpaper">
-              <img class="bg" src="~/assets/dummy/4.png" />
-              <button class="cta-button">
+              <img class="bg" src="~/assets/DigitalSwags/insta.png" />
+              <button @click="instaBingo" class="cta-button">
                 DOWNLOAD&nbsp;&nbsp;&nbsp;
                 <img
                   style="margin-bottom: -1px"
@@ -434,6 +465,39 @@ export default {
       link.download = "htf-badge.png";
       link.href = image;
       link.click();
+      link.remove();
+    },
+    desktopWallpaper() {
+      var link = document.createElement("a");
+      link.target = "_blank";
+      link.href =
+        "https://drive.google.com/drive/folders/18fTSDdTyT54Qihy0kzdrww0NQbAm4UPJ?usp=sharing";
+      link.click();
+      link.remove();
+    },
+    instaBingo() {
+      var link = document.createElement("a");
+      link.target = "_blank";
+      link.href =
+        "https://drive.google.com/file/d/1gBKNDRGFlg88YU1zA4ErvRXCrG7kznvg/view?usp=sharing";
+      link.click();
+      link.remove();
+    },
+    mobileWallpaper() {
+      var link = document.createElement("a");
+      link.target = "_blank";
+      link.href =
+        "https://drive.google.com/drive/folders/1R5Ca9GbutusY7skY3OKWCGbNYJvbnOBD?usp=sharing";
+      link.click();
+      link.remove();
+    },
+    zoomBackground() {
+      var link = document.createElement("a");
+      link.target = "_blank";
+      link.href =
+        "https://drive.google.com/drive/folders/13vb62xb3fTv9W-U1Kk0Bg3emMTj2t5Gn?usp=sharing";
+      link.click();
+      link.remove();
     },
     toggleImageAdded() {
       this.addedImage = true;
@@ -460,31 +524,62 @@ a {
 }
 
 .slick-prev {
-  left: 40px;
-  top: 305px;
+  left: 20px;
+  top: 270px;
   z-index: 99;
 
   @include respond-below(xs) {
     top: unset;
-    left: 8%;
-    bottom: 10%;
+    left: 4%;
+    bottom: 5%;
   }
 }
 
 .slick-next {
-  left: 70px;
-  top: 305px;
+  left: 50px;
+  top: 270px;
   z-index: 99;
 
   @include respond-below(xs) {
     top: unset;
-    left: 14%;
-    bottom: 10%;
+    left: 10%;
+    bottom: 5%;
   }
 
   @include respond-below(xxs) {
     top: unset;
-    left: 16%;
+    left: 12%;
+  }
+}
+
+.StoryCarouselWrapper {
+  .slick-prev {
+    left: 20px;
+    top: 418px;
+    z-index: 99;
+
+    @include respond-below(xs) {
+      top: unset;
+      left: 4%;
+      bottom: 1%;
+    }
+  }
+
+  .slick-next {
+    left: 50px;
+    top: 418px;
+    z-index: 99;
+
+    @include respond-below(xs) {
+      top: unset;
+      left: 12%;
+      bottom: 1%;
+    }
+
+    @include respond-below(xxs) {
+      top: unset;
+      left: 16%;
+    }
   }
 }
 </style>
@@ -534,6 +629,7 @@ a {
 
   .panel:hover {
     box-shadow: 0px 15px 30px 0px rgba(223, 117, 64, 0.15) !important;
+    background-color: #feeee5;
   }
 
   .smooth-transition {
@@ -799,7 +895,7 @@ a {
   .wallpapers {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 0.4rem;
+    margin-left: 0.1rem;
     margin-bottom: 1rem;
 
     @include respond-below(xs) {
@@ -808,20 +904,43 @@ a {
 
     .carouselWrapper {
       position: relative;
+      margin: 0 1rem;
+      border-radius: 1rem;
+
+      @include respond-below(lg) {
+        margin: unset;
+        margin-left: 20%;
+      }
+
+      @include respond-below(md) {
+        margin: unset;
+        margin-left: 12%;
+      }
+
+      @include respond-below(sm) {
+        margin: unset;
+        margin-left: -0.5rem;
+      }
+
+      @include respond-below(xs) {
+        margin: unset;
+        margin-left: 2.5%;
+      }
 
       .carousel {
-        width: 550px;
+        width: 520px;
+        border-radius: 1rem;
 
         @include respond-below(xs) {
-          width: 100vw !important;
-          margin-bottom: -20px;
+          width: 95vw !important;
         }
 
         .carouselImg {
-          width: 550px;
+          width: 520px;
+          border-radius: 1rem;
 
           @include respond-below(xs) {
-            width: 100vw !important;
+            width: 95vw !important;
           }
         }
       }
@@ -831,9 +950,9 @@ a {
         color: white;
         border: none;
         position: absolute;
-        top: 277px;
-        left: 355px;
-        z-index: 999;
+        bottom: 5px;
+        right: 13px;
+        z-index: 100;
         padding: 0.5rem 1rem;
         display: flex;
         align-items: center;
@@ -849,7 +968,7 @@ a {
 
         @include respond-below(xs) {
           bottom: 2%;
-          right: 8%;
+          right: 3%;
           left: unset;
           top: unset;
           width: unset;
@@ -867,24 +986,14 @@ a {
     .cornerHeading {
       position: absolute;
       z-index: 99;
-      top: 27px;
-      left: 27px;
+      top: 0px;
+      left: 0px;
       background: #e85325;
       color: #fff;
       font-weight: 600;
       padding: 8px 10px;
-      border-top-left-radius: 0.4rem;
-      border-bottom-right-radius: 0.4rem;
-
-      @include respond-below(xs) {
-        top: 8%;
-        left: 5%;
-      }
-
-      @include respond-below(xxs) {
-        top: 16px;
-        left: 17px;
-      }
+      border-top-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
 
       img {
         display: inline-block;
@@ -897,13 +1006,21 @@ a {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 2rem;
-    margin-left: 25%;
+    margin-left: 27%;
 
-    @include respond-below(xs) {
-      margin-left: 17%;
+    @include respond-below(lg) {
+      margin-left: 20%;
     }
 
-    @media screen and (max-width: 390px) {
+    @include respond-below(md) {
+      margin-left: 12%;
+    }
+
+    @include respond-below(sm) {
+      margin-left: 22%;
+    }
+
+    @include respond-below(xs) {
       margin-left: 1%;
     }
 
@@ -921,9 +1038,9 @@ a {
       color: white;
       border: none;
       position: absolute;
-      top: 350px;
-      left: 85px;
-      z-index: 999;
+      bottom: 4%;
+      right: 10px;
+      z-index: 100;
       padding: 0.5rem 1rem;
       display: flex;
       align-items: center;
@@ -934,16 +1051,20 @@ a {
       cursor: pointer;
       box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
 
+      @include respond-below(sm) {
+        bottom: 0;
+      }
+
       &:hover {
         box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
       }
 
       @media screen and (max-width: 390px) {
-      top: unset;
-      left: unset;
-      bottom: -1%;
-      right: 3%;
-    }
+        top: unset;
+        left: unset;
+        bottom: -1%;
+        right: 3%;
+      }
     }
 
     .cornerHeading {
@@ -966,12 +1087,70 @@ a {
     .storyWallpaper {
       position: relative;
       margin-right: 2rem;
-      margin-top: 1rem;
+      border-radius: 1rem;
 
       .bg {
-        @media screen and (max-width: 390px) {
-          width: 90vw;
+        width: 250px;
+        border-radius: 1rem;
+
+        @include respond-below(xs) {
+          width: 90vw !important;
         }
+      }
+    }
+
+    .StoryCarouselWrapper {
+      position: relative;
+      margin-right: 1rem;
+      border-radius: 1rem;
+      margin-bottom: 20px;
+
+      @include respond-below(xs) {
+        margin-bottom: 20px;
+        margin-right: 0;
+      }
+
+      .StoryCarousel {
+        width: 250px;
+        border-radius: 1rem;
+
+        @include respond-below(xs) {
+          width: 90vw !important;
+        }
+
+        .StorycarouselImg {
+          width: 250px;
+          border-radius: 1rem;
+
+          @include respond-below(xs) {
+            width: 90vw !important;
+          }
+        }
+      }
+
+      .story-button {
+        bottom: 0px !important;
+        right: 10px !important;
+        top: unset !important;
+        left: unset !important;
+      }
+    }
+
+    .cornerHeading {
+      position: absolute;
+      z-index: 99;
+      top: 0px;
+      left: 0px;
+      background: #e85325;
+      color: #fff;
+      font-weight: 600;
+      padding: 8px 10px;
+      border-top-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+
+      img {
+        display: inline-block;
+        margin-bottom: -2px;
       }
     }
   }
