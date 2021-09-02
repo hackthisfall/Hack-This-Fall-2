@@ -1,9 +1,9 @@
 <template>
   <div id="swag">
-    <Container name="swag">
-      <section class="content-section">
-        <HashHeader title="SWAG STORE" />
-        <div class="contents">
+    <section class="content-section">
+      <HashHeader title="SWAG STORE" />
+      <div class="contents">
+        <Container name="swagAbout">
           <div class="about">
             <p>
               Everyone loves swags so that they can brag about them. We at Hack
@@ -31,6 +31,8 @@
               delivered at your doorstep.
             </p>
           </div>
+        </Container>
+        <div class="container-fluid">
           <div
             v-for="(challenge, index) in challenges"
             :key="index"
@@ -61,6 +63,8 @@
               </div>
             </div>
           </div>
+        </div>
+        <Container name="swagDigital">
           <HashHeader title="DIGITAL SWAG" />
           <div class="about">
             <p>
@@ -300,9 +304,9 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </Container>
+        </Container>
+      </div>
+    </section>
   </div>
 </template>
 
