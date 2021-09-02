@@ -392,7 +392,7 @@ export default {
             {
               heading: "1. Sign up for a WazirX account",
               content:
-                "Head to <a target='_blank' href='https://wrx.gg/htf'>wrx.gg/htf</a> and sign up. WazirX is India’s most trusted bitcoin & cryptocurrency exchange platform. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge/'>Challenge Form</a>."
+                "Head to <a target='_blank' href='https://wrx.gg/htf'>wrx.gg/htf</a> and sign up. WazirX is India’s most trusted bitcoin & cryptocurrency exchange platform. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
             },
             {
               heading: "2. Sign up on SAWO Labs landing page",
