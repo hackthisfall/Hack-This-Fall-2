@@ -42,12 +42,12 @@
               <h2 class="section-title">{{ challenge.heading }}</h2>
             </div>
             <div
-              class="row m-lg-3 m-0 justify-content-xl-around justify-content-lg-around justify-content-center text-center text-lg-left"
+              class="row m-lg-3 m-0 justify-content-center text-center text-lg-left"
             >
               <div
                 v-for="(task, index) in challenge.tasks"
                 :key="index"
-                class="col-10 col-md-5 col-lg-3 m-3 panel shadow-1  smooth-transition-1"
+                class="col-10 col-md-5 col-lg-3 m-4 panel shadow-1  smooth-transition-1"
               >
                 <div class="row justify-content-center p-3">
                   <div
@@ -287,14 +287,6 @@
                 <img
                   style="margin-bottom: -1px"
                   src="~/assets/icons/download.svg"
-                  height="15px"
-                />
-              </button>
-              <button class="cta-button share">
-                SHARE&nbsp;&nbsp;&nbsp;
-                <img
-                  style="margin-bottom: -1px"
-                  src="~/assets/icons/insta.svg"
                   height="15px"
                 />
               </button>
@@ -613,6 +605,7 @@ a {
     justify-content: space-around;
     display: flex;
     align-self: center;
+    text-align: center;
     color: rgba(128, 128, 128, 1);
 
     h2.section-title {
@@ -639,11 +632,11 @@ a {
   .panel {
     padding: 0 30px;
     font-family: "Poppins";
+    background-color: #feeee5;
   }
 
   .panel:hover {
     box-shadow: 0px 15px 30px 0px rgba(223, 117, 64, 0.15) !important;
-    background-color: #feeee5;
   }
 
   .smooth-transition {
@@ -1020,7 +1013,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 2rem;
-    margin-left: 27%;
+    margin-top: 1.5rem;
+    margin-left: 26%;
 
     @include respond-below(lg) {
       margin-left: 20%;
@@ -1036,15 +1030,6 @@ a {
 
     @include respond-below(xs) {
       margin-left: 1%;
-    }
-
-    .share {
-      display: none !important;
-      top: 305px !important;
-
-      @include respond-below(xs) {
-        top: 290px !important;
-      }
     }
 
     .cta-button {
@@ -1115,7 +1100,7 @@ a {
 
     .StoryCarouselWrapper {
       position: relative;
-      margin-right: 1rem;
+      margin-right: 2rem;
       border-radius: 1rem;
       margin-bottom: 20px;
 
