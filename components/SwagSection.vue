@@ -3,35 +3,33 @@
     <section class="content-section">
       <HashHeader title="SWAG STORE" />
       <div class="contents">
-        <Container name="swagAbout">
-          <div class="about">
-            <p>
-              Everyone loves swags so that they can brag about them. We at Hack
-              This Fall love swags too. What if we tell you that you can earn
-              cool swags just by doing some interesting and fun challenges?
-              <br /><br />
-              We have designed various challenges especially for you and by
-              completing them, you can earn points for yourself. All the
-              challenges are listed below with their descriptions. Read them out
-              carefully. New challenges will be added with time and
-              announcements for the same will be done in our
-              <a target="_blank" href="https://discord.hackthisfall.tech/"
-                >Discord</a
-              >, so make sure you join us there. <br /><br />
-              Once you complete a Challenge, make sure you fill out our
-              <a target="_blank" href="https://bit.ly/htf2-challenge"
-                >Challenge Form</a
-              >, you can edit the form responses so feel free to submit one task
-              and return to edit the form to submit another task. Every task has
-              points and Top-3 people on the leaderboard after the hackathon
-              ends will stand a chance to win an outstanding exclusive
-              <span style="color: rgb(233, 83, 34)"
-                >Hack This Fall Merchandise Swag Pack</span
-              >
-              delivered at your doorstep.
-            </p>
-          </div>
-        </Container>
+        <div class="about">
+          <p>
+            Everyone loves swags so that they can brag about them. We at Hack
+            This Fall love swags too. What if we tell you that you can earn cool
+            swags just by doing some interesting and fun challenges?
+            <br /><br />
+            We have designed various challenges especially for you and by
+            completing them, you can earn points for yourself. All the
+            challenges are listed below with their descriptions. Read them out
+            carefully. New challenges will be added with time and announcements
+            for the same will be done in our
+            <a target="_blank" href="https://discord.hackthisfall.tech/"
+              >Discord</a
+            >, so make sure you join us there. <br /><br />
+            Once you complete a Challenge, make sure you fill out our
+            <a target="_blank" href="https://bit.ly/htf2-challenge"
+              >Challenge Form</a
+            >, you can edit the form responses so feel free to submit one task
+            and return to edit the form to submit another task. Every task has
+            points and Top-3 people on the leaderboard after the hackathon ends
+            will stand a chance to win an outstanding exclusive
+            <span style="color: rgb(233, 83, 34)"
+              >Hack This Fall Merchandise Swag Pack</span
+            >
+            delivered at your doorstep.
+          </p>
+        </div>
         <div class="container-fluid">
           <div
             v-for="(challenge, index) in challenges"
@@ -64,23 +62,23 @@
             </div>
           </div>
         </div>
+        <HashHeader title="DIGITAL SWAG" />
+        <div class="about">
+          <p>
+            Hack This Fall 2.0 is a virtual hackathon so get yourself equipped
+            with some amazing official Hack This Fall Digital Swags, and flex it
+            by owning them. We have a Digital Badge where you can upload your
+            photo and make it personalized. Get our cool Hack This Fall
+            wallpapers for your desktop computers and mobile phones. Don't
+            forget to use the zoom/meet wallpapers in your meetings. Also, to
+            have fun and enjoy, we have an Instagram Bingo Story for you, which
+            you can share on your stories, tag
+            <a target="_blank" href="https://www.instagram.com/hackthisfall/"
+              >@hackthisfall</a
+            >, and nominate your friends for the same.
+          </p>
+        </div>
         <Container name="swagDigital">
-          <HashHeader title="DIGITAL SWAG" />
-          <div class="about">
-            <p>
-              Hack This Fall 2.0 is a virtual hackathon so get yourself equipped
-              with some amazing official Hack This Fall Digital Swags, and flex
-              it by owning them. We have a Digital Badge where you can upload
-              your photo and make it personalized. Get our cool Hack This Fall
-              wallpapers for your desktop computers and mobile phones. Don't
-              forget to use the zoom/meet wallpapers in your meetings. Also, to
-              have fun and enjoy, we have an Instagram Bingo Story for you,
-              which you can share on your stories, tag
-              <a target="_blank" href="https://www.instagram.com/hackthisfall/"
-                >@hackthisfall</a
-              >, and nominate your friends for the same.
-            </p>
-          </div>
           <div class="virtualBadge">
             <div class="cornerHeading">
               <img
@@ -661,6 +659,8 @@ a {
   .contents {
     .about {
       padding: 10px;
+      margin: auto;
+      width: 90%;
       background-color: #feeee5;
       text-align: center;
       border-radius: 1rem;
@@ -758,7 +758,7 @@ a {
     }
 
     @media screen and (max-width: 360px) {
-      padding: 4rem 0 3rem 0rem;
+      padding: 4rem 0.5rem 3rem 0.5rem;
     }
 
     .cornerHeading {
@@ -792,6 +792,16 @@ a {
           canvas {
             height: 300px;
             width: 300px;
+          }
+        }
+
+        @media screen and (max-width: 360px) {
+          height: 280px;
+          width: 280px;
+
+          canvas {
+            height: 280px;
+            width: 280px;
           }
         }
       }
