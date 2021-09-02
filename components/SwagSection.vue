@@ -633,6 +633,7 @@ a {
     padding: 0 30px;
     font-family: "Poppins";
     background-color: #feeee5;
+    min-width: 29%;
   }
 
   .panel:hover {
