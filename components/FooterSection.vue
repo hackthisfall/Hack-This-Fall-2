@@ -39,6 +39,7 @@
           <a href="/#speakers">Speakers</a>
           <a href="/#sponsors">Sponsors</a>
           <a href="/#testimonials">Testimonials</a>
+          <a href="/swag">Swag Page</a>
         </div>
 
         <div class="panel">
