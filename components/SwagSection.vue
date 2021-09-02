@@ -394,7 +394,7 @@ export default {
             {
               heading: "2. Sign up on SAWO Labs landing page",
               content:
-                "Head to <a target='_blank href='https://sawolabs.com/hackathon/redeemnow/?hackathon_name=HackThisFall2.0'>SAWO Labs</a> and sign up. Say goodbye to OTPs and Passwords. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
+                "Head to <a target='_blank' href='https://sawolabs.com/hackathon/redeemnow/?hackathon_name=HackThisFall2.0'>SAWO Labs</a> and sign up. Say goodbye to OTPs and Passwords. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
             }
           ]
         }
