@@ -320,6 +320,7 @@ export default {
         edgeFriction: 0.35,
         infinite: true,
         speed: 500,
+        lazyLoad: true,
         slidesToShow: 1,
         slidesToScroll: 1
       },
