@@ -25,7 +25,10 @@
                   v-if="speaker.buttonText"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://www.youtube.com/c/HackThisFall"
+                  :href="
+                    speaker.sessionUrl ||
+                    'https://www.youtube.com/c/HackThisFall'
+                  "
                   class="cta-button smooth-transition discord"
                 >
                   {{ speaker.buttonText }}
@@ -81,6 +84,7 @@ export default {
         {
           title: "Dear Performant App,",
           name: "Nishu Goel",
+          sessionUrl: "https://bit.ly/htf2-nishu",
           buttonText: "WATCH NOW",
           date: "2 Sep 2021 20:30",
           endDate: "2 Sep 2021 21:30",
