@@ -108,6 +108,24 @@ export default {
           picture: require("~/assets/Speakers/samuel.jpg"),
         },
         {
+          description: "Product Manager, Agoric",
+          name: "Rowland Graus",
+          url: "https://twitter.com/rowlandgraus",
+          picture: require("~/assets/Speakers/rowland.jpeg"),
+        },
+        {
+          description: "CEO, Agoric",
+          name: "Dean Tribble",
+          url: "https://twitter.com/deantribble",
+          picture: require("~/assets/Speakers/dean.jpeg"),
+        },
+        {
+          description: "Software Engineer, Agoric",
+          name: "Kate Sills",
+          url: "https://twitter.com/kate_sills",
+          picture: require("~/assets/Speakers/kate.jpeg"),
+        },
+        {
           description: "Software Engineer, Microsoft",
           name: "Sashrika Kaur",
           url: "https://twitter.com/SashrikaKaur",
@@ -115,7 +133,7 @@ export default {
         },
         {
           description: "Developer Relations Lead, Strapi",
-          name: "Daniel Phiri",
+          name: "Daniel Phir",
           url: "https://twitter.com/malgamves",
           picture: require("~/assets/Speakers/daniel.jpg"),
         },
