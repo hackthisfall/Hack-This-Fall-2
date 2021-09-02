@@ -22,12 +22,14 @@
               >Challenge Form</a
             >, you can edit the form responses so feel free to submit one task
             and return to edit the form to submit another task. Every task has
-            points and Top-3 people on the leaderboard after the hackathon ends
-            will stand a chance to win an outstanding exclusive
+            points and <span style="color: rgb(233, 83, 34)">Top-3</span> people
+            on the leaderboard after the hackathon ends will stand a chance to
+            win an outstanding exclusive
             <span style="color: rgb(233, 83, 34)"
               >Hack This Fall Merchandise Swag Pack</span
             >
-            delivered at your doorstep.
+            delivered at your doorstep. The deadline to complete the challenges
+            is 31st October 2021.
           </p>
         </div>
         <div class="container-fluid">
@@ -79,7 +81,7 @@
           </p>
         </div>
         <Container name="swagDigital">
-          <div class="virtualBadge">
+          <div class="virtualBadge" id="badge">
             <div class="cornerHeading">
               <img
                 style="margin-bottom: -1px"
