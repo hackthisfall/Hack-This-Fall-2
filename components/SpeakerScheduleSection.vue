@@ -94,6 +94,7 @@ export default {
         },
         {
           title: "Build a Twitter UI Clone using React JS",
+          sessionUrl: "https://bit.ly/htf2-praveen",
           name: "Praveen Kumar",
           buttonText: "WATCH NOW",
           date: "4 Sep 2021 18:00",
