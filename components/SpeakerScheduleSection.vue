@@ -105,6 +105,7 @@ export default {
         },
         {
           title: "Sailing with Containers",
+          sessionUrl: "https://bit.ly/htf2-gourav",
           name: "Gourav Sharma",
           buttonText: "WATCH NOW",
           date: "7 Sep 2021 19:00",
