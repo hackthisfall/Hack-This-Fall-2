@@ -116,6 +116,7 @@ export default {
         },
         {
           title: "Living on the edge until your 30s",
+          sessionUrl: "https://bit.ly/htf2-narayanan",
           name: "Narayanan S",
           buttonText: "WATCH NOW",
           date: "9 Sep 2021 18:00",
