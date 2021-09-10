@@ -127,6 +127,7 @@ export default {
         },
         {
           title: "Integrating SAWO API In Your Project",
+          sessionUrl: "https://bit.ly/htf2-soumaya",
           name: "Soumaya Ranjan",
           buttonText: "WATCH NOW",
           date: "11 Sep 2021 19:00",
