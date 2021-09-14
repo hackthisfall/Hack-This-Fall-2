@@ -90,10 +90,10 @@ export default {
           picture: require("~/assets/Speakers/soumaya.jpeg"),
         },
         {
-          description: "Program Manager, InspiritAI",
-          name: "Noah Anderson",
+          description: "Curriculum Manager, InspiritAI",
+          name: "Amanda Somvilay",
           url: "https://twitter.com/hackthisfall",
-          picture: require("~/assets/Speakers/noah.png"),
+          picture: require("~/assets/Speakers/amanda.png"),
         },
         {
           description: "Developer Relations Engineer, Storyblok",

@@ -137,13 +137,13 @@ export default {
           rotation: 30,
         },
         {
-          title: "How AI Visual Recognition Works",
-          name: "Noah Anderson",
+          title: "Introduction to Computer Vision and Inspirit AI",
+          name: "Amanda Somvilay",
           buttonText: "WATCH NOW",
           date: "14 Sep 2021 20:00",
           endDate: "14 Sep 2021 21:00",
           url: "https://twitter.com/hackthisfall",
-          picture: require("~/assets/Speakers/noah.png"),
+          picture: require("~/assets/Speakers/amanda.png"),
           rotation: 30,
         },
         {
