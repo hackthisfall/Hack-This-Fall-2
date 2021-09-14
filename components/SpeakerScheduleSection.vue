@@ -138,6 +138,7 @@ export default {
         },
         {
           title: "Introduction to Computer Vision and Inspirit AI",
+          sessionUrl: "https://bit.ly/htf2-amanda",
           name: "Amanda Somvilay",
           buttonText: "WATCH NOW",
           date: "14 Sep 2021 20:00",
