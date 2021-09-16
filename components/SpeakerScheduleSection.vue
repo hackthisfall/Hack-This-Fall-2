@@ -150,6 +150,7 @@ export default {
         {
           title: "Crash Course into the Jamstack with Next.js & Storyblok",
           name: "Facundo Giuliani",
+          sessionUrl: "https://bit.ly/htf2-storyblok-live",
           buttonText: "WATCH NOW",
           date: "16 Sep 2021 19:00",
           endDate: "16 Sep 2021 20:30",
@@ -162,6 +163,7 @@ export default {
         },
         {
           title: "Introduction to Decentralized Finance",
+          sessionUrl: "https://bit.ly/htf2-agoric-live",
           name: "Rowland Graus",
           buttonText: "WATCH NOW",
           date: "17 Sep 2021 20:30",
@@ -172,6 +174,7 @@ export default {
         },
         {
           title: "Blockchain Is Ready For You",
+          sessionUrl: "https://bit.ly/htf2-agoric-live",
           name: "Dean Tribble",
           buttonText: "WATCH NOW",
           date: "17 Sep 2021 21:00",
@@ -182,6 +185,7 @@ export default {
         },
         {
           title: "How to Quickly Build an NFT Application",
+          sessionUrl: "https://bit.ly/htf2-agoric-live",
           name: "Kate Sills",
           buttonText: "WATCH NOW",
           date: "17 Sep 2021 21:30",
