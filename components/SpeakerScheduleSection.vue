@@ -196,6 +196,7 @@ export default {
         },
         {
           title: "Azure Services for Your Hacks",
+          sessionUrl: "https://bit.ly/htf2-sashrika",
           name: "Sashrika Kaur",
           buttonText: "WATCH NOW",
           date: "18 Sep 2021 17:00",
