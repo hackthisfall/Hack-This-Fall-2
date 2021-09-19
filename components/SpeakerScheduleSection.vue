@@ -207,6 +207,7 @@ export default {
         },
         {
           title: "Building Modern CMS Driven Web Application",
+          sessionUrl: "https://bit.ly/htf2-daniel",
           name: "Daniel Phir",
           buttonText: "WATCH NOW",
           date: "21 Sep 2021 20:00",
@@ -217,6 +218,7 @@ export default {
         },
         {
           title: "Getting started with Symbl.AI",
+          sessionUrl: "https://bit.ly/htf2-symbl-live",
           name: "Akanksha Bhasin",
           buttonText: "WATCH NOW",
           date: "23 Sep 2021 21:00",
@@ -230,6 +232,7 @@ export default {
         },
         {
           title: "Dockerizing your Discord Bot",
+          sessionUrl: "https://bit.ly/htf2-harshil",
           name: "Harshil Agrawal",
           buttonText: "WATCH NOW",
           date: "25 Sep 2021 18:00",
@@ -240,6 +243,7 @@ export default {
         },
         {
           title: "Unleashing the Power of Communities",
+          sessionUrl: "https://bit.ly/htf2-khushboo",
           name: "Khushboo Verma",
           buttonText: "WATCH NOW",
           date: "26 Sep 2021 17:30",
