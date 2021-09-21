@@ -150,10 +150,16 @@ export default {
           picture: require("~/assets/Speakers/eric.jpeg"),
         },
         {
-          description: "Jr. Developer Advocate, n8n",
-          name: "Harshil Agrawal",
-          url: "https://twitter.com/harshil1712",
-          picture: require("~/assets/Speakers/harshil.jpeg"),
+          description: "Auth0 Ambassador",
+          name: "Abel Mathew",
+          url: "https://twitter.com/DesignrKnight",
+          picture: require("~/assets/Speakers/abel.jpg"),
+        },
+        {
+          description: "COO, Filebase",
+          name: "Zac Cohen",
+          url: "https://www.linkedin.com/in/zaccohen427/",
+          picture: require("~/assets/Speakers/zac.jpg"),
         },
         {
           description: "Software Engineer, Microsoft",
