@@ -208,7 +208,7 @@ export default {
         {
           title: "Building Modern CMS Driven Web Application",
           sessionUrl: "https://bit.ly/htf2-daniel",
-          name: "Daniel Phir",
+          name: "Daniel Phiri",
           buttonText: "WATCH NOW",
           date: "21 Sep 2021 20:00",
           endDate: "21 Sep 2021 21:00",

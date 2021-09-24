@@ -133,7 +133,7 @@ export default {
         },
         {
           description: "Developer Relations Lead, Strapi",
-          name: "Daniel Phir",
+          name: "Daniel Phiri",
           url: "https://twitter.com/malgamves",
           picture: require("~/assets/Speakers/daniel.jpg"),
         },

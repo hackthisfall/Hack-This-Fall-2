@@ -97,7 +97,7 @@ export default {
           type: "DIAMOND SPONSOR",
           logos: [
             {
-              url: "https://filebase.com/",
+              url: "https://filebase.com/?utm_source=website&utm_medium=sponsor&utm_campaign=hackthisfall",
               image: require("~/assets/Sponsors/filebase.svg"),
             },
           ],
