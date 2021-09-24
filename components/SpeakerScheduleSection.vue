@@ -232,6 +232,7 @@ export default {
         },
         {
           title: "Use Google Sheets as backend for your project",
+          sessionUrl: "https://bit.ly/htf2-abel",
           name: "Abel Mathew",
           buttonText: "WATCH NOW",
           date: "25 Sep 2021 17:00",
@@ -253,6 +254,7 @@ export default {
         },
         {
           title: "Using GitHub to win Hackathons",
+          sessionUrl: "https://bit.ly/htf2-eddie",
           name: "Eddie Jaoude",
           buttonText: "WATCH NOW",
           date: "27 Sep 2021 18:30",
@@ -263,6 +265,7 @@ export default {
         },
         {
           title: "Deploy using Filebase's S3 Compatible API",
+          sessionUrl: "https://bit.ly/htf2-filebase-live",
           name: "Zac Cohen",
           buttonText: "WATCH NOW",
           date: "28 Sep 2021 20:00",
@@ -273,6 +276,7 @@ export default {
         },
         {
           title: "Move your Local Development Environment to the Cloud",
+          sessionUrl: "https://bit.ly/htf2-pauline",
           name: "Pauline Narvas",
           buttonText: "WATCH NOW",
           date: "30 Sep 2021 16:00",
