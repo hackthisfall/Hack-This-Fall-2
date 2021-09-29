@@ -189,7 +189,7 @@ export default {
               image: require("~/assets/Sponsors/devhero.png"),
             },
             {
-              url: "https://www.stickermule.com/",
+              url: "https://hackp.ac/mlh-stickermule-hackathons",
               image: require("~/assets/Sponsors/stickermule.png"),
             },
             {
