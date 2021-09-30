@@ -176,7 +176,7 @@ export default {
               image: require("~/assets/Sponsors/coil.jpg"),
             },
             {
-              url: "https:/gen.xyz/",
+              url: "https://gen.xyz/",
               image: require("~/assets/Sponsors/xyz.svg"),
             },
           ],
