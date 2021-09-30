@@ -147,8 +147,8 @@ export default {
               image: require("~/assets/Sponsors/sketch.png"),
             },
             {
-              url: "https://draftbit.com/",
-              image: require("~/assets/Sponsors/draftbit.png"),
+              url: "https://coil.com/",
+              image: require("~/assets/Sponsors/coil.jpg"),
             },
           ],
         },
@@ -172,8 +172,8 @@ export default {
               image: require("~/assets/Sponsors/replit.png"),
             },
             {
-              url: "https://coil.com/",
-              image: require("~/assets/Sponsors/coil.jpg"),
+              url: "https://draftbit.com/",
+              image: require("~/assets/Sponsors/draftbit.png"),
             },
             {
               url: "https://gen.xyz/",
