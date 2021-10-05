@@ -1,7 +1,10 @@
 <template>
-  <Container id="prizesPage">
+  <Container id="prizes" name="prizes">
     <section class="content-section">
       <HashHeader title="PRIZES" />
+      <div class="subheading">
+        <h2 class="section-title">HACK THIS FALL PRIZES</h2>
+      </div>
       <div class="contents">
         <div class="cards-grid">
           <div v-for="(prize, index) in prizes" :key="index">
@@ -16,9 +19,6 @@
                 </div>
               </div>
               <div class="card-side back">
-                <div class="image">
-                  <img :src="prize.prizeImage" :alt="prize.name" />
-                </div>
                 <p>
                   <span v-html="prize.description">{{}}</span>
                 </p>
@@ -26,16 +26,9 @@
             </div>
           </div>
         </div>
-        <MLH />
-        <!-- 
-          <OtherPrizes />
-        <AmagiAndElastic />
-        <Auth0AndRaahee />
-        <MagicLabs />
-        <GraphCMS />
-        <SawoAndPolygon />
-        <Symbl />
-         -->
+        <SponsoredPrizes />
+        <OtherPrizes />
+        <FunPrizes />
       </div>
     </section>
   </Container>
@@ -51,41 +44,46 @@ import HashHeader from "~/components/HashHeader";
 // import MagicLabs from "~/components/prizesPage/magicLabs.vue";
 // import SawoAndPolygon from "~/components/prizesPage/SawoAndPolygon.vue";
 // import GraphCMS from "~/components/prizesPage/graphCMS.vue";
-import MLH from "~/components/prizesPage/MLH.vue";
+import SponsoredPrizes from "~/components/prizesPage/SponsoredPrizes.vue";
+import OtherPrizes from "~/components/prizesPage/OtherPrizes.vue";
+import FunPrizes from "~/components/prizesPage/FunPrizes.vue";
 // import Symbl from "~/components/prizesPage/Symbl.vue";
 
 export default {
   components: {
     Container,
+    SponsoredPrizes,
     HashHeader,
+    OtherPrizes,
+    FunPrizes,
     // SubHashHeader,
     // OtherPrizes,
     // AmagiAndElastic,
     // Auth0AndRaahee,
     // MagicLabs,
     // SawoAndPolygon,
-    // GraphCMS,
-    MLH,
     // Symbl
   },
   data() {
     return {
       prizes: [
         {
-          name: "Winner (1st Prize)",
+          name: "Winner",
           image: require("~/assets/Prizes/1st.svg"),
           prizeImage: require("~/assets/Prizes/1st.svg"),
           amount: "₹25,000",
           details: "The team ranked 1st overall ",
-          description: "₹25000 Prize to winning team",
+          description:
+            "<ul><li>₹20000 Prize to winning team</li><li>Hack This Fall Swag pack</li></ul><br/><div style='text-align:center'>and more...</div>",
         },
         {
-          name: "First Runner-Up",
+          name: "1st Runner-Up",
           image: require("~/assets/Prizes/2nd.svg"),
           prizeImage: require("~/assets/Prizes/2nd.svg"),
           amount: "₹15,000",
           details: "The team ranked 2nd overall ",
-          description: "₹15000 Prize to winning team",
+          description:
+            "<ul><li>₹15000 Prize to winning team</li><li>Hack This Fall Swag pack</li></ul><br/><div style='text-align:center'>and more...</div>",
         },
         {
           name: "2nd Runner-Up",
@@ -93,7 +91,8 @@ export default {
           prizeImage: require("~/assets/Prizes/3rd.svg"),
           amount: "₹10,000",
           details: "The team ranked 3rd overall",
-          description: "₹10000 Prize to winning team",
+          description:
+            "<ul><li>₹10000 Prize to winning team</li><li>Hack This Fall Swag pack</li></ul><br/><div style='text-align:center'>and more...</div>",
         },
       ],
     };
@@ -107,6 +106,24 @@ export default {
   flex-direction: column;
   padding: 20px 0;
 
+  .subheading {
+    &.with-spacing {
+      margin-top: 2rem;
+    }
+    font-family: "Poppins";
+    font-style: bold;
+    justify-content: space-around;
+    display: flex;
+    align-self: center;
+    color: rgba(128, 128, 128, 1);
+
+    h2.section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 20px 10px 20px 0;
+    }
+  }
+
   .contents {
     padding: 20px 0;
 
@@ -117,7 +134,7 @@ export default {
       row-gap: 30px;
 
       @include respond-below(md) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
       }
 
       @include respond-below(sm) {
@@ -156,6 +173,7 @@ export default {
           transform: rotateY(180deg);
         }
         &:hover .card-side.back {
+          text-align: left;
           transform: rotateY(0deg);
         }
 
@@ -182,6 +200,41 @@ export default {
 
       .clickable {
         cursor: pointer;
+      }
+    }
+    .cta-buttons {
+      display: flex;
+      margin-top: 3rem;
+      justify-content: center;
+
+      a {
+        text-decoration: none;
+      }
+
+      .cta-button {
+        background-color: #e85325;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Segoe UI Bold";
+        border-radius: 0.5rem;
+        cursor: pointer;
+        box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
+
+        &:hover {
+          box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
+        }
+
+        img {
+          margin-right: 0.5rem;
+        }
+
+        &:hover {
+          box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
+        }
       }
     }
   }

@@ -27,7 +27,7 @@
       </div>
       <div class="cta-buttons">
         <a
-          href="/people"
+          href="/sponsors"
           class="cta-button smooth-transition discord"
           rel="noopener noreferrer"
           target="_blank"

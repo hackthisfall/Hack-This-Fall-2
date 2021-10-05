@@ -16,9 +16,6 @@
                 </div>
               </div>
               <div class="card-side back">
-                <div class="image">
-                  <img :src="prize.prizeImage" :alt="prize.name" />
-                </div>
                 <p>
                   <span v-html="prize.description">{{}}</span>
                 </p>
@@ -72,20 +69,22 @@ export default {
     return {
       prizes: [
         {
-          name: "Winner (1st Prize)",
+          name: "Winner",
           image: require("~/assets/Prizes/1st.svg"),
           prizeImage: require("~/assets/Prizes/1st.svg"),
           amount: "₹25,000",
           details: "The team ranked 1st overall ",
-          description: "₹25000 Prize to winning team",
+          description:
+            "<ul><li>₹20000 Prize to winning team</li><li>Hack This Fall Swag pack</li></ul><br/><div style='text-align:center'>and more...</div>",
         },
         {
-          name: "First Runner-Up",
+          name: "1st Runner-Up",
           image: require("~/assets/Prizes/2nd.svg"),
           prizeImage: require("~/assets/Prizes/2nd.svg"),
           amount: "₹15,000",
           details: "The team ranked 2nd overall ",
-          description: "₹15000 Prize to winning team",
+          description:
+            "<ul><li>₹15000 Prize to winning team</li><li>Hack This Fall Swag pack</li></ul><br/><div style='text-align:center'>and more...</div>",
         },
         {
           name: "2nd Runner-Up",
@@ -93,7 +92,8 @@ export default {
           prizeImage: require("~/assets/Prizes/3rd.svg"),
           amount: "₹10,000",
           details: "The team ranked 3rd overall",
-          description: "₹10000 Prize to winning team",
+          description:
+            "<ul><li>₹10000 Prize to winning team</li><li>Hack This Fall Swag pack</li></ul><br/><div style='text-align:center'>and more...</div>",
         },
       ],
     };
@@ -156,6 +156,7 @@ export default {
           transform: rotateY(180deg);
         }
         &:hover .card-side.back {
+          text-align: left;
           transform: rotateY(0deg);
         }
 
