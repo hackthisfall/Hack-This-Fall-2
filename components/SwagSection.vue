@@ -382,7 +382,17 @@ export default {
             {
               heading: "4. [Repeatable] Attend a Live Session",
               content:
-                "Attend any of the live speaker sessions happening the entire September on our <a target=\"_blank\" href=\"https://www.youtube.com/c/HackThisFall\"></a>YouTube Channel and tweet your learnings from the session. Share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
+                "Attend any of the live speaker sessions happening the entire September on our <a target=\"_blank\" href=\"https://www.youtube.com/c/HackThisFall\">YouTube Channel</a> and tweet your learnings from the session. Share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
+            },
+            {
+              heading: "5. Play Bingo on Instagram Story",
+              content:
+                "Remember the time we were obsessed with Insta Bingos? Check out Hack This Fall themed bingo <a target=\"_blank\" href=\"https://drive.google.com/file/d/1gBKNDRGFlg88YU1zA4ErvRXCrG7kznvg/view\">here</a>. Show it off on your stories & tag your favorite community members to complete it! Share the screenshot of your story in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
+            },
+            {
+              heading: "6. Show off using Instagram Filter",
+              content:
+                "We are all obsessed with Instagram filters. Explore an awesome Hack This Fall Virtual Booth Instagram filter on our profile <a target=\"_blank\" href=\"https://www.instagram.com/hackthisfall/\">here</a> and try out the filter made with love for all the hackers attending Hack This Fall 2.0! Share the screenshot of your story in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
             }
           ]
         },
@@ -398,6 +408,16 @@ export default {
               heading: "2. Sign up on SAWO Labs landing page",
               content:
                 "Head to <a target='_blank' href='https://sawolabs.com/hackathon/redeemnow/?hackathon_name=HackThisFall2.0'>SAWO Labs</a> and sign up. Say goodbye to OTPs and Passwords. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
+            },
+            {
+              heading: "3. Join the Storyblok Beta Crew",
+              content:
+                "Our favorite Headless CMS has just gotten even better! Check out the Storyblok v2, which will be launching later this year, & you can already sign-up for public beta <a target='_blank' href='https://bit.ly/htf2-storyblok-beta'>here</a>. Submit a screenshot of confirmation to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
+            },
+            {
+              heading: "4. Sign up and try out Filebase",
+              content:
+                "Filebase is S3 Compatible Object Storage Powered by Blockchain. Get the first 5 GB of storage as free by just signing up <a target='_blank' href='https://bit.ly/htf2-filebase-signup'>here</a>. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
             }
           ]
         }
