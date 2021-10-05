@@ -55,6 +55,13 @@ export default {
   components: {
     Slide,
   },
+  mounted() {
+    let lastPart = window.location.href.split("/").pop();
+    if (lastPart[0] === "#") {
+      lastPart = lastPart.substring(1);
+      document.getElementById(`nav-link-${lastPart}`)?.click();
+    }
+  },
 };
 </script>
 

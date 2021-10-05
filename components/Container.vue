@@ -32,7 +32,6 @@ export default {
       if (going === this.$waypointMap.GOING_IN) {
         ["about", "tracks", "speakers", "sponsors", "faq", "prizes"].forEach(
           (e) => {
-            console.log(e);
             document.getElementById(`nav-link-${e}`).classList.remove("active");
           }
         );
