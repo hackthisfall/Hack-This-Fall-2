@@ -1,5 +1,5 @@
 <template>
-  <Container id="speakers" name="speakers">
+  <Container id="speakers" name="people">
     <section class="content-section">
       <HashHeader title="SPEAKERS" />
       <div class="contents">
@@ -33,16 +33,6 @@
           <button>VIEW ALL</button>
         </a>
       </div>
-      <div class="cta-buttons">
-        <a
-          href="/people"
-          class="cta-button smooth-transition discord"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          VIEW MORE
-        </a>
-      </div>
     </section>
   </Container>
 </template>
@@ -59,6 +49,30 @@ export default {
   data() {
     return {
       speakers: [
+        {
+          description: "Engineer,Web DataWorks",
+          name: "Nishu Goel",
+          url: "https://twitter.com/TheNishuGoel",
+          picture: require("~/assets/Speakers/nishu.png"),
+        },
+        {
+          description: "JS Full stack developer",
+          name: "Praveen Kumar",
+          url: "https://praveen.science/",
+          picture: require("~/assets/Speakers/praveen.jpeg"),
+        },
+        {
+          description: "Associate Solution Architect, Red Hat",
+          name: "Gourav Sharma",
+          url: "https://twitter.com/rhcasharma",
+          picture: require("~/assets/Speakers/gourav.jpg"),
+        },
+        {
+          description: "Chief Business Officer, Unschool",
+          name: "Narayanan S",
+          url: "https://www.linkedin.com/in/chalkmeout/",
+          picture: require("~/assets/Speakers/narayanan.png"),
+        },
         {
           description: "Lead-Engineering, SAWO Labs",
           name: "Soumaya Ranjan",
@@ -102,10 +116,58 @@ export default {
           picture: require("~/assets/Speakers/kate.jpeg"),
         },
         {
+          description: "Software Engineer, Microsoft",
+          name: "Sashrika Kaur",
+          url: "https://twitter.com/SashrikaKaur",
+          picture: require("~/assets/Speakers/sashrika.jpg"),
+        },
+        {
+          description: "Developer Relations Lead, Strapi",
+          name: "Daniel Phiri",
+          url: "https://twitter.com/malgamves",
+          picture: require("~/assets/Speakers/daniel.jpg"),
+        },
+        {
+          description: "Community Evangelist, SymblAI",
+          name: "Akanksha Bhasin",
+          url: "https://www.linkedin.com/in/akankshabhasin",
+          picture: require("~/assets/Speakers/akanksha.jpeg"),
+        },
+        {
+          description: "Lead Developer Advocate, SymblAI",
+          name: "Eric Giannini",
+          url: "https://www.linkedin.com/in/unicornmobile",
+          picture: require("~/assets/Speakers/eric.jpeg"),
+        },
+        {
+          description: "Auth0 Ambassador",
+          name: "Abel Mathew",
+          url: "https://twitter.com/DesignrKnight",
+          picture: require("~/assets/Speakers/abel.jpg"),
+        },
+        {
           description: "COO, Filebase",
           name: "Zac Cohen",
           url: "https://www.linkedin.com/in/zaccohen427/",
           picture: require("~/assets/Speakers/zac.jpg"),
+        },
+        {
+          description: "Software Engineer, Microsoft",
+          name: "Khushboo Verma",
+          url: "https://twitter.com/khushbooverma_",
+          picture: require("~/assets/Speakers/khushboo.jpg"),
+        },
+        {
+          description: "Founder, EddieHub",
+          name: "Eddie Jaoude",
+          url: "https://twitter.com/eddiejaoude/",
+          picture: require("~/assets/Speakers/eddie.jpg"),
+        },
+        {
+          description: "Senior Community Engineer, Gitpod",
+          name: "Pauline Narvas",
+          url: "https://twitter.com/paulienuh",
+          picture: require("~/assets/Speakers/pauline.jpg"),
         },
       ],
     };

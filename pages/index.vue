@@ -26,15 +26,20 @@
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
     />
-    <!-- <PrizesSection /> -->
-    <SpeakersSection
+    <PrizesSection
       data-aos="fade-left"
       data-aos-delay="200"
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
     />
-    <SponsorsSection
+    <SpeakersSection
       data-aos="fade-right"
+      data-aos-delay="200"
+      data-aos-duration="800"
+      data-aos-easing="ease-in-out"
+    />
+    <SponsorsSection
+      data-aos="fade-left"
       data-aos-delay="200"
       data-aos-duration="800"
       data-aos-easing="ease-in-out"

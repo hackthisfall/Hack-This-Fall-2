@@ -2,6 +2,9 @@
   <Container id="prizes" name="prizes">
     <section class="content-section">
       <HashHeader title="PRIZES" />
+      <div class="subheading">
+        <h2 class="section-title">HACK THIS FALL PRIZES</h2>
+      </div>
       <div class="contents">
         <div class="cards-grid">
           <div v-for="(prize, index) in prizes" :key="index">
@@ -23,16 +26,9 @@
             </div>
           </div>
         </div>
-        <div class="cta-buttons">
-          <a
-            href="/prizes"
-            class="cta-button smooth-transition discord"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            VIEW MORE
-          </a>
-        </div>
+        <SponsoredPrizes />
+        <OtherPrizes />
+        <FunPrizes />
       </div>
     </section>
   </Container>
@@ -48,21 +44,24 @@ import HashHeader from "~/components/HashHeader";
 // import MagicLabs from "~/components/prizesPage/magicLabs.vue";
 // import SawoAndPolygon from "~/components/prizesPage/SawoAndPolygon.vue";
 // import GraphCMS from "~/components/prizesPage/graphCMS.vue";
-import MLH from "~/components/prizesPage/MLH.vue";
+import SponsoredPrizes from "~/components/prizesPage/SponsoredPrizes.vue";
+import OtherPrizes from "~/components/prizesPage/OtherPrizes.vue";
+import FunPrizes from "~/components/prizesPage/FunPrizes.vue";
 // import Symbl from "~/components/prizesPage/Symbl.vue";
 
 export default {
   components: {
     Container,
+    SponsoredPrizes,
     HashHeader,
+    OtherPrizes,
+    FunPrizes,
     // SubHashHeader,
     // OtherPrizes,
     // AmagiAndElastic,
     // Auth0AndRaahee,
     // MagicLabs,
     // SawoAndPolygon,
-    // GraphCMS,
-    MLH,
     // Symbl
   },
   data() {
@@ -107,6 +106,24 @@ export default {
   flex-direction: column;
   padding: 20px 0;
 
+  .subheading {
+    &.with-spacing {
+      margin-top: 2rem;
+    }
+    font-family: "Poppins";
+    font-style: bold;
+    justify-content: space-around;
+    display: flex;
+    align-self: center;
+    color: rgba(128, 128, 128, 1);
+
+    h2.section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 20px 10px 20px 0;
+    }
+  }
+
   .contents {
     padding: 20px 0;
 
@@ -126,8 +143,8 @@ export default {
 
       .card {
         position: relative;
-        border-radius: 15px;
         text-align: center;
+        border-radius: 15px;
         min-height: 200px;
         margin: auto;
 
