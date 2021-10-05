@@ -117,7 +117,7 @@ export default {
       row-gap: 30px;
 
       @include respond-below(md) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
       }
 
       @include respond-below(sm) {
