@@ -26,21 +26,20 @@
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
     />
-    <PrizesSection />
-    <PS
+    <PrizesSection
       data-aos="fade-left"
       data-aos-delay="200"
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
     />
     <SpeakersSection
-      data-aos="fade-left"
+      data-aos="fade-right"
       data-aos-delay="200"
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
     />
     <SponsorsSection
-      data-aos="fade-right"
+      data-aos="fade-left"
       data-aos-delay="200"
       data-aos-duration="800"
       data-aos-easing="ease-in-out"

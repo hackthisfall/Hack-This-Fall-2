@@ -39,18 +39,18 @@ export default {
       navlinks: [
         { link: "/#about", text: "about" },
         { link: "/#tracks", text: "tracks" },
+        { link: "/#prizes", text: "prizes" },
         { link: "/#speakers", text: "speakers" },
         { link: "/#sponsors", text: "sponsors" },
         { link: "/schedule", text: "Schedule" },
         { link: "/swag", text: "swag" },
         { link: "/#faq", text: "faq" },
-        { link: "/team", text: "team" }
-      ]
+      ],
     };
   },
   components: {
-    Slide
-  }
+    Slide,
+  },
 };
 </script>
 
