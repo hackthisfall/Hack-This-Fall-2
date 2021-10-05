@@ -71,10 +71,10 @@ export default {
           name: "Winner",
           image: require("~/assets/Prizes/1st.svg"),
           prizeImage: require("~/assets/Prizes/1st.svg"),
-          amount: "₹25,000",
+          amount: "₹20,000",
           details: "The team ranked 1st overall ",
           description:
-            "<ul><li>₹20000 Prize to winning team</li><li>Hack This Fall Swag pack</li></ul><br/><div style='text-align:center'>and more...</div>",
+            "<ul><li>₹20,000 Prize to winning team</li><li>Hack This Fall Swag pack</li></ul><br/><div style='text-align:center'>and more...</div>",
         },
         {
           name: "1st Runner-Up",
@@ -83,7 +83,7 @@ export default {
           amount: "₹15,000",
           details: "The team ranked 2nd overall ",
           description:
-            "<ul><li>₹15000 Prize to winning team</li><li>Hack This Fall Swag pack</li></ul><br/><div style='text-align:center'>and more...</div>",
+            "<ul><li>₹15,000 Prize to winning team</li><li>Hack This Fall Swag pack</li></ul><br/><div style='text-align:center'>and more...</div>",
         },
         {
           name: "2nd Runner-Up",
@@ -92,7 +92,7 @@ export default {
           amount: "₹10,000",
           details: "The team ranked 3rd overall",
           description:
-            "<ul><li>₹10000 Prize to winning team</li><li>Hack This Fall Swag pack</li></ul><br/><div style='text-align:center'>and more...</div>",
+            "<ul><li>₹10,000 Prize to winning team</li><li>Hack This Fall Swag pack</li></ul><br/><div style='text-align:center'>and more...</div>",
         },
       ],
     };
@@ -173,8 +173,11 @@ export default {
           transform: rotateY(180deg);
         }
         &:hover .card-side.back {
-          text-align: left;
           transform: rotateY(0deg);
+        }
+
+        .card-side.back {
+          text-align: left;
         }
 
         .image {

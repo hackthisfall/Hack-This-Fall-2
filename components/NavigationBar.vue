@@ -16,7 +16,11 @@
               :key="index"
               :id="'nav-link-' + navlink.text"
             >
-              <a :href="navlink.link">{{ navlink.text }}</a>
+              <a
+                :href="navlink.link"
+                :target="navlink.newTab ? '_new' : '_self'"
+                >{{ navlink.text }}</a
+              >
             </li>
           </ul>
         </div>
@@ -42,8 +46,8 @@ export default {
         { link: "/#prizes", text: "prizes" },
         { link: "/#speakers", text: "speakers" },
         { link: "/#sponsors", text: "sponsors" },
-        { link: "/schedule", text: "Schedule" },
-        { link: "/swag", text: "swag" },
+        { link: "/schedule", text: "Schedule", newTab: true },
+        { link: "/swag", text: "swag", newTab: true },
         { link: "/#faq", text: "faq" },
       ],
     };
