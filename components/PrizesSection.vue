@@ -1,5 +1,5 @@
 <template>
-  <Container id="prizes">
+  <Container id="prizes" name="prizes">
     <section class="content-section">
       <HashHeader title="PRIZES" />
       <div class="contents">
