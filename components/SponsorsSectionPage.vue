@@ -234,7 +234,7 @@ export default {
               image: require("~/assets/Community-Partners/devstrons.png"),
             },
             {
-              url: "",
+              url: "https://www.linkedin.com/company/learn-with-community/",
               image: require("~/assets/Community-Partners/lwc.png"),
             },
             {

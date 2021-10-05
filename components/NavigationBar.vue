@@ -27,7 +27,12 @@
       </div>
     </div>
     <Slide class="slidingDrawer" :closeOnNavigation="true">
-      <a v-for="(navlink, index) in navlinks" :key="index" :href="navlink.link">
+      <a
+        v-for="(navlink, index) in navlinks"
+        :key="index"
+        :href="navlink.link"
+        :target="navlink.newTab ? '_new' : '_self'"
+      >
         <span>{{ navlink.text }}</span>
       </a>
     </Slide>
@@ -56,11 +61,14 @@ export default {
     Slide,
   },
   mounted() {
-    let lastPart = window.location.href.split("/").pop();
-    if (lastPart[0] === "#") {
-      lastPart = lastPart.substring(1);
-      document.getElementById(`nav-link-${lastPart}`)?.click();
-    }
+    window.addEventListener("hashchange", function () {
+      let lastPart = window.location.href.split("/").pop();
+      if (lastPart[0] === "#") {
+        lastPart = lastPart.substring(1);
+        console.log(document.getElementById(`nav-link-${lastPart}`));
+        document.getElementById(`nav-link-${lastPart}`)?.click();
+      }
+    });
   },
 };
 </script>

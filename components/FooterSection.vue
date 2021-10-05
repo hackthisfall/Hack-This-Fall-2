@@ -115,6 +115,15 @@ export default {
     Container,
     CopyLink,
   },
+  mounted() {
+    setTimeout(() => {
+      let lastPart = window.location.href.split("/").pop();
+      if (lastPart[0] === "#") {
+        lastPart = lastPart.substring(1);
+        document.getElementById(`${lastPart}`)?.scrollIntoView(true);
+      }
+    }, 500);
+  },
 };
 </script>
 
