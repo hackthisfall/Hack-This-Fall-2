@@ -60,16 +60,6 @@ export default {
   components: {
     Slide,
   },
-  mounted() {
-    window.addEventListener("hashchange", function () {
-      let lastPart = window.location.href.split("/").pop();
-      if (lastPart[0] === "#") {
-        lastPart = lastPart.substring(1);
-        console.log(document.getElementById(`nav-link-${lastPart}`));
-        document.getElementById(`nav-link-${lastPart}`)?.click();
-      }
-    });
-  },
 };
 </script>
 
