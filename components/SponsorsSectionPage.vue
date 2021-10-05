@@ -25,16 +25,6 @@
           </div>
         </div>
       </div>
-      <div class="cta-buttons">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="/sponsors"
-          class="cta-button smooth-transition discord"
-        >
-          VIEW ALL
-        </a>
-      </div>
     </section>
   </Container>
 </template>
@@ -178,6 +168,125 @@ export default {
             {
               url: "https://gen.xyz/",
               image: require("~/assets/Sponsors/xyz.svg"),
+            },
+          ],
+        },
+        {
+          type: "MERCHANDISE PARTNER",
+          logos: [
+            {
+              url: "https://devhero.shop/",
+              image: require("~/assets/Sponsors/devhero.png"),
+            },
+            {
+              url: "https://hackp.ac/mlh-stickermule-hackathons",
+              image: require("~/assets/Sponsors/stickermule.png"),
+            },
+            {
+              url: "https://dev.to/",
+              image: require("~/assets/Sponsors/devto.png"),
+            },
+          ],
+        },
+        {
+          type: "STREAMING PARTNER",
+          logos: [
+            {
+              url: "https://streamyard.com/about",
+              image: require("~/assets/Sponsors/streamyard.png"),
+            },
+          ],
+        },
+        {
+          type: "COMMUNITY PARTNER",
+          logos: [
+            {
+              url: "https://www.pugroups.in/",
+              image: require("~/assets/Community-Partners/pug.png"),
+            },
+            {
+              url: "https://iter.hackclub.com",
+              image: require("~/assets/Community-Partners/hc-iter.png"),
+            },
+            {
+              url: "https://twitter.com/EvokeCoders",
+              image: require("~/assets/Community-Partners/coders-evoke.png"),
+            },
+            {
+              url: "https://www.learnforcause.com/",
+              image: require("~/assets/Community-Partners/lfc.jpg"),
+            },
+            {
+              url: "https://githubsrm.tech/",
+              image: require("~/assets/Community-Partners/github-srm.png"),
+            },
+            {
+              url: "https://linktr.ee/devstrons",
+              image: require("~/assets/Community-Partners/devstrons.png"),
+            },
+            {
+              url: "",
+              image: require("~/assets/Community-Partners/lwc.png"),
+            },
+            {
+              url: "https://twitter.com/basecampXD",
+              image: require("~/assets/Community-Partners/basecamp.png"),
+            },
+            {
+              url: "https://apihacks.co/",
+              image: require("~/assets/Community-Partners/phantom.jpg"),
+            },
+            {
+              url: "https://community.mozilla.org/en/groups/moznuv/",
+              image: require("~/assets/Community-Partners/moz-nuv.png"),
+            },
+            {
+              url: "https://geeksforgeeksvitb.study/",
+              image: require("~/assets/Community-Partners/gfg-bhopal.png"),
+            },
+            {
+              url: "https://techsahead.netlify.app/",
+              image: require("~/assets/Community-Partners/techsahead.png"),
+            },
+            {
+              url: "https://www.srmkzilla.net/",
+              image: require("~/assets/Community-Partners/srmkzilla.png"),
+            },
+            {
+              url: "https://www.gdsclnct.xyz/",
+              image: require("~/assets/Community-Partners/gdg-lnct.png"),
+            },
+            {
+              url: "https://linktr.ee/developer_student_community",
+              image: require("~/assets/Community-Partners/opinco.png"),
+            },
+            {
+              url: "https://gdsc.community.dev/rajasthan-technical-university-kota/",
+              image: require("~/assets/Community-Partners/gdg-rtu.jpg"),
+            },
+            {
+              url: "https://twitter.com/hackclubsvit",
+              image: require("~/assets/Community-Partners/hc-svit.png"),
+            },
+            {
+              url: "https://alexadevsrm.com",
+              image: require("~/assets/Community-Partners/alexa-srm.png"),
+            },
+            {
+              url: "https://thesundayorg.social/",
+              image: require("~/assets/Community-Partners/sunday.png"),
+            },
+            {
+              url: "https://nitsurat.acm.org/",
+              image: require("~/assets/Community-Partners/acm-surat.png"),
+            },
+            {
+              url: "https://twitter.com/ankushsgandhi",
+              image: require("~/assets/Community-Partners/codevisors.png"),
+            },
+            {
+              url: "https://twitter.com/pieai_jaipur",
+              image: require("~/assets/Community-Partners/pie-jaipur.png"),
             },
           ],
         },

@@ -37,17 +37,17 @@ export default {
         {
           name: "First Prize",
           image: require("~/assets/Prizes/1st.svg"),
-          amount: "",
+          amount: "₹20,000",
         },
         {
           name: "Second Prize",
           image: require("~/assets/Prizes/2nd.svg"),
-          amount: " ",
+          amount: "₹15,000",
         },
         {
           name: "Third Prize",
           image: require("~/assets/Prizes/3rd.svg"),
-          amount: " ",
+          amount: "₹10,000",
         },
       ],
     };
@@ -124,6 +124,7 @@ export default {
           text-align: center;
           margin-top: 20px;
           color: rgba(233, 83, 34, 1);
+          font-family: "Segoe UI Bold";
           text-align: center;
           .prizeAmount {
             color: rgba(128, 128, 128, 1);
