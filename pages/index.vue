@@ -26,7 +26,13 @@
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
     />
-    <!-- <PrizesSection /> -->
+    <PrizesSection />
+    <PS
+      data-aos="fade-left"
+      data-aos-delay="200"
+      data-aos-duration="800"
+      data-aos-easing="ease-in-out"
+    />
     <SpeakersSection
       data-aos="fade-left"
       data-aos-delay="200"

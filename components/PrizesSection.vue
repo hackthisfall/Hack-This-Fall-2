@@ -16,7 +16,9 @@
             </div>
           </div>
         </div>
-        <a class="view-all" href="/prizes"><button>VIEW ALL ></button></a>
+        <a class="view-all" href="/prizes"
+          ><button class="smooth-transition">VIEW ALL</button></a
+        >
       </div>
     </section>
   </Container>
@@ -37,17 +39,17 @@ export default {
         {
           name: "First Prize",
           image: require("~/assets/Prizes/1st.svg"),
-          amount: "",
+          amount: "₹20000",
         },
         {
           name: "Second Prize",
           image: require("~/assets/Prizes/2nd.svg"),
-          amount: " ",
+          amount: "₹15000",
         },
         {
           name: "Third Prize",
           image: require("~/assets/Prizes/3rd.svg"),
-          amount: " ",
+          amount: "₹10000",
         },
       ],
     };
@@ -87,7 +89,6 @@ export default {
       grid-template-columns: repeat(3, 1fr);
       column-gap: 4rem;
       row-gap: 30px;
-      margin-top: 2rem;
 
       @include respond-below(md) {
         grid-template-columns: repeat(3, 1fr);
@@ -137,26 +138,8 @@ export default {
     }
 
     .view-all {
-      .cta-button {
-        background-color: #e85325;
-        color: white;
-        border: none;
-        padding: 0.5rem 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-family: "Segoe UI Bold";
-        border-radius: 0.5rem;
-
-        img {
-          margin-right: 0.5rem;
-        }
-
-        &:nth-of-type(2) {
-          margin-left: 1rem;
-        }
-      }
       button {
+        cursor: pointer;
         margin-top: 2rem;
         color: white;
         padding: 0.5rem 1rem;
@@ -167,6 +150,10 @@ export default {
         img {
           transform: rotate(90deg);
           height: 0.4rem;
+        }
+
+        &:hover {
+          box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
         }
       }
     }
