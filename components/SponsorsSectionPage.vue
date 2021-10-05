@@ -198,6 +198,15 @@ export default {
           ],
         },
         {
+          type: "CERTIFICATE PARTNER",
+          logos: [
+            {
+              url: "https://givemycertificate.com/",
+              image: require("~/assets/Sponsors/gmc.png"),
+            },
+          ],
+        },
+        {
           type: "COMMUNITY PARTNER",
           logos: [
             {

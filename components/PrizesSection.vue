@@ -1,5 +1,5 @@
 <template>
-  <Container id="prizes" name="prizes">
+  <Container id="prizes">
     <section class="content-section">
       <HashHeader title="PRIZES" />
       <div class="contents">
@@ -16,7 +16,11 @@
             </div>
           </div>
         </div>
-        <a class="view-all" href="/prizes"><button>VIEW ALL ></button></a>
+        <div class="cta-buttons">
+          <a href="/prizes" class="cta-button smooth-transition discord">
+            VIEW MORE
+          </a>
+        </div>
       </div>
     </section>
   </Container>
@@ -37,17 +41,17 @@ export default {
         {
           name: "First Prize",
           image: require("~/assets/Prizes/1st.svg"),
-          amount: "₹20,000",
+          amount: "₹20000",
         },
         {
           name: "Second Prize",
           image: require("~/assets/Prizes/2nd.svg"),
-          amount: "₹15,000",
+          amount: "₹15000",
         },
         {
           name: "Third Prize",
           image: require("~/assets/Prizes/3rd.svg"),
-          amount: "₹10,000",
+          amount: "₹10000",
         },
       ],
     };
@@ -87,7 +91,6 @@ export default {
       grid-template-columns: repeat(3, 1fr);
       column-gap: 4rem;
       row-gap: 30px;
-      margin-top: 2rem;
 
       @include respond-below(md) {
         grid-template-columns: repeat(3, 1fr);
@@ -124,7 +127,6 @@ export default {
           text-align: center;
           margin-top: 20px;
           color: rgba(233, 83, 34, 1);
-          font-family: "Segoe UI Bold";
           text-align: center;
           .prizeAmount {
             color: rgba(128, 128, 128, 1);
@@ -137,7 +139,15 @@ export default {
       }
     }
 
-    .view-all {
+    .cta-buttons {
+      display: flex;
+      margin-top: 3rem;
+      justify-content: center;
+
+      a {
+        text-decoration: none;
+      }
+
       .cta-button {
         background-color: #e85325;
         color: white;
@@ -148,26 +158,15 @@ export default {
         justify-content: space-between;
         font-family: "Segoe UI Bold";
         border-radius: 0.5rem;
+        cursor: pointer;
+        box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
+
+        &:hover {
+          box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
+        }
 
         img {
           margin-right: 0.5rem;
-        }
-
-        &:nth-of-type(2) {
-          margin-left: 1rem;
-        }
-      }
-      button {
-        margin-top: 2rem;
-        color: white;
-        padding: 0.5rem 1rem;
-        background-color: #e85325;
-        border: none;
-        font-family: "Segoe UI Bold";
-        border-radius: 0.5rem;
-        img {
-          transform: rotate(90deg);
-          height: 0.4rem;
         }
       }
     }

@@ -35,7 +35,7 @@
       </div>
       <div class="cta-buttons">
         <a href="/people" class="cta-button smooth-transition discord">
-          MORE
+          VIEW MORE
         </a>
       </div>
     </section>
