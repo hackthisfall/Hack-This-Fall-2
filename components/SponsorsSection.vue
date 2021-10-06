@@ -118,10 +118,6 @@ export default {
               image: require("~/assets/Sponsors/sawolabs.png"),
             },
             {
-              url: "https://hackclub.com/",
-              image: require("~/assets/Sponsors/hackclub.png"),
-            },
-            {
               url: "https://www.quicknode.com/",
               image: require("~/assets/Sponsors/quicknode.png"),
             },

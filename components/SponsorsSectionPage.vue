@@ -108,10 +108,6 @@ export default {
               image: require("~/assets/Sponsors/sawolabs.png"),
             },
             {
-              url: "https://hackclub.com/",
-              image: require("~/assets/Sponsors/hackclub.png"),
-            },
-            {
               url: "https://www.quicknode.com/",
               image: require("~/assets/Sponsors/quicknode.png"),
             },
@@ -210,6 +206,10 @@ export default {
           type: "COMMUNITY PARTNER",
           logos: [
             {
+              url: "https://hackclub.com/",
+              image: require("~/assets/Sponsors/hackclub.png"),
+            },
+            {
               url: "https://www.pugroups.in/",
               image: require("~/assets/Community-Partners/pug.png"),
             },
@@ -224,6 +224,10 @@ export default {
             {
               url: "https://www.learnforcause.com/",
               image: require("~/assets/Community-Partners/lfc.jpg"),
+            },
+            {
+              url: "https://semikolan.co",
+              image: require("~/assets/Community-Partners/semikolan.png"),
             },
             {
               url: "https://githubsrm.tech/",
@@ -266,9 +270,14 @@ export default {
               image: require("~/assets/Community-Partners/gdg-lnct.png"),
             },
             {
-              url: "https://linktr.ee/developer_student_community",
+              url: "https://linktr.ee/opincocommunity/",
               image: require("~/assets/Community-Partners/opinco.png"),
             },
+            {
+              url: "https://gdsc.community.dev/university-institute-of-technology-rgpv-bhopal/",
+              image: require("~/assets/Community-Partners/gdsc-rgpv.png"),
+            },
+
             {
               url: "https://gdsc.community.dev/rajasthan-technical-university-kota/",
               image: require("~/assets/Community-Partners/gdg-rtu.jpg"),
@@ -292,6 +301,10 @@ export default {
             {
               url: "https://twitter.com/ankushsgandhi",
               image: require("~/assets/Community-Partners/codevisors.png"),
+            },
+            {
+              url: "https://aitoss.club/",
+              image: require("~/assets/Community-Partners/oss.png"),
             },
             {
               url: "https://twitter.com/pieai_jaipur",
