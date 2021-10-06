@@ -71,29 +71,23 @@ export default {
         {
           name: "Winner",
           image: require("~/assets/Prizes/1st.svg"),
-          prizeImage: require("~/assets/Prizes/1st.svg"),
-          amount: "INR 20,000",
           details: "The team ranked 1st overall ",
           description:
-            "<ul><li>INR 20,000 Prize to winning team</li><li>Hack This Fall Swag pack</li></ul><br/><div style='text-align:center'>and more...</div>",
+            "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 20,000</span> Prize to winning team</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li></ul><br/><div style='text-align:center'>and more...</div>",
         },
         {
           name: "1st Runner-Up",
           image: require("~/assets/Prizes/2nd.svg"),
-          prizeImage: require("~/assets/Prizes/2nd.svg"),
-          amount: "INR 15,000",
           details: "The team ranked 2nd overall ",
           description:
-            "<ul><li>INR 15,000 Prize to winning team</li><li>Hack This Fall Swag pack</li></ul><br/><div style='text-align:center'>and more...</div>",
+            "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 15,000</span> Prize to winning team</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li></ul><br/><div style='text-align:center'>and more...</div>",
         },
         {
           name: "2nd Runner-Up",
           image: require("~/assets/Prizes/3rd.svg"),
-          prizeImage: require("~/assets/Prizes/3rd.svg"),
-          amount: "INR 10,000",
           details: "The team ranked 3rd overall",
           description:
-            "<ul><li>INR 10,000 Prize to winning team</li><li>Hack This Fall Swag pack</li></ul><br/><div style='text-align:center'>and more...</div>",
+            "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 10,000</span> Prize to winning team</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li></ul><br/><div style='text-align:center'>and more...</div>",
         },
       ],
     };

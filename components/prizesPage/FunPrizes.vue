@@ -65,14 +65,14 @@ export default {
           image: require("~/assets/Prizes/github-bag.png"),
           details: "Win GitHub Bag 🎒",
           description:
-            "<ul><li>Bring in your creativity and show it to us by designing a Mascot for Hack This Fall.</li><li>Tweet your design and tag us @hackthisfall using hashtag #HackThisFall</li><li>The mascot which wins our heart gets a GitHub bag as a prize!🎒</li></ul>",
+            "<ul><li>Bring in your creativity and show it to us by designing a Mascot for Hack This Fall.</li><li>Tweet your design and tag us <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hackthisfall'>@hackthisfall</a> using hashtag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#HackThisFall</a></li><li>The mascot which wins our heart gets a <b style='color: rgba(233, 83, 34, 1)'>GitHub Bag</b> as a prize!🎒</li></ul>",
         },
         {
           name: "Meme Challenge",
           image: require("~/assets/Prizes/gh-tee.png"),
           details: "Win GitHub Tee 👕",
           description:
-            "<ul><li>Tickle our funny bones and create some amazing memes to stand out. </li><li>Tweet them by tagging us @hackthisfall using hashtag #HackThisFall </li><li>The best meme maker will receive a GitHub Tshirt as a prize👕</li></ul>",
+            "<ul><li>Tickle our funny bones and create some amazing memes to stand out. </li><li>Tweet them by tagging us <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hackthisfall'>@hackthisfall</a> using hashtag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#HackThisFall</a></li><li>The best meme maker will receive a <b style='color: rgba(233, 83, 34, 1)'>GitHub Tshirt</b> as a prize👕</li></ul>",
         },
       ],
     };
