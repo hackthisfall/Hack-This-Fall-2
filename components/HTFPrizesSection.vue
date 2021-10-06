@@ -26,9 +26,9 @@
             </div>
           </div>
         </div>
+        <FunPrizes />
         <SponsoredPrizes />
         <OtherPrizes />
-        <FunPrizes />
       </div>
     </section>
   </Container>
@@ -47,7 +47,7 @@ import HashHeader from "~/components/HashHeader";
 import SponsoredPrizes from "~/components/prizesPage/SponsoredPrizes.vue";
 import OtherPrizes from "~/components/prizesPage/OtherPrizes.vue";
 import FunPrizes from "~/components/prizesPage/FunPrizes.vue";
-// import Symbl from "~/components/prizesPage/Symbl.vue";
+import MLH from "~/components/prizesPage/MLH.vue";
 
 export default {
   components: {
@@ -56,6 +56,7 @@ export default {
     HashHeader,
     OtherPrizes,
     FunPrizes,
+    MLH,
     // SubHashHeader,
     // OtherPrizes,
     // AmagiAndElastic,

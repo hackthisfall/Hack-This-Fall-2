@@ -23,7 +23,7 @@
         <div class="card-side front">
           <div class="image">
             <img :src="prize.image" :alt="prize.name" class="prizeImage1" />
-            <div class="line" v-if="prize.name"></div>
+            <!-- <div class="line" v-if="prize.name"></div> -->
           </div>
           <div class="texts">
             <h4 class="prizeName" v-html="prize.name">{{}}</h4>
@@ -46,7 +46,7 @@ export default {
       magicLabPrizes: [
         {
           name: 'Best Hardware Hack Sponsored by Digi-Key <span style="color: #00FFA4">x</span> 2',
-          image: require("~/assets/Prizes/grove-kit.webp"),
+          image: require("~/assets/Prizes/github-bag.png"),
           description:
             "Grove Beginner Kit, with an embedded Arduino compatible board",
           details:
@@ -54,7 +54,7 @@ export default {
         },
         {
           name: "Best Use of Jina",
-          image: require("~/assets/Prizes/arduino-ml-kit.png"),
+          image: require("~/assets/Prizes/gh-tee.png"),
           description: "Arduino Tiny Machine Learning Kits",
           details:
             "Jina is an open-source search framework that makes building AI-powered search applications even easier for hackers. Create search functionality that matches all kinds of data, including text, images, video & more! Hack with Jina for a chance to win <b>Arduino Tiny Machine Learning Kits</b> for you and your team!",
