@@ -90,6 +90,14 @@ export default {
               url: "https://filebase.com/?utm_source=website&utm_medium=sponsor&utm_campaign=hackthisfall",
               image: require("~/assets/Sponsors/filebase.svg"),
             },
+            {
+              url: "https://www.courier.com/",
+              image: require("~/assets/Sponsors/courier.png"),
+            },
+            {
+              url: "https://atsign.com/",
+              image: require("~/assets/Sponsors/atsign.webp"),
+            },
           ],
         },
         {

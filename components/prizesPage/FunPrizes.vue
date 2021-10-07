@@ -152,6 +152,10 @@ export default {
           padding: 0.5rem 0 0.5rem 0;
           min-height: 100%;
           background-color: #feede3;
+
+          @include respond-below(sm) {
+            display: unset !important;
+          }
         }
         .card-side.back {
           transform: rotateY(-180deg);
