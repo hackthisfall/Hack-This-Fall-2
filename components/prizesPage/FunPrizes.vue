@@ -72,6 +72,13 @@ export default {
           description:
             "<ul><li>Tickle our funny bones and create some amazing memes to stand out. </li><li>Tweet them by tagging us <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hackthisfall'>@hackthisfall</a> using hashtag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#HackThisFall</a></li><li>The best meme maker will receive a <span style='color: rgba(233, 83, 34, 1)'>GitHub Tshirt</span> as a prize👕</li></ul>",
         },
+        {
+          name: "Octocat Challenge",
+          image: require("~/assets/Prizes/octocat.png"),
+          details: "Win GitHub Swags 🐙",
+          description:
+            "<ul><li>Draw an Octocat & tweet it by tagging us <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hackthisfall'>@hackthisfall</a> & <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/GitHubEducation'>@GitHubEducation</a> using hashtag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#HackThisFall</a> & <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#MyOctocat</a></li><li>The best octocat will receive <span style='color: rgba(233, 83, 34, 1)'>GitHub Swags</span> as a prize 🐙</li></ul>",
+        },
       ],
     };
   },
@@ -105,8 +112,8 @@ export default {
 
     .cards-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 30px;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 20px;
       row-gap: 30px;
 
       @include respond-below(md) {
@@ -140,10 +147,10 @@ export default {
           backface-visibility: hidden;
           position: absolute;
           display: flex;
-          justify-content: space-evenly;
+          justify-content: center;
           align-items: center;
-          padding: 0.5rem;
-          min-height: 95%;
+          padding: 0.5rem 0 0.5rem 0;
+          min-height: 100%;
           background-color: #feede3;
         }
         .card-side.back {
@@ -158,13 +165,14 @@ export default {
 
         .card-side.back {
           text-align: left;
+          padding-right: 0.2rem;
         }
 
         .image {
           align-content: center;
           img {
             width: 150px;
-            margin: 10px;
+            margin: 10px 10px 10px 0;
           }
         }
 

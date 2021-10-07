@@ -26,8 +26,8 @@
             </div>
           </div>
         </div>
+        <SponsoredPrizes /> 
         <FunPrizes />
-        <SponsoredPrizes />
         <OtherPrizes />
       </div>
     </section>

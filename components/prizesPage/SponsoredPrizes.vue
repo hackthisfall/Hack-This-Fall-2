@@ -3,7 +3,8 @@
     <div class="subheading">
       <h2 class="section-title">SPONSORED PRIZES</h2>
     </div>
-    <p style="text-align: center">To be announced soon...</p>
+    <MLH />
+    <p style="text-align: center">More prizes coming soon...</p>
   </section>
 </template>
 
