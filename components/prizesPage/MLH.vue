@@ -187,9 +187,18 @@ export default {
           min-height: 95%;
           background-color: rgb(253, 250, 245);
           overflow: hidden;
+
+          @include respond-below(sm) {
+            flex-direction: column;
+            padding: 40px 10px;
+          }
         }
         .card-side.back {
           transform: rotateY(-180deg);
+
+          @include respond-below(sm) {
+            flex-direction: column;
+          }
         }
         &:hover .card-side.front {
           transform: rotateY(180deg);
@@ -245,6 +254,10 @@ export default {
         .texts {
           margin-left: 1rem;
           flex: 1;
+          
+          @include respond-below(sm) {
+            margin-left: 0;
+          }
           .prizeName {
             font-size: 1.2rem;
             font-weight: bold;
