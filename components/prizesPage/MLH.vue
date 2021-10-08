@@ -1,10 +1,7 @@
 <template>
   <div class="contents">
     <div class="prizes-wrapper">
-      <img
-          src="~/assets/Sponsors/mlh.svg"
-          alt="company"
-        />
+      <img src="~/assets/Sponsors/mlh.svg" alt="company" />
       <div class="cards-grid">
         <img
           class="background"
@@ -32,7 +29,7 @@
             </div>
             <div class="texts">
               <h4 class="prizeName" v-html="prize.name">{{}}</h4>
-              <p class="prize">{{prize.prizeName}}</p>
+              <p class="prize">{{ prize.prizeName }}</p>
             </div>
           </div>
         </div>
@@ -52,12 +49,11 @@ export default {
     return {
       magicLabPrizes: [
         {
-          name:
-            'Best Web Monetization Project',
+          name: "Best Web Monetization Project",
           image: require("~/assets/Sponsors/coil.png"),
           prizeName: "Portable Charger, Coil Pin & $60 Credit [2 winners]",
           details:
-            "Using your preferred hardware or hardware emulator, build a hack for your chance to win a <span style='color: rgba(233, 83, 34, 1)'>Grove Beginner Kit, with an embedded Arduino compatible board</span>. 1 prize for each winning team member with 2 winning teams per event!"
+            "Coil is all about providing better ways to access and reward the creators, publishers and platforms that you love. Build a web monetized hack using Coil for a chance to win an <span style='color: rgba(233, 83, 34, 1)'>Anker - PowerCore Quick Charge Portable Charger, exclusive Coil pin and a $60 coil credit redemption card!</span> Bonus points for originality and creativity!"
         },
         {
           name: "Best Use of Linode Cloud",
@@ -79,7 +75,7 @@ export default {
           prizeName: "Twilio Swag Box GameGo Console",
           details:
             "Twilio allows you to incorporate mobile messaging, phone calls and a ton of other awesome communication features right into your hackathon project using web service APIs. Build a hack that simplifies your life using any one of Twilio’s APIs for a chance to win a <span style='color: rgba(233, 83, 34, 1)'>Twilio Swag Box and GameGo Console</span> for you and each of your teammates!"
-        },
+        }
       ]
     };
   }
@@ -254,7 +250,7 @@ export default {
         .texts {
           margin-left: 1rem;
           flex: 1;
-          
+
           @include respond-below(sm) {
             margin-left: 0;
           }
