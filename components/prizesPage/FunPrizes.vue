@@ -70,7 +70,7 @@ export default {
           image: require("~/assets/Prizes/gh-tee.png"),
           details: "Win GitHub Tee 👕",
           description:
-            "<ul><li>Tickle our funny bones and create some amazing memes to stand out. </li><li>Tweet them by tagging us <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hackthisfall'>@hackthisfall</a> using hashtag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#HackThisFall</a></li><li>The best meme maker will receive a <span style='color: rgba(233, 83, 34, 1)'>GitHub Tshirt</span> as a prize👕</li></ul>",
+            "<ul><li>Tickle our funny bones and create some amazing memes to stand out. </li><li>Tweet them by tagging us <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hackthisfall'>@hackthisfall</a> using hashtag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/HTFMeme'>#HTFMeme</a> & <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#HackThisFall</a></li><li>The best meme maker will receive a <span style='color: rgba(233, 83, 34, 1)'>GitHub Tshirt</span> as a prize👕</li></ul>",
         },
         {
           name: "Octocat Challenge",
