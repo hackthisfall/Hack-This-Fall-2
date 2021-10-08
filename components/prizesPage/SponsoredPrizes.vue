@@ -3,6 +3,7 @@
     <div class="subheading">
       <h2 class="section-title">SPONSORED PRIZES</h2>
     </div>
+    <AtSign />
     <MLH />
     <p style="text-align: center">More prizes coming soon...</p>
   </section>
@@ -19,6 +20,7 @@ import HashHeader from "~/components/HashHeader";
 // import SawoAndPolygon from "~/components/prizesPage/SawoAndPolygon.vue";
 // import GraphCMS from "~/components/prizesPage/graphCMS.vue";
 import MLH from "~/components/prizesPage/MLH.vue";
+import AtSign from "~/components/prizesPage/TheAtcompany.vue";
 // import Symbl from "~/components/prizesPage/Symbl.vue";
 
 export default {
@@ -33,6 +35,7 @@ export default {
     // SawoAndPolygon,
     // GraphCMS,
     MLH,
+    AtSign
     // Symbl
   },
 };

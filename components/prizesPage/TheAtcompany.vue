@@ -1,7 +1,27 @@
 <template>
   <div class="contents">
     <div class="prizes-wrapper">
-      <img src="~/assets/Sponsors/mlh.svg" alt="company" />
+      <img src="~/assets/Sponsors/atsign.webp" alt="company" />
+      <p style="width: 90%; margin: auto">
+        <span
+          style="color: rgba(233, 83, 34, 1); font-size: 18px; font-weight: 600;"
+          >The @wavi Contest</span
+        >
+        <br /><br /><span style="color: rgba(233, 83, 34, 1)">@wavi</span> is an
+        app from
+        <span style="color: rgba(233, 83, 34, 1)">The @ Company</span> that
+        allows you to create a highly customizable microsite in a matter of
+        minutes. This can be a public space for your business, your project,
+        your pet or yourself.<br /><br />
+        Skills needed for using
+        <span style="color: rgba(233, 83, 34, 1)">@wavi</span> - Creativity,
+        typing, copy-pasting and the ability to Google well. If you want to kick
+        it up a notch, cutting and pasting embed codes will come in super
+        handy.<br /><br />
+        <span style="color: rgba(233, 83, 34, 1)">Pro tip</span>: For really
+        cool CUSTOM CONTENT, try pasting HTML into the TEXT field.
+      </p>
+      <br />
       <div class="cards-grid">
         <img
           class="background"
@@ -23,10 +43,9 @@
             </div>
           </div>
           <div class="card-side front">
-            <div class="image">
+            <!-- <div class="image">
               <img :src="prize.image" :alt="prize.name" class="prizeImage1" />
-              <!-- <div class="line" v-if="prize.name"></div> -->
-            </div>
+            </div> -->
             <div class="texts">
               <h4 class="prizeName" v-html="prize.name">{{}}</h4>
               <p class="prize">{{ prize.prizeName }}</p>
@@ -49,32 +68,34 @@ export default {
     return {
       magicLabPrizes: [
         {
-          name: "Best Web Monetization Project",
-          image: require("~/assets/Sponsors/coil.png"),
-          prizeName: "Portable Charger, Coil Pin & $60 Credit [2 winners]",
+          name: "Best Overall Winner",
+          prizeName: "INR 17,500",
           details:
-            "Coil is all about providing better ways to access and reward the creators, publishers and platforms that you love. Build a web monetized hack using Coil for a chance to win an <span style='color: rgba(233, 83, 34, 1)'>Anker - PowerCore Quick Charge Portable Charger, exclusive Coil pin and a $60 coil credit redemption card!</span> Bonus points for originality and creativity!"
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 17,500</span> awarded to the person whose page stands out the most for all the right reasons."
         },
         {
-          name: "Best Use of Linode Cloud",
-          image: require("~/assets/Sponsors/linode.png"),
-          prizeName: "Raspberry Pi 4 Starter Kit",
+          name: "Most Creative Use of Custom Content",
+          prizeName: "INR 7,500",
           details:
-            "Use any one of Linode's wide array of cloud products and take your hack to the next level! Whether you're looking for data storage, compute power or hosting, Linode has what you need and the complimentary credits to get you started. Sign up and start hacking for your chance to win a <span style='color: rgba(233, 83, 34, 1)'>Raspberry Pi 4 Starter Kit</span>."
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person who used the custom content feature in the most creative and unique ways."
         },
         {
-          name: "Best Domain Name from GoDaddy Registry",
-          image: require("~/assets/Sponsors/godaddy.png"),
-          prizeName: "Hack from Home Kit",
+          name: "Most Desi/Festive",
+          prizeName: "INR 7,500",
           details:
-            "GoDaddy Registry is giving you everything you need to be the best hacker no matter where you are. Register your domain name with GoDaddy Registry for a chance to win a Hack from Home Kit! <span style='color: rgba(233, 83, 34, 1)'>Each Kit contains wireless earbuds, blue light glasses, selfie ring light and a pouch for easy transport</span>."
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the page that showcases Indian culture, art, traditions, the festivals and its people the best."
         },
         {
-          name: "Most Creative Use of Twilio",
-          image: require("~/assets/Sponsors/twilio.png"),
-          prizeName: "Twilio Swag Box GameGo Console",
+          name: "Best Pet Page",
+          prizeName: "INR 7,500",
           details:
-            "Twilio allows you to incorporate mobile messaging, phone calls and a ton of other awesome communication features right into your hackathon project using web service APIs. Build a hack that simplifies your life using any one of Twilio’s APIs for a chance to win a <span style='color: rgba(233, 83, 34, 1)'>Twilio Swag Box and GameGo Console</span> for you and each of your teammates!"
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the best page about their pet(s)"
+        },
+        {
+          name: "Most Nerdy Page",
+          prizeName: "INR 7,500",
+          details:
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the most nerdy page. We expect the content on this to be super techy!"
         }
       ]
     };
@@ -95,13 +116,13 @@ export default {
 
     img {
       margin: auto auto 30px;
-      width: 200px;
+      width: 300px;
     }
 
     .cards-grid {
       display: grid;
       position: relative;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       background-color: #feede3;
       border-radius: 10px;
       column-gap: 30px;
@@ -167,6 +188,10 @@ export default {
         min-height: 200px;
         position: relative;
 
+        @include respond-below(sm) {
+            min-height: 100px;
+        }
+
         @media (max-width: 1000px) {
           width: 96%;
         }
@@ -218,11 +243,11 @@ export default {
         }
 
         @include respond-below(md) {
-          min-height: 350px;
+          min-height: 250px;
         }
 
         @include respond-below(sm) {
-          min-height: 400px;
+          min-height: 200px;
         }
 
         .image {

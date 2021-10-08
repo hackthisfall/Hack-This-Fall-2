@@ -48,7 +48,7 @@ export default {
       navlinks: [
         { link: "/#about", text: "about" },
         { link: "/#tracks", text: "tracks" },
-        { link: "/#prizes", text: "prizes" },
+        { link: "/prizes", text: "prizes" },
         { link: "/#speakers", text: "speakers" },
         { link: "/#sponsors", text: "sponsors" },
         { link: "/schedule", text: "Schedule", newTab: true },
