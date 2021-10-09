@@ -225,6 +225,10 @@ export default {
           min-height: 400px;
         }
 
+        @media (max-width: 341px) {
+          min-height: 500px;
+        }
+
         .image {
           position: relative;
           display: flex;

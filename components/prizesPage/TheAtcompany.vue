@@ -117,6 +117,10 @@ export default {
     img {
       margin: auto auto 30px;
       width: 300px;
+
+      @include respond-below(xs) {
+        width: 90%;
+      }
     }
 
     .cards-grid {
