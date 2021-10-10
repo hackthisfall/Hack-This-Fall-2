@@ -13,6 +13,7 @@
                 <div class="texts">
                   <h4 class="prizeName">{{ prize.name }}</h4>
                   <p class="prizeDescription" v-html="prize.details">{{}}</p>
+                  <p class="prizeAmount" v-html="prize.amount">{{}}</p>
                 </div>
               </div>
               <div class="card-side back">
@@ -72,6 +73,7 @@ export default {
           name: "Winner",
           image: require("~/assets/Prizes/1st.svg"),
           details: "The team ranked 1st overall ",
+          amount: "INR 50,000",
           description:
             "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 50,000</span> Prize to winning team</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li></ul><br/><div style='text-align:center'>and more...</div>"
         },
@@ -79,6 +81,7 @@ export default {
           name: "1st Runner-Up",
           image: require("~/assets/Prizes/2nd.svg"),
           details: "The team ranked 2nd overall ",
+          amount: "INR 35,000",
           description:
             "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 35,000</span> Prize to winning team</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li></ul><br/><div style='text-align:center'>and more...</div>"
         },
@@ -86,6 +89,7 @@ export default {
           name: "2nd Runner-Up",
           image: require("~/assets/Prizes/3rd.svg"),
           details: "The team ranked 3rd overall",
+          amount: "INR 20,000",
           description:
             "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 20,000</span> Prize to winning team</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li></ul><br/><div style='text-align:center'>and more...</div>"
         }
