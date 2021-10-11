@@ -64,7 +64,7 @@ export default {
         },
         {
           name: "Best Domain Name from GoDaddy Registry",
-          image: require("~/assets/Sponsors/godaddy.png"),
+          image: require("~/assets/Sponsors/godaddy.jpg"),
           prizeName: "Hack from Home Kit",
           details:
             "GoDaddy Registry is giving you everything you need to be the best hacker no matter where you are. Register your domain name with GoDaddy Registry for a chance to win a Hack from Home Kit! <span style='color: rgba(233, 83, 34, 1)'>Each Kit contains wireless earbuds, blue light glasses, selfie ring light and a pouch for easy transport</span>."
