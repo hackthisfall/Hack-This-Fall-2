@@ -10,10 +10,10 @@
         >. Hackers can choose what they want to build in the NFT space.<br /><br />
         <span style="color: rgba(233, 83, 34, 1)">1.</span> Create and launch
         your own non-fungible token project using the Agoric smart contracting
-        framework <br /><br />
+        framework. <br /><br />
         <span style="color: rgba(233, 83, 34, 1)">2. Level Up:</span> Complete a
         contract to allow NFT creators to perform “NFT drops” which are
-        currently popular on other blockchains [Work with dapp-nft-drop as a
+        currently popular on other blockchains. [Work with dapp-nft-drop as a
         starting point]
       </p>
       <br />
