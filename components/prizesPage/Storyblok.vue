@@ -38,9 +38,9 @@
           :class="['card', prize.specialClass]"
         >
           <div class="card-side front">
-             <div class="image">
-                <img :src="prize.image" :alt="prize.name" />
-              </div>
+            <div class="image">
+              <img :src="prize.image" :alt="prize.name" />
+            </div>
             <div class="texts">
               <h4 class="prizeName" v-html="prize.name">{{}}</h4>
               <p class="prize">{{ prize.prizeName }}</p>
@@ -64,10 +64,11 @@ export default {
       magicLabPrizes: [
         {
           name: "Best Project",
-          prizeName: "Keychron K2 (Hot-swappable) Wireless Mechanical Keyboard (Version 2)",
+          prizeName:
+            "Keychron K2 (Hot-swappable) Wireless Mechanical Keyboard (Version 2)",
           details:
             "<span style='color: rgba(233, 83, 34, 1)'>INR 17,500</span> awarded to the person whose page stands out the most for all the right reasons.",
-            image: "https://cdn.shopify.com/s/files/1/0059/0630/1017/products/Keychron-K2-hot-swappable-wireless-mechanical-keyboard-for-Mac-Windows-iOS-Gateron-switch-red-with-type-C-RGB-white-backlight_1800x1800.jpg?v=1604558640"
+          image: require("~/assets/keyboard.png")
         }
       ]
     };
@@ -115,7 +116,7 @@ export default {
     }
 
     .cards-grid {
-        justify-content: center;
+      justify-content: center;
       position: relative;
       background-color: #feede3;
       border-radius: 10px;
