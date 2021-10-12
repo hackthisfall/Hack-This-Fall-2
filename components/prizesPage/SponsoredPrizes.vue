@@ -3,6 +3,8 @@
     <div class="subheading">
       <h2 class="section-title">SPONSORED PRIZES</h2>
     </div>
+    <Agoric />
+    <Storyblok />
     <AtSign />
     <MLH />
     <p style="text-align: center">More prizes coming soon...</p>
@@ -21,6 +23,8 @@ import HashHeader from "~/components/HashHeader";
 // import GraphCMS from "~/components/prizesPage/graphCMS.vue";
 import MLH from "~/components/prizesPage/MLH.vue";
 import AtSign from "~/components/prizesPage/TheAtcompany.vue";
+import Agoric from "~/components/prizesPage/Agoric.vue";
+import Storyblok from "~/components/prizesPage/Storyblok.vue";
 // import Symbl from "~/components/prizesPage/Symbl.vue";
 
 export default {
@@ -35,7 +39,9 @@ export default {
     // SawoAndPolygon,
     // GraphCMS,
     MLH,
-    AtSign
+    AtSign,
+    Agoric,
+    Storyblok
     // Symbl
   },
 };
@@ -47,6 +53,7 @@ export default {
   flex-direction: column;
   padding: 0px 0;
   margin-top: -0.5rem;
+  justify-content: center;
 
   .subheading {
     font-family: "Poppins";
