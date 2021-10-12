@@ -1,28 +1,25 @@
 <template>
   <div class="contents">
     <div class="prizes-wrapper">
-      <img src="~/assets/Sponsors/atsign.webp" alt="company" />
+      <img src="~/assets/Sponsors/storyblok.svg" alt="company" />
       <p style="width: 90%; margin: auto">
-        <span
-          style="color: rgba(233, 83, 34, 1); font-size: 18px; font-weight: 600;"
-          >The @wavi Contest</span
+        Teams may use
+        <span style="color: rgba(233, 83, 34, 1)"
+          >Storyblok APIs (Content Delivery API or Management API)</span
         >
-        <br /><br /><span style="color: rgba(233, 83, 34, 1)">@wavi</span> is an
-        app from
-        <span style="color: rgba(233, 83, 34, 1)">The @ Company</span> that
-        allows you to create a highly customizable microsite in a matter of
-        minutes. This can be a public space for your business, your project,
-        your pet or yourself.<br /><br />
-        Skills needed for using
-        <span style="color: rgba(233, 83, 34, 1)">@wavi</span> - Creativity,
-        typing, copy-pasting and the ability to Google well. If you want to kick
-        it up a notch, cutting and pasting embed codes will come in super
-        handy.<br /><br />
-        <span style="color: rgba(233, 83, 34, 1)">Pro tip</span>: For really
-        cool CUSTOM CONTENT, try pasting HTML into the TEXT field.
+        to integrate Storyblok with their project.<br /><br />
+        We encourage you to also check out how to expand Storyblok using custom
+        apps and field types (plugins) to create an awesome hack.<br /><br />
+        Storyblok plans to look closely at everyone who provides the best
+        Storyblok hack to see if they could be an asset to one of their teams
+        <span style="color: rgba(233, 83, 34, 1)">(see the open positions)</span
+        >.
       </p>
       <br />
-      <a class="cta-button smooth-transition" target="_blank" href="https://atsign.com/hack-this-fall-wavi-contest/"
+      <a
+        class="cta-button smooth-transition"
+        target="_blank"
+        href="https://storyblok.notion.site/Storyblok-Track-Prize-edea7a031c1f4f5f88f4cff1998e69a8"
         >More Info</a
       >
       <div class="cards-grid">
@@ -40,15 +37,10 @@
           :key="index"
           :class="['card', prize.specialClass]"
         >
-          <div class="card-side back">
-            <div class="texts">
-              <p class="prizeDescription" v-html="prize.details">{{}}</p>
-            </div>
-          </div>
           <div class="card-side front">
-            <!-- <div class="image">
-              <img :src="prize.image" :alt="prize.name" class="prizeImage1" />
-            </div> -->
+             <div class="image">
+                <img :src="prize.image" :alt="prize.name" />
+              </div>
             <div class="texts">
               <h4 class="prizeName" v-html="prize.name">{{}}</h4>
               <p class="prize">{{ prize.prizeName }}</p>
@@ -71,34 +63,11 @@ export default {
     return {
       magicLabPrizes: [
         {
-          name: "Best Overall Winner",
-          prizeName: "INR 17,500",
+          name: "Best Project",
+          prizeName: "Keychron K2 (Hot-swappable) Wireless Mechanical Keyboard (Version 2)",
           details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 17,500</span> awarded to the person whose page stands out the most for all the right reasons."
-        },
-        {
-          name: "Most Creative Use of Custom Content",
-          prizeName: "INR 7,500",
-          details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person who used the custom content feature in the most creative and unique ways."
-        },
-        {
-          name: "Most Desi/Festive",
-          prizeName: "INR 7,500",
-          details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the page that showcases Indian culture, art, traditions, the festivals and its people the best."
-        },
-        {
-          name: "Best Pet Page",
-          prizeName: "INR 7,500",
-          details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the best page about their pet(s)"
-        },
-        {
-          name: "Most Nerdy Page",
-          prizeName: "INR 7,500",
-          details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the most nerdy page. We expect the content on this to be super techy!"
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 17,500</span> awarded to the person whose page stands out the most for all the right reasons.",
+            image: "https://cdn.shopify.com/s/files/1/0059/0630/1017/products/Keychron-K2-hot-swappable-wireless-mechanical-keyboard-for-Mac-Windows-iOS-Gateron-switch-red-with-type-C-RGB-white-backlight_1800x1800.jpg?v=1604558640"
         }
       ]
     };
@@ -110,6 +79,7 @@ export default {
 .contents {
   width: 99%;
   padding: 20px 0;
+  margin: auto;
 
   .prizes-wrapper {
     background-color: #feede3;
@@ -145,14 +115,12 @@ export default {
     }
 
     .cards-grid {
-      display: grid;
+        justify-content: center;
       position: relative;
-      grid-template-columns: 1fr 1fr 1fr;
       background-color: #feede3;
       border-radius: 10px;
-      column-gap: 30px;
+
       margin-top: 1.5rem;
-      row-gap: 30px;
 
       @include respond-below(md) {
         grid-template-columns: repeat(3, 1fr);
@@ -211,11 +179,13 @@ export default {
       }
 
       .card {
-        min-height: 200px;
+        min-height: 300px;
         position: relative;
+        width: 600px;
+        margin: auto;
 
         @include respond-below(sm) {
-          min-height: 100px;
+          min-height: 450px !important;
         }
 
         @media (max-width: 1000px) {
@@ -247,9 +217,9 @@ export default {
             flex-direction: column;
           }
         }
-        &:hover .card-side.front {
+        /* &:hover .card-side.front {
           transform: rotateY(180deg);
-        }
+        } */
         &:hover .card-side.back {
           transform: rotateY(0deg);
         }

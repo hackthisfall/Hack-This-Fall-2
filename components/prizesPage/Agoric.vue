@@ -1,30 +1,28 @@
 <template>
   <div class="contents">
     <div class="prizes-wrapper">
-      <img src="~/assets/Sponsors/atsign.webp" alt="company" />
+      <img src="~/assets/Sponsors/agoric.svg" alt="company" />
       <p style="width: 90%; margin: auto">
-        <span
-          style="color: rgba(233, 83, 34, 1); font-size: 18px; font-weight: 600;"
-          >The @wavi Contest</span
-        >
-        <br /><br /><span style="color: rgba(233, 83, 34, 1)">@wavi</span> is an
-        app from
-        <span style="color: rgba(233, 83, 34, 1)">The @ Company</span> that
-        allows you to create a highly customizable microsite in a matter of
-        minutes. This can be a public space for your business, your project,
-        your pet or yourself.<br /><br />
-        Skills needed for using
-        <span style="color: rgba(233, 83, 34, 1)">@wavi</span> - Creativity,
-        typing, copy-pasting and the ability to Google well. If you want to kick
-        it up a notch, cutting and pasting embed codes will come in super
-        handy.<br /><br />
-        <span style="color: rgba(233, 83, 34, 1)">Pro tip</span>: For really
-        cool CUSTOM CONTENT, try pasting HTML into the TEXT field.
+        Agoric is offering
+        <span style="color: rgba(233, 83, 34, 1)">3 prizes</span> for the
+        <span style="color: rgba(233, 83, 34, 1)"
+          >best NFT related projects</span
+        >. Hackers can choose what they want to build in the NFT space.<br /><br />
+        <span style="color: rgba(233, 83, 34, 1)">1.</span> Create and launch
+        your own non-fungible token project using the Agoric smart contracting
+        framework <br /><br />
+        <span style="color: rgba(233, 83, 34, 1)">2. Level Up:</span> Complete a
+        contract to allow NFT creators to perform “NFT drops” which are
+        currently popular on other blockchains [Work with dapp-nft-drop as a
+        starting point]
       </p>
       <br />
-      <a class="cta-button smooth-transition" target="_blank" href="https://atsign.com/hack-this-fall-wavi-contest/"
+      <!-- <a
+        class="cta-button smooth-transition"
+        target="_blank"
+        href="https://atsign.com/hack-this-fall-wavi-contest/"
         >More Info</a
-      >
+      > -->
       <div class="cards-grid">
         <img
           class="background"
@@ -40,11 +38,11 @@
           :key="index"
           :class="['card', prize.specialClass]"
         >
-          <div class="card-side back">
+          <!-- <div class="card-side back">
             <div class="texts">
               <p class="prizeDescription" v-html="prize.details">{{}}</p>
             </div>
-          </div>
+          </div> -->
           <div class="card-side front">
             <!-- <div class="image">
               <img :src="prize.image" :alt="prize.name" class="prizeImage1" />
@@ -71,34 +69,16 @@ export default {
     return {
       magicLabPrizes: [
         {
-          name: "Best Overall Winner",
-          prizeName: "INR 17,500",
+          name: "Best Project",
+          prizeName: "USD 1,500",
           details:
             "<span style='color: rgba(233, 83, 34, 1)'>INR 17,500</span> awarded to the person whose page stands out the most for all the right reasons."
         },
         {
-          name: "Most Creative Use of Custom Content",
-          prizeName: "INR 7,500",
+          name: "Second Best Projects",
+          prizeName: "USD 500 [2 winners]",
           details:
             "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person who used the custom content feature in the most creative and unique ways."
-        },
-        {
-          name: "Most Desi/Festive",
-          prizeName: "INR 7,500",
-          details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the page that showcases Indian culture, art, traditions, the festivals and its people the best."
-        },
-        {
-          name: "Best Pet Page",
-          prizeName: "INR 7,500",
-          details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the best page about their pet(s)"
-        },
-        {
-          name: "Most Nerdy Page",
-          prizeName: "INR 7,500",
-          details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the most nerdy page. We expect the content on this to be super techy!"
         }
       ]
     };
@@ -110,6 +90,7 @@ export default {
 .contents {
   width: 99%;
   padding: 20px 0;
+  margin: auto;
 
   .prizes-wrapper {
     background-color: #feede3;
@@ -147,7 +128,7 @@ export default {
     .cards-grid {
       display: grid;
       position: relative;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       background-color: #feede3;
       border-radius: 10px;
       column-gap: 30px;
@@ -155,7 +136,7 @@ export default {
       row-gap: 30px;
 
       @include respond-below(md) {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         margin-top: 30px;
       }
 
@@ -247,9 +228,9 @@ export default {
             flex-direction: column;
           }
         }
-        &:hover .card-side.front {
+        /* &:hover .card-side.front {
           transform: rotateY(180deg);
-        }
+        } */
         &:hover .card-side.back {
           transform: rotateY(0deg);
         }
