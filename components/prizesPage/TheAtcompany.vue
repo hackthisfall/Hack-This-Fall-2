@@ -1,10 +1,12 @@
 <template>
   <div class="contents">
     <div class="prizes-wrapper">
-      <img src="~/assets/Sponsors/atsign.webp" alt="company" />
+      <a href="https://atsign.com/" rel="noopener noreferrer" target="_blank">
+        <img src="~/assets/Sponsors/atsign.webp" alt="company"
+      /></a>
       <p style="width: 90%; margin: auto">
         <span
-          style="color: rgba(233, 83, 34, 1); font-size: 18px; font-weight: 600;"
+          style="color: rgba(233, 83, 34, 1); font-size: 18px; font-weight: 600"
           >The @wavi Contest</span
         >
         <br /><br /><span style="color: rgba(233, 83, 34, 1)">@wavi</span> is an
@@ -22,7 +24,10 @@
         cool CUSTOM CONTENT, try pasting HTML into the TEXT field.
       </p>
       <br />
-      <a class="cta-button smooth-transition" target="_blank" href="https://atsign.com/hack-this-fall-wavi-contest/"
+      <a
+        class="cta-button smooth-transition"
+        target="_blank"
+        href="https://atsign.com/hack-this-fall-wavi-contest/"
         >More Info</a
       >
       <div class="cards-grid">
@@ -65,7 +70,7 @@ import Container from "~/components/Container";
 
 export default {
   components: {
-    Container
+    Container,
   },
   data() {
     return {
@@ -74,35 +79,35 @@ export default {
           name: "Best Overall Winner",
           prizeName: "INR 17,500",
           details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 17,500</span> awarded to the person whose page stands out the most for all the right reasons."
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 17,500</span> awarded to the person whose page stands out the most for all the right reasons.",
         },
         {
           name: "Most Creative Use of Custom Content",
           prizeName: "INR 7,500",
           details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person who used the custom content feature in the most creative and unique ways."
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person who used the custom content feature in the most creative and unique ways.",
         },
         {
           name: "Most Desi/Festive",
           prizeName: "INR 7,500",
           details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the page that showcases Indian culture, art, traditions, the festivals and its people the best."
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the page that showcases Indian culture, art, traditions, the festivals and its people the best.",
         },
         {
           name: "Best Pet Page",
           prizeName: "INR 7,500",
           details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the best page about their pet(s)"
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the best page about their pet(s)",
         },
         {
           name: "Most Nerdy Page",
           prizeName: "INR 7,500",
           details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the most nerdy page. We expect the content on this to be super techy!"
-        }
-      ]
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the most nerdy page. We expect the content on this to be super techy!",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
