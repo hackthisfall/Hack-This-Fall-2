@@ -1,7 +1,9 @@
 <template>
   <div class="contents">
     <div class="prizes-wrapper">
-      <img src="~/assets/Sponsors/mlh.svg" alt="company" />
+      <a href="https://mlh.io/" rel="noopener noreferrer" target="_blank">
+        <img src="~/assets/Sponsors/mlh.svg" alt="company"
+      /></a>
       <div class="cards-grid">
         <img
           class="background"
@@ -43,7 +45,7 @@ import Container from "~/components/Container";
 
 export default {
   components: {
-    Container
+    Container,
   },
   data() {
     return {
@@ -53,32 +55,32 @@ export default {
           image: require("~/assets/Sponsors/coil.png"),
           prizeName: "Portable Charger, Coil Pin & $60 Credit [2 winners]",
           details:
-            "Coil is all about providing better ways to access and reward the creators, publishers and platforms that you love. Build a web monetized hack using Coil for a chance to win an <span style='color: rgba(233, 83, 34, 1)'>Anker - PowerCore Quick Charge Portable Charger, exclusive Coil pin and a $60 coil credit redemption card!</span> Bonus points for originality and creativity!"
+            "Coil is all about providing better ways to access and reward the creators, publishers and platforms that you love. Build a web monetized hack using Coil for a chance to win an <span style='color: rgba(233, 83, 34, 1)'>Anker - PowerCore Quick Charge Portable Charger, exclusive Coil pin and a $60 coil credit redemption card!</span> Bonus points for originality and creativity!",
         },
         {
           name: "Best Use of Linode Cloud",
           image: require("~/assets/Sponsors/linode.png"),
           prizeName: "Raspberry Pi 4 Starter Kit",
           details:
-            "Use any one of Linode's wide array of cloud products and take your hack to the next level! Whether you're looking for data storage, compute power or hosting, Linode has what you need and the complimentary credits to get you started. Sign up and start hacking for your chance to win a <span style='color: rgba(233, 83, 34, 1)'>Raspberry Pi 4 Starter Kit</span>."
+            "Use any one of Linode's wide array of cloud products and take your hack to the next level! Whether you're looking for data storage, compute power or hosting, Linode has what you need and the complimentary credits to get you started. Sign up and start hacking for your chance to win a <span style='color: rgba(233, 83, 34, 1)'>Raspberry Pi 4 Starter Kit</span>.",
         },
         {
           name: "Best Domain Name from GoDaddy Registry",
           image: require("~/assets/Sponsors/godaddy.jpg"),
           prizeName: "Hack from Home Kit",
           details:
-            "GoDaddy Registry is giving you everything you need to be the best hacker no matter where you are. Register your domain name with GoDaddy Registry for a chance to win a Hack from Home Kit! <span style='color: rgba(233, 83, 34, 1)'>Each Kit contains wireless earbuds, blue light glasses, selfie ring light and a pouch for easy transport</span>."
+            "GoDaddy Registry is giving you everything you need to be the best hacker no matter where you are. Register your domain name with GoDaddy Registry for a chance to win a Hack from Home Kit! <span style='color: rgba(233, 83, 34, 1)'>Each Kit contains wireless earbuds, blue light glasses, selfie ring light and a pouch for easy transport</span>.",
         },
         {
           name: "Most Creative Use of Twilio",
           image: require("~/assets/Sponsors/twilio.png"),
           prizeName: "Twilio Swag Box GameGo Console",
           details:
-            "Twilio allows you to incorporate mobile messaging, phone calls and a ton of other awesome communication features right into your hackathon project using web service APIs. Build a hack that simplifies your life using any one of Twilio’s APIs for a chance to win a <span style='color: rgba(233, 83, 34, 1)'>Twilio Swag Box and GameGo Console</span> for you and each of your teammates!"
-        }
-      ]
+            "Twilio allows you to incorporate mobile messaging, phone calls and a ton of other awesome communication features right into your hackathon project using web service APIs. Build a hack that simplifies your life using any one of Twilio’s APIs for a chance to win a <span style='color: rgba(233, 83, 34, 1)'>Twilio Swag Box and GameGo Console</span> for you and each of your teammates!",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 

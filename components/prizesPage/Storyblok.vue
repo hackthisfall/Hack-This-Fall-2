@@ -1,7 +1,13 @@
 <template>
   <div class="contents">
     <div class="prizes-wrapper">
-      <img src="~/assets/Sponsors/storyblok.svg" alt="company" />
+      <a
+        href="https://www.storyblok.com/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img src="~/assets/Sponsors/storyblok.svg" alt="company" />
+      </a>
       <p style="width: 90%; margin: auto">
         Teams may use
         <span style="color: rgba(233, 83, 34, 1)"
@@ -57,7 +63,7 @@ import Container from "~/components/Container";
 
 export default {
   components: {
-    Container
+    Container,
   },
   data() {
     return {
@@ -68,11 +74,11 @@ export default {
             "Keychron K2 (Hot-swappable) Wireless Mechanical Keyboard (Version 2)",
           details:
             "<span style='color: rgba(233, 83, 34, 1)'>INR 17,500</span> awarded to the person whose page stands out the most for all the right reasons.",
-          image: require("~/assets/keyboard.png")
-        }
-      ]
+          image: require("~/assets/keyboard.png"),
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 

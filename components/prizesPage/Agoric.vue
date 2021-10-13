@@ -1,7 +1,9 @@
 <template>
   <div class="contents">
     <div class="prizes-wrapper">
-      <img src="~/assets/Sponsors/agoric.svg" alt="company" />
+      <a href="https://agoric.com/" rel="noopener noreferrer" target="_blank">
+        <img src="~/assets/Sponsors/agoric.svg" alt="company" />
+      </a>
       <p style="width: 90%; margin: auto">
         Agoric is offering
         <span style="color: rgba(233, 83, 34, 1)">3 prizes</span> for the
@@ -63,7 +65,7 @@ import Container from "~/components/Container";
 
 export default {
   components: {
-    Container
+    Container,
   },
   data() {
     return {
@@ -72,17 +74,23 @@ export default {
           name: "Best Project",
           prizeName: "USD 1,500",
           details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 17,500</span> awarded to the person whose page stands out the most for all the right reasons."
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 17,500</span> awarded to the person whose page stands out the most for all the right reasons.",
         },
         {
-          name: "Second Best Projects",
-          prizeName: "USD 500 [2 winners]",
+          name: "Second Best Project",
+          prizeName: "USD 700",
           details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person who used the custom content feature in the most creative and unique ways."
-        }
-      ]
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person who used the custom content feature in the most creative and unique ways.",
+        },
+        {
+          name: "Third Best Project",
+          prizeName: "USD 300",
+          details:
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person who used the custom content feature in the most creative and unique ways.",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -128,7 +136,7 @@ export default {
     .cards-grid {
       display: grid;
       position: relative;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       background-color: #feede3;
       border-radius: 10px;
       column-gap: 30px;
