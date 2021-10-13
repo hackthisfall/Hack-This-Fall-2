@@ -3,7 +3,8 @@
     <div class="subheading">
       <h2 class="section-title">OTHER PRIZES</h2>
     </div>
-    <p style="text-align: center">To be announced soon...</p>
+    <!-- <SawoAndSymbl /> -->
+    <p style="text-align: center">More prizes coming soon...</p>
   </section>
 </template>
 
@@ -17,13 +18,14 @@ import HashHeader from "~/components/HashHeader";
 // import MagicLabs from "~/components/prizesPage/magicLabs.vue";
 // import SawoAndPolygon from "~/components/prizesPage/SawoAndPolygon.vue";
 // import GraphCMS from "~/components/prizesPage/graphCMS.vue";
-import MLH from "~/components/prizesPage/MLH.vue";
+import SawoAndSymbl from "~/components/prizesPage/SawoAndSymbl.vue";
 // import Symbl from "~/components/prizesPage/Symbl.vue";
 
 export default {
   components: {
     Container,
     HashHeader,
+    SawoAndSymbl,
     // SubHashHeader,
     // OtherPrizes,
     // AmagiAndElastic,
@@ -31,7 +33,7 @@ export default {
     // MagicLabs,
     // SawoAndPolygon,
     // GraphCMS,
-    MLH,
+    // MLH,
     // Symbl
   },
 };
