@@ -19,12 +19,12 @@
         starting point]
       </p>
       <br />
-      <!-- <a
+      <a
         class="cta-button smooth-transition"
         target="_blank"
-        href="https://atsign.com/hack-this-fall-wavi-contest/"
+        href="https://rowan-vacation-631.notion.site/Agoric-Build-Challenge-5b3d04df9cbb48e1a8e1ccb64490484c"
         >More Info</a
-      > -->
+      >
       <div class="cards-grid">
         <img
           class="background"
@@ -65,7 +65,7 @@ import Container from "~/components/Container";
 
 export default {
   components: {
-    Container,
+    Container
   },
   data() {
     return {
@@ -74,23 +74,23 @@ export default {
           name: "Best Project",
           prizeName: "USD 1,500",
           details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 17,500</span> awarded to the person whose page stands out the most for all the right reasons.",
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 17,500</span> awarded to the person whose page stands out the most for all the right reasons."
         },
         {
           name: "Second Best Project",
           prizeName: "USD 700",
           details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person who used the custom content feature in the most creative and unique ways.",
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person who used the custom content feature in the most creative and unique ways."
         },
         {
           name: "Third Best Project",
           prizeName: "USD 300",
           details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person who used the custom content feature in the most creative and unique ways.",
-        },
-      ],
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person who used the custom content feature in the most creative and unique ways."
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 
