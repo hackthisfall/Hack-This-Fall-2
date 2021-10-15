@@ -42,12 +42,23 @@
               <h2 class="section-title">{{ challenge.heading }}</h2>
             </div>
             <div
-              class="row m-lg-3 m-0 justify-content-center text-center text-lg-left"
+              class="
+                row
+                m-lg-3 m-0
+                justify-content-center
+                text-center text-lg-left
+              "
             >
               <div
                 v-for="(task, index) in challenge.tasks"
                 :key="index"
-                class="col-10 col-md-5 col-lg-3 m-4 panel shadow-1  smooth-transition-1"
+                class="
+                  col-10 col-md-5 col-lg-3
+                  m-4
+                  panel
+                  shadow-1
+                  smooth-transition-1
+                "
               >
                 <div class="row justify-content-center p-3">
                   <div
@@ -56,9 +67,7 @@
                   >
                     {{ task.heading }}
                   </div>
-                  <div class="col-12 mb-2" v-html="task.content">
-                    {{}}
-                  </div>
+                  <div class="col-12 mb-2" v-html="task.content">{{}}</div>
                 </div>
               </div>
             </div>
@@ -312,7 +321,7 @@ export default {
   components: {
     HashHeader,
     Container,
-    VueSlickCarousel
+    VueSlickCarousel,
   },
   data() {
     return {
@@ -322,7 +331,7 @@ export default {
         speed: 500,
         lazyLoad: true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
       },
       addedImage: false,
       challenges: [
@@ -332,34 +341,34 @@ export default {
             {
               heading: "1. Register for Hack This Fall",
               content:
-                "First things first, we want to get you registered! <a target='_blank' href='https://hackthisfall.devpost.com/'>Register now here</a> to earn yourself your first points. It's as easy as that! Send us a screenshot on our <a target='_blank' href=\"https://bit.ly/htf2-challenge\">Challenge Form</a> after you register."
+                "First things first, we want to get you registered! <a target='_blank' href='https://hackthisfall.devpost.com/'>Register now here</a> to earn yourself your first points. It's as easy as that! Send us a screenshot on our <a target='_blank' href=\"https://bit.ly/htf2-challenge\">Challenge Form</a> after you register.",
             },
             {
               heading: "2. Follow HTF on Social Media",
               content:
-                "Hack This Fall has an engaging social media presence where we share opportunities for the community. You can follow us on <a target='_blank' href='https://www.instagram.com/hackthisfall/'>Instagram</a>, <a target='_blank' href='https://twitter.com/hackthisfall'>Twitter</a>, <a target='_blank' href='https://www.linkedin.com/company/hackthisfall/'>LinkedIn</a>, <a target='_blank' href='https://dev.to/hackthisfall'>Dev.to</a> or <a target='_blank' href='https://www.youtube.com/c/HackThisFall'>Youtube</a> for a point each! Send us a screenshot on our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a> after you follow."
+                "Hack This Fall has an engaging social media presence where we share opportunities for the community. You can follow us on <a target='_blank' href='https://www.instagram.com/hackthisfall/'>Instagram</a>, <a target='_blank' href='https://twitter.com/hackthisfall'>Twitter</a>, <a target='_blank' href='https://www.linkedin.com/company/hackthisfall/'>LinkedIn</a>, <a target='_blank' href='https://dev.to/hackthisfall'>Dev.to</a> or <a target='_blank' href='https://www.youtube.com/c/HackThisFall'>Youtube</a> for a point each! Send us a screenshot on our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a> after you follow.",
             },
             {
               heading: "3. Join the HTF Community Discord",
               content:
-                "Join us on <a target='_blank' href='https://discord.hackthisfall.tech/'>Discord</a> and be a part of our awesome community. Send us a screenshot on our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a> after you join."
+                "Join us on <a target='_blank' href='https://discord.hackthisfall.tech/'>Discord</a> and be a part of our awesome community. Send us a screenshot on our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a> after you join.",
             },
             {
               heading: "4. Submit a project on Devpost",
               content:
-                "Build something during the hackathon duration and submit a project on devpost. Submit your project link after the hackathon to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a> after you register."
+                "Build something during the hackathon duration and submit a project on devpost. Submit your project link after the hackathon to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a> after you register.",
             },
             {
               heading: "5. [Repeatable] Post about HTF on Socials",
               content:
-                "Share anything about us and use #HackThisFall and tag @hackthisfall on your Twitter, Instagram, and LinkedIn posts to earn points! This challenge is repeatable once daily. Submit a link to your post on our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
+                "Share anything about us and use #HackThisFall and tag @hackthisfall on your Twitter, Instagram, and LinkedIn posts to earn points! This challenge is repeatable once daily. Submit a link to your post on our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
               heading: "6. [Repeatable] Refer your friend",
               content:
-                'Refer your friends and community members to register for Hack This Fall and ask them to enter your Email under the "Referral Email" field while registering on Devpost. Earn 1 point for 1 referral.'
-            }
-          ]
+                'Refer your friends and community members to register for Hack This Fall and ask them to enter your Email under the "Referral Email" field while registering on Devpost. Earn 1 point for 1 referral.',
+            },
+          ],
         },
         {
           heading: "Community Challenges",
@@ -367,82 +376,87 @@ export default {
             {
               heading: "1. Share a coffee with a hacker",
               content:
-                "Interact with our community members over coffee and network with others. Tweet the screenshot of your video call and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
+                "Interact with our community members over coffee and network with others. Tweet the screenshot of your video call and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
               heading: "2. Design a Mascot for Hack This Fall",
               content:
-                "Bring in your creativity and show it to us by designing a Mascot for Hack This Fall. Tweet your design and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
+                "Bring in your creativity and show it to us by designing a Mascot for Hack This Fall. Tweet your design and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
               heading: "3. Best memory with Hack This Fall",
               content:
-                "We would love to hear from you your best memory at Hack This Fall. Tweet your favorite memory and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
+                "We would love to hear from you your best memory at Hack This Fall. Tweet your favorite memory and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
               heading: "4. [Repeatable] Attend a Live Session",
               content:
-                "Attend any of the live speaker sessions happening the entire September on our <a target=\"_blank\" href=\"https://www.youtube.com/c/HackThisFall\">YouTube Channel</a> and tweet your learnings from the session. Share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
+                "Attend any of the live speaker sessions happening the entire September on our <a target=\"_blank\" href=\"https://www.youtube.com/c/HackThisFall\">YouTube Channel</a> and tweet your learnings from the session. Share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
               heading: "5. Play Bingo on Instagram Story",
               content:
-                "Remember the time we were obsessed with Insta Bingos? Check out Hack This Fall themed bingo <a target=\"_blank\" href=\"https://drive.google.com/file/d/1gBKNDRGFlg88YU1zA4ErvRXCrG7kznvg/view\">here</a>. Show it off on your stories & tag your favorite community members to complete it! Share the screenshot of your story in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
+                "Remember the time we were obsessed with Insta Bingos? Check out Hack This Fall themed bingo <a target=\"_blank\" href=\"https://drive.google.com/file/d/1gBKNDRGFlg88YU1zA4ErvRXCrG7kznvg/view\">here</a>. Show it off on your stories & tag your favorite community members to complete it! Share the screenshot of your story in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
               heading: "6. Show off using Instagram Filter",
               content:
-                "We are all obsessed with Instagram filters. Explore an awesome Hack This Fall Virtual Booth Instagram filter on our profile <a target=\"_blank\" href=\"https://www.instagram.com/hackthisfall/\">here</a> and try out the filter made with love for all the hackers attending Hack This Fall 2.0! Share the screenshot of your story in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
-            }
-          ]
+                "We are all obsessed with Instagram filters. Explore an awesome Hack This Fall Virtual Booth Instagram filter on our profile <a target=\"_blank\" href=\"https://www.instagram.com/hackthisfall/\">here</a> and try out the filter made with love for all the hackers attending Hack This Fall 2.0! Share the screenshot of your story in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
+            },
+          ],
         },
         {
           heading: "Sponsor Challenges",
           tasks: [
             {
-              heading: "1. Sign up for a WazirX account",
+              heading: "1. FREE Tshirt by The@Company",
               content:
-                "Head to <a target='_blank' href='https://wrx.gg/htf'>wrx.gg/htf</a> and sign up. WazirX is India’s most trusted bitcoin & cryptocurrency exchange platform. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
+                "<span style='color: rgb(233, 83, 34);'>The@Company</span> loves hackathon, and they are giving away FREE Tshirts for first 200 people. All you need to do is, complete the steps in this form : <a style='text-decoration: underline' href='https://docs.google.com/forms/d/e/1FAIpQLSeUHeKxM6N0ts3V5M17lmtOZvZDVK7kdD506tox1ZA-2b8lrw/viewform' target='_blank'> CLICK HERE</a>.",
             },
             {
-              heading: "2. Sign up on SAWO Labs landing page",
+              heading: "2. Sign up for a WazirX account",
               content:
-                "Head to <a target='_blank' href='https://sawolabs.com/hackathon/redeemnow/?hackathon_name=HackThisFall2.0'>SAWO Labs</a> and sign up. Say goodbye to OTPs and Passwords. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
+                "Head to <a target='_blank' href='https://wrx.gg/htf'>wrx.gg/htf</a> and sign up. WazirX is India’s most trusted bitcoin & cryptocurrency exchange platform. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
-              heading: "3. Join the Storyblok Beta Crew",
+              heading: "3. Sign up on SAWO Labs landing page",
               content:
-                "Our favorite Headless CMS has just gotten even better! Check out the Storyblok v2, which will be launching later this year, & you can already sign-up for public beta <a target='_blank' href='https://bit.ly/htf2-storyblok-beta'>here</a>. Submit a screenshot of confirmation to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
+                "Head to <a target='_blank' href='https://sawolabs.com/hackathon/redeemnow/?hackathon_name=HackThisFall2.0'>SAWO Labs</a> and sign up. Say goodbye to OTPs and Passwords. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
-              heading: "4. Sign up and try out Filebase",
+              heading: "4. Join the Storyblok Beta Crew",
               content:
-                "Filebase is S3 Compatible Object Storage Powered by Blockchain. Get the first 5 GB of storage as free by just signing up <a target='_blank' href='https://bit.ly/htf2-filebase-signup'>here</a>. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>."
-            }
-          ]
-        }
-      ]
+                "Our favorite Headless CMS has just gotten even better! Check out the Storyblok v2, which will be launching later this year, & you can already sign-up for public beta <a target='_blank' href='https://bit.ly/htf2-storyblok-beta'>here</a>. Submit a screenshot of confirmation to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
+            },
+            {
+              heading: "5. Sign up and try out Filebase",
+              content:
+                "Filebase is S3 Compatible Object Storage Powered by Blockchain. Get the first 5 GB of storage as free by just signing up <a target='_blank' href='https://bit.ly/htf2-filebase-signup'>here</a>. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
+            },
+          ],
+        },
+      ],
     };
   },
   mounted() {
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");
     var img = new Image();
-    img.onload = function() {
+    img.onload = function () {
       ctx.drawImage(img, 0, 0, 1620, 1620);
     };
     img.src = "/badge.png";
 
     let imgInput = document.getElementById("imageInput");
-    imgInput.addEventListener("change", e => {
+    imgInput.addEventListener("change", (e) => {
       if (e.target.files) {
         let imageFile = e.target.files[0];
         var reader = new FileReader();
         reader.readAsDataURL(imageFile);
-        reader.onloadend = e => {
+        reader.onloadend = (e) => {
           var myImage = new Image();
           myImage.src = e.target.result;
-          myImage.onload = ev => {
+          myImage.onload = (ev) => {
             ctx.clearRect(0, 0, 1620, 1620);
             const inputWidth = myImage.naturalWidth;
             const inputHeight = myImage.naturalHeight;
@@ -520,8 +534,8 @@ export default {
     },
     toggleImageAdded() {
       this.addedImage = true;
-    }
-  }
+    },
+  },
 };
 </script>
 
