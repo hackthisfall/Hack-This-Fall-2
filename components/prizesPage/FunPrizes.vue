@@ -6,13 +6,13 @@
     <div class="contents">
       <div class="cards-grid">
         <div v-for="(prize, index) in prizes" :key="index">
-          <div class="card">
+          <div class="card" :class="prize.specialClass">
             <div class="card-side front">
               <div class="image">
                 <img :src="prize.image" :alt="prize.name" />
               </div>
               <div class="texts">
-                <h4 class="prizeName">{{ prize.name }}</h4>
+                <h4 class="prizeName" v-html="prize.name">{{}}</h4>
                 <p class="prizeDescription" v-html="prize.details">{{}}</p>
               </div>
             </div>
@@ -31,29 +31,11 @@
 <script>
 import Container from "~/components/Container";
 import HashHeader from "~/components/HashHeader";
-// import SubHashHeader from "~/components/SubHashHeader";
-// import OtherPrizes from "~/components/prizesPage/OtherPrizes.vue";
-// import AmagiAndElastic from "~/components/prizesPage/AmagiAndElastic.vue";
-// import Auth0AndRaahee from "~/components/prizesPage/Auth0AndRaahee.vue";
-// import MagicLabs from "~/components/prizesPage/magicLabs.vue";
-// import SawoAndPolygon from "~/components/prizesPage/SawoAndPolygon.vue";
-// import GraphCMS from "~/components/prizesPage/graphCMS.vue";
-import MLH from "~/components/prizesPage/MLH.vue";
-// import Symbl from "~/components/prizesPage/Symbl.vue";
 
 export default {
   components: {
     Container,
     HashHeader,
-    // SubHashHeader,
-    // OtherPrizes,
-    // AmagiAndElastic,
-    // Auth0AndRaahee,
-    // MagicLabs,
-    // SawoAndPolygon,
-    // GraphCMS,
-    MLH,
-    // Symbl
   },
   data() {
     return {
@@ -78,6 +60,14 @@ export default {
           details: "Win GitHub Swags 🐙",
           description:
             "<ul><li>Draw an Octocat & tweet it by tagging us <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hackthisfall'>@hackthisfall</a> & <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/GitHubEducation'>@GitHubEducation</a> using hashtag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#HackThisFall</a> & <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#MyOctocat</a></li><li>The best octocat will receive <span style='color: rgba(233, 83, 34, 1)'>GitHub Swags</span> as a prize 🐙</li></ul>",
+        },
+        {
+          name: "Best Raahee <br/> Mascot Design",
+          image: require("~/assets/Sponsors/raahee.png"),
+          details: "Free Therapy Voucher",
+          specialClass: "raahee",
+          description:
+            "<ul><li>Create a mascot for Raahee and upload it on Twitter and tag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/raahee_'>@Raahee_</a> using hashtag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#HackThisFall</a></li><li style='margin-top: 0.4rem'>The winner gets <span style='color: rgba(233, 83, 34, 1)'>Free Therapy Voucher</span> &amp; a chance to be a <span style='color: rgba(233, 83, 34, 1)'>Raahee Design Intern</span>.</li></ul>",
         },
       ],
     };
@@ -173,6 +163,16 @@ export default {
           img {
             width: 150px;
             margin: 10px 10px 10px 0;
+          }
+        }
+
+        &.raahee {
+          .image {
+            align-content: center;
+            img {
+              width: 100px;
+              margin: 10px 10px 10px 0;
+            }
           }
         }
 

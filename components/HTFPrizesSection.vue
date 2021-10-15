@@ -27,9 +27,8 @@
             </div>
           </div>
         </div>
-        <SponsoredPrizes /> 
+        <SponsoredPrizes />
         <FunPrizes />
-        <OtherPrizes />
       </div>
     </section>
   </Container>
@@ -38,15 +37,7 @@
 <script>
 import Container from "~/components/Container";
 import HashHeader from "~/components/HashHeader";
-// import SubHashHeader from "~/components/SubHashHeader";
-// import OtherPrizes from "~/components/prizesPage/OtherPrizes.vue";
-// import AmagiAndElastic from "~/components/prizesPage/AmagiAndElastic.vue";
-// import Auth0AndRaahee from "~/components/prizesPage/Auth0AndRaahee.vue";
-// import MagicLabs from "~/components/prizesPage/magicLabs.vue";
-// import SawoAndPolygon from "~/components/prizesPage/SawoAndPolygon.vue";
-// import GraphCMS from "~/components/prizesPage/graphCMS.vue";
 import SponsoredPrizes from "~/components/prizesPage/SponsoredPrizes.vue";
-import OtherPrizes from "~/components/prizesPage/OtherPrizes.vue";
 import FunPrizes from "~/components/prizesPage/FunPrizes.vue";
 import MLH from "~/components/prizesPage/MLH.vue";
 
@@ -55,16 +46,8 @@ export default {
     Container,
     SponsoredPrizes,
     HashHeader,
-    OtherPrizes,
     FunPrizes,
     MLH,
-    // SubHashHeader,
-    // OtherPrizes,
-    // AmagiAndElastic,
-    // Auth0AndRaahee,
-    // MagicLabs,
-    // SawoAndPolygon,
-    // Symbl
   },
   data() {
     return {

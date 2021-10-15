@@ -43,7 +43,6 @@
 import Container from "~/components/Container";
 import HashHeader from "~/components/HashHeader";
 // import SubHashHeader from "~/components/SubHashHeader";
-// import OtherPrizes from "~/components/prizesPage/OtherPrizes.vue";
 // import AmagiAndElastic from "~/components/prizesPage/AmagiAndElastic.vue";
 // import Auth0AndRaahee from "~/components/prizesPage/Auth0AndRaahee.vue";
 // import MagicLabs from "~/components/prizesPage/magicLabs.vue";
@@ -57,13 +56,12 @@ export default {
     Container,
     HashHeader,
     // SubHashHeader,
-    // OtherPrizes,
     // AmagiAndElastic,
     // Auth0AndRaahee,
     // MagicLabs,
     // SawoAndPolygon,
     // GraphCMS,
-    MLH
+    MLH,
     // Symbl
   },
   data() {
@@ -75,7 +73,7 @@ export default {
           details: "The team ranked 1st overall ",
           amount: "INR 50,000",
           description:
-            "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 50,000</span> Prize to winning team</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li></ul><br/><div style='text-align:center'>and more...</div>"
+            "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 50,000</span> Prize to winning team</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li></ul><br/><div style='text-align:center'>and more...</div>",
         },
         {
           name: "1st Runner-Up",
@@ -83,7 +81,7 @@ export default {
           details: "The team ranked 2nd overall ",
           amount: "INR 35,000",
           description:
-            "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 35,000</span> Prize to winning team</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li></ul><br/><div style='text-align:center'>and more...</div>"
+            "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 35,000</span> Prize to winning team</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li></ul><br/><div style='text-align:center'>and more...</div>",
         },
         {
           name: "2nd Runner-Up",
@@ -91,11 +89,11 @@ export default {
           details: "The team ranked 3rd overall",
           amount: "INR 20,000",
           description:
-            "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 20,000</span> Prize to winning team</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li></ul><br/><div style='text-align:center'>and more...</div>"
-        }
-      ]
+            "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 20,000</span> Prize to winning team</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li></ul><br/><div style='text-align:center'>and more...</div>",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 

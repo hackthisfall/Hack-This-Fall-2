@@ -10,29 +10,13 @@
 <script>
 import Container from "~/components/Container";
 import HashHeader from "~/components/HashHeader";
-// import SubHashHeader from "~/components/SubHashHeader";
-// import OtherPrizes from "~/components/prizesPage/OtherPrizes.vue";
-// import AmagiAndElastic from "~/components/prizesPage/AmagiAndElastic.vue";
-// import Auth0AndRaahee from "~/components/prizesPage/Auth0AndRaahee.vue";
-// import MagicLabs from "~/components/prizesPage/magicLabs.vue";
-// import SawoAndPolygon from "~/components/prizesPage/SawoAndPolygon.vue";
-// import GraphCMS from "~/components/prizesPage/graphCMS.vue";
 import MLH from "~/components/prizesPage/MLH.vue";
-// import Symbl from "~/components/prizesPage/Symbl.vue";
 
 export default {
   components: {
     Container,
     HashHeader,
-    // SubHashHeader,
-    // OtherPrizes,
-    // AmagiAndElastic,
-    // Auth0AndRaahee,
-    // MagicLabs,
-    // SawoAndPolygon,
-    // GraphCMS,
     MLH,
-    // Symbl
   },
 };
 </script>
