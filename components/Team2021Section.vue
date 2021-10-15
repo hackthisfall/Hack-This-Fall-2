@@ -61,12 +61,6 @@ export default {
           url: "https://www.linkedin.com/in/apoorvdwi",
           picture: require("~/assets/Team/apoorv.jpeg"),
         },
-        // {
-        //   name: "Shubhangi Gupta",
-        //   url: "https://www.linkedin.com/in/knowshubhangi/",
-        //   picture: require("~/assets/Team/shubhangi.jpeg"),
-        //   rotation: 45,
-        // },
         {
           name: "Vaibhav Toshniwal",
           url: "https://www.linkedin.com/in/vaibhav-vinay-toshniwal-252ba8187/",
@@ -84,12 +78,12 @@ export default {
           url: "https://www.linkedin.com/in/dendemello/",
           picture: require("~/assets/Team/dennis.jpeg"),
         },
-        // {
-        //   name: "Sahil Sen",
-        //   url: "https://www.linkedin.com/in/sahil-sen-528647ba/",
-        //   picture: require("~/assets/Team/sahilsen.webp"),
-        //   rotation: 150,
-        // },
+        {
+          name: "Sahil Sen",
+          url: "https://www.linkedin.com/in/sahil-sen-528647ba/",
+          picture: require("~/assets/Team/sahilsen.webp"),
+          rotation: 150,
+        },
         // {
         //   name: "Rishabh Bansal",
         //   url: "https://www.linkedin.com/in/rishabhbansal97",
