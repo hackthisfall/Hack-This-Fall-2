@@ -6,11 +6,7 @@
           href="https://sawolabs.com/hackathon/redeemnow/?hackathon_name=HackThisFall2.0"
           target="_blank"
         >
-          <img
-            src="~/assets/Sponsors/sawolabs.png"
-            alt="company"
-            style="height: 5rem; width: auto"
-          />
+          <img src="~/assets/Sponsors/sawolabs.png" alt="company" />
         </a>
         <p style="color: rgb(233, 83, 34); font-size: 18px; font-weight: 600">
           #SAWOforAuth Challenge
@@ -49,10 +45,7 @@
       </div>
       <div class="prizes-wrapper">
         <a href="https://symbl.ai/" target="_blank"
-          ><img
-            src="~/assets/Sponsors/symbl.svg"
-            alt="company"
-            style="height: 5rem; width: auto"
+          ><img src="~/assets/Sponsors/symbl.svg" alt="company"
         /></a>
         <p style="color: rgb(233, 83, 34); font-size: 18px; font-weight: 600">
           #BuildWithSymbl
@@ -91,10 +84,7 @@
       </div>
       <div class="prizes-wrapper">
         <a href="https://raahee.in"
-          ><img
-            src="~/assets/Sponsors/raahee.png"
-            alt="company"
-            style="height: 5rem; width: auto"
+          ><img src="~/assets/Sponsors/raahee.png" alt="company"
         /></a>
         <p style="color: rgb(233, 83, 34); font-size: 18px; font-weight: 600">
           Mental Health Track
@@ -168,15 +158,29 @@ export default {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1rem;
 
+    @include respond-below(sm) {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 1rem;
+    }
+
+    @include respond-below(xs) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
     .prizes-wrapper {
       background-color: #feede3;
       border-radius: 10px;
       text-align: center;
       padding: 30px;
 
+      @include respond-below(sm) {
+        width: 90vw;
+      }
+
       img {
         margin: auto auto 30px;
-        width: 200px;
+        height: 4rem;
+        width: auto;
       }
 
       .cta-button {
@@ -297,18 +301,8 @@ export default {
             }
           }
 
-          &.hidden {
-            .card-side {
-              background-color: transparent;
-            }
-
-            @include respond-below(sm) {
-              display: none;
-            }
-          }
-
           @include respond-between(md, lg) {
-            min-height: 350px;
+            min-height: 300px;
           }
 
           @include respond-below(md) {
@@ -316,11 +310,11 @@ export default {
           }
 
           @include respond-below(sm) {
-            min-height: 400px;
+            min-height: 200px;
           }
 
           @media (max-width: 341px) {
-            min-height: 500px;
+            min-height: 300px;
           }
 
           .image {

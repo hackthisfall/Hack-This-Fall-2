@@ -31,24 +31,12 @@
           src="~/assets/Prizes/mlhTransparent.png"
           alt="background"
         />
-        <!-- <div class="company">
-        <img src="~/assets/Prizes/mlh.png" alt="magic logo" />
-        <h1>MLH</h1>
-      </div> -->
         <div
           v-for="(prize, index) in magicLabPrizes"
           :key="index"
           :class="['card', prize.specialClass]"
         >
-          <!-- <div class="card-side back">
-            <div class="texts">
-              <p class="prizeDescription" v-html="prize.details">{{}}</p>
-            </div>
-          </div> -->
           <div class="card-side front">
-            <!-- <div class="image">
-              <img :src="prize.image" :alt="prize.name" class="prizeImage1" />
-            </div> -->
             <div class="texts">
               <h4 class="prizeName" v-html="prize.name">{{}}</h4>
               <p class="prize">{{ prize.prizeName }}</p>
@@ -65,7 +53,7 @@ import Container from "~/components/Container";
 
 export default {
   components: {
-    Container
+    Container,
   },
   data() {
     return {
@@ -74,23 +62,23 @@ export default {
           name: "Best Project",
           prizeName: "USD 1,500",
           details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 17,500</span> awarded to the person whose page stands out the most for all the right reasons."
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 17,500</span> awarded to the person whose page stands out the most for all the right reasons.",
         },
         {
           name: "Second Best Project",
           prizeName: "USD 700",
           details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person who used the custom content feature in the most creative and unique ways."
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person who used the custom content feature in the most creative and unique ways.",
         },
         {
           name: "Third Best Project",
           prizeName: "USD 300",
           details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person who used the custom content feature in the most creative and unique ways."
-        }
-      ]
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person who used the custom content feature in the most creative and unique ways.",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -208,7 +196,7 @@ export default {
         }
 
         @media (max-width: 1000px) {
-          width: 96%;
+          width: 100%;
         }
 
         .card-side {

@@ -36,10 +36,6 @@
           src="~/assets/Prizes/mlhTransparent.png"
           alt="background"
         />
-        <!-- <div class="company">
-        <img src="~/assets/Prizes/mlh.png" alt="magic logo" />
-        <h1>MLH</h1>
-      </div> -->
         <div
           v-for="(prize, index) in magicLabPrizes"
           :key="index"
@@ -51,9 +47,6 @@
             </div>
           </div>
           <div class="card-side front">
-            <!-- <div class="image">
-              <img :src="prize.image" :alt="prize.name" class="prizeImage1" />
-            </div> -->
             <div class="texts">
               <h4 class="prizeName" v-html="prize.name">{{}}</h4>
               <p class="prize">{{ prize.prizeName }}</p>
@@ -224,7 +217,7 @@ export default {
         }
 
         @media (max-width: 1000px) {
-          width: 96%;
+          width: 100%;
         }
 
         .card-side {

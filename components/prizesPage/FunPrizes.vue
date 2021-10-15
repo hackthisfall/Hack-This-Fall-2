@@ -122,7 +122,7 @@ export default {
         margin: auto;
 
         @media (max-width: 1000px) {
-          width: 96%;
+          width: 100%;
         }
 
         @media (max-width: 400px) {
@@ -130,7 +130,7 @@ export default {
         }
 
         .card-side {
-          width: 96%;
+          width: 100%;
           margin: auto;
           border-radius: 15px;
           transition: all 0.8s ease;
