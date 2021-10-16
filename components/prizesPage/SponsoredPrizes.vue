@@ -6,6 +6,7 @@
     <Agoric />
     <Storyblok />
     <AtSign />
+    <Courier />
     <MLH />
     <SawoAndSymbl />
     <p style="text-align: center">More prizes coming soon...</p>
@@ -19,6 +20,7 @@ import MLH from "~/components/prizesPage/MLH.vue";
 import AtSign from "~/components/prizesPage/TheAtcompany.vue";
 import Agoric from "~/components/prizesPage/Agoric.vue";
 import Storyblok from "~/components/prizesPage/Storyblok.vue";
+import Courier from "~/components/prizesPage/Courier.vue";
 import SawoAndSymbl from "~/components/prizesPage/SawoAndSymbl.vue";
 
 export default {
@@ -30,6 +32,7 @@ export default {
     AtSign,
     Agoric,
     Storyblok,
+    Courier,
   },
 };
 </script>
