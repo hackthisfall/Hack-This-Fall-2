@@ -84,9 +84,19 @@
       </div>
       <div class="prizes-wrapper">
         <a href="https://raahee.in"
-          ><img src="~/assets/Sponsors/raahee.png" alt="company"
+          ><img
+            src="~/assets/Prizes/raahee.png"
+            alt="company"
+            style="height: 3.2rem"
         /></a>
-        <p style="color: rgb(233, 83, 34); font-size: 18px; font-weight: 600">
+        <p
+          style="
+            color: rgb(233, 83, 34);
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 0.8rem;
+          "
+        >
           Mental Health Track
         </p>
         <p style="margin-bottom: 2rem; margin-top: 0.5rem">
@@ -108,7 +118,7 @@
                 <h4 class="prizeName">
                   Grab
                   <span style="color: rgb(233, 83, 34)"
-                    >6 weeks internship</span
+                    >2 months internship</span
                   >
                   and get mentored by mentors from
                   <span style="color: rgb(233, 83, 34)">

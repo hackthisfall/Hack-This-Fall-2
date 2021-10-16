@@ -2,6 +2,72 @@
   <div class="contents">
     <div class="prizes-wrapper">
       <a
+        href="https://filebase.com/?utm_source=website&utm_medium=sponsor&utm_campaign=hackthisfall"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          src="~/assets/Sponsors/filebase.svg"
+          alt="company"
+          style="height: 4.5rem"
+        />
+      </a>
+      <p style="width: 90%; margin: auto; margin-top: -0.5rem">
+        Filebase is the
+        <span style="color: rgba(233, 83, 34, 1)"
+          >world’s first object storage platform</span
+        >
+        powered by
+        <span style="color: rgba(233, 83, 34, 1)">decentralized networks</span>.
+        It unifies multiple networks under a single S3-compatible API to make
+        decentralized storage accessible and easy to use. <br /><br />
+        They are giving away
+        <span style="color: rgba(233, 83, 34, 1)"
+          >$250 of free S3-compatible object storage credits</span
+        >
+        with Filebase in prizes for the best project build on top of Filebase.
+        Get the first
+        <span style="color: rgba(233, 83, 34, 1)"
+          >5 GB of storage absolutely FREE</span
+        >
+        by just signing up on their website
+        <a
+          href="https://bit.ly/htf2-filebase-signup"
+          target="_blank"
+          style="color: rgba(233, 83, 34, 1)"
+          >here</a
+        >.
+      </p>
+      <br />
+      <a
+        class="cta-button smooth-transition"
+        target="_blank"
+        href="https://docs.google.com/document/d/12nGPq_KTQP6vr6HH_NYfkg8mRx2DYNyRQYwTbG_dcaM/"
+        >More Info</a
+      >
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-side front">
+            <div class="texts">
+              <h4 class="prizeName"></h4>
+              <p
+                class="prize"
+                style="
+                  font-size: 5rem;
+                  font-weight: 600;
+                  font-family: monospace;
+                "
+              >
+                $250
+              </p>
+              FREE S3-compatible object storage credits with Filebase
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prizes-wrapper">
+      <a
         href="https://www.courier.com/"
         rel="noopener noreferrer"
         target="_blank"
@@ -43,7 +109,7 @@
               >
                 $100
               </p>
-              Amazon Card + Courier Swag Kit
+              Amazon Card + Courier Swag Kit for each team member
             </div>
           </div>
         </div>
@@ -67,6 +133,18 @@ export default {
   width: 99%;
   padding: 20px 0;
   margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+
+  @include respond-below(sm) {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+  }
+
+  @include respond-below(xs) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
   .prizes-wrapper {
     background-color: #feede3;
@@ -76,7 +154,8 @@ export default {
 
     img {
       margin: auto auto 30px;
-      width: 300px;
+      height: 4rem;
+      width: auto;
 
       @include respond-below(xs) {
         width: 90%;

@@ -58,7 +58,7 @@ export default {
           details: "The team ranked 1st overall ",
           amount: "INR 50,000",
           description:
-            "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 50,000</span> Prize to winning team</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li></ul><br/><div style='text-align:center'>and more...</div>",
+            "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 50,000</span> Prize to winning team</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li><li>USD 250 Amazon Gift Card from Quicknode.</li><li>$250 of free S3-compatible object storage credits with Filebase</li></ul><br/><div style='text-align:center'>and more...</div>",
         },
         {
           name: "1st Runner-Up",
@@ -66,7 +66,7 @@ export default {
           details: "The team ranked 2nd overall ",
           amount: "INR 35,000",
           description:
-            "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 35,000</span> Prize to winning team</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li></ul><br/><div style='text-align:center'>and more...</div>",
+            "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 35,000</span> Prize to winning team</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li><li>USD 100 Amazon Gift Card from Quicknode.</li><li>$250 of free S3-compatible object storage credits with Filebase</li></ul><br/><div style='text-align:center'>and more...</div>",
         },
         {
           name: "2nd Runner-Up",
@@ -74,7 +74,7 @@ export default {
           details: "The team ranked 3rd overall",
           amount: "INR 20,000",
           description:
-            "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 20,000</span> Prize to winning team</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li></ul><br/><div style='text-align:center'>and more...</div>",
+            "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 20,000</span> Prize to winning team</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li><li>$250 of free S3-compatible object storage credits with Filebase</li></ul><br/><div style='text-align:center'>and more...</div>",
         },
       ],
     };
