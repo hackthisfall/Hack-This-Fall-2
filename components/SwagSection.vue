@@ -414,14 +414,14 @@ export default {
                 "<span style='color: rgb(233, 83, 34);'>The@Company</span> loves hackathon, and they are giving away FREE Tshirts for first 200 people. All you need to do is, complete the steps in this form : <a style='text-decoration: underline' href='https://docs.google.com/forms/d/e/1FAIpQLSeUHeKxM6N0ts3V5M17lmtOZvZDVK7kdD506tox1ZA-2b8lrw/viewform' target='_blank'> CLICK HERE</a>.",
             },
             {
-              heading: "2. Sign up for a WazirX account",
+              heading: "2. Earn FREE Tshirt [Courier]",
               content:
-                "Head to <a target='_blank' href='https://wrx.gg/htf'>wrx.gg/htf</a> and sign up. WazirX is India’s most trusted bitcoin & cryptocurrency exchange platform. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
+                "Tweet about your project based on Courier or tweet about your hackathon experience using Courier and tag <a target='_blank' style='color: rgb(233, 83, 34);' href=\"https://twitter.com/hackthisfall\">@hackthisfall</a>, <a target='_blank' href=\"https://twitter.com/trycourier\" style='color: rgb(233, 83, 34);'>@trycourier</a> to receive a free graphic t-shirt. Limited to first 25 people who do this.",
             },
             {
-              heading: "3. Sign up on SAWO Labs landing page",
+              heading: "3. Sign up for a WazirX account",
               content:
-                "Head to <a target='_blank' href='https://sawolabs.com/hackathon/redeemnow/?hackathon_name=HackThisFall2.0'>SAWO Labs</a> and sign up. Say goodbye to OTPs and Passwords. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
+                "Head to <a target='_blank' href='https://wrx.gg/htf'>wrx.gg/htf</a> and sign up. WazirX is India’s most trusted bitcoin & cryptocurrency exchange platform. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
               heading: "4. Join the Storyblok Beta Crew",
@@ -432,6 +432,11 @@ export default {
               heading: "5. Sign up and try out Filebase",
               content:
                 "Filebase is S3 Compatible Object Storage Powered by Blockchain. Get the first 5 GB of storage as free by just signing up <a target='_blank' href='https://bit.ly/htf2-filebase-signup'>here</a>. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
+            },
+            {
+              heading: "6. Sign up on SAWO Labs landing page",
+              content:
+                "Head to <a target='_blank' href='https://sawolabs.com/hackathon/redeemnow/?hackathon_name=HackThisFall2.0'>SAWO Labs</a> and sign up. Say goodbye to OTPs and Passwords. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
           ],
         },
