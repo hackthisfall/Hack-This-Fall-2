@@ -131,60 +131,6 @@ export default {
             },
           ],
         },
-        {
-          type: "BRONZE SPONSOR",
-          logos: [
-            {
-              url: "https://www.twilio.com/",
-              image: require("~/assets/Sponsors/twilio.png"),
-            },
-            {
-              url: "https://symbl.ai/",
-              image: require("~/assets/Sponsors/symbl.svg"),
-            },
-            {
-              url: "https://www.digitalocean.com/",
-              image: require("~/assets/Sponsors/digitalocean.svg"),
-            },
-            {
-              url: "https://sketch.com",
-              image: require("~/assets/Sponsors/sketch.png"),
-            },
-            {
-              url: "https://coil.com/",
-              image: require("~/assets/Sponsors/coil.jpg"),
-            },
-          ],
-        },
-        {
-          type: "SPONSOR",
-          logos: [
-            {
-              url: "https://balsamiq.com/",
-              image: require("~/assets/Sponsors/balsamiq.png"),
-            },
-            {
-              url: "https://www.wolfram.com/",
-              image: require("~/assets/Sponsors/wolfram.png"),
-            },
-            {
-              url: "https://www.linode.com/",
-              image: require("~/assets/Sponsors/linode.svg"),
-            },
-            {
-              url: "https://replit.com/",
-              image: require("~/assets/Sponsors/replit.png"),
-            },
-            {
-              url: "https://draftbit.com/",
-              image: require("~/assets/Sponsors/draftbit.png"),
-            },
-            {
-              url: "https://gen.xyz/",
-              image: require("~/assets/Sponsors/xyz.svg"),
-            },
-          ],
-        },
       ],
     };
   },
