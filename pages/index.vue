@@ -32,6 +32,7 @@
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
     />
+    <ScheduleSection />
     <SpeakersSection
       data-aos="fade-right"
       data-aos-delay="200"
@@ -72,6 +73,7 @@ import AboutSection from "~/components/AboutSection";
 import GlimpseSection from "~/components/GlimpseSection";
 import TracksSection from "~/components/TracksSection";
 import PrizesSection from "~/components/PrizesSection";
+import ScheduleSection from "~/components/ScheduleSection";
 import SpeakersSection from "~/components/SpeakersSection";
 import ScrollTopArrow from "~/components/ScrollTopArrow";
 import SponsorsSection from "~/components/SponsorsSection";
@@ -91,6 +93,7 @@ export default {
     SpeakersSection,
     SponsorsSection,
     TestimonialsSection,
+    ScheduleSection,
     FAQSection,
     ScrollTopArrow,
     FooterSection,
