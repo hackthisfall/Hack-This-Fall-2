@@ -51,7 +51,7 @@
               </div>
             </a>
             <h4 class="title">{{ speaker.name }}</h4>
-            <p class="description">{{ speaker.description }}</p>
+            <p class="description"></p>
             <img
               v-if="speaker.companyLogo"
               :src="speaker.companyLogo"
@@ -201,166 +201,144 @@ export default {
       ],
       mentors: [
         {
-          description: "Engineer,Web DataWorks",
           name: "Ishita Keshawani",
           url: "https://twitter.com/ishitakeshawani",
           picture: require("~/assets/Mentors/ishita.jpg"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Shubham Patel",
           url: "https://devshub21.github.io/deshub21/",
           picture: require("~/assets/Mentors/shubham.jpeg"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Ishika	Kesarwani",
           url: "https://github.com/ishikkkkaaaa",
           picture: require("~/assets/Mentors/ishika.jpg"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Himanshu	Sharma",
           url: "https://www.linkedin.com/in/himanshusharma89",
           picture: require("~/assets/Mentors/himanshu.jpg"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Abhishek	Doshi",
           url: "abhishekdoshi.netlify.app",
           picture: require("~/assets/Mentors/abhishek.jpg"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Ashwin Kumar	Uppala",
           url: "https://bio.link/ashwinexe",
           picture: require("~/assets/Mentors/ashwin.jpg"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Subhampreet Mohanty",
           url: "https://github.com/Subhampreet",
           picture: require("~/assets/Mentors/subhampreet.jpg"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Akshita Gupta",
           url: "https://www.linkedin.com/in/akshita-gupta-a4a895187",
           picture: require("~/assets/Mentors/akshita.jpg"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Swasthik	Shetty",
           url: "https://www.swaaz.dev/",
           picture: require("~/assets/Mentors/swaaz.png"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Manasvi Alimchandani",
           url: "https://www.linkedin.com/in/manasvi-alimchandani-934b49197/",
           picture: require("~/assets/Mentors/manasvi.jpeg"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Anup	Panwar",
           url: "https://www.linkedin.com/in/anupkumarpanwar/",
           picture: require("~/assets/Mentors/anup.jpg"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Avinash Upadhyaya K R",
           url: "https://www.linkedin.com/in/avinash-upadhyaya/",
           picture: require("~/assets/Mentors/avinash.jpg"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Pragati Verma",
           url: "https://linktr.ee/pragativerma18",
           picture: require("~/assets/Mentors/pragati.png"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Sagar Choudhary",
           url: "https://www.linkedin.com/sagarchoudhary96",
           picture: require("~/assets/Mentors/sagar.png"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Yashank",
           url: "https://www.linkedin.com/in/yashank18/",
           picture: require("~/assets/Mentors/yashank.jpg"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Anshumaan Kumar Prasad",
           url: "https://twitter.com/aminostwt",
           picture: require("~/assets/Mentors/anshumaan.png"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Sreekaran Srinath",
           url: "https://sreekaran.com",
           picture: require("~/assets/Mentors/sreekaran.png"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Shyam Sundar	R",
           url: "www.linkedin.com/in/iamshyam",
           picture: require("~/assets/Mentors/shyam.jpg"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Khushi	Saxena",
           url: "https://www.linkedin.com/in/khushi321/",
           picture: require("~/assets/Mentors/khushi.jpg"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Devesh	Raj",
           url: "https://www.linkedin.com/in/devish2/",
           picture: require("~/assets/Mentors/devesh.jpeg"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Kumar Satyarth",
           url: "https://ksatyarth2.in",
           picture: require("~/assets/Mentors/satyarth.png"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Prathamesh	Shanbhag",
           url: "https://www.linkedin.com/in/prathamesh-shanbhag/",
           picture: require("~/assets/Mentors/prathamesh.jpg"),
         },
         {
-          description: "Engineer,Web DataWorks",
-          name: "Prince	Canuma",
+          name: "Prince Canuma",
           url: "https://twitter.com/CanumaGdt",
           picture: require("~/assets/Mentors/prince.jpeg"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Chandrika Deb",
           url: "https://github.com/chandrikadeb7",
           picture: require("~/assets/Mentors/chandrika.jpeg"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Vedant Bahel",
           url: "https://twitter.com/Vedant_Bahel",
           picture: require("~/assets/Mentors/vedant.jpg"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Shubham Sah",
           url: "https://twitter.com/ishubhamsah",
           picture: require("~/assets/Mentors/shubham.jpg"),
         },
         {
-          description: "Engineer,Web DataWorks",
           name: "Vanshika Garg",
           url: "https://github.com/Vanshikagarg17",
           picture: require("~/assets/Mentors/vanshika.jpeg"),
+        },
+        {
+          name: "Soumya	Ghosh Dastidar",
+          url: "https://twitter.com/gdsoumya",
+          picture: require("~/assets/Mentors/soumya.jpg"),
         },
       ],
     };
