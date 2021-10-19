@@ -107,7 +107,7 @@
         <a
           class="cta-button smooth-transition"
           target="_blank"
-          href="https://raahee.in/"
+          href="https://docs.google.com/document/d/1nOf5Fz1A46TpUJnD_tnGtByQra0aE4IhSwltWRG-dog/"
           style=""
           >More Info</a
         >

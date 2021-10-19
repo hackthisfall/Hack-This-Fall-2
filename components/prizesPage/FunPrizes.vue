@@ -45,7 +45,7 @@ export default {
           image: require("~/assets/Prizes/github-bag.png"),
           details: "Win GitHub Bag 🎒",
           description:
-            "<ul><li>Bring in your creativity and show it to us by designing a Mascot for Hack This Fall.</li><li>Tweet your design and tag us <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hackthisfall'>@hackthisfall</a> using hashtag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/HTFMascot'>#HTFMascot</a> & <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#HackThisFall</a></li><li>The mascot which wins our heart gets a <span style='color: rgba(233, 83, 34, 1)'>GitHub Bag</span> as a prize!🎒</li></ul>",
+            "<ul><li>Bring in your creativity and show it to us by designing a Mascot for Hack This Fall.</li><li>Tweet your design and tag us <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hackthisfall'>@hackthisfall</a> using hashtag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/HTFMascot'>#HTFMascot</a> & <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#HackThisFall</a></li><li>The mascot which wins our heart gets a <span style='color: rgba(233, 83, 34, 1)'>GitHub Bag</span> as a prize and a Sketch license worth <span style='color: rgba(233, 83, 34, 1)'>USD 99</span>!</li></ul>",
         },
         {
           name: "Meme Challenge",
