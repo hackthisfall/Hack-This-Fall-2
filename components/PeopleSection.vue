@@ -4,11 +4,11 @@
       <HashHeader title="SPEAKERS, MENTORS" />
       <div class="contents">
         <div class="subheading">
-          <h2 class="section-title">SPEAKERS</h2>
+          <h2 class="section-title">JUDGES</h2>
         </div>
         <div class="speakers-grid">
           <div
-            v-for="(speaker, index) in speakers"
+            v-for="(speaker, index) in judges"
             :key="index"
             :class="['team-card', `rot-${Math.floor(Math.random() * 24) * 15}`]"
           >
@@ -22,7 +22,7 @@
               </div>
             </a>
             <h4 class="title">{{ speaker.name }}</h4>
-            <p class="description">{{ speaker.description }}</p>
+            <p class="description"></p>
             <img
               v-if="speaker.companyLogo"
               :src="speaker.companyLogo"
@@ -51,7 +51,36 @@
               </div>
             </a>
             <h4 class="title">{{ speaker.name }}</h4>
-            <p class="description"></p>
+            <p class="description">{{ speaker.description }}</p>
+            <img
+              v-if="speaker.companyLogo"
+              :src="speaker.companyLogo"
+              :title="speaker.company"
+              alt="company logo"
+              class="company-logo"
+            />
+          </div>
+        </div>
+        <div class="subheading with-spacing">
+          <h2 class="section-title">SPEAKERS</h2>
+        </div>
+        <div class="speakers-grid">
+          <div
+            v-for="(speaker, index) in speakers"
+            :key="index"
+            :class="['team-card', `rot-${Math.floor(Math.random() * 24) * 15}`]"
+          >
+            <a :href="speaker.url" target="_blank" rel="noopener noreferrer">
+              <div class="picture-wrapper smooth-transition">
+                <img
+                  :src="speaker.picture"
+                  alt="profile picture"
+                  class="profile-pic"
+                />
+              </div>
+            </a>
+            <h4 class="title">{{ speaker.name }}</h4>
+            <p class="description">{{ speaker.description }}</p>
             <img
               v-if="speaker.companyLogo"
               :src="speaker.companyLogo"
@@ -222,8 +251,8 @@ export default {
         },
         {
           name: "Abhishek	Doshi",
-          url: "abhishekdoshi.netlify.app",
-          picture: require("~/assets/Mentors/abhishek.jpg"),
+          url: "https://abhishekdoshi.netlify.app",
+          picture: require("~/assets/Mentors/abhishek.jpeg"),
         },
         {
           name: "Ashwin Kumar	Uppala",
@@ -345,6 +374,93 @@ export default {
           url: "https://twitter.com/dwvicy",
           picture: require("~/assets/Mentors/vaishnavi.jpg"),
         },
+        {
+          name: "Abir	Pal",
+          url: "https://twitter.com/imabptweets",
+          picture: require("~/assets/Mentors/abir.png"),
+        },
+        {
+          name: "Calvin	D'Souza",
+          url: "https://twitter.com/kalzen15",
+          picture: require("~/assets/Mentors/calvin.png"),
+        },
+      ],
+      judges: [
+        {
+          name: "Abhishek	Doshi",
+          url: "https://abhishekdoshi.netlify.app",
+          picture: require("~/assets/Mentors/abhishek.jpeg"),
+        },
+        {
+          name: "Soumya	Ghosh Dastidar",
+          url: "https://twitter.com/gdsoumya",
+          picture: require("~/assets/Mentors/soumya.jpg"),
+        },
+        // {
+        //   name: "Sreekaran Srinath",
+        //   url: "https://sreekaran.com",
+        //   picture: require("~/assets/Mentors/sreekaran.png"),
+        // },
+        // {
+        //   name: "Himanshu	Sharma",
+        //   url: "https://www.linkedin.com/in/himanshusharma89",
+        //   picture: require("~/assets/Mentors/himanshu.jpg"),
+        // },
+        {
+          name: "Pragati Verma",
+          url: "https://linktr.ee/pragativerma18",
+          picture: require("~/assets/Mentors/pragati.png"),
+        },
+        {
+          name: "Aditya Oberai",
+          url: "https://twitter.com/adityaoberai1",
+          picture: require("~/assets/Testimonials/aditya.jpg"),
+        },
+        // {
+        //   name: "Praveen Kumar",
+        //   url: "https://praveen.science/",
+        //   picture: require("~/assets/Speakers/praveen.jpeg"),
+        // },
+        {
+          name: "Sashrika Kaur",
+          url: "https://twitter.com/SashrikaKaur",
+          picture: require("~/assets/Speakers/sashrika.jpg"),
+        },
+        {
+          name: "Khushboo Verma",
+          url: "https://twitter.com/khushbooverma_",
+          picture: require("~/assets/Speakers/khushboo.jpg"),
+        },
+        // {
+        //   name: "Mohammad Shahbaz Alam",
+        //   url: "https://twitter.com/mdsbzalam",
+        //   picture: require("~/assets/Judges/shahbaz.png"),
+        // },
+        // {
+        //   name: "Pranshu Khanna",
+        //   url: "https://twitter.com/inmypranshoes",
+        //   picture: require("~/assets/Judges/pranshu.jpg"),
+        // },
+        {
+          name: "Santosh Yadav",
+          url: "https://twitter.com/SantoshYadavDev",
+          picture: require("~/assets/Judges/santosh.png"),
+        },
+        {
+          name: "Abel Mathew",
+          url: "https://twitter.com/DesignrKnight",
+          picture: require("~/assets/Speakers/abel.jpg"),
+        },
+        {
+          name: "Yashovardhan Agrawal",
+          url: "https://twitter.com/yashovardhan",
+          picture: require("~/assets/Judges/yashovardhan.jpg"),
+        },
+        // {
+        //   name: "Harshit Singh",
+        //   url: "https://twitter.com/helios1101",
+        //   picture: require("~/assets/Judges/harshit.jpeg"),
+        // },
       ],
     };
   },
@@ -360,6 +476,16 @@ export default {
     });
 
     this.mentors.sort((a, b) => {
+      if (a.name < b.name) {
+        return -1;
+      }
+      if (a.name > b.name) {
+        return 1;
+      }
+      return 0;
+    });
+
+    this.judges.sort((a, b) => {
       if (a.name < b.name) {
         return -1;
       }
