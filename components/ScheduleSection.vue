@@ -207,6 +207,7 @@ export default {
         margin-left: 0.5rem;
 
         @include respond-below(xs) {
+          margin-left: 0rem;
           width: 100%;
           text-align: center;
         }
