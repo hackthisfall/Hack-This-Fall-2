@@ -19,36 +19,24 @@
         starting point]
       </p>
       <br />
-      <!-- <a
+      <a
         class="cta-button smooth-transition"
         target="_blank"
-        href="https://atsign.com/hack-this-fall-wavi-contest/"
+        href="https://rowan-vacation-631.notion.site/Agoric-Build-Challenge-5b3d04df9cbb48e1a8e1ccb64490484c"
         >More Info</a
-      > -->
+      >
       <div class="cards-grid">
         <img
           class="background"
           src="~/assets/Prizes/mlhTransparent.png"
           alt="background"
         />
-        <!-- <div class="company">
-        <img src="~/assets/Prizes/mlh.png" alt="magic logo" />
-        <h1>MLH</h1>
-      </div> -->
         <div
           v-for="(prize, index) in magicLabPrizes"
           :key="index"
           :class="['card', prize.specialClass]"
         >
-          <!-- <div class="card-side back">
-            <div class="texts">
-              <p class="prizeDescription" v-html="prize.details">{{}}</p>
-            </div>
-          </div> -->
           <div class="card-side front">
-            <!-- <div class="image">
-              <img :src="prize.image" :alt="prize.name" class="prizeImage1" />
-            </div> -->
             <div class="texts">
               <h4 class="prizeName" v-html="prize.name">{{}}</h4>
               <p class="prize">{{ prize.prizeName }}</p>
@@ -208,7 +196,7 @@ export default {
         }
 
         @media (max-width: 1000px) {
-          width: 96%;
+          width: 100%;
         }
 
         .card-side {

@@ -42,29 +42,13 @@
 <script>
 import Container from "~/components/Container";
 import HashHeader from "~/components/HashHeader";
-// import SubHashHeader from "~/components/SubHashHeader";
-// import OtherPrizes from "~/components/prizesPage/OtherPrizes.vue";
-// import AmagiAndElastic from "~/components/prizesPage/AmagiAndElastic.vue";
-// import Auth0AndRaahee from "~/components/prizesPage/Auth0AndRaahee.vue";
-// import MagicLabs from "~/components/prizesPage/magicLabs.vue";
-// import SawoAndPolygon from "~/components/prizesPage/SawoAndPolygon.vue";
-// import GraphCMS from "~/components/prizesPage/graphCMS.vue";
 import MLH from "~/components/prizesPage/MLH.vue";
-// import Symbl from "~/components/prizesPage/Symbl.vue";
 
 export default {
   components: {
     Container,
     HashHeader,
-    // SubHashHeader,
-    // OtherPrizes,
-    // AmagiAndElastic,
-    // Auth0AndRaahee,
-    // MagicLabs,
-    // SawoAndPolygon,
-    // GraphCMS,
-    MLH
-    // Symbl
+    MLH,
   },
   data() {
     return {
@@ -75,7 +59,7 @@ export default {
           details: "The team ranked 1st overall ",
           amount: "INR 50,000",
           description:
-            "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 50,000</span> Prize to winning team</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li></ul><br/><div style='text-align:center'>and more...</div>"
+            "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 50,000</span> Prize to winning team</li><li><span style='color: rgba(233, 83, 34, 1)'>USD 250</span> Amazon Gift Card from Quicknode.</li><li><span style='color: rgba(233, 83, 34, 1)'>USD 250 </span>of free S3-compatible object storage credits with Filebase</li><li><span style='color: rgba(233, 83, 34, 1)'>USD 449</span> of 1 year of Draftbit Pro</li><li><span style='color: rgba(233, 83, 34, 1)'>USD 375</span> of In-Kind Wolfram Award</li><li><span style='color: rgba(233, 83, 34, 1)'>USD 250</span> of Digital Ocean Credits</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li><li><span style='color: rgba(233, 83, 34, 1)'>Certificates</span> to members</li><li>Special Mention on <a style='color: rgba(233, 83, 34, 1)'  target='_blank' rel='noopener noreferrer' href='https://twitter.com/hackthisfall'>@hackthisfall</a> socials</li></ul>",
         },
         {
           name: "1st Runner-Up",
@@ -83,7 +67,7 @@ export default {
           details: "The team ranked 2nd overall ",
           amount: "INR 35,000",
           description:
-            "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 35,000</span> Prize to winning team</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li></ul><br/><div style='text-align:center'>and more...</div>"
+            "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 35,000</span> Prize to winning team</li><li><span style='color: rgba(233, 83, 34, 1)'>USD 100</span> Amazon Gift Card from Quicknode.</li><li><span style='color: rgba(233, 83, 34, 1)'>USD 150 </span>of free S3-compatible object storage credits with Filebase</li><li><span style='color: rgba(233, 83, 34, 1)'>USD 449</span> of 1 year of Draftbit Pro</li><li><span style='color: rgba(233, 83, 34, 1)'>USD 375</span> of In-Kind Wolfram Award</li><li><span style='color: rgba(233, 83, 34, 1)'>USD 125 </span>of Digital Ocean Credits</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li><li><span style='color: rgba(233, 83, 34, 1)'>Certificates</span> to members</li><li>Special Mention on <a style='color: rgba(233, 83, 34, 1)'  target='_blank' rel='noopener noreferrer' href='https://twitter.com/hackthisfall'>@hackthisfall</a> socials</li></ul>",
         },
         {
           name: "2nd Runner-Up",
@@ -91,11 +75,11 @@ export default {
           details: "The team ranked 3rd overall",
           amount: "INR 20,000",
           description:
-            "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 20,000</span> Prize to winning team</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li></ul><br/><div style='text-align:center'>and more...</div>"
-        }
-      ]
+            "<ul><li><span style='color: rgba(233, 83, 34, 1)'>INR 20,000</span> Prize to winning team</li><li><span style='color: rgba(233, 83, 34, 1)'>USD 250 </span>of free S3-compatible object storage credits with Filebase</li><li><span style='color: rgba(233, 83, 34, 1)'>USD 449</span> of 1 year of Draftbit Pro</li><li><span style='color: rgba(233, 83, 34, 1)'>USD 375</span> of In-Kind Wolfram Award</li><li><span style='color: rgba(233, 83, 34, 1)'>USD 100</span> of Digital Ocean Credits</li><li>Hack This Fall <span style='color: rgba(233, 83, 34, 1)'>Swag Pack</span></li><li><span style='color: rgba(233, 83, 34, 1)'>Certificates</span> to members</li><li>Special Mention on <a style='color: rgba(233, 83, 34, 1)'  target='_blank' rel='noopener noreferrer' href='https://twitter.com/hackthisfall'>@hackthisfall</a> socials</li></ul>",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -126,7 +110,7 @@ export default {
         position: relative;
         border-radius: 15px;
         text-align: center;
-        min-height: 200px;
+        min-height: 300px;
         margin: auto;
 
         @media (max-width: 1000px) {

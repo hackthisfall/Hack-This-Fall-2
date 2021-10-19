@@ -1,55 +1,115 @@
 <template>
   <div class="contents">
     <div class="prizes-wrapper">
-      <a href="https://atsign.com/" rel="noopener noreferrer" target="_blank">
-        <img src="~/assets/Sponsors/atsign.webp" alt="company"
-      /></a>
-      <p style="width: 90%; margin: auto">
-        <span
-          style="color: rgba(233, 83, 34, 1); font-size: 18px; font-weight: 600"
-          >The @wavi Contest</span
+      <a
+        href="https://filebase.com/?utm_source=website&utm_medium=sponsor&utm_campaign=hackthisfall"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          src="~/assets/Sponsors/filebase.svg"
+          alt="company"
+          style="height: 4.5rem"
+        />
+      </a>
+      <p style="width: 90%; margin: auto; margin-top: -0.5rem">
+        Filebase is the
+        <span style="color: rgba(233, 83, 34, 1)"
+          >world’s first object storage platform</span
         >
-        <br /><br /><span style="color: rgba(233, 83, 34, 1)">@wavi</span> is an
-        app from
-        <span style="color: rgba(233, 83, 34, 1)">The @ Company</span> that
-        allows you to create a highly customizable microsite in a matter of
-        minutes. This can be a public space for your business, your project,
-        your pet or yourself.<br /><br />
-        Skills needed for using
-        <span style="color: rgba(233, 83, 34, 1)">@wavi</span> - Creativity,
-        typing, copy-pasting and the ability to Google well. If you want to kick
-        it up a notch, cutting and pasting embed codes will come in super
-        handy.<br /><br />
-        <span style="color: rgba(233, 83, 34, 1)">Pro tip</span>: For really
-        cool CUSTOM CONTENT, try pasting HTML into the TEXT field.
+        powered by
+        <span style="color: rgba(233, 83, 34, 1)">decentralized networks</span>.
+        It unifies multiple networks under a single S3-compatible API to make
+        decentralized storage accessible and easy to use. <br /><br />
+        They are giving away
+        <span style="color: rgba(233, 83, 34, 1)"
+          >$250 of free S3-compatible object storage credits</span
+        >
+        with Filebase in prizes for the best project build on top of Filebase.
+        Get the first
+        <span style="color: rgba(233, 83, 34, 1)"
+          >5 GB of storage absolutely FREE</span
+        >
+        by just signing up on their website
+        <a
+          href="https://bit.ly/htf2-filebase-signup"
+          target="_blank"
+          style="color: rgba(233, 83, 34, 1)"
+          >here</a
+        >.
       </p>
       <br />
       <a
         class="cta-button smooth-transition"
         target="_blank"
-        href="https://atsign.com/hack-this-fall-wavi-contest/"
+        href="https://docs.google.com/document/d/12nGPq_KTQP6vr6HH_NYfkg8mRx2DYNyRQYwTbG_dcaM/"
         >More Info</a
       >
       <div class="cards-grid">
-        <img
-          class="background"
-          src="~/assets/Prizes/mlhTransparent.png"
-          alt="background"
-        />
-        <div
-          v-for="(prize, index) in magicLabPrizes"
-          :key="index"
-          :class="['card', prize.specialClass]"
-        >
-          <div class="card-side back">
-            <div class="texts">
-              <p class="prizeDescription" v-html="prize.details">{{}}</p>
-            </div>
-          </div>
+        <div class="card">
           <div class="card-side front">
             <div class="texts">
-              <h4 class="prizeName" v-html="prize.name">{{}}</h4>
-              <p class="prize">{{ prize.prizeName }}</p>
+              <h4 class="prizeName"></h4>
+              <p
+                class="prize"
+                style="
+                  font-size: 5rem;
+                  font-weight: 600;
+                  font-family: monospace;
+                "
+              >
+                $250
+              </p>
+              FREE S3-compatible object storage credits with Filebase
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prizes-wrapper">
+      <a
+        href="https://www.courier.com/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img src="~/assets/Sponsors/courier.png" alt="company" />
+      </a>
+      <p style="width: 90%; margin: auto">
+        Early stage startups can require building complex notification systems
+        into their product to improve communication with users and increase user
+        engagement, which can be a time consuming and expensive process.
+        <br /><br />
+        <span style="color: rgba(233, 83, 34, 1)"
+          >Courier offers a fast and cost-effective solution for developers to
+          build notifications into their products.</span
+        >
+        We are looking for the project for the best implementation - the most
+        innovative, fun, and/or practical - of notifications using the
+        <span style="color: rgba(233, 83, 34, 1)">Courier API.</span>.
+      </p>
+      <br />
+      <a
+        class="cta-button smooth-transition"
+        target="_blank"
+        href="https://docs.google.com/document/d/1s2s1li4YYXdpIPk33gTmSGcOAuVaZwk9PfvQ4FI_gGA/edit?usp=sharing"
+        >More Info</a
+      >
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-side front">
+            <div class="texts">
+              <h4 class="prizeName"></h4>
+              <p
+                class="prize"
+                style="
+                  font-size: 5rem;
+                  font-weight: 600;
+                  font-family: monospace;
+                "
+              >
+                $100
+              </p>
+              Amazon Card + Courier Swag Kit for each team member
             </div>
           </div>
         </div>
@@ -65,42 +125,6 @@ export default {
   components: {
     Container,
   },
-  data() {
-    return {
-      magicLabPrizes: [
-        {
-          name: "Best Overall Winner",
-          prizeName: "INR 17,500",
-          details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 17,500</span> awarded to the person whose page stands out the most for all the right reasons.",
-        },
-        {
-          name: "Most Creative Use of Custom Content",
-          prizeName: "INR 7,500",
-          details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person who used the custom content feature in the most creative and unique ways.",
-        },
-        {
-          name: "Most Desi/Festive",
-          prizeName: "INR 7,500",
-          details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the page that showcases Indian culture, art, traditions, the festivals and its people the best.",
-        },
-        {
-          name: "Best Pet Page",
-          prizeName: "INR 7,500",
-          details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the best page about their pet(s)",
-        },
-        {
-          name: "Most Nerdy Page",
-          prizeName: "INR 7,500",
-          details:
-            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the most nerdy page. We expect the content on this to be super techy!",
-        },
-      ],
-    };
-  },
 };
 </script>
 
@@ -108,6 +132,19 @@ export default {
 .contents {
   width: 99%;
   padding: 20px 0;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+
+  @include respond-below(sm) {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+  }
+
+  @include respond-below(xs) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
   .prizes-wrapper {
     background-color: #feede3;
@@ -117,7 +154,8 @@ export default {
 
     img {
       margin: auto auto 30px;
-      width: 300px;
+      height: 4rem;
+      width: auto;
 
       @include respond-below(xs) {
         width: 90%;
@@ -143,14 +181,12 @@ export default {
     }
 
     .cards-grid {
-      display: grid;
+      justify-content: center;
       position: relative;
-      grid-template-columns: 1fr 1fr 1fr;
       background-color: #feede3;
       border-radius: 10px;
-      column-gap: 30px;
+
       margin-top: 1.5rem;
-      row-gap: 30px;
 
       @include respond-below(md) {
         grid-template-columns: repeat(3, 1fr);
@@ -211,13 +247,15 @@ export default {
       .card {
         min-height: 200px;
         position: relative;
+        width: 400px;
+        margin: auto;
 
         @include respond-below(sm) {
-          min-height: 100px;
+          min-height: 250px !important;
         }
 
         @media (max-width: 1000px) {
-          width: 100%;
+          width: 96%;
         }
 
         .card-side {
@@ -245,9 +283,9 @@ export default {
             flex-direction: column;
           }
         }
-        &:hover .card-side.front {
+        /* &:hover .card-side.front {
           transform: rotateY(180deg);
-        }
+        } */
         &:hover .card-side.back {
           transform: rotateY(0deg);
         }

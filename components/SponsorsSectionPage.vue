@@ -318,6 +318,14 @@ export default {
               url: "https://twitter.com/pieai_jaipur",
               image: require("~/assets/Community-Partners/pie-jaipur.png"),
             },
+            {
+              url: "https://www.instagram.com/hackclub.duk/",
+              image: require("~/assets/Community-Partners/hackclub-duk.png"),
+            },
+            {
+              url: "https://www.youtube.com/c/KunalKushwaha",
+              image: require("~/assets/Community-Partners/cclass.jpg"),
+            },
           ],
         },
       ],
