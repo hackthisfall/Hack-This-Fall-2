@@ -74,32 +74,26 @@ export default {
           items: [
             {
               title: "Check-In",
-              type: "Hackathon",
-              time: "10:00",
+              time: "09:30",
             },
             {
               title: "Opening Ceremony",
-              type: "Hackathon",
-              time: "11:30",
+              time: "10:30",
             },
             {
               title: "Hacking Begins",
-              type: "Hackathon",
-              time: "12:00",
+              time: "11:00",
             },
             {
-              title: "Mentorship Hours",
-              type: "Hackathon",
+              title: "hacker Connect",
               time: "15:00",
             },
             {
-              title: "Session with Elastic",
-              type: "Workshop",
-              time: "18:00",
+              title: "HTF Mentor Connect - 1",
+              time: "19:00",
             },
             {
-              title: "Hackathon AMA with Sashrika",
-              type: "Workshop",
+              title: "Bob Ross Mini Event",
               time: "21:00",
             },
           ],
@@ -110,33 +104,27 @@ export default {
           items: [
             {
               title: "Announcements Day 2",
-              type: "Hackathon",
               time: "09:00",
             },
             {
-              title: "Auth0 Session",
-              type: "Workshop",
-              time: "11:30",
+              title: "Organizer Connect",
+              time: "10:00",
             },
             {
-              title: "Mentorship Hours",
-              type: "Hackathon",
+              title: "Werewolf Mini Event",
               time: "14:00",
             },
             {
-              title: "MS Paint Bob Ross",
-              type: "Workshop",
+              title: "HTF Mentor Connect - 2",
               time: "17:00",
             },
             {
-              title: "Hangout with Raahee",
-              type: "Workshop",
-              time: "19:30",
+              title: "Raahee Mini Event",
+              time: "19:00",
             },
             {
-              title: "Hacker Hangout 2",
-              type: "Workshop",
-              time: "21:00",
+              title: "Sketchful IO Mini Event",
+              time: "22:00",
             },
           ],
         },
@@ -146,28 +134,27 @@ export default {
           items: [
             {
               title: "Announcements Day 3",
-              type: "Hackathon",
               time: "09:00",
             },
             {
+              title: "Devpost Office Hours",
+              time: "09:30",
+            },
+            {
               title: "Soft Deadline",
-              type: "Hackathon",
-              time: "10:30",
+              time: "10:00",
             },
             {
-              title: "Hacking Ends",
-              type: "Hackathon",
-              time: "12:00",
+              title: "Hard Deadline/Hacking Ends",
+              time: "11:00",
             },
             {
-              title: "Showcase",
-              type: "Workshop",
+              title: "HTF Project Showcase",
               time: "14:00",
             },
             {
               title: "Closing Ceremony",
-              type: "Hackathon",
-              time: "18:00",
+              time: "21:00",
             },
           ],
         },
