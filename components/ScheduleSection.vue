@@ -1,7 +1,7 @@
 <template>
   <Container id="schedule">
     <section class="content-section">
-      <HashHeader title="SCHEDULE" />
+      <HashHeader title="HACKATHON SCHEDULE" />
       <div class="contents">
         <span
           v-for="(schedule, index) in scheduleComplete"
@@ -15,8 +15,16 @@
         >
           <div class="headers">{{ schedule.header }}</div>
         </span>
-        <div class="disclaimer">
-          *All the timings mentioned are in the IST timezone
+        <div
+          style="
+            color: rgba(233, 83, 34, 1);
+            font-style: italic;
+            font-size: 0.8rem;
+            margin-top: 0.6rem;
+            margin-bottom: 1rem;
+          "
+        >
+          * All times displayed in India Standard Time (UTC+05:30).
         </div>
         <div class="daily-schedule">
           <div
@@ -79,13 +87,14 @@ export default {
             {
               title: "Opening Ceremony",
               time: "10:30",
+              type: "Live",
             },
             {
               title: "Hacking Begins",
               time: "11:00",
             },
             {
-              title: "hacker Connect",
+              title: "HTF Hacker Connect",
               time: "15:00",
             },
             {
@@ -103,15 +112,15 @@ export default {
           date: "Oct 23",
           items: [
             {
-              title: "Announcements Day 2",
+              title: "Day 2 Announcements",
               time: "09:00",
             },
             {
-              title: "Organizer Connect",
+              title: "HTF Organizer Connect",
               time: "10:00",
             },
             {
-              title: "Werewolf Mini Event",
+              title: "MLH Werewolf Mini Event",
               time: "14:00",
             },
             {
@@ -133,7 +142,7 @@ export default {
           date: "Oct 24",
           items: [
             {
-              title: "Announcements Day 3",
+              title: "Day 3 Announcements",
               time: "09:00",
             },
             {
@@ -151,10 +160,12 @@ export default {
             {
               title: "HTF Project Showcase",
               time: "14:00",
+              type: "Live",
             },
             {
               title: "Closing Ceremony",
               time: "21:00",
+              type: "Live",
             },
           ],
         },
@@ -172,10 +183,10 @@ export default {
 <style lang="scss" scoped>
 .content-section {
   flex-direction: column;
+  font-family: "Segoe UI Bold";
   margin-top: 2rem;
   .contents {
     .allHeaders {
-      font-family: "Segoe UI Bold";
       @media (max-width: 465px) {
         margin-left: 0em;
       }
@@ -257,10 +268,8 @@ export default {
 
         border-left: 3px solid #e85325;
 
-        &.Workshop {
-          .type {
-            color: #7fc1c8;
-          }
+        &.Live {
+          border-left: 3px solid #254774;
         }
 
         &.Hackathon {
