@@ -330,6 +330,10 @@ export default {
               url: "https://linktr.ee/michispotlight",
               image: require("~/assets/Community-Partners/michi.png"),
             },
+            {
+              url: "https://codezoned.com/",
+              image: require("~/assets/Community-Partners/codezoned.jpeg"),
+            },
           ],
         },
       ],
