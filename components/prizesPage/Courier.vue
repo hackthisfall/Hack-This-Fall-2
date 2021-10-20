@@ -42,7 +42,7 @@
       <a
         class="cta-button smooth-transition"
         target="_blank"
-        href="https://docs.google.com/document/d/12nGPq_KTQP6vr6HH_NYfkg8mRx2DYNyRQYwTbG_dcaM/"
+        href="https://docs.google.com/document/d/1Habm3DahrkIp3JoRWWVg1dWheXDPiUaTkmdBVi2wJaA/"
         >More Info</a
       >
       <div class="cards-grid">
