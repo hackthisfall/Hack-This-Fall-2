@@ -369,11 +369,11 @@ export default {
           url: "https://twitter.com/gdsoumya",
           picture: require("~/assets/Mentors/soumya.jpg"),
         },
-        // {
-        //   name: "Vaishnavi Dwivedi",
-        //   url: "https://twitter.com/dwvicy",
-        //   picture: require("~/assets/Mentors/vaishnavi.jpg"),
-        // },
+        {
+          name: "Vaishnavi Dwivedi",
+          url: "https://twitter.com/dwvicy",
+          picture: require("~/assets/Mentors/vaishnavi.jpg"),
+        },
         // {
         //   name: "Abir	Pal",
         //   url: "https://twitter.com/imabptweets",

@@ -117,7 +117,13 @@ export default {
   },
   mounted() {
     setTimeout(() => {
-      let lastPart = window.location.href.split("/").pop();
+      let lastPart;
+      if (window.location.href.includes("/prizes")) {
+        lastPart = window.location.href.split("/prizes").pop();
+        lastPart.replace("/", "");
+      } else {
+        lastPart = window.location.href.split("/").pop();
+      }
       if (lastPart[0] === "#") {
         lastPart = lastPart.substring(1);
         document.getElementById(`${lastPart}`)?.scrollIntoView(true);

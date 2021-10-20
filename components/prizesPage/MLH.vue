@@ -1,6 +1,6 @@
 <template>
   <div class="contents">
-    <div class="prizes-wrapper">
+    <div class="prizes-wrapper" id="mlh">
       <a href="https://mlh.io/" rel="noopener noreferrer" target="_blank">
         <img src="~/assets/Sponsors/mlh.svg" alt="company"
       /></a>

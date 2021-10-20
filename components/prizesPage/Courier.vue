@@ -1,6 +1,6 @@
 <template>
   <div class="contents">
-    <div class="prizes-wrapper">
+    <div class="prizes-wrapper" id="filebase">
       <a
         href="https://filebase.com/?utm_source=website&utm_medium=sponsor&utm_campaign=hackthisfall"
         rel="noopener noreferrer"
@@ -66,7 +66,7 @@
         </div>
       </div>
     </div>
-    <div class="prizes-wrapper">
+    <div class="prizes-wrapper" id="courier">
       <a
         href="https://www.courier.com/"
         rel="noopener noreferrer"

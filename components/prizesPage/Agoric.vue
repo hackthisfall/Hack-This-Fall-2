@@ -1,6 +1,6 @@
 <template>
   <div class="contents">
-    <div class="prizes-wrapper">
+    <div class="prizes-wrapper" id="agoric">
       <a href="https://agoric.com/" rel="noopener noreferrer" target="_blank">
         <img src="~/assets/Sponsors/agoric.svg" alt="company" />
       </a>
