@@ -384,6 +384,16 @@ export default {
           url: "https://twitter.com/kalzen15",
           picture: require("~/assets/Mentors/calvin.png"),
         },
+        {
+          name: "Kartik	Choudhary",
+          url: "https://www.linkedin.com/in/kartikcho/",
+          picture: require("~/assets/Mentors/kartik.jpg"),
+        },
+        {
+          name: "Harsh Jain",
+          url: "https://www.linkedin.com/in/harshjain2710/",
+          picture: require("~/assets/Mentors/harsh.jpeg"),
+        },
       ],
       judges: [
         {
@@ -440,6 +450,11 @@ export default {
           name: "Himanshu Sharma",
           url: "https://www.linkedin.com/in/himanshusharma89",
           picture: require("~/assets/Mentors/himanshu.jpg"),
+        },
+        {
+          name: "Kartik	Choudhary",
+          url: "https://www.linkedin.com/in/kartikcho/",
+          picture: require("~/assets/Mentors/kartik.jpg"),
         },
         // {
         //   name: "Mohammad Shahbaz Alam",
