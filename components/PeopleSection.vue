@@ -1,10 +1,10 @@
 <template>
   <Container id="speakers">
     <section class="content-section">
-      <HashHeader title="SPEAKERS, MENTORS" />
+      <HashHeader title="HUMANS OF HACK THIS FALL" />
       <div class="contents">
         <div class="subheading">
-          <h2 class="section-title">JUDGES</h2>
+          <h2 class="section-title" style="margin-top: -2rem">JUDGES</h2>
         </div>
         <div class="speakers-grid">
           <div
@@ -269,21 +269,21 @@ export default {
           url: "https://www.linkedin.com/in/akshita-gupta-a4a895187",
           picture: require("~/assets/Mentors/akshita.jpg"),
         },
-        {
-          name: "Swasthik	Shetty",
-          url: "https://www.swaaz.dev/",
-          picture: require("~/assets/Mentors/swaaz.png"),
-        },
+        // {
+        //   name: "Swasthik Shetty",
+        //   url: "https://www.swaaz.dev/",
+        //   picture: require("~/assets/Mentors/swaaz.png"),
+        // },
         {
           name: "Manasvi Alimchandani",
           url: "https://www.linkedin.com/in/manasvi-alimchandani-934b49197/",
           picture: require("~/assets/Mentors/manasvi.jpeg"),
         },
-        {
-          name: "Anup	Panwar",
-          url: "https://www.linkedin.com/in/anupkumarpanwar/",
-          picture: require("~/assets/Mentors/anup.jpg"),
-        },
+        // {
+        //   name: "Anup	Panwar",
+        //   url: "https://www.linkedin.com/in/anupkumarpanwar/",
+        //   picture: require("~/assets/Mentors/anup.jpg"),
+        // },
         {
           name: "Avinash Upadhyaya K R",
           url: "https://www.linkedin.com/in/avinash-upadhyaya/",
@@ -304,16 +304,16 @@ export default {
           url: "https://www.linkedin.com/in/yashank18/",
           picture: require("~/assets/Mentors/yashank.jpg"),
         },
-        {
-          name: "Anshumaan Kumar Prasad",
-          url: "https://twitter.com/aminostwt",
-          picture: require("~/assets/Mentors/anshumaan.png"),
-        },
-        {
-          name: "Sreekaran Srinath",
-          url: "https://sreekaran.com",
-          picture: require("~/assets/Mentors/sreekaran.png"),
-        },
+        // {
+        //   name: "Anshumaan Kumar Prasad",
+        //   url: "https://twitter.com/aminostwt",
+        //   picture: require("~/assets/Mentors/anshumaan.png"),
+        // },
+        // {
+        //   name: "Sreekaran Srinath",
+        //   url: "https://sreekaran.com",
+        //   picture: require("~/assets/Mentors/sreekaran.png"),
+        // },
         {
           name: "Shyam Sundar	R",
           url: "www.linkedin.com/in/iamshyam",
@@ -369,16 +369,16 @@ export default {
           url: "https://twitter.com/gdsoumya",
           picture: require("~/assets/Mentors/soumya.jpg"),
         },
-        {
-          name: "Vaishnavi Dwivedi",
-          url: "https://twitter.com/dwvicy",
-          picture: require("~/assets/Mentors/vaishnavi.jpg"),
-        },
-        {
-          name: "Abir	Pal",
-          url: "https://twitter.com/imabptweets",
-          picture: require("~/assets/Mentors/abir.png"),
-        },
+        // {
+        //   name: "Vaishnavi Dwivedi",
+        //   url: "https://twitter.com/dwvicy",
+        //   picture: require("~/assets/Mentors/vaishnavi.jpg"),
+        // },
+        // {
+        //   name: "Abir	Pal",
+        //   url: "https://twitter.com/imabptweets",
+        //   picture: require("~/assets/Mentors/abir.png"),
+        // },
         {
           name: "Calvin	D'Souza",
           url: "https://twitter.com/kalzen15",
@@ -386,6 +386,41 @@ export default {
         },
       ],
       judges: [
+        {
+          name: "Pranshu Khanna",
+          url: "https://twitter.com/inmypranshoes",
+          picture: require("~/assets/Judges/pranshu.jpg"),
+        },
+        {
+          name: "Harshit Singh",
+          url: "https://twitter.com/helios1101",
+          picture: require("~/assets/Judges/harshit.jpeg"),
+        },
+        {
+          name: "Yashovardhan Agrawal",
+          url: "https://twitter.com/yashovardhan",
+          picture: require("~/assets/Judges/yashovardhan.jpg"),
+        },
+        {
+          name: "Santosh Yadav",
+          url: "https://twitter.com/SantoshYadavDev",
+          picture: require("~/assets/Judges/santosh.png"),
+        },
+        {
+          name: "Khushboo Verma",
+          url: "https://twitter.com/khushbooverma_",
+          picture: require("~/assets/Speakers/khushboo.jpg"),
+        },
+        {
+          name: "Abel Mathew",
+          url: "https://twitter.com/DesignrKnight",
+          picture: require("~/assets/Speakers/abel.jpg"),
+        },
+        {
+          name: "Sashrika Kaur",
+          url: "https://twitter.com/SashrikaKaur",
+          picture: require("~/assets/Speakers/sashrika.jpg"),
+        },
         {
           name: "Abhishek	Doshi",
           url: "https://abhishekdoshi.netlify.app",
@@ -396,40 +431,15 @@ export default {
           url: "https://twitter.com/gdsoumya",
           picture: require("~/assets/Mentors/soumya.jpg"),
         },
-        // {
-        //   name: "Sreekaran Srinath",
-        //   url: "https://sreekaran.com",
-        //   picture: require("~/assets/Mentors/sreekaran.png"),
-        // },
-        // {
-        //   name: "Himanshu	Sharma",
-        //   url: "https://www.linkedin.com/in/himanshusharma89",
-        //   picture: require("~/assets/Mentors/himanshu.jpg"),
-        // },
         {
           name: "Pragati Verma",
           url: "https://linktr.ee/pragativerma18",
           picture: require("~/assets/Mentors/pragati.png"),
         },
         {
-          name: "Aditya Oberai",
-          url: "https://twitter.com/adityaoberai1",
-          picture: require("~/assets/Testimonials/aditya.jpg"),
-        },
-        // {
-        //   name: "Praveen Kumar",
-        //   url: "https://praveen.science/",
-        //   picture: require("~/assets/Speakers/praveen.jpeg"),
-        // },
-        {
-          name: "Sashrika Kaur",
-          url: "https://twitter.com/SashrikaKaur",
-          picture: require("~/assets/Speakers/sashrika.jpg"),
-        },
-        {
-          name: "Khushboo Verma",
-          url: "https://twitter.com/khushbooverma_",
-          picture: require("~/assets/Speakers/khushboo.jpg"),
+          name: "Himanshu Sharma",
+          url: "https://www.linkedin.com/in/himanshusharma89",
+          picture: require("~/assets/Mentors/himanshu.jpg"),
         },
         // {
         //   name: "Mohammad Shahbaz Alam",
@@ -437,30 +447,15 @@ export default {
         //   picture: require("~/assets/Judges/shahbaz.png"),
         // },
         // {
-        //   name: "Pranshu Khanna",
-        //   url: "https://twitter.com/inmypranshoes",
-        //   picture: require("~/assets/Judges/pranshu.jpg"),
+        //   name: "Praveen Kumar",
+        //   url: "https://praveen.science/",
+        //   picture: require("~/assets/Speakers/praveen.jpeg"),
         // },
         {
-          name: "Santosh Yadav",
-          url: "https://twitter.com/SantoshYadavDev",
-          picture: require("~/assets/Judges/santosh.png"),
+          name: "Aditya Oberai",
+          url: "https://twitter.com/adityaoberai1",
+          picture: require("~/assets/Testimonials/aditya.jpg"),
         },
-        {
-          name: "Abel Mathew",
-          url: "https://twitter.com/DesignrKnight",
-          picture: require("~/assets/Speakers/abel.jpg"),
-        },
-        {
-          name: "Yashovardhan Agrawal",
-          url: "https://twitter.com/yashovardhan",
-          picture: require("~/assets/Judges/yashovardhan.jpg"),
-        },
-        // {
-        //   name: "Harshit Singh",
-        //   url: "https://twitter.com/helios1101",
-        //   picture: require("~/assets/Judges/harshit.jpeg"),
-        // },
       ],
     };
   },
