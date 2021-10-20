@@ -334,6 +334,10 @@ export default {
               url: "https://codezoned.com/",
               image: require("~/assets/Community-Partners/codezoned.jpeg"),
             },
+            {
+              url: "https://hackcbs.tech/",
+              image: require("~/assets/Community-Partners/hackcbs.png"),
+            },
           ],
         },
       ],
