@@ -67,7 +67,7 @@ export default {
           details: "Free Therapy Voucher",
           specialClass: "raahee",
           description:
-            "<ul><li>Create a mascot for Raahee and upload it on Twitter and tag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/raahee_'>@Raahee_</a> using hashtag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#HackThisFall</a></li><li style='margin-top: 0.4rem'>The winner gets <span style='color: rgba(233, 83, 34, 1)'>Free Therapy Voucher</span> &amp; a chance to be a <span style='color: rgba(233, 83, 34, 1)'>Raahee Design Intern</span>.</li></ul>",
+            "<ul><li>Create a mascot for Raahee and upload it on Twitter and tag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/raahee_'>@Raahee_</a> using hashtag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#HackThisFall</a></li><li style='margin-top: 0.4rem'>The winner gets <span style='color: rgba(233, 83, 34, 1)'>Free Therapy Voucher</span> &amp; a chance to be a <span style='color: rgba(233, 83, 34, 1)'>Raahee Design Intern</span>.</li><li>Also win a Sketch license worth <span style='color: rgba(233, 83, 34, 1)'>USD 99</span>!</li></ul>",
         },
       ],
     };

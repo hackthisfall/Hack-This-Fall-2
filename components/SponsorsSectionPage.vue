@@ -214,6 +214,10 @@ export default {
           type: "COMMUNITY PARTNER",
           logos: [
             {
+              url: "https://www.youtube.com/c/KunalKushwaha",
+              image: require("~/assets/Community-Partners/cclass.jpg"),
+            },
+            {
               url: "https://hackclub.com/",
               image: require("~/assets/Sponsors/hackclub.png"),
             },
@@ -323,8 +327,8 @@ export default {
               image: require("~/assets/Community-Partners/hackclub-duk.png"),
             },
             {
-              url: "https://www.youtube.com/c/KunalKushwaha",
-              image: require("~/assets/Community-Partners/cclass.jpg"),
+              url: "https://linktr.ee/michispotlight",
+              image: require("~/assets/Community-Partners/michi.png"),
             },
           ],
         },
