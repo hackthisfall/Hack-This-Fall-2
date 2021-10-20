@@ -1,6 +1,6 @@
 <template>
   <div class="contents">
-    <div class="prizes-wrapper">
+    <div class="prizes-wrapper" id="storyblok">
       <a
         href="https://www.storyblok.com/"
         rel="noopener noreferrer"

@@ -1,7 +1,7 @@
 <template>
   <section class="content-section">
     <div class="subheading">
-      <h2 class="section-title">FUN PRIZES</h2>
+      <h2 class="section-title" id="fun">FUN PRIZES</h2>
     </div>
     <div class="contents">
       <div class="cards-grid">

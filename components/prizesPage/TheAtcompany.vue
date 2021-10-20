@@ -1,6 +1,6 @@
 <template>
   <div class="contents">
-    <div class="prizes-wrapper">
+    <div class="prizes-wrapper" id="theatcompany">
       <a href="https://atsign.com/" rel="noopener noreferrer" target="_blank">
         <img src="~/assets/Sponsors/atsign.webp" alt="company"
       /></a>
