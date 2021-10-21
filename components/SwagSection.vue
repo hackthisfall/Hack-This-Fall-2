@@ -354,17 +354,32 @@ export default {
                 "Join us on <a target='_blank' href='https://discord.hackthisfall.tech/'>Discord</a> and be a part of our awesome community. Send us a screenshot on our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a> after you join.",
             },
             {
-              heading: "4. Submit a project on Devpost",
+              heading: "4. Join us in Opening Ceremony",
+              content:
+                "Join us in our <a target='_blank' href='https://youtu.be/odV-eeqM3Jw'>Opening Ceremony</a> on 22nd October 10:30 AM IST. Tweet your excitement about it live and submit a link to your tweet on our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form.</a>",
+            },
+            {
+              heading: "5. Submit a project on Devpost",
               content:
                 "Build something during the hackathon duration and submit a project on devpost. Submit your project link after the hackathon to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a> after you register.",
             },
             {
-              heading: "5. [Repeatable] Post about HTF on Socials",
+              heading: "6. Join us in Project Showcase Live Stream",
+              content:
+                "Join us for the <a target='_blank' href='https://youtu.be/rlNmAB7fqv4'>Project Showcase Live Stream</a> and share your excitement on Twitter. Submit a link to your tweet on our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form.</a>.",
+            },
+            {
+              heading: "7. Join us in Closing Ceremony",
+              content:
+                "Join us in our <a target='_blank' href='https://youtu.be/8pu1hMsGP3k'>Closing Ceremony</a> on 24th October 9:00 PM IST. Tweet your excitement about it live and submit a link to your tweet on our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form.</a>.",
+            },
+            {
+              heading: "8. [Repeatable] Post about HTF on Socials",
               content:
                 "Share anything about us and use #HackThisFall and tag @hackthisfall on your Twitter, Instagram, and LinkedIn posts to earn points! This challenge is repeatable once daily. Submit a link to your post on our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
-              heading: "6. [Repeatable] Refer your friend",
+              heading: "9. [Repeatable] Refer your friend",
               content:
                 'Refer your friends and community members to register for Hack This Fall and ask them to enter your Email under the "Referral Email" field while registering on Devpost. Earn 1 point for 1 referral.',
             },
@@ -374,34 +389,49 @@ export default {
           heading: "Community Challenges",
           tasks: [
             {
-              heading: "1. Share a coffee with a hacker",
-              content:
-                "Interact with our community members over coffee and network with others. Tweet the screenshot of your video call and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
-            },
-            {
-              heading: "2. Design a Mascot for Hack This Fall",
+              heading: "1. Design a Mascot for Hack This Fall",
               content:
                 "Bring in your creativity and show it to us by designing a Mascot for Hack This Fall. Tweet your design and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
-              heading: "3. Best memory with Hack This Fall",
+              heading: "2. Share a coffee with a hacker",
               content:
-                "We would love to hear from you your best memory at Hack This Fall. Tweet your favorite memory and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
+                "Interact with our community members over coffee and network with others. Tweet the screenshot of your video call and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
-              heading: "4. [Repeatable] Attend a Live Session",
+              heading: "3. Join HTF Hacker Connect",
               content:
-                "Attend any of the live speaker sessions happening the entire September on our <a target=\"_blank\" href=\"https://www.youtube.com/c/HackThisFall\">YouTube Channel</a> and tweet your learnings from the session. Share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
+                "Join us for a fun Hacker Connect to enjoy and relax. Tweet the screenshot of the connect and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
-              heading: "5. Play Bingo on Instagram Story",
+              heading: "4. Join Bob Ross Mini Event",
+              content:
+                "Come join us and paint with Bob Ross himself, flaunt your painting skills online by tweeting your art. Share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
+            },
+            {
+              heading: "5. Join Sketchful IO Mini Event",
+              content:
+                "Want to have some extra fun? Join us for the Sketchful mini event to guess the guesses. Tweet the screenshot of the mini event and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
+            },
+            {
+              heading: "6. Play Bingo on Instagram Story",
               content:
                 "Remember the time we were obsessed with Insta Bingos? Check out Hack This Fall themed bingo <a target=\"_blank\" href=\"https://drive.google.com/file/d/1gBKNDRGFlg88YU1zA4ErvRXCrG7kznvg/view\">here</a>. Show it off on your stories & tag your favorite community members to complete it! Share the screenshot of your story in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
-              heading: "6. Show off using Instagram Filter",
+              heading: "7. Show off using Instagram Filter",
               content:
                 "We are all obsessed with Instagram filters. Explore an awesome Hack This Fall Virtual Booth Instagram filter on our profile <a target=\"_blank\" href=\"https://www.instagram.com/hackthisfall/\">here</a> and try out the filter made with love for all the hackers attending Hack This Fall 2.0! Share the screenshot of your story in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
+            },
+            {
+              heading: "8. Best memory with Hack This Fall",
+              content:
+                "We would love to hear from you your best memory at Hack This Fall. Tweet your favorite memory and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
+            },
+            {
+              heading: "9. [Repeatable] Attend a Live Session",
+              content:
+                "Attend any of the live speaker sessions happening the entire September on our <a target=\"_blank\" href=\"https://www.youtube.com/c/HackThisFall\">YouTube Channel</a> and tweet your learnings from the session. Share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
           ],
         },
