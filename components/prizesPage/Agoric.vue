@@ -22,7 +22,7 @@
       <a
         class="cta-button smooth-transition"
         target="_blank"
-        href="https://rowan-vacation-631.notion.site/Agoric-Build-Challenge-5b3d04df9cbb48e1a8e1ccb64490484c"
+        href="https://bit.ly/htf2-agoric-challenge"
         >More Info</a
       >
       <div class="cards-grid">

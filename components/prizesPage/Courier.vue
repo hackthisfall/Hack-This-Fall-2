@@ -42,7 +42,7 @@
       <a
         class="cta-button smooth-transition"
         target="_blank"
-        href="https://docs.google.com/document/d/1Habm3DahrkIp3JoRWWVg1dWheXDPiUaTkmdBVi2wJaA/"
+        href="https://bit.ly/htf2-filebase-challenge"
         >More Info</a
       >
       <div class="cards-grid">
@@ -91,7 +91,7 @@
       <a
         class="cta-button smooth-transition"
         target="_blank"
-        href="https://docs.google.com/document/d/1s2s1li4YYXdpIPk33gTmSGcOAuVaZwk9PfvQ4FI_gGA/edit?usp=sharing"
+        href="https://bit.ly/htf2-courier-challenge"
         >More Info</a
       >
       <div class="cards-grid">

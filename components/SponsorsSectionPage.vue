@@ -338,6 +338,10 @@ export default {
               url: "https://hackcbs.tech/",
               image: require("~/assets/Community-Partners/hackcbs.png"),
             },
+            {
+              url: "http://www.codezilla.club",
+              image: require("~/assets/Community-Partners/codezilla.png"),
+            },
           ],
         },
       ],

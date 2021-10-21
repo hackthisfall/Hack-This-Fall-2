@@ -27,7 +27,7 @@
       <a
         class="cta-button smooth-transition"
         target="_blank"
-        href="https://atsign.com/hack-this-fall-wavi-contest/"
+        href="https://bit.ly/htf2-theatcompany-challenge"
         >More Info</a
       >
       <div class="cards-grid">

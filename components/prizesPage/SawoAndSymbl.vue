@@ -19,7 +19,7 @@
         <a
           class="cta-button smooth-transition"
           target="_blank"
-          href="https://drive.google.com/file/d/15N7aUy8EJT38ZnfwdVfLq_skMGNYl_gA/view"
+          href="https://bit.ly/htf2-sawolabs-challenge"
           style=""
           >More Info</a
         >
@@ -58,7 +58,7 @@
         <a
           class="cta-button smooth-transition"
           target="_blank"
-          href="https://docs.symbl.ai/docs/"
+          href="https://bit.ly/htf2-symblai-challenge"
           style=""
           >More Info</a
         >
@@ -107,7 +107,7 @@
         <a
           class="cta-button smooth-transition"
           target="_blank"
-          href="https://docs.google.com/document/d/1nOf5Fz1A46TpUJnD_tnGtByQra0aE4IhSwltWRG-dog/"
+          href="https://bit.ly/htf2-raahee-challenge"
           style=""
           >More Info</a
         >
