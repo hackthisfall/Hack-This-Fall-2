@@ -269,21 +269,16 @@ export default {
           url: "https://www.linkedin.com/in/akshita-gupta-a4a895187",
           picture: require("~/assets/Mentors/akshita.jpg"),
         },
-        // {
-        //   name: "Swasthik Shetty",
-        //   url: "https://www.swaaz.dev/",
-        //   picture: require("~/assets/Mentors/swaaz.png"),
-        // },
         {
           name: "Manasvi Alimchandani",
           url: "https://www.linkedin.com/in/manasvi-alimchandani-934b49197/",
           picture: require("~/assets/Mentors/manasvi.jpeg"),
         },
-        // {
-        //   name: "Anup	Panwar",
-        //   url: "https://www.linkedin.com/in/anupkumarpanwar/",
-        //   picture: require("~/assets/Mentors/anup.jpg"),
-        // },
+        {
+          name: "Anup Panwar",
+          url: "https://www.linkedin.com/in/anupkumarpanwar/",
+          picture: require("~/assets/Mentors/anup.jpg"),
+        },
         {
           name: "Avinash Upadhyaya K R",
           url: "https://www.linkedin.com/in/avinash-upadhyaya/",
@@ -304,16 +299,16 @@ export default {
           url: "https://www.linkedin.com/in/yashank18/",
           picture: require("~/assets/Mentors/yashank.jpg"),
         },
-        // {
-        //   name: "Anshumaan Kumar Prasad",
-        //   url: "https://twitter.com/aminostwt",
-        //   picture: require("~/assets/Mentors/anshumaan.png"),
-        // },
-        // {
-        //   name: "Sreekaran Srinath",
-        //   url: "https://sreekaran.com",
-        //   picture: require("~/assets/Mentors/sreekaran.png"),
-        // },
+        {
+          name: "Anshumaan Kumar Prasad",
+          url: "https://twitter.com/aminostwt",
+          picture: require("~/assets/Mentors/anshumaan.png"),
+        },
+        {
+          name: "Sreekaran Srinath",
+          url: "https://sreekaran.com",
+          picture: require("~/assets/Mentors/sreekaran.png"),
+        },
         {
           name: "Shyam Sundar	R",
           url: "www.linkedin.com/in/iamshyam",
@@ -374,11 +369,11 @@ export default {
           url: "https://twitter.com/dwvicy",
           picture: require("~/assets/Mentors/vaishnavi.jpg"),
         },
-        // {
-        //   name: "Abir	Pal",
-        //   url: "https://twitter.com/imabptweets",
-        //   picture: require("~/assets/Mentors/abir.png"),
-        // },
+        {
+          name: "Abir	Pal",
+          url: "https://twitter.com/imabptweets",
+          picture: require("~/assets/Mentors/abir.png"),
+        },
         {
           name: "Calvin	D'Souza",
           url: "https://twitter.com/kalzen15",
