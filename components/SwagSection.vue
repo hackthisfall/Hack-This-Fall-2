@@ -29,7 +29,7 @@
               >Hack This Fall Merchandise Swag Pack</span
             >
             delivered at your doorstep. The deadline to complete the challenges
-            is 31st October 2021.
+            is 25th October 2021 11:59 PM IST.
           </p>
         </div>
         <div class="container-fluid">
