@@ -45,6 +45,12 @@ export default {
           rotation: 30,
         },
         {
+          name: "Sahil Sen",
+          url: "https://www.linkedin.com/in/sahil-sen-528647ba/",
+          picture: require("~/assets/Team/sahilsen.webp"),
+          rotation: 150,
+        },
+        {
           name: "Paras Gupta",
           url: "https://www.linkedin.com/in/parasg1999/",
           picture: require("~/assets/Team/paras.jpeg"),
@@ -68,21 +74,15 @@ export default {
           rotation: 90,
         },
         {
-          name: "Sahil Bhatiya",
-          url: "https://www.linkedin.com/in/sahil-bhatiya-73790719a/",
-          picture: require("~/assets/Team/sahil.jpeg"),
-          rotation: 120,
-        },
-        {
           name: "Dennis D'mello",
           url: "https://www.linkedin.com/in/dendemello/",
           picture: require("~/assets/Team/dennis.jpeg"),
         },
         {
-          name: "Sahil Sen",
-          url: "https://www.linkedin.com/in/sahil-sen-528647ba/",
-          picture: require("~/assets/Team/sahilsen.webp"),
-          rotation: 150,
+          name: "Sahil Bhatiya",
+          url: "https://www.linkedin.com/in/sahil-bhatiya-73790719a/",
+          picture: require("~/assets/Team/sahil.jpeg"),
+          rotation: 120,
         },
         // {
         //   name: "Rishabh Bansal",
