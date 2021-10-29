@@ -7,7 +7,7 @@
             <img height="90%" src="~/assets/HTF2/hero.svg" />
           </div>
           <div class="about">
-            <img class="logo" src="~/assets/HTF2/Logo.svg" />
+            <img class="logo" src="~/assets/HTF2/logo.svg" />
             <span class="date"> We’ll be back with Season 3 soon! </span>
             <div class="cta-buttons">
               <a
