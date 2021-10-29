@@ -47,13 +47,14 @@ export default {
     return {
       navlinks: [
         { link: "/#about", text: "about" },
-        { link: "/#tracks", text: "tracks" },
-        { link: "/prizes", text: "prizes" },
+        // { link: "/#tracks", text: "tracks" },
+        // { link: "/prizes", text: "prizes" },
         { link: "/#speakers", text: "speakers" },
         { link: "/#sponsors", text: "sponsors" },
-        { link: "/schedule", text: "Schedule", newTab: true },
+        // { link: "/schedule", text: "Schedule", newTab: true },
         { link: "/swag", text: "swag", newTab: true },
-        { link: "/#faq", text: "faq" },
+        { link: "/team", text: "team", newTab: true },
+        // { link: "/#faq", text: "faq" },
       ],
     };
   },

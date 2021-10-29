@@ -1,7 +1,7 @@
 <template>
   <Container id="sponsors" name="sponsors">
     <section class="content-section">
-      <HashHeader title="SPONSORS &amp; PARTNERS" />
+      <HashHeader title="PREVIOUS SPONSORS" />
       <div class="contents">
         <div v-for="(section, index) in sponsors" :key="index">
           <div :class="['subheading', index !== 0 ? 'with-spacing' : null]">
@@ -11,7 +11,10 @@
             <div
               v-for="(sponsor, index) in section.logos"
               :key="index"
-              :class="[sponsor.image ? null : 'hide-small']"
+              :class="[
+                sponsor.image ? null : 'hide-small',
+                sponsor.specialClass,
+              ]"
             >
               <a :href="sponsor.url" rel="noopener noreferrer" target="_blank">
                 <div
@@ -24,16 +27,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="cta-buttons">
-        <a
-          href="/sponsors"
-          class="cta-button smooth-transition discord"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          VIEW MORE
-        </a>
       </div>
     </section>
   </Container>
@@ -52,8 +45,12 @@ export default {
     return {
       sponsors: [
         {
-          type: "TITLE SPONSOR",
+          type: "",
           logos: [
+            {
+              url: "https://mlh.io/",
+              image: require("~/assets/Sponsors/mlh.svg"),
+            },
             {
               url: "https://www.storyblok.com/",
               image: require("~/assets/Sponsors/storyblok.svg"),
@@ -70,32 +67,7 @@ export default {
               url: "https://wrx.gg/htf",
               image: require("~/assets/Sponsors/wazirx.png"),
             },
-          ],
-        },
-        {
-          type: "HACKATHON PARTNER",
-          logos: [
-            {
-              url: "https://mlh.io/",
-              image: require("~/assets/Sponsors/mlh.svg"),
-            },
-            {
-              url: "https://devpost.com/",
-              image: require("~/assets/Sponsors/devpost.svg"),
-            },
-            {
-              url: "https://raahee.in/",
-              image: require("~/assets/Sponsors/raahee.png"),
-            },
-            {
-              url: "https://hackon.tech/universe",
-              image: require("~/assets/Sponsors/hackon.svg"),
-            },
-          ],
-        },
-        {
-          type: "DIAMOND SPONSOR",
-          logos: [
+
             {
               url: "https://filebase.com/?utm_source=website&utm_medium=sponsor&utm_campaign=hackthisfall",
               image: require("~/assets/Sponsors/filebase.svg"),
@@ -108,11 +80,6 @@ export default {
               url: "https://atsign.com/",
               image: require("~/assets/Sponsors/atsign.webp"),
             },
-          ],
-        },
-        {
-          type: "SILVER SPONSOR",
-          logos: [
             {
               url: "https://education.github.com/discount_requests/student_application?utm_source=2021-10-22-hackthisfall",
               image: require("~/assets/Sponsors/github.svg"),
@@ -128,6 +95,164 @@ export default {
             {
               url: "https://www.quicknode.com/",
               image: require("~/assets/Sponsors/quicknode.png"),
+            },
+            {
+              url: "https://www.portis.io/",
+              image: require("~/assets/Sponsors/portis.png"),
+            },
+            {
+              url: "https://fold.money/",
+              image: require("~/assets/Sponsors/fold.png"),
+            },
+            {
+              url: "https://matic.network/",
+              image: require("~/assets/Sponsors/matic.png"),
+            },
+            {
+              url: "https://tezos.com/",
+              image: require("~/assets/Sponsors/tezos.png"),
+            },
+            {
+              url: "https://xinfin.org/",
+              image: require("~/assets/Sponsors/xdc.png"),
+            },
+            {
+              url: "https://www.twilio.com/",
+              image: require("~/assets/Sponsors/twilio.png"),
+            },
+            {
+              url: "https://coil.com/",
+              image: require("~/assets/Sponsors/coil.jpg"),
+            },
+            {
+              url: "https://registry.godaddy/",
+              image: require("~/assets/Sponsors/godaddy.jpg"),
+              specialClass: "godaddy",
+            },
+            {
+              url: "https://www.linode.com/",
+              image: require("~/assets/Sponsors/linode.svg"),
+            },
+            {
+              url: "https://symbl.ai/",
+              image: require("~/assets/Sponsors/symbl.svg"),
+            },
+            {
+              url: "https://www.digitalocean.com/",
+              image: require("~/assets/Sponsors/digitalocean.svg"),
+            },
+            {
+              url: "https://sketch.com",
+              image: require("~/assets/Sponsors/sketch.png"),
+            },
+            {
+              url: "https://balsamiq.com/",
+              image: require("~/assets/Sponsors/balsamiq.png"),
+            },
+            {
+              url: "https://www.wolfram.com/",
+              image: require("~/assets/Sponsors/wolfram.png"),
+            },
+            {
+              url: "https://replit.com/",
+              image: require("~/assets/Sponsors/replit.png"),
+            },
+            {
+              url: "https://draftbit.com/",
+              image: require("~/assets/Sponsors/draftbit.png"),
+            },
+            {
+              url: "https://gen.xyz/",
+              image: require("~/assets/Sponsors/xyz.svg"),
+            },
+            {
+              url: "https://www.axure.com/",
+              image: require("~/assets/Sponsors/axure.png"),
+            },
+            {
+              url: "https://www.sashido.io/",
+              image: require("~/assets/Sponsors/sashido.png"),
+            },
+            {
+              url: "https://www.echoar.xyz/",
+              image: require("~/assets/Sponsors/echoar.png"),
+            },
+            {
+              url: "https://www.devhood.tech/",
+              image: require("~/assets/Sponsors/devhood.png"),
+            },
+            {
+              url: "https://codingblocks.com/",
+              image: require("~/assets/Sponsors/cb.png"),
+            },
+            {
+              url: "https://www.clerky.com/",
+              image: require("~/assets/Sponsors/clerky.png"),
+            },
+            {
+              url: "https://interwebs.host/",
+              image: require("~/assets/Sponsors/iwh.png"),
+            },
+            {
+              url: "https://1password.com/",
+              image: require("~/assets/Sponsors/1p.png"),
+            },
+            {
+              url: "https://rosenfeldmedia.com/",
+              image: require("~/assets/Sponsors/rosenfeld.png"),
+            },
+            {
+              url: "https://www.egghead.io/",
+              image: require("~/assets/Sponsors/eh.png"),
+            },
+            {
+              url: "https://www.taskade.com/",
+              image: require("~/assets/Sponsors/taskade.png"),
+            },
+            {
+              url: "https://www.framer.com/",
+              image: require("~/assets/Sponsors/framer.png"),
+            },
+            {
+              url: "https://www.voiceflow.com/",
+              image: require("~/assets/Sponsors/voiceflow.png"),
+            },
+            {
+              url: "http://joinglimpse.com/",
+              image: require("~/assets/Sponsors/glimpse.png"),
+            },
+            {
+              url: "https://progate.com/",
+              image: require("~/assets/Sponsors/progate.png"),
+            },
+            // remaining except slido
+            {
+              url: "https://devhero.shop/",
+              image: require("~/assets/Sponsors/devhero.png"),
+            },
+            {
+              url: "https://hackp.ac/mlh-stickermule-hackathons",
+              image: require("~/assets/Sponsors/stickermule.png"),
+            },
+            {
+              url: "https://dev.to/",
+              image: require("~/assets/Sponsors/devto.png"),
+            },
+            {
+              url: "https://streamyard.com/about",
+              image: require("~/assets/Sponsors/streamyard.png"),
+            },
+            {
+              url: "https://givemycertificate.com/",
+              image: require("~/assets/Sponsors/gmc.png"),
+            },
+            {
+              url: "https://raahee.in/",
+              image: require("~/assets/Prizes/raahee.png"),
+            },
+            {
+              url: "https://hackon.tech/universe",
+              image: require("~/assets/Sponsors/hackon.svg"),
             },
           ],
         },
@@ -149,9 +274,6 @@ export default {
   }
 
   .subheading {
-    &.with-spacing {
-      margin-top: 2rem;
-    }
     font-family: "Poppins";
     font-style: bold;
     justify-content: space-around;
@@ -184,6 +306,7 @@ export default {
       }
     }
     .cards-grid {
+      margin-top: -4rem;
       display: flex;
       grid-template-columns: repeat(4, 1fr);
       column-gap: 30px;
@@ -208,8 +331,8 @@ export default {
         justify-content: center;
         box-shadow: rgba(255, 107, 0, 0.07) 0px 0px 10px 2px;
         height: 100px;
-        min-width: 250px;
-        padding: 2rem 4rem;
+        min-width: 200px;
+        padding: 2rem 0rem;
         border-radius: 1rem;
 
         &:hover {
@@ -231,38 +354,6 @@ export default {
             max-width: 80px;
           }
         }
-      }
-    }
-  }
-
-  .cta-buttons {
-    display: flex;
-    margin-top: 3rem;
-    justify-content: center;
-
-    a {
-      text-decoration: none;
-    }
-
-    .cta-button {
-      background-color: #e85325;
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-family: "Segoe UI Bold";
-      border-radius: 0.5rem;
-      cursor: pointer;
-      box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
-
-      &:hover {
-        box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
-      }
-
-      img {
-        margin-right: 0.5rem;
       }
     }
   }

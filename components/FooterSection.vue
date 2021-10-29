@@ -19,27 +19,40 @@
           <a rel="noopener noreferrer" target="_blank" href="/blog"
             >Season 1 Blog</a
           >
-          <a rel="noopener noreferrer" target="_blank" href="/team"
+          <!-- <a rel="noopener noreferrer" target="_blank" href="/team"
             >Know The Team</a
-          >
-          <a rel="noopener noreferrer" target="_blank" href="/schedule"
+          > -->
+          <!-- <a rel="noopener noreferrer" target="_blank" href="/schedule"
             >Schedule</a
+          > -->
+
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://s1.hackthisfall.tech/"
+            >Season 1.0
+          </a>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://s2.hackthisfall.tech/"
+            >Season 2.0</a
           >
+        </div>
+
+        <div class="panel">
+          <h4 class="title">Explore</h4>
+          <!-- <a href="/#tracks">Tracks</a> -->
+          <!-- <a href="/#speakers">Speakers</a> -->
+          <a href="/#sponsors">Sponsors</a>
+          <a href="/#testimonials">Testimonials</a>
+          <a href="/swag">Swag Page</a>
           <a
             rel="noopener noreferrer"
             target="_blank"
             href="https://dev.to/hackthisfall"
             >Dev.to Page</a
           >
-        </div>
-
-        <div class="panel">
-          <h4 class="title">Explore</h4>
-          <a href="/#tracks">Tracks</a>
-          <a href="/#speakers">Speakers</a>
-          <a href="/#sponsors">Sponsors</a>
-          <a href="/#testimonials">Testimonials</a>
-          <a href="/swag">Swag Page</a>
         </div>
 
         <div class="panel">

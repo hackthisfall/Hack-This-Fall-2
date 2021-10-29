@@ -1,9 +1,9 @@
 <template>
   <div id="swag">
     <section class="content-section">
-      <HashHeader title="SWAG STORE" />
+      <!-- <HashHeader title="SWAG STORE" /> -->
       <div class="contents">
-        <div class="about">
+        <!-- <div class="about">
           <p>
             Everyone loves swags so that they can brag about them. We at Hack
             This Fall love swags too. What if we tell you that you can earn cool
@@ -72,15 +72,13 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <HashHeader title="DIGITAL SWAG" />
         <div class="about">
           <p>
-            Hack This Fall 2.0 is a virtual hackathon so get yourself equipped
-            with some amazing official Hack This Fall Digital Swags, and flex it
-            by owning them. We have a Digital Badge where you can upload your
-            photo and make it personalized. Get our cool Hack This Fall
-            wallpapers for your desktop computers and mobile phones. Don't
+            Get yourself equipped with some amazing official Hack This Fall
+            Digital Swags, and flex it by owning them. Get our cool Hack This
+            Fall wallpapers for your desktop computers and mobile phones. Don't
             forget to use the zoom/meet wallpapers in your meetings. Also, to
             have fun and enjoy, we have an Instagram Bingo Story for you, which
             you can share on your stories, tag
@@ -90,7 +88,7 @@
           </p>
         </div>
         <Container name="swagDigital">
-          <div class="virtualBadge" id="badge">
+          <!-- <div class="virtualBadge" id="badge">
             <div class="cornerHeading">
               <img
                 style="margin-bottom: -1px"
@@ -100,7 +98,6 @@
               Virtual Badge
             </div>
             <div class="leftColumn">
-              <!-- add canvas or badge here -->
               <div class="dummy">
                 <canvas id="myCanvas" width="1620" height="1620" />
               </div>
@@ -183,7 +180,7 @@
                 </a>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="wallpapers">
             <div class="carouselWrapper">
               <div class="cornerHeading">
@@ -473,56 +470,56 @@ export default {
       ],
     };
   },
-  mounted() {
-    const canvas = document.getElementById("myCanvas");
-    const ctx = canvas.getContext("2d");
-    var img = new Image();
-    img.onload = function () {
-      ctx.drawImage(img, 0, 0, 1620, 1620);
-    };
-    img.src = "/badge.png";
+  // mounted() {
+  //   const canvas = document.getElementById("myCanvas");
+  //   const ctx = canvas.getContext("2d");
+  //   var img = new Image();
+  //   img.onload = function () {
+  //     ctx.drawImage(img, 0, 0, 1620, 1620);
+  //   };
+  //   img.src = "/badge.png";
 
-    let imgInput = document.getElementById("imageInput");
-    imgInput.addEventListener("change", (e) => {
-      if (e.target.files) {
-        let imageFile = e.target.files[0];
-        var reader = new FileReader();
-        reader.readAsDataURL(imageFile);
-        reader.onloadend = (e) => {
-          var myImage = new Image();
-          myImage.src = e.target.result;
-          myImage.onload = (ev) => {
-            ctx.clearRect(0, 0, 1620, 1620);
-            const inputWidth = myImage.naturalWidth;
-            const inputHeight = myImage.naturalHeight;
-            const smallerSide = Math.min(inputWidth, inputHeight);
-            let startX = 0;
-            let startY = 0;
+  //   let imgInput = document.getElementById("imageInput");
+  //   imgInput.addEventListener("change", (e) => {
+  //     if (e.target.files) {
+  //       let imageFile = e.target.files[0];
+  //       var reader = new FileReader();
+  //       reader.readAsDataURL(imageFile);
+  //       reader.onloadend = (e) => {
+  //         var myImage = new Image();
+  //         myImage.src = e.target.result;
+  //         myImage.onload = (ev) => {
+  //           ctx.clearRect(0, 0, 1620, 1620);
+  //           const inputWidth = myImage.naturalWidth;
+  //           const inputHeight = myImage.naturalHeight;
+  //           const smallerSide = Math.min(inputWidth, inputHeight);
+  //           let startX = 0;
+  //           let startY = 0;
 
-            if (inputWidth < inputHeight) {
-              startY = (inputHeight - inputWidth) / 2;
-            } else if (inputWidth > inputHeight) {
-              startX = (inputWidth - inputHeight) / 2;
-            }
+  //           if (inputWidth < inputHeight) {
+  //             startY = (inputHeight - inputWidth) / 2;
+  //           } else if (inputWidth > inputHeight) {
+  //             startX = (inputWidth - inputHeight) / 2;
+  //           }
 
-            ctx.drawImage(
-              myImage,
-              startX,
-              startY,
-              smallerSide,
-              smallerSide,
-              0,
-              0,
-              1620,
-              1620
-            );
-            ctx.drawImage(img, 0, 0, 1620, 1620);
-            this.toggleImageAdded();
-          };
-        };
-      }
-    });
-  },
+  //           ctx.drawImage(
+  //             myImage,
+  //             startX,
+  //             startY,
+  //             smallerSide,
+  //             smallerSide,
+  //             0,
+  //             0,
+  //             1620,
+  //             1620
+  //           );
+  //           ctx.drawImage(img, 0, 0, 1620, 1620);
+  //           this.toggleImageAdded();
+  //         };
+  //       };
+  //     }
+  //   });
+  // },
   methods: {
     uploadImage() {
       document.getElementById("imageInput").click();

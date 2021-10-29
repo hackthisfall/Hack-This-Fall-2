@@ -1,7 +1,7 @@
 <template>
   <Container id="speakers" name="speakers">
     <section class="content-section">
-      <HashHeader title="SPEAKERS" />
+      <HashHeader title="SEASON 2 SPEAKERS" />
       <div class="contents">
         <div class="speakers-grid">
           <div

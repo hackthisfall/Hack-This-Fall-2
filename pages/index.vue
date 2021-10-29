@@ -20,19 +20,19 @@
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
     />
-    <TracksSection
+    <!-- <TracksSection
       data-aos="fade-right"
       data-aos-delay="200"
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
-    />
-    <PrizesSection
+    /> -->
+    <!-- <PrizesSection
       data-aos="fade-left"
       data-aos-delay="200"
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
-    />
-    <ScheduleSection />
+    /> -->
+    <!-- <ScheduleSection /> -->
     <SpeakersSection
       data-aos="fade-right"
       data-aos-delay="200"
@@ -51,12 +51,12 @@
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
     />
-    <FAQSection
+    <!-- <FAQSection
       data-aos="fade-left"
       data-aos-delay="200"
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
-    />
+    /> -->
     <FooterSection
       data-aos="fade-right"
       data-aos-delay="200"

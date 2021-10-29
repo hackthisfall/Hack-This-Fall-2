@@ -7,17 +7,16 @@
             <img height="90%" src="~/assets/HTF2/hero.svg" />
           </div>
           <div class="about">
-            <img class="logo" src="~/assets/HTF2/HTFLogo.svg" />
-            <span class="tagline"> Innovate For Good </span>
-            <span class="date"> 22 - 24 October 2021 </span>
+            <img class="logo" src="~/assets/HTF2/Logo.svg" />
+            <span class="date"> We’ll be back with Season 3 soon! </span>
             <div class="cta-buttons">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://hackthisfall.devpost.com/"
+                href="https://hackthisfall.devpost.com/project-gallery"
                 class="cta-button smooth-transition register"
               >
-                <img src="~/assets/HTF2/devpost.svg" />REGISTER NOW
+                <img src="~/assets/HTF2/devpost.svg" />PROJECT GALLERY
               </a>
               <a
                 target="_blank"
@@ -104,7 +103,7 @@ export default {
         font-family: "Poppins";
         font-weight: bold;
         font-size: 1.5rem;
-        color: rgba(226, 62, 37, 1);
+        margin-top: -3rem;
       }
 
       .cta-buttons {

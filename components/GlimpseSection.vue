@@ -2,26 +2,34 @@
   <div id="glimpse">
     <Container>
       <section class="content-section">
-        <HashHeader title="GLIMPSE OF SEASON 1" />
+        <HashHeader title="GLIMPSE OF PAST SEASONS" />
         <div class="contents">
           <div class="about">
             <p>
-              Hack This Fall Season 1 was a 24 Hours Virtual Hackathon organized
-              on Oct 31st - Nov 1st, 2020. We organized this event during the
-              global COVID19 crisis, where the entire world was suffering from a
-              pandemic. The event allowed participants to join from the safety
-              and comfort of their homes.
+              <span style="color: rgba(233, 83, 34, 1)"> Hack This Fall </span
+              >has hosted 2 seasons virtually in the last 2 years. Both the
+              seasons of Hack This Fall experienced an outstanding attendance of
+              <span style="color: rgba(233, 83, 34, 1); font-weight: bold">
+                4500+ hackers</span
+              >
+              joining us from
+              <span style="color: rgba(233, 83, 34, 1); font-weight: bold"
+                >55+ countries</span
+              >
+              across the globe.
               <br />
               <br />
-              In Season 1, we were joined by 500+ superb hackers from 170+
-              cities, who all were motivated to build towards solving society’s
-              everyday problems, and ended up building 50+ projects, which was
-              in line with our motto i.e. “Build &amp; Solve”. Hackers truly
-              understood the value of our motto and showed their excellent piece
-              of innovation and problem-solving skills. Not only this, we found
-              hackers hacking individually and collaborating in a team, but this
-              didn’t stop them from engaging with other hackers in a meaningful
-              way.
+              The taglines for the last 2 years were <span style="font-weight: bold">Build &amp; Solve</span> and
+         <span style="font-weight: bold">Innovate For Good</span> respectively, with which we came across a pool
+              of
+              <span style="color: rgba(233, 83, 34, 1); font-weight: bold">
+                320+ amazing  ideas</span> and  project submissions.</span
+              >
+              <br />
+              <br />
+
+              Hackers truly understood the value of our motto and showed their
+              excellent piece of innovation and problem-solving skills.
             </p>
           </div>
           <div class="stats">
@@ -51,7 +59,7 @@
               <div class="statData smooth-transition">
                 <img src="~/assets/HTF2/globe.svg" />
                 <span>{{ cities.value }}+</span>
-                <p>Cities</p>
+                <p>Countries</p>
               </div>
             </div>
           </div>
@@ -72,10 +80,10 @@ export default {
   data() {
     return {
       incrementCalled: false,
-      numberOfHours: { value: 0, max: 24 },
-      projects: { value: 0, max: 50 },
-      hackers: { value: 0, max: 500 },
-      cities: { value: 0, max: 170 },
+      numberOfHours: { value: 0, max: 48 },
+      projects: { value: 0, max: 320 },
+      hackers: { value: 0, max: 4500 },
+      cities: { value: 0, max: 55 },
       intersectionOptions: {
         root: null,
         rootMargin: "0px 0px 0px 0px",
