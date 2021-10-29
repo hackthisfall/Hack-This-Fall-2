@@ -51,6 +51,7 @@ export default {
         // { link: "/prizes", text: "prizes" },
         { link: "/#speakers", text: "speakers" },
         { link: "/#sponsors", text: "sponsors" },
+        { link: "/#testimonials", text: "testimonials" },
         // { link: "/schedule", text: "Schedule", newTab: true },
         { link: "/swag", text: "swag", newTab: true },
         { link: "/team", text: "team", newTab: true },
