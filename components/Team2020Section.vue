@@ -40,7 +40,7 @@ export default {
       team: [
         {
           name: "Siddharth Dayalwal",
-          url: "https://www.linkedin.com/in/siddharth-dayalwal/",
+          url: "https://twitter.com/siddharth_hacks",
           picture: require("~/assets/Team/siddharth.png"),
           rotation: 30,
         },
