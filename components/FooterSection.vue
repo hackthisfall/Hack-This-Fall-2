@@ -4,7 +4,7 @@
       <div class="content-grid">
         <div class="panel">
           <div class="branding">
-            <img src="~/assets/HTF2/logo-light.svg" />
+            <img src="~/assets/HTF2/logo.svg" />
           </div>
         </div>
 

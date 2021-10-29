@@ -5,7 +5,7 @@
         <!-- Branding area -->
         <div class="branding">
           <NuxtLink to="/">
-            <img class="headerImage" src="~/assets/HTF2/HTFLogo.svg" />
+            <img class="headerImage" src="~/assets/HTF2/logo.png" />
           </NuxtLink>
         </div>
         <!-- Menu area -->
