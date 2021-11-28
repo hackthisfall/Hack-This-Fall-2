@@ -84,17 +84,17 @@ export default {
           picture: require("~/assets/Team/sahil.jpeg"),
           rotation: 120,
         },
-        // {
-        //   name: "Rishabh Bansal",
-        //   url: "https://www.linkedin.com/in/rishabhbansal97",
-        //   picture: require("~/assets/Team/rishabh.jpeg"),
-        //   rotation: 210,
-        // },
         {
           name: "Aaishika S Bhattacharya",
           url: "https://www.linkedin.com/in/aaishika/",
           picture: require("~/assets/Team/aaishika.png"),
           rotation: 45,
+        },
+        {
+          name: "Rishabh Bansal",
+          url: "https://www.linkedin.com/in/rishabhbansal97",
+          picture: require("~/assets/Team/rishabh.jpeg"),
+          rotation: 210,
         },
       ],
     };
