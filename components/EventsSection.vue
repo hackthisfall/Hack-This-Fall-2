@@ -5,7 +5,7 @@
         src="https://raw.githubusercontent.com/hack-this-fall/Media-Kit/main/Logo/HTF-White.png"
         alt="HTF Logo"
       />
-      <p style="width: 70%; margin: auto auto 2rem">
+      <p class="details">
         <span style="color: #d74f4b; font-size: 25px; font-weight: 600"
           >In-Person City Meetup Series 2022</span
         >
@@ -117,6 +117,15 @@ export default {
     text-align: center;
     padding: 30px;
 
+    .details {
+      width: 70%;
+      margin: auto auto 2rem;
+
+      @include respond-below(xs) {
+        width: 90%;
+      }
+    }
+
     img {
       margin: auto auto 30px;
       width: 300px;
@@ -169,95 +178,30 @@ export default {
         margin-top: 30px;
       }
 
-      .background {
-        position: absolute;
-        top: 10%;
-        left: 4rem;
-
-        @include respond-below(lg) {
-          left: 2rem;
-        }
-
-        @include respond-below(md) {
-          top: 15%;
-          left: 2rem;
-        }
-
-        @include respond-below(sm) {
-          height: 10rem;
-          top: 10rem;
-          left: 2rem;
-        }
-
-        @include respond-below(xs) {
-          display: none;
-        }
-      }
-
-      .company {
-        text-align: center;
-        margin: auto;
-
-        img {
-          width: 110px;
-          border-radius: 10px;
-        }
-
-        h1 {
-          font-weight: 600;
-          font-family: "Sen";
-          font-size: 1.4rem;
-        }
-      }
-
       .card {
-        min-height: 20rem;
-        position: relative;
+        min-height: 21rem;
         display: flex;
         align-items: center;
         justify-content: center;
 
-        img {
-          margin: auto auto -5px;
-          height: 8rem;
-          width: auto;
-        }
-
-        @include respond-below(sm) {
-          min-height: 100px;
-        }
-
-        @media (max-width: 1000px) {
-          width: 100%;
+        @include respond-below (lg) {
+          min-height: 18rem;
         }
 
         .card-side {
           width: 100%;
           border-radius: 15px;
           backface-visibility: hidden;
-          position: absolute;
           padding: 1.5rem;
-          min-height: 95%;
+          height: 96%;
           background-color: #fdf7df;
           border: 2px solid #d74f4b;
           overflow: hidden;
 
-          @include respond-below(sm) {
-            flex-direction: column;
-            padding: 40px 10px;
+          img {
+            margin: auto auto -5px;
+            width: 100%;
           }
-        }
-
-        @include respond-between(md, lg) {
-          min-height: 350px;
-        }
-
-        @include respond-below(md) {
-          min-height: 250px;
-        }
-
-        @include respond-below(sm) {
-          min-height: 200px;
         }
 
         .image {
@@ -283,11 +227,7 @@ export default {
         }
 
         .texts {
-          flex: 1;
-
-          @include respond-below(sm) {
-            margin-left: 0;
-          }
+          text-align: center;
           .eventName {
             font-size: 1.2rem;
             font-weight: bold;
