@@ -1,7 +1,7 @@
 <template>
   <div class="contents">
     <div class="main-grid">
-      <div class="prizes-wrapper">
+      <div class="prizes-wrapper" id="sawo">
         <a
           href="https://sawolabs.com/hackathon/redeemnow/?hackathon_name=HackThisFall2.0"
           target="_blank"
@@ -19,7 +19,7 @@
         <a
           class="cta-button smooth-transition"
           target="_blank"
-          href="https://drive.google.com/file/d/15N7aUy8EJT38ZnfwdVfLq_skMGNYl_gA/view"
+          href="https://bit.ly/htf2-sawolabs-challenge"
           style=""
           >More Info</a
         >
@@ -43,7 +43,7 @@
           </div>
         </div>
       </div>
-      <div class="prizes-wrapper">
+      <div class="prizes-wrapper" id="symbl">
         <a href="https://symbl.ai/" target="_blank"
           ><img src="~/assets/Sponsors/symbl.svg" alt="company"
         /></a>
@@ -58,7 +58,7 @@
         <a
           class="cta-button smooth-transition"
           target="_blank"
-          href="https://docs.symbl.ai/docs/"
+          href="https://bit.ly/htf2-symblai-challenge"
           style=""
           >More Info</a
         >
@@ -82,7 +82,7 @@
           </div>
         </div>
       </div>
-      <div class="prizes-wrapper">
+      <div class="prizes-wrapper" id="raahee">
         <a href="https://raahee.in"
           ><img
             src="~/assets/Prizes/raahee.png"
@@ -107,7 +107,7 @@
         <a
           class="cta-button smooth-transition"
           target="_blank"
-          href="https://raahee.in/"
+          href="https://bit.ly/htf2-raahee-challenge"
           style=""
           >More Info</a
         >

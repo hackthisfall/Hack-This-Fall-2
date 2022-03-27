@@ -1,6 +1,6 @@
 <template>
   <div class="contents">
-    <div class="prizes-wrapper">
+    <div class="prizes-wrapper" id="theatcompany">
       <a href="https://atsign.com/" rel="noopener noreferrer" target="_blank">
         <img src="~/assets/Sponsors/atsign.webp" alt="company"
       /></a>
@@ -27,7 +27,7 @@
       <a
         class="cta-button smooth-transition"
         target="_blank"
-        href="https://atsign.com/hack-this-fall-wavi-contest/"
+        href="https://bit.ly/htf2-theatcompany-challenge"
         >More Info</a
       >
       <div class="cards-grid">

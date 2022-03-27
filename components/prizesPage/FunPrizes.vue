@@ -1,7 +1,7 @@
 <template>
   <section class="content-section">
     <div class="subheading">
-      <h2 class="section-title">FUN PRIZES</h2>
+      <h2 class="section-title" id="fun">FUN PRIZES</h2>
     </div>
     <div class="contents">
       <div class="cards-grid">
@@ -45,7 +45,7 @@ export default {
           image: require("~/assets/Prizes/github-bag.png"),
           details: "Win GitHub Bag 🎒",
           description:
-            "<ul><li>Bring in your creativity and show it to us by designing a Mascot for Hack This Fall.</li><li>Tweet your design and tag us <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hackthisfall'>@hackthisfall</a> using hashtag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/HTFMascot'>#HTFMascot</a> & <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#HackThisFall</a></li><li>The mascot which wins our heart gets a <span style='color: rgba(233, 83, 34, 1)'>GitHub Bag</span> as a prize!🎒</li></ul>",
+            "<ul><li>Bring in your creativity and show it to us by designing a Mascot for Hack This Fall.</li><li>Tweet your design and tag us <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hackthisfall'>@hackthisfall</a> using hashtag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/HTFMascot'>#HTFMascot</a> & <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#HackThisFall</a></li><li>The mascot which wins our heart gets a <span style='color: rgba(233, 83, 34, 1)'>GitHub Bag</span> as a prize and a Sketch license worth <span style='color: rgba(233, 83, 34, 1)'>USD 99</span>!</li></ul>",
         },
         {
           name: "Meme Challenge",
@@ -59,7 +59,7 @@ export default {
           image: require("~/assets/Prizes/octocat.png"),
           details: "Win GitHub Swags 🐙",
           description:
-            "<ul><li>Draw an Octocat & tweet it by tagging us <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hackthisfall'>@hackthisfall</a> & <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/GitHubEducation'>@GitHubEducation</a> using hashtag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#HackThisFall</a> & <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#MyOctocat</a></li><li>The best octocat will receive <span style='color: rgba(233, 83, 34, 1)'>GitHub Swags</span> as a prize 🐙</li></ul>",
+            "<ul><li>Draw an Octocat & tweet it by tagging us <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hackthisfall'>@hackthisfall</a>, <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/GitHubEducation'>@GitHubEducation</a> & <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/MLHacks'>@MLHacks</a> using hashtag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#HackThisFall</a> & <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#MyOctocat</a></li><li>The best octocat will receive <span style='color: rgba(233, 83, 34, 1)'>GitHub Swags</span> as a prize 🐙</li></ul>",
         },
         {
           name: "Best Raahee <br/> Mascot Design",
@@ -67,7 +67,7 @@ export default {
           details: "Free Therapy Voucher",
           specialClass: "raahee",
           description:
-            "<ul><li>Create a mascot for Raahee and upload it on Twitter and tag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/raahee_'>@Raahee_</a> using hashtag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#HackThisFall</a></li><li style='margin-top: 0.4rem'>The winner gets <span style='color: rgba(233, 83, 34, 1)'>Free Therapy Voucher</span> &amp; a chance to be a <span style='color: rgba(233, 83, 34, 1)'>Raahee Design Intern</span>.</li></ul>",
+            "<ul><li>Create a mascot for Raahee and upload it on Twitter and tag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/raahee_'>@Raahee_</a> using hashtag <a style='color: rgba(233, 83, 34, 1)' target='_blank' rel='noopener noreferrer' href='https://twitter.com/hashtag/hackthisfall'>#HackThisFall</a></li><li style='margin-top: 0.4rem'>The winner gets <span style='color: rgba(233, 83, 34, 1)'>Free Therapy Voucher</span> &amp; a chance to be a <span style='color: rgba(233, 83, 34, 1)'>Raahee Design Intern</span>.</li><li>Also win a Sketch license worth <span style='color: rgba(233, 83, 34, 1)'>USD 99</span>!</li></ul>",
         },
       ],
     };

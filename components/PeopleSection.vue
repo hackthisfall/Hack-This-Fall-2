@@ -1,8 +1,69 @@
 <template>
-  <Container id="speakers" name="people">
+  <Container id="speakers">
     <section class="content-section">
-      <HashHeader title="SPEAKERS" />
+      <HashHeader title="HUMANS OF HACK THIS FALL" />
       <div class="contents">
+        <div class="subheading">
+          <h2 class="section-title" style="margin-top: -2rem">JUDGES</h2>
+        </div>
+        <div class="speakers-grid">
+          <div
+            v-for="(speaker, index) in judges"
+            :key="index"
+            :class="['team-card', `rot-${Math.floor(Math.random() * 24) * 15}`]"
+          >
+            <a :href="speaker.url" target="_blank" rel="noopener noreferrer">
+              <div class="picture-wrapper smooth-transition">
+                <img
+                  :src="speaker.picture"
+                  alt="profile picture"
+                  class="profile-pic"
+                />
+              </div>
+            </a>
+            <h4 class="title">{{ speaker.name }}</h4>
+            <p class="description"></p>
+            <img
+              v-if="speaker.companyLogo"
+              :src="speaker.companyLogo"
+              :title="speaker.company"
+              alt="company logo"
+              class="company-logo"
+            />
+          </div>
+        </div>
+        <div class="subheading with-spacing">
+          <h2 class="section-title">MENTORS</h2>
+        </div>
+        <div class="speakers-grid">
+          <div
+            v-for="(speaker, index) in mentors"
+            :key="index"
+            :class="['team-card', `rot-${Math.floor(Math.random() * 24) * 15}`]"
+          >
+            <a :href="speaker.url" target="_blank" rel="noopener noreferrer">
+              <div class="picture-wrapper smooth-transition">
+                <img
+                  :src="speaker.picture"
+                  alt="profile picture"
+                  class="profile-pic"
+                />
+              </div>
+            </a>
+            <h4 class="title">{{ speaker.name }}</h4>
+            <p class="description">{{ speaker.description }}</p>
+            <img
+              v-if="speaker.companyLogo"
+              :src="speaker.companyLogo"
+              :title="speaker.company"
+              alt="company logo"
+              class="company-logo"
+            />
+          </div>
+        </div>
+        <div class="subheading with-spacing">
+          <h2 class="section-title">SPEAKERS</h2>
+        </div>
         <div class="speakers-grid">
           <div
             v-for="(speaker, index) in speakers"
@@ -29,9 +90,6 @@
             />
           </div>
         </div>
-        <a class="view-more" href="/speakers">
-          <button>VIEW ALL</button>
-        </a>
       </div>
     </section>
   </Container>
@@ -170,10 +228,269 @@ export default {
           picture: require("~/assets/Speakers/pauline.jpg"),
         },
       ],
+      mentors: [
+        {
+          name: "Ishita Keshawani",
+          url: "https://twitter.com/ishitakeshawani",
+          picture: require("~/assets/Mentors/ishita.jpg"),
+        },
+        {
+          name: "Shubham Patel",
+          url: "https://devshub21.github.io/deshub21/",
+          picture: require("~/assets/Mentors/shubham.jpeg"),
+        },
+        {
+          name: "Ishika	Kesarwani",
+          url: "https://github.com/ishikkkkaaaa",
+          picture: require("~/assets/Mentors/ishika.jpg"),
+        },
+        {
+          name: "Himanshu	Sharma",
+          url: "https://www.linkedin.com/in/himanshusharma89",
+          picture: require("~/assets/Mentors/himanshu.jpg"),
+        },
+        {
+          name: "Abhishek	Doshi",
+          url: "https://abhishekdoshi.netlify.app",
+          picture: require("~/assets/Mentors/abhishek.jpeg"),
+        },
+        {
+          name: "Ashwin Kumar	Uppala",
+          url: "https://bio.link/ashwinexe",
+          picture: require("~/assets/Mentors/ashwin.jpg"),
+        },
+        {
+          name: "Subhampreet Mohanty",
+          url: "https://github.com/Subhampreet",
+          picture: require("~/assets/Mentors/subhampreet.jpg"),
+        },
+        {
+          name: "Akshita Gupta",
+          url: "https://www.linkedin.com/in/akshita-gupta-a4a895187",
+          picture: require("~/assets/Mentors/akshita.jpg"),
+        },
+        {
+          name: "Manasvi Alimchandani",
+          url: "https://www.linkedin.com/in/manasvi-alimchandani-934b49197/",
+          picture: require("~/assets/Mentors/manasvi.jpeg"),
+        },
+        {
+          name: "Anup Panwar",
+          url: "https://www.linkedin.com/in/anupkumarpanwar/",
+          picture: require("~/assets/Mentors/anup.jpg"),
+        },
+        {
+          name: "Avinash Upadhyaya K R",
+          url: "https://www.linkedin.com/in/avinash-upadhyaya/",
+          picture: require("~/assets/Mentors/avinash.jpg"),
+        },
+        {
+          name: "Pragati Verma",
+          url: "https://linktr.ee/pragativerma18",
+          picture: require("~/assets/Mentors/pragati.png"),
+        },
+        {
+          name: "Sagar Choudhary",
+          url: "https://www.linkedin.com/sagarchoudhary96",
+          picture: require("~/assets/Mentors/sagar.png"),
+        },
+        {
+          name: "Yashank",
+          url: "https://www.linkedin.com/in/yashank18/",
+          picture: require("~/assets/Mentors/yashank.jpg"),
+        },
+        {
+          name: "Anshumaan Kumar Prasad",
+          url: "https://twitter.com/aminostwt",
+          picture: require("~/assets/Mentors/anshumaan.png"),
+        },
+        {
+          name: "Sreekaran Srinath",
+          url: "https://sreekaran.com",
+          picture: require("~/assets/Mentors/sreekaran.png"),
+        },
+        {
+          name: "Shyam Sundar	R",
+          url: "www.linkedin.com/in/iamshyam",
+          picture: require("~/assets/Mentors/shyam.jpg"),
+        },
+        {
+          name: "Khushi	Saxena",
+          url: "https://www.linkedin.com/in/khushi321/",
+          picture: require("~/assets/Mentors/khushi.jpg"),
+        },
+        {
+          name: "Devesh	Raj",
+          url: "https://www.linkedin.com/in/devish2/",
+          picture: require("~/assets/Mentors/devesh.jpeg"),
+        },
+        {
+          name: "Kumar Satyarth",
+          url: "https://ksatyarth2.in",
+          picture: require("~/assets/Mentors/satyarth.png"),
+        },
+        {
+          name: "Prathamesh	Shanbhag",
+          url: "https://www.linkedin.com/in/prathamesh-shanbhag/",
+          picture: require("~/assets/Mentors/prathamesh.jpg"),
+        },
+        {
+          name: "Prince Canuma",
+          url: "https://twitter.com/CanumaGdt",
+          picture: require("~/assets/Mentors/prince.jpeg"),
+        },
+        {
+          name: "Chandrika Deb",
+          url: "https://github.com/chandrikadeb7",
+          picture: require("~/assets/Mentors/chandrika.jpeg"),
+        },
+        {
+          name: "Vedant Bahel",
+          url: "https://twitter.com/Vedant_Bahel",
+          picture: require("~/assets/Mentors/vedant.jpg"),
+        },
+        {
+          name: "Shubham Sah",
+          url: "https://twitter.com/ishubhamsah",
+          picture: require("~/assets/Mentors/shubham.jpg"),
+        },
+        {
+          name: "Vanshika Garg",
+          url: "https://github.com/Vanshikagarg17",
+          picture: require("~/assets/Mentors/vanshika.jpeg"),
+        },
+        {
+          name: "Soumya	Ghosh Dastidar",
+          url: "https://twitter.com/gdsoumya",
+          picture: require("~/assets/Mentors/soumya.jpg"),
+        },
+        {
+          name: "Vaishnavi Dwivedi",
+          url: "https://twitter.com/dwvicy",
+          picture: require("~/assets/Mentors/vaishnavi.jpg"),
+        },
+        {
+          name: "Abir	Pal",
+          url: "https://twitter.com/imabptweets",
+          picture: require("~/assets/Mentors/abir.png"),
+        },
+        {
+          name: "Calvin	D'Souza",
+          url: "https://twitter.com/kalzen15",
+          picture: require("~/assets/Mentors/calvin.png"),
+        },
+        {
+          name: "Kartik	Choudhary",
+          url: "https://www.linkedin.com/in/kartikcho/",
+          picture: require("~/assets/Mentors/kartik.jpg"),
+        },
+        {
+          name: "Harsh Jain",
+          url: "https://www.linkedin.com/in/harshjain2710/",
+          picture: require("~/assets/Mentors/harsh.jpeg"),
+        },
+      ],
+      judges: [
+        {
+          name: "Pranshu Khanna",
+          url: "https://twitter.com/inmypranshoes",
+          picture: require("~/assets/Judges/pranshu.jpg"),
+        },
+        {
+          name: "Harshit Singh",
+          url: "https://twitter.com/helios1101",
+          picture: require("~/assets/Judges/harshit.jpeg"),
+        },
+        {
+          name: "Yashovardhan Agrawal",
+          url: "https://twitter.com/yashovardhan",
+          picture: require("~/assets/Judges/yashovardhan.jpg"),
+        },
+        {
+          name: "Santosh Yadav",
+          url: "https://twitter.com/SantoshYadavDev",
+          picture: require("~/assets/Judges/santosh.png"),
+        },
+        {
+          name: "Khushboo Verma",
+          url: "https://twitter.com/khushbooverma_",
+          picture: require("~/assets/Speakers/khushboo.jpg"),
+        },
+        {
+          name: "Abel Mathew",
+          url: "https://twitter.com/DesignrKnight",
+          picture: require("~/assets/Speakers/abel.jpg"),
+        },
+        {
+          name: "Sashrika Kaur",
+          url: "https://twitter.com/SashrikaKaur",
+          picture: require("~/assets/Speakers/sashrika.jpg"),
+        },
+        {
+          name: "Abhishek	Doshi",
+          url: "https://abhishekdoshi.netlify.app",
+          picture: require("~/assets/Mentors/abhishek.jpeg"),
+        },
+        {
+          name: "Soumya	Ghosh Dastidar",
+          url: "https://twitter.com/gdsoumya",
+          picture: require("~/assets/Mentors/soumya.jpg"),
+        },
+        {
+          name: "Pragati Verma",
+          url: "https://linktr.ee/pragativerma18",
+          picture: require("~/assets/Mentors/pragati.png"),
+        },
+        {
+          name: "Himanshu Sharma",
+          url: "https://www.linkedin.com/in/himanshusharma89",
+          picture: require("~/assets/Mentors/himanshu.jpg"),
+        },
+        {
+          name: "Kartik	Choudhary",
+          url: "https://www.linkedin.com/in/kartikcho/",
+          picture: require("~/assets/Mentors/kartik.jpg"),
+        },
+        // {
+        //   name: "Mohammad Shahbaz Alam",
+        //   url: "https://twitter.com/mdsbzalam",
+        //   picture: require("~/assets/Judges/shahbaz.png"),
+        // },
+        // {
+        //   name: "Praveen Kumar",
+        //   url: "https://praveen.science/",
+        //   picture: require("~/assets/Speakers/praveen.jpeg"),
+        // },
+        {
+          name: "Aditya Oberai",
+          url: "https://twitter.com/adityaoberai1",
+          picture: require("~/assets/Testimonials/aditya.jpg"),
+        },
+      ],
     };
   },
   mounted() {
     this.speakers.sort((a, b) => {
+      if (a.name < b.name) {
+        return -1;
+      }
+      if (a.name > b.name) {
+        return 1;
+      }
+      return 0;
+    });
+
+    this.mentors.sort((a, b) => {
+      if (a.name < b.name) {
+        return -1;
+      }
+      if (a.name > b.name) {
+        return 1;
+      }
+      return 0;
+    });
+
+    this.judges.sort((a, b) => {
       if (a.name < b.name) {
         return -1;
       }
@@ -214,6 +531,24 @@ export default {
   .contents {
     padding: 1rem 4rem;
     text-align: center;
+
+    .subheading {
+      &.with-spacing {
+        margin-top: 3rem;
+      }
+      font-family: "Poppins";
+      font-style: bold;
+      justify-content: space-around;
+      display: flex;
+      align-self: center;
+      color: rgba(128, 128, 128, 1);
+
+      h2.section-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 20px 10px 20px 0;
+      }
+    }
 
     @include respond-below(sm) {
       padding: 1rem 0rem;
@@ -304,16 +639,6 @@ export default {
           font-size: 0.8rem;
           height: 20px;
         }
-      }
-    }
-
-    .view-more {
-      display: none;
-      cursor: pointer;
-      color: var(--colour-pink);
-
-      img {
-        transform: rotate(90deg);
       }
     }
   }

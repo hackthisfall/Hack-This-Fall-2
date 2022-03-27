@@ -4,7 +4,7 @@
       <div class="content-grid">
         <div class="panel">
           <div class="branding">
-            <img src="~/assets/HTF2/logo-light.svg" />
+            <img src="~/assets/HTF2/logo.svg" />
           </div>
         </div>
 
@@ -19,27 +19,40 @@
           <a rel="noopener noreferrer" target="_blank" href="/blog"
             >Season 1 Blog</a
           >
-          <a rel="noopener noreferrer" target="_blank" href="/team"
+          <!-- <a rel="noopener noreferrer" target="_blank" href="/team"
             >Know The Team</a
-          >
-          <a rel="noopener noreferrer" target="_blank" href="/schedule"
+          > -->
+          <!-- <a rel="noopener noreferrer" target="_blank" href="/schedule"
             >Schedule</a
+          > -->
+
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://s1.hackthisfall.tech/"
+            >Season 1.0
+          </a>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://s2.hackthisfall.tech/"
+            >Season 2.0</a
           >
+        </div>
+
+        <div class="panel">
+          <h4 class="title">Explore</h4>
+          <!-- <a href="/#tracks">Tracks</a> -->
+          <!-- <a href="/#speakers">Speakers</a> -->
+          <a href="/#sponsors">Sponsors</a>
+          <a href="/#testimonials">Testimonials</a>
+          <a href="/swag">Swag Page</a>
           <a
             rel="noopener noreferrer"
             target="_blank"
             href="https://dev.to/hackthisfall"
             >Dev.to Page</a
           >
-        </div>
-
-        <div class="panel">
-          <h4 class="title">Explore</h4>
-          <a href="/#tracks">Tracks</a>
-          <a href="/#speakers">Speakers</a>
-          <a href="/#sponsors">Sponsors</a>
-          <a href="/#testimonials">Testimonials</a>
-          <a href="/swag">Swag Page</a>
         </div>
 
         <div class="panel">
@@ -117,7 +130,13 @@ export default {
   },
   mounted() {
     setTimeout(() => {
-      let lastPart = window.location.href.split("/").pop();
+      let lastPart;
+      if (window.location.href.includes("/prizes")) {
+        lastPart = window.location.href.split("/prizes").pop();
+        lastPart.replace("/", "");
+      } else {
+        lastPart = window.location.href.split("/").pop();
+      }
       if (lastPart[0] === "#") {
         lastPart = lastPart.substring(1);
         document.getElementById(`${lastPart}`)?.scrollIntoView(true);

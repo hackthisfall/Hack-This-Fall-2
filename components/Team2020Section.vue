@@ -40,9 +40,15 @@ export default {
       team: [
         {
           name: "Siddharth Dayalwal",
-          url: "https://www.linkedin.com/in/siddharth-dayalwal/",
+          url: "https://twitter.com/siddharth_hacks",
           picture: require("~/assets/Team/siddharth.png"),
           rotation: 30,
+        },
+        {
+          name: "Sahil Sen",
+          url: "https://www.linkedin.com/in/sahil-sen-528647ba/",
+          picture: require("~/assets/Team/sahilsen.webp"),
+          rotation: 60,
         },
         {
           name: "Dhvanan Kotecha",
@@ -67,12 +73,6 @@ export default {
           url: "https://www.linkedin.com/in/tushar-ba401a136/",
           picture: require("~/assets/Team2020/tushar.webp"),
           rotation: 210,
-        },
-        {
-          name: "Sahil Sen",
-          url: "https://www.linkedin.com/in/sahil-sen-528647ba/",
-          picture: require("~/assets/Team/sahilsen.webp"),
-          rotation: 60,
         },
         {
           name: "Tirthak Patel",

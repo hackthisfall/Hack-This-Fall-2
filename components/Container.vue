@@ -30,11 +30,9 @@ export default {
       if (!this.name) return;
 
       if (going === this.$waypointMap.GOING_IN) {
-        ["about", "tracks", "speakers", "sponsors", "faq", "prizes"].forEach(
-          (e) => {
-            document.getElementById(`nav-link-${e}`).classList.remove("active");
-          }
-        );
+        ["about", "speakers", "sponsors", "testimonials"].forEach((e) => {
+          document.getElementById(`nav-link-${e}`).classList.remove("active");
+        });
         if (this.name !== "hero")
           document
             .getElementById(`nav-link-${this.name}`)

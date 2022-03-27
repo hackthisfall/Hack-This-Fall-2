@@ -9,7 +9,6 @@
     <Courier />
     <MLH />
     <SawoAndSymbl />
-    <p style="text-align: center">More prizes coming soon...</p>
   </section>
 </template>
 

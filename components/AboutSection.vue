@@ -6,20 +6,22 @@
         <div class="contents">
           <div class="about">
             <p>
-              Hack This Fall is a 48 Hours Virtual Hackathon where we aim to
-              promote hackers and help them nurture their new ideas and
-              prototypes in various domains. Our motto is also to involve more
-              beginner hackers and support everyone to solve the shared problems
-              of our society to bring a change in a revolutionary way.
+              <span style="color: rgba(233, 83, 34, 1)"> Hack This Fall</span>
+              began with a mindset of encouraging beginner hackers to build
+              unique projects regardless of the tech or field; the only focus
+              was to create something meaningful and enjoy building while also
+              solving the shared struggles of our surroundings.
               <br />
               <br />
-              For season 2, we are focussing on creating more learning
-              opportunities along with building and solving. We will talk about
-              various technologies, create awareness, encourage others, hack to
-              contribute, and participate in many more exciting events &amp;
-              sessions.
+              The community encourages<span style="color: rgba(233, 83, 34, 1)">
+                Inclusion and Diversity</span
+              >
+              at its core and has various events and happenings around the same
+              as well to keep hackers engaged in a meaningful way. All in all,
+              we want hackers to not just participate but experience a hackathon
+              in a true sense.
             </p>
-            <div class="cta-buttons">
+            <!-- <div class="cta-buttons">
               <button class="cta-button smooth-transition">
                 <img src="~/assets/HTF2/about-where.svg" />
                 <div>
@@ -34,7 +36,7 @@
                   ><span class="desc">22-24 Oct, 2021</span>
                 </div>
               </button>
-            </div>
+            </div> -->
           </div>
           <div class="img hide-small">
             <img src="~/assets/HTF2/about.svg" />
@@ -75,6 +77,10 @@ export default {
 
     .about {
       padding: 10px 0;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
 
       p {
         color: rgba(112, 112, 112, 1);

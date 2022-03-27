@@ -40,9 +40,15 @@ export default {
       team: [
         {
           name: "Siddharth Dayalwal",
-          url: "https://www.linkedin.com/in/siddharth-dayalwal/",
+          url: "https://twitter.com/siddharth_hacks",
           picture: require("~/assets/Team/siddharth.png"),
           rotation: 30,
+        },
+        {
+          name: "Sahil Sen",
+          url: "https://www.linkedin.com/in/sahil-sen-528647ba/",
+          picture: require("~/assets/Team/sahilsen.webp"),
+          rotation: 150,
         },
         {
           name: "Paras Gupta",
@@ -68,33 +74,27 @@ export default {
           rotation: 90,
         },
         {
+          name: "Dennis D'mello",
+          url: "https://www.linkedin.com/in/dendemello/",
+          picture: require("~/assets/Team/dennis.jpeg"),
+        },
+        {
           name: "Sahil Bhatiya",
           url: "https://www.linkedin.com/in/sahil-bhatiya-73790719a/",
           picture: require("~/assets/Team/sahil.jpeg"),
           rotation: 120,
         },
         {
-          name: "Dennis D'mello",
-          url: "https://www.linkedin.com/in/dendemello/",
-          picture: require("~/assets/Team/dennis.jpeg"),
-        },
-        {
-          name: "Sahil Sen",
-          url: "https://www.linkedin.com/in/sahil-sen-528647ba/",
-          picture: require("~/assets/Team/sahilsen.webp"),
-          rotation: 150,
-        },
-        // {
-        //   name: "Rishabh Bansal",
-        //   url: "https://www.linkedin.com/in/rishabhbansal97",
-        //   picture: require("~/assets/Team/rishabh.jpeg"),
-        //   rotation: 210,
-        // },
-        {
           name: "Aaishika S Bhattacharya",
           url: "https://www.linkedin.com/in/aaishika/",
           picture: require("~/assets/Team/aaishika.png"),
           rotation: 45,
+        },
+        {
+          name: "Rishabh Bansal",
+          url: "https://www.linkedin.com/in/rishabhbansal97",
+          picture: require("~/assets/Team/rishabh.jpeg"),
+          rotation: 210,
         },
       ],
     };

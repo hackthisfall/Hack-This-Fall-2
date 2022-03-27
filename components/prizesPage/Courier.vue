@@ -1,6 +1,6 @@
 <template>
   <div class="contents">
-    <div class="prizes-wrapper">
+    <div class="prizes-wrapper" id="filebase">
       <a
         href="https://filebase.com/?utm_source=website&utm_medium=sponsor&utm_campaign=hackthisfall"
         rel="noopener noreferrer"
@@ -42,7 +42,7 @@
       <a
         class="cta-button smooth-transition"
         target="_blank"
-        href="https://docs.google.com/document/d/12nGPq_KTQP6vr6HH_NYfkg8mRx2DYNyRQYwTbG_dcaM/"
+        href="https://bit.ly/htf2-filebase-challenge"
         >More Info</a
       >
       <div class="cards-grid">
@@ -66,7 +66,7 @@
         </div>
       </div>
     </div>
-    <div class="prizes-wrapper">
+    <div class="prizes-wrapper" id="courier">
       <a
         href="https://www.courier.com/"
         rel="noopener noreferrer"
@@ -91,7 +91,7 @@
       <a
         class="cta-button smooth-transition"
         target="_blank"
-        href="https://docs.google.com/document/d/1s2s1li4YYXdpIPk33gTmSGcOAuVaZwk9PfvQ4FI_gGA/edit?usp=sharing"
+        href="https://bit.ly/htf2-courier-challenge"
         >More Info</a
       >
       <div class="cards-grid">

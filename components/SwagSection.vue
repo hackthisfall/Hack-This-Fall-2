@@ -1,9 +1,9 @@
 <template>
   <div id="swag">
     <section class="content-section">
-      <HashHeader title="SWAG STORE" />
+      <!-- <HashHeader title="SWAG STORE" /> -->
       <div class="contents">
-        <div class="about">
+        <!-- <div class="about">
           <p>
             Everyone loves swags so that they can brag about them. We at Hack
             This Fall love swags too. What if we tell you that you can earn cool
@@ -29,7 +29,7 @@
               >Hack This Fall Merchandise Swag Pack</span
             >
             delivered at your doorstep. The deadline to complete the challenges
-            is 31st October 2021.
+            is 25th October 2021 11:59 PM IST.
           </p>
         </div>
         <div class="container-fluid">
@@ -72,15 +72,13 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <HashHeader title="DIGITAL SWAG" />
         <div class="about">
           <p>
-            Hack This Fall 2.0 is a virtual hackathon so get yourself equipped
-            with some amazing official Hack This Fall Digital Swags, and flex it
-            by owning them. We have a Digital Badge where you can upload your
-            photo and make it personalized. Get our cool Hack This Fall
-            wallpapers for your desktop computers and mobile phones. Don't
+            Get yourself equipped with some amazing official Hack This Fall
+            Digital Swags, and flex it by owning them. Get our cool Hack This
+            Fall wallpapers for your desktop computers and mobile phones. Don't
             forget to use the zoom/meet wallpapers in your meetings. Also, to
             have fun and enjoy, we have an Instagram Bingo Story for you, which
             you can share on your stories, tag
@@ -90,7 +88,7 @@
           </p>
         </div>
         <Container name="swagDigital">
-          <div class="virtualBadge" id="badge">
+          <!-- <div class="virtualBadge" id="badge">
             <div class="cornerHeading">
               <img
                 style="margin-bottom: -1px"
@@ -100,7 +98,6 @@
               Virtual Badge
             </div>
             <div class="leftColumn">
-              <!-- add canvas or badge here -->
               <div class="dummy">
                 <canvas id="myCanvas" width="1620" height="1620" />
               </div>
@@ -183,7 +180,7 @@
                 </a>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="wallpapers">
             <div class="carouselWrapper">
               <div class="cornerHeading">
@@ -354,17 +351,32 @@ export default {
                 "Join us on <a target='_blank' href='https://discord.hackthisfall.tech/'>Discord</a> and be a part of our awesome community. Send us a screenshot on our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a> after you join.",
             },
             {
-              heading: "4. Submit a project on Devpost",
+              heading: "4. Join us in Opening Ceremony",
+              content:
+                "Join us in our <a target='_blank' href='https://youtu.be/odV-eeqM3Jw'>Opening Ceremony</a> on 22nd October 10:30 AM IST. Tweet your excitement about it live and submit a link to your tweet on our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form.</a>",
+            },
+            {
+              heading: "5. Submit a project on Devpost",
               content:
                 "Build something during the hackathon duration and submit a project on devpost. Submit your project link after the hackathon to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a> after you register.",
             },
             {
-              heading: "5. [Repeatable] Post about HTF on Socials",
+              heading: "6. Join us in Project Showcase Live Stream",
+              content:
+                "Join us for the <a target='_blank' href='https://youtu.be/rlNmAB7fqv4'>Project Showcase Live Stream</a> and share your excitement on Twitter. Submit a link to your tweet on our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form.</a>.",
+            },
+            {
+              heading: "7. Join us in Closing Ceremony",
+              content:
+                "Join us in our <a target='_blank' href='https://youtu.be/8pu1hMsGP3k'>Closing Ceremony</a> on 24th October 9:00 PM IST. Tweet your excitement about it live and submit a link to your tweet on our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form.</a>.",
+            },
+            {
+              heading: "8. [Repeatable] Post about HTF on Socials",
               content:
                 "Share anything about us and use #HackThisFall and tag @hackthisfall on your Twitter, Instagram, and LinkedIn posts to earn points! This challenge is repeatable once daily. Submit a link to your post on our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
-              heading: "6. [Repeatable] Refer your friend",
+              heading: "9. [Repeatable] Refer your friend",
               content:
                 'Refer your friends and community members to register for Hack This Fall and ask them to enter your Email under the "Referral Email" field while registering on Devpost. Earn 1 point for 1 referral.',
             },
@@ -374,34 +386,49 @@ export default {
           heading: "Community Challenges",
           tasks: [
             {
-              heading: "1. Share a coffee with a hacker",
-              content:
-                "Interact with our community members over coffee and network with others. Tweet the screenshot of your video call and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
-            },
-            {
-              heading: "2. Design a Mascot for Hack This Fall",
+              heading: "1. Design a Mascot for Hack This Fall",
               content:
                 "Bring in your creativity and show it to us by designing a Mascot for Hack This Fall. Tweet your design and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
-              heading: "3. Best memory with Hack This Fall",
+              heading: "2. Share a coffee with a hacker",
               content:
-                "We would love to hear from you your best memory at Hack This Fall. Tweet your favorite memory and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
+                "Interact with our community members over coffee and network with others. Tweet the screenshot of your video call and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
-              heading: "4. [Repeatable] Attend a Live Session",
+              heading: "3. Join HTF Hacker Connect",
               content:
-                "Attend any of the live speaker sessions happening the entire September on our <a target=\"_blank\" href=\"https://www.youtube.com/c/HackThisFall\">YouTube Channel</a> and tweet your learnings from the session. Share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
+                "Join us for a fun Hacker Connect to enjoy and relax. Tweet the screenshot of the connect and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
-              heading: "5. Play Bingo on Instagram Story",
+              heading: "4. Join Bob Ross Mini Event",
+              content:
+                "Come join us and paint with Bob Ross himself, flaunt your painting skills online by tweeting your art. Share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
+            },
+            {
+              heading: "5. Join Sketchful IO Mini Event",
+              content:
+                "Want to have some extra fun? Join us for the Sketchful mini event to guess the guesses. Tweet the screenshot of the mini event and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
+            },
+            {
+              heading: "6. Play Bingo on Instagram Story",
               content:
                 "Remember the time we were obsessed with Insta Bingos? Check out Hack This Fall themed bingo <a target=\"_blank\" href=\"https://drive.google.com/file/d/1gBKNDRGFlg88YU1zA4ErvRXCrG7kznvg/view\">here</a>. Show it off on your stories & tag your favorite community members to complete it! Share the screenshot of your story in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
-              heading: "6. Show off using Instagram Filter",
+              heading: "7. Show off using Instagram Filter",
               content:
                 "We are all obsessed with Instagram filters. Explore an awesome Hack This Fall Virtual Booth Instagram filter on our profile <a target=\"_blank\" href=\"https://www.instagram.com/hackthisfall/\">here</a> and try out the filter made with love for all the hackers attending Hack This Fall 2.0! Share the screenshot of your story in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
+            },
+            {
+              heading: "8. Best memory with Hack This Fall",
+              content:
+                "We would love to hear from you your best memory at Hack This Fall. Tweet your favorite memory and share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
+            },
+            {
+              heading: "9. [Repeatable] Attend a Live Session",
+              content:
+                "Attend any of the live speaker sessions happening the entire September on our <a target=\"_blank\" href=\"https://www.youtube.com/c/HackThisFall\">YouTube Channel</a> and tweet your learnings from the session. Share the link of the tweet in this <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
           ],
         },
@@ -409,90 +436,90 @@ export default {
           heading: "Sponsor Challenges",
           tasks: [
             {
-              heading: "1. FREE Tshirt by The@Company",
-              content:
-                "<span style='color: rgb(233, 83, 34);'>The@Company</span> loves hackathon, and they are giving away FREE Tshirts for first 200 people. All you need to do is, complete the steps in this form : <a style='text-decoration: underline' href='https://docs.google.com/forms/d/e/1FAIpQLSeUHeKxM6N0ts3V5M17lmtOZvZDVK7kdD506tox1ZA-2b8lrw/viewform' target='_blank'> CLICK HERE</a>.",
-            },
-            {
-              heading: "2. Earn FREE Tshirt [Courier]",
-              content:
-                "Tweet about your project based on Courier or tweet about your hackathon experience using Courier and tag <a target='_blank' style='color: rgb(233, 83, 34);' href=\"https://twitter.com/hackthisfall\">@hackthisfall</a>, <a target='_blank' href=\"https://twitter.com/trycourier\" style='color: rgb(233, 83, 34);'>@trycourier</a> to receive a free graphic t-shirt. Limited to first 25 people who do this.",
-            },
-            {
-              heading: "3. Sign up for a WazirX account",
+              heading: "1. Sign up for a WazirX account",
               content:
                 "Head to <a target='_blank' href='https://wrx.gg/htf'>wrx.gg/htf</a> and sign up. WazirX is India’s most trusted bitcoin & cryptocurrency exchange platform. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
-              heading: "4. Join the Storyblok Beta Crew",
+              heading: "2. Sign up on SAWO Labs landing page",
+              content:
+                "Head to <a target='_blank' href='https://sawolabs.com/hackathon/redeemnow/?hackathon_name=HackThisFall2.0'>SAWO Labs</a> and sign up. Say goodbye to OTPs and Passwords. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
+            },
+            {
+              heading: "3. Join the Storyblok Beta Crew",
               content:
                 "Our favorite Headless CMS has just gotten even better! Check out the Storyblok v2, which will be launching later this year, & you can already sign-up for public beta <a target='_blank' href='https://bit.ly/htf2-storyblok-beta'>here</a>. Submit a screenshot of confirmation to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
-              heading: "5. Sign up and try out Filebase",
+              heading: "4. Sign up and try out Filebase",
               content:
                 "Filebase is S3 Compatible Object Storage Powered by Blockchain. Get the first 5 GB of storage as free by just signing up <a target='_blank' href='https://bit.ly/htf2-filebase-signup'>here</a>. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
             },
             {
-              heading: "6. Sign up on SAWO Labs landing page",
+              heading: "5. FREE Tshirt by The@Company",
               content:
-                "Head to <a target='_blank' href='https://sawolabs.com/hackathon/redeemnow/?hackathon_name=HackThisFall2.0'>SAWO Labs</a> and sign up. Say goodbye to OTPs and Passwords. Submit a screenshot of your account to our <a target='_blank' href='https://bit.ly/htf2-challenge'>Challenge Form</a>.",
+                "<span style='color: rgb(233, 83, 34);'>The@Company</span> loves hackathon, and they are giving away FREE Tshirts for first 200 people. All you need to do is, complete the steps in this form : <a style='text-decoration: underline' href='https://docs.google.com/forms/d/e/1FAIpQLSeUHeKxM6N0ts3V5M17lmtOZvZDVK7kdD506tox1ZA-2b8lrw/viewform' target='_blank'> CLICK HERE</a>.",
+            },
+            {
+              heading: "6. Earn FREE Tshirt [Courier]",
+              content:
+                "Tweet about your project based on Courier or tweet about your hackathon experience using Courier and tag <a target='_blank' style='color: rgb(233, 83, 34);' href=\"https://twitter.com/hackthisfall\">@hackthisfall</a>, <a target='_blank' href=\"https://twitter.com/trycourier\" style='color: rgb(233, 83, 34);'>@trycourier</a> to receive a free graphic t-shirt. Limited to first 25 people who do this.",
             },
           ],
         },
       ],
     };
   },
-  mounted() {
-    const canvas = document.getElementById("myCanvas");
-    const ctx = canvas.getContext("2d");
-    var img = new Image();
-    img.onload = function () {
-      ctx.drawImage(img, 0, 0, 1620, 1620);
-    };
-    img.src = "/badge.png";
+  // mounted() {
+  //   const canvas = document.getElementById("myCanvas");
+  //   const ctx = canvas.getContext("2d");
+  //   var img = new Image();
+  //   img.onload = function () {
+  //     ctx.drawImage(img, 0, 0, 1620, 1620);
+  //   };
+  //   img.src = "/badge.png";
 
-    let imgInput = document.getElementById("imageInput");
-    imgInput.addEventListener("change", (e) => {
-      if (e.target.files) {
-        let imageFile = e.target.files[0];
-        var reader = new FileReader();
-        reader.readAsDataURL(imageFile);
-        reader.onloadend = (e) => {
-          var myImage = new Image();
-          myImage.src = e.target.result;
-          myImage.onload = (ev) => {
-            ctx.clearRect(0, 0, 1620, 1620);
-            const inputWidth = myImage.naturalWidth;
-            const inputHeight = myImage.naturalHeight;
-            const smallerSide = Math.min(inputWidth, inputHeight);
-            let startX = 0;
-            let startY = 0;
+  //   let imgInput = document.getElementById("imageInput");
+  //   imgInput.addEventListener("change", (e) => {
+  //     if (e.target.files) {
+  //       let imageFile = e.target.files[0];
+  //       var reader = new FileReader();
+  //       reader.readAsDataURL(imageFile);
+  //       reader.onloadend = (e) => {
+  //         var myImage = new Image();
+  //         myImage.src = e.target.result;
+  //         myImage.onload = (ev) => {
+  //           ctx.clearRect(0, 0, 1620, 1620);
+  //           const inputWidth = myImage.naturalWidth;
+  //           const inputHeight = myImage.naturalHeight;
+  //           const smallerSide = Math.min(inputWidth, inputHeight);
+  //           let startX = 0;
+  //           let startY = 0;
 
-            if (inputWidth < inputHeight) {
-              startY = (inputHeight - inputWidth) / 2;
-            } else if (inputWidth > inputHeight) {
-              startX = (inputWidth - inputHeight) / 2;
-            }
+  //           if (inputWidth < inputHeight) {
+  //             startY = (inputHeight - inputWidth) / 2;
+  //           } else if (inputWidth > inputHeight) {
+  //             startX = (inputWidth - inputHeight) / 2;
+  //           }
 
-            ctx.drawImage(
-              myImage,
-              startX,
-              startY,
-              smallerSide,
-              smallerSide,
-              0,
-              0,
-              1620,
-              1620
-            );
-            ctx.drawImage(img, 0, 0, 1620, 1620);
-            this.toggleImageAdded();
-          };
-        };
-      }
-    });
-  },
+  //           ctx.drawImage(
+  //             myImage,
+  //             startX,
+  //             startY,
+  //             smallerSide,
+  //             smallerSide,
+  //             0,
+  //             0,
+  //             1620,
+  //             1620
+  //           );
+  //           ctx.drawImage(img, 0, 0, 1620, 1620);
+  //           this.toggleImageAdded();
+  //         };
+  //       };
+  //     }
+  //   });
+  // },
   methods: {
     uploadImage() {
       document.getElementById("imageInput").click();

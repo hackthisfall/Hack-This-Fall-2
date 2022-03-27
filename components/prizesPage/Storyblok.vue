@@ -1,6 +1,6 @@
 <template>
   <div class="contents">
-    <div class="prizes-wrapper">
+    <div class="prizes-wrapper" id="storyblok">
       <a
         href="https://www.storyblok.com/"
         rel="noopener noreferrer"
@@ -25,7 +25,7 @@
       <a
         class="cta-button smooth-transition"
         target="_blank"
-        href="https://storyblok.notion.site/Storyblok-Track-Prize-edea7a031c1f4f5f88f4cff1998e69a8"
+        href="https://bit.ly/htf2-storyblok-challenge"
         >More Info</a
       >
       <div class="cards-grid">
