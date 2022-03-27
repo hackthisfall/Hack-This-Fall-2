@@ -1,0 +1,301 @@
+<template>
+  <div class="contents">
+    <div class="events-wrapper">
+      <img
+        src="https://raw.githubusercontent.com/hack-this-fall/Media-Kit/main/Logo/HTF-White.png"
+        alt="HTF Logo"
+      />
+      <p style="width: 70%; margin: auto auto 2rem">
+        <span style="color: #d74f4b; font-size: 25px; font-weight: 600"
+          >In-Person City Meetup Series 2022</span
+        >
+        <br /><br />A hackathon community that started online is now breaking
+        the virtual barrier and aims to help connect the folks with others from
+        the region to create more
+        <span style="color: #d74f4b">Opportunities</span> &
+        <span style="color: #d74f4b">Collaboration</span>!💥 <br /><br />
+        Hack This Fall is excited to host its first
+        <span style="color: #d74f4b">6 Meetups</span> in your city. Get
+        yourselves hyped to experience our community culture and join us in any
+        of the cities listed below!👇 <br /><br />
+        It is going to be completely free of cost, you just need to register for
+        the meetup. <span style="color: #d74f4b">Free Food</span> and
+        <span style="color: #d74f4b">Cool Swags</span> are on us and you know we
+        don't limit ourselves there!🤩 <br /><br />
+        What are you waiting for? Register Now 🚀
+      </p>
+      <a
+        class="cta-button smooth-transition"
+        style="background-color: #d74f4b;"
+        target="_blank"
+        href="https://atsign.com/hack-this-fall-wavi-contest/"
+        >Click Here To Register</a
+      >
+      <br />
+      <div class="cards-grid">
+        <div v-for="(event, index) in events" :key="index" class="card">
+          <div class="card-side">
+            <img :src="event.image" alt="cityImage" />
+            <div class="texts">
+              <h4 class="eventName" v-html="event.name">{{}}</h4>
+              <p class="event">{{ event.eventName }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import Container from "~/components/Container";
+
+export default {
+  components: {
+    Container
+  },
+  data() {
+    return {
+      events: [
+        {
+          name: "Jaipur City Meetup",
+          eventName: "INR 17,500",
+          details:
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 17,500</span> awarded to the person whose page stands out the most for all the right reasons.",
+          image: require("~/assets/Meetup/jaipur.png")
+        },
+        {
+          name: "Mumbai City Meetup",
+          eventName: "INR 7,500",
+          details:
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person who used the custom content feature in the most creative and unique ways.",
+          image: require("~/assets/Meetup/mumbai.png")
+        },
+        {
+          name: "Pune City Meetup",
+          eventName: "INR 7,500",
+          details:
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the page that showcases Indian culture, art, traditions, the festivals and its people the best.",
+          image: require("~/assets/Meetup/pune.png")
+        },
+        {
+          name: "Delhi City Meetup",
+          eventName: "INR 7,500",
+          details:
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the best page about their pet(s)",
+          image: require("~/assets/Meetup/delhi.png")
+        },
+        {
+          name: "Bengaluru City Meetup",
+          eventName: "INR 7,500",
+          details:
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the most nerdy page. We expect the content on this to be super techy!",
+          image: require("~/assets/Meetup/bengaluru.png")
+        },
+        {
+          name: "Ahmedabad City Meetup",
+          eventName: "INR 7,500",
+          details:
+            "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the most nerdy page. We expect the content on this to be super techy!",
+          image: require("~/assets/Meetup/ahmedabad.png")
+        }
+      ]
+    };
+  }
+};
+</script>
+
+<style lang="scss" scoped>
+.contents {
+  width: 90%;
+  margin: 0 auto;
+  padding: 80px 0 20px;
+
+  .events-wrapper {
+    background-color: #fdf7df;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+
+    img {
+      margin: auto auto 30px;
+      width: 300px;
+
+      @include respond-below(xs) {
+        width: 90%;
+      }
+    }
+
+    .cta-button {
+      background-color: #e85325;
+      color: white;
+      border: none;
+      text-decoration: none;
+      margin-bottom: 1rem;
+      height: 5rem;
+      padding: 0.5rem 1rem;
+      font-family: "Segoe UI Bold";
+      border-radius: 0.5rem;
+      cursor: pointer;
+      box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
+
+      &:hover {
+        box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
+      }
+    }
+
+    .cards-grid {
+      display: grid;
+      position: relative;
+      grid-template-columns: 1fr 1fr 1fr;
+      background-color: #fdf7df;
+      border-radius: 10px;
+      column-gap: 30px;
+      margin-top: 2rem;
+      row-gap: 30px;
+
+      @include respond-below(md) {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 30px;
+      }
+
+      @include respond-below(sm) {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 30px;
+      }
+
+      @include respond-below(xs) {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 30px;
+      }
+
+      .background {
+        position: absolute;
+        top: 10%;
+        left: 4rem;
+
+        @include respond-below(lg) {
+          left: 2rem;
+        }
+
+        @include respond-below(md) {
+          top: 15%;
+          left: 2rem;
+        }
+
+        @include respond-below(sm) {
+          height: 10rem;
+          top: 10rem;
+          left: 2rem;
+        }
+
+        @include respond-below(xs) {
+          display: none;
+        }
+      }
+
+      .company {
+        text-align: center;
+        margin: auto;
+
+        img {
+          width: 110px;
+          border-radius: 10px;
+        }
+
+        h1 {
+          font-weight: 600;
+          font-family: "Sen";
+          font-size: 1.4rem;
+        }
+      }
+
+      .card {
+        min-height: 20rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          margin: auto auto -5px;
+          height: 8rem;
+          width: auto;
+        }
+
+        @include respond-below(sm) {
+          min-height: 100px;
+        }
+
+        @media (max-width: 1000px) {
+          width: 100%;
+        }
+
+        .card-side {
+          width: 100%;
+          border-radius: 15px;
+          backface-visibility: hidden;
+          position: absolute;
+          padding: 1.5rem;
+          min-height: 95%;
+          background-color: #fdf7df;
+          border: 2px solid #d74f4b;
+          overflow: hidden;
+
+          @include respond-below(sm) {
+            flex-direction: column;
+            padding: 40px 10px;
+          }
+        }
+
+        @include respond-between(md, lg) {
+          min-height: 350px;
+        }
+
+        @include respond-below(md) {
+          min-height: 250px;
+        }
+
+        @include respond-below(sm) {
+          min-height: 200px;
+        }
+
+        .image {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          margin-left: auto;
+          margin-right: auto;
+
+          img {
+            margin: 16px;
+            width: 190px;
+          }
+
+          .line {
+            position: absolute;
+            right: 0px;
+            border-left: 2px dashed #ff5100;
+            top: -50px;
+            height: 300%;
+          }
+        }
+
+        .texts {
+          flex: 1;
+
+          @include respond-below(sm) {
+            margin-left: 0;
+          }
+          .eventName {
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+</style>
