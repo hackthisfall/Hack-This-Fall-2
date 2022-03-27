@@ -38,7 +38,11 @@
             <img :src="event.image" alt="cityImage" />
             <div class="texts">
               <h4 class="eventName" v-html="event.name">{{}}</h4>
-              <p class="event">{{ event.eventName }}</p>
+              <p class="event">
+                Date: {{ event.date }} <br />
+                Time: {{ event.time }} <br />
+                Venue: {{ event.venue }}
+              </p>
             </div>
           </div>
         </div>
@@ -59,45 +63,57 @@ export default {
       events: [
         {
           name: "Jaipur City Meetup",
-          eventName: "INR 17,500",
           details:
             "<span style='color: rgba(233, 83, 34, 1)'>INR 17,500</span> awarded to the person whose page stands out the most for all the right reasons.",
-          image: require("~/assets/Meetup/jaipur.png")
+          image: require("~/assets/Meetup/jaipur.png"),
+          venue: "TBD",
+          date: "4th April 2022",
+          time: "TBD"
         },
         {
           name: "Mumbai City Meetup",
-          eventName: "INR 7,500",
           details:
             "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person who used the custom content feature in the most creative and unique ways.",
-          image: require("~/assets/Meetup/mumbai.png")
+          image: require("~/assets/Meetup/mumbai.png"),
+          venue: "TBD",
+          date: "TBD",
+          time: "TBD"
         },
         {
           name: "Pune City Meetup",
-          eventName: "INR 7,500",
           details:
             "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the page that showcases Indian culture, art, traditions, the festivals and its people the best.",
-          image: require("~/assets/Meetup/pune.png")
+          image: require("~/assets/Meetup/pune.png"),
+          venue: "TBD",
+          date: "TBD",
+          time: "TBD"
         },
         {
           name: "Delhi City Meetup",
-          eventName: "INR 7,500",
           details:
             "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the best page about their pet(s)",
-          image: require("~/assets/Meetup/delhi.png")
+          image: require("~/assets/Meetup/delhi.png"),
+          venue: "TBD",
+          date: "TBD",
+          time: "TBD"
         },
         {
           name: "Bengaluru City Meetup",
-          eventName: "INR 7,500",
           details:
             "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the most nerdy page. We expect the content on this to be super techy!",
-          image: require("~/assets/Meetup/bengaluru.png")
+          image: require("~/assets/Meetup/bengaluru.png"),
+          venue: "TBD",
+          date: "TBD",
+          time: "TBD"
         },
         {
           name: "Ahmedabad City Meetup",
-          eventName: "INR 7,500",
           details:
             "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the most nerdy page. We expect the content on this to be super techy!",
-          image: require("~/assets/Meetup/ahmedabad.png")
+          image: require("~/assets/Meetup/ahmedabad.png"),
+          venue: "TBD",
+          date: "TBD",
+          time: "TBD"
         }
       ]
     };
@@ -179,12 +195,12 @@ export default {
       }
 
       .card {
-        min-height: 21rem;
+        min-height: 25rem;
         display: flex;
         align-items: center;
         justify-content: center;
 
-        @include respond-below (lg) {
+        @include respond-below(lg) {
           min-height: 18rem;
         }
 
