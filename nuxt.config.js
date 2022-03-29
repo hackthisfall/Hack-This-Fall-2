@@ -19,7 +19,7 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "Hack This Fall 2.0 is a 48 Hours Virtual Hackathon happening on 22nd-24th October 2021. This is a beginner-friendly hackathon & our motto is Innovate For Good."
+          "Hack This Fall is one of the most thriving hacker communities. It encourages beginner hackers to build unique projects regardless of the tech or field; the only focus is to create something meaningful and enjoy building while also solving the shared struggles of our surroundings."
       },
       {
         property: "apple-mobile-web-app-title",
@@ -40,7 +40,7 @@ export default {
       {
         property: "og:description",
         content:
-          "Hack This Fall 2.0 is a 48 Hours Virtual Hackathon happening on 22nd-24th October 2021. This is a beginner-friendly hackathon & our motto is Innovate For Good."
+          "Hack This Fall is one of the most thriving hacker communities. It encourages beginner hackers to build unique projects regardless of the tech or field; the only focus is to create something meaningful and enjoy building while also solving the shared struggles of our surroundings."
       },
       {
         property: "og:image",
