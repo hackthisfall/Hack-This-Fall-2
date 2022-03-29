@@ -1,6 +1,10 @@
 <template>
   <div class="heading">
-    <h2 class="section-title" v-html="title"></h2>
+    <h2
+      :style="{ color: color ? color : 'rgba(214, 93, 32, 1)' }"
+      class="section-title"
+      v-html="title"
+    ></h2>
   </div>
 </template>
 
@@ -8,7 +12,8 @@
 export default {
   props: {
     title: String,
-  },
+    color: String
+  }
 };
 </script>
 
@@ -24,7 +29,6 @@ export default {
     font-size: 2rem;
     font-weight: bold;
     padding: 10px;
-    color: rgba(214, 93, 32, 1);
     margin-bottom: 2rem;
 
     &:after {

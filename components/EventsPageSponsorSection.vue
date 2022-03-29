@@ -1,7 +1,7 @@
 <template>
   <Container id="event-sponsors" name="event-sponsors">
     <section class="content-section">
-      <HashHeader title="SPONSORS" />
+      <HashHeader color="#d74f4b" title="SPONSORS" />
       <div class="contents">
         <div v-for="(section, index) in sponsors" :key="index">
           <div :class="['subheading', index !== 0 ? 'with-spacing' : null]">
