@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "Hack This Fall 2.0 | Innovate For Good",
+    title: "Hack This Fall",
     htmlAttrs: {
       lang: "en"
     },
@@ -23,7 +23,7 @@ export default {
       },
       {
         property: "apple-mobile-web-app-title",
-        content: "Hack This Fall 2.0 | Innovate For Good"
+        content: "Hack This Fall"
       },
       {
         property: "og:url",
@@ -35,7 +35,7 @@ export default {
       },
       {
         property: "og:title",
-        content: "Hack This Fall 2.0 | Innovate For Good"
+        content: "Hack This Fall"
       },
       {
         property: "og:description",
@@ -56,7 +56,7 @@ export default {
       },
       {
         name: "twitter:title",
-        content: "Hack This Fall 2.0 | Innovate For Good"
+        content: "Hack This Fall"
       },
       {
         name: "twitter:image",

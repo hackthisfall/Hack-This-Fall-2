@@ -29,7 +29,7 @@
         style="background-color: #d74f4b;"
         target="_blank"
         href="https://atsign.com/hack-this-fall-wavi-contest/"
-        >Click Here To Register</a
+        >Registration Starting Soon</a
       >
       <br />
       <div class="cards-grid">
@@ -47,16 +47,19 @@
           </div>
         </div>
       </div>
+      <EventsPageSponsorSection />
     </div>
   </div>
 </template>
 
 <script>
 import Container from "~/components/Container";
+import EventsPageSponsorSection from "~/components/EventsPageSponsorSection.vue";
 
 export default {
   components: {
-    Container
+    Container,
+    EventsPageSponsorSection
   },
   data() {
     return {
