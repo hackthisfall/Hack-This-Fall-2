@@ -26,7 +26,7 @@
       </p>
       <a
         class="cta-button smooth-transition"
-        style="background-color: #d74f4b;"
+        style="background-color: #d74f4b; pointer-events: none"
         target="_blank"
         href="https://atsign.com/hack-this-fall-wavi-contest/"
         >Registration Starting Soon</a

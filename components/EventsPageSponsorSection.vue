@@ -54,6 +54,10 @@ export default {
             {
               url: "https://hackclub.com/",
               image: require("~/assets/Sponsors/hackclub.png")
+            },
+            {
+              url: "https://hack2skill.com/",
+              image: require("~/assets/Sponsors/hack2skill.png")
             }
           ]
         }
