@@ -48,6 +48,10 @@ export default {
           type: "",
           logos: [
             {
+              url: "https://atsign.com/",
+              image: require("~/assets/Sponsors/atsign.webp")
+            },
+            {
               url: "https://hackp.ac/mlh-stickermule-hackathons",
               image: require("~/assets/Sponsors/stickermule.png")
             },
@@ -58,11 +62,7 @@ export default {
             {
               url: "https://hack2skill.com/",
               image: require("~/assets/Sponsors/hack2skill.png")
-            },
-            {
-              url: "https://atsign.com/",
-              image: require("~/assets/Sponsors/atsign.webp"),
-            },
+            }
           ]
         }
       ]
