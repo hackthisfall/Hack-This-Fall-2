@@ -26,10 +26,10 @@
       </p>
       <a
         class="cta-button smooth-transition"
-        style="background-color: #d74f4b; pointer-events: none"
+        style="background-color: #d74f4b;"
         target="_blank"
-        href="https://atsign.com/hack-this-fall-wavi-contest/"
-        >Registration Starting Soon</a
+        href="https://bit.ly/htf-city-meetup-2022"
+        >Click Here To Register</a
       >
       <br />
       <div class="cards-grid">

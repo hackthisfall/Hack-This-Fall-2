@@ -52,10 +52,6 @@ export default {
               image: require("~/assets/Sponsors/atsign.webp")
             },
             {
-              url: "https://hackp.ac/mlh-stickermule-hackathons",
-              image: require("~/assets/Sponsors/stickermule.png")
-            },
-            {
               url: "https://hackclub.com/",
               image: require("~/assets/Sponsors/hackclub.png")
             },
