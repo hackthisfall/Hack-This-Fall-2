@@ -34,17 +34,19 @@
       <br />
       <div class="cards-grid">
         <div v-for="(event, index) in events" :key="index" class="card">
-          <div class="card-side">
-            <img :src="event.image" alt="cityImage" />
-            <div class="texts">
-              <h4 class="eventName" v-html="event.name">{{}}</h4>
-              <p class="event">
-                Date: {{ event.date }} <br />
-                Time: {{ event.time }} <br />
-                Venue: {{ event.venue }}
-              </p>
+          <a :href="event.url" target="_blank">
+            <div class="card-side smooth-transition">
+              <img :src="event.image" alt="cityImage" />
+              <div class="texts">
+                <h4 class="eventName" v-html="event.name">{{}}</h4>
+                <p class="event">
+                  Date: {{ event.date }} <br />
+                  Time: {{ event.time }} <br />
+                  Venue: {{ event.venue }}
+                </p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <EventsPageSponsorSection />
@@ -69,9 +71,10 @@ export default {
           details:
             "<span style='color: rgba(233, 83, 34, 1)'>INR 17,500</span> awarded to the person whose page stands out the most for all the right reasons.",
           image: require("~/assets/Meetup/jaipur.png"),
-          venue: "TBD",
+          venue: "Cowocoli, Jaipur",
           date: "4th April 2022",
-          time: "TBD"
+          time: "6:00 PM to 8:00 PM",
+          url: "https://g.page/Cowocoli-Coworkingspace?share"
         },
         {
           name: "Mumbai City Meetup",
@@ -79,7 +82,7 @@ export default {
             "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person who used the custom content feature in the most creative and unique ways.",
           image: require("~/assets/Meetup/mumbai.png"),
           venue: "TBD",
-          date: "TBD",
+          date: "16th April 2022",
           time: "TBD"
         },
         {
@@ -88,7 +91,7 @@ export default {
             "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the page that showcases Indian culture, art, traditions, the festivals and its people the best.",
           image: require("~/assets/Meetup/pune.png"),
           venue: "TBD",
-          date: "TBD",
+          date: "17th April 2022",
           time: "TBD"
         },
         {
@@ -97,7 +100,7 @@ export default {
             "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the best page about their pet(s)",
           image: require("~/assets/Meetup/delhi.png"),
           venue: "TBD",
-          date: "TBD",
+          date: "22nd May 2022",
           time: "TBD"
         },
         {
@@ -106,7 +109,7 @@ export default {
             "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the most nerdy page. We expect the content on this to be super techy!",
           image: require("~/assets/Meetup/bengaluru.png"),
           venue: "TBD",
-          date: "TBD",
+          date: "19th June 2022",
           time: "TBD"
         },
         {
@@ -115,7 +118,7 @@ export default {
             "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the most nerdy page. We expect the content on this to be super techy!",
           image: require("~/assets/Meetup/ahmedabad.png"),
           venue: "TBD",
-          date: "TBD",
+          date: "26th June 2022",
           time: "TBD"
         }
       ]
@@ -168,7 +171,7 @@ export default {
       box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
 
       &:hover {
-        box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
+        box-shadow: rgba(215, 79, 75, 0.25) 0px 0px 0px 6px;
       }
     }
 
@@ -207,6 +210,11 @@ export default {
           min-height: 18rem;
         }
 
+        a {
+          text-decoration: none;
+          color: unset;
+        }
+
         .card-side {
           width: 100%;
           border-radius: 15px;
@@ -214,8 +222,12 @@ export default {
           padding: 1.5rem;
           height: 96%;
           background-color: #fdf7df;
-          border: 2px solid #d74f4b;
+          border: 2px solid #d8504b;
           overflow: hidden;
+
+          &:hover {
+            box-shadow: rgba(215, 79, 75, 0.25) 0px 0px 0px 10px;
+          }
 
           img {
             margin: auto auto -5px;
