@@ -34,19 +34,21 @@
       <br />
       <div class="cards-grid">
         <div v-for="(event, index) in events" :key="index" class="card">
-          <a :href="event.url" target="_blank">
-            <div class="card-side smooth-transition">
-              <img :src="event.image" alt="cityImage" />
-              <div class="texts">
-                <h4 class="eventName" v-html="event.name">{{}}</h4>
-                <p class="event">
-                  Date: {{ event.date }} <br />
-                  Time: {{ event.time }} <br />
-                  Venue: {{ event.venue }}
-                </p>
-              </div>
+          <div class="card-side smooth-transition">
+            <img :src="event.image" alt="cityImage" />
+            <div class="texts">
+              <h4 class="eventName" v-html="event.name">{{}}</h4>
+              <p class="event">
+                Date: {{ event.date }} <br />
+                Time: {{ event.time }} <br />
+              </p>
+              <p :class="['venue smooth-transition', event.active ? 'highlight' : null]">
+                <a :href="event.url" target="_blank"
+                  >Venue: {{ event.venue }}</a
+                >
+              </p>
             </div>
-          </a>
+          </div>
         </div>
       </div>
       <EventsPageSponsorSection />
@@ -74,7 +76,8 @@ export default {
           venue: "Cowocoli, Jaipur",
           date: "4th April 2022",
           time: "6:00 PM to 8:00 PM",
-          url: "https://g.page/Cowocoli-Coworkingspace?share"
+          url: "https://g.page/Cowocoli-Coworkingspace?share",
+          active: true
         },
         {
           name: "Mumbai City Meetup",
@@ -259,6 +262,19 @@ export default {
 
         .texts {
           text-align: center;
+
+          .highlight {
+            background: #d8504b;
+            border-radius: 5px;
+            color: white;
+            padding: 3px 0;
+            margin-top: 8px;
+
+            &:hover {
+              box-shadow: rgba(215, 79, 75, 0.25) 0px 0px 0px 6px;
+            }
+          }
+
           .eventName {
             font-size: 1.2rem;
             font-weight: bold;
