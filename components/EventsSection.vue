@@ -221,12 +221,9 @@ export default {
         .card-side {
           width: 100%;
           border-radius: 15px;
-          backface-visibility: hidden;
           padding: 1.5rem;
-          height: 96%;
           background-color: #fdf7df;
           border: 2px solid #d8504b;
-          overflow: hidden;
 
           &:hover {
             box-shadow: rgba(215, 79, 75, 0.25) 0px 0px 0px 10px;
@@ -267,7 +264,7 @@ export default {
             background: #d8504b;
             border-radius: 5px;
             color: white;
-            padding: 3px 0;
+            padding: 4px 0;
             margin-top: 8px;
 
             &:hover {
