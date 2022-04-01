@@ -1,11 +1,14 @@
 <template>
   <Container id="event-sponsors" name="event-sponsors">
     <section class="content-section">
-      <HashHeader color="#d74f4b" title="SPONSORS" />
       <div class="contents">
         <div v-for="(section, index) in sponsors" :key="index">
-          <div :class="['subheading', index !== 0 ? 'with-spacing' : null]">
-            <h2 class="section-title">{{ section.type }}</h2>
+          <div :class="['subheading', index === 0 ? 'no-spacing' : null]">
+            <HashHeader
+              class="section-title"
+              color="#d74f4b"
+              :title="section.type"
+            />
           </div>
           <div class="cards-grid">
             <div
@@ -45,7 +48,7 @@ export default {
     return {
       sponsors: [
         {
-          type: "",
+          type: "SPONSORS",
           logos: [
             {
               url: "https://atsign.com/",
@@ -58,6 +61,15 @@ export default {
             {
               url: "https://hack2skill.com/",
               image: require("~/assets/Sponsors/hack2skill.png")
+            }
+          ]
+        },
+        {
+          type: "VENUE PARTNERS",
+          logos: [
+            {
+              url: "https://cowocoli.com/",
+              image: require("~/assets/Meetup/Venue/cowocoli.png")
             }
           ]
         }
@@ -78,38 +90,24 @@ export default {
     padding: 1rem 1rem;
   }
 
-  .subheading {
-    font-family: "Poppins";
-    font-style: bold;
-    justify-content: space-around;
-    display: flex;
-    align-self: center;
-    color: rgba(128, 128, 128, 1);
-
-    h2.section-title {
-      font-size: 1.5rem;
-      font-weight: 600;
-      padding: 20px 10px 20px 0;
-    }
-  }
-
   .contents {
     .subheading {
-      margin-top: 2rem;
-      // padding: 20px 0px;
+      margin: 2rem 0 2rem;
       font-family: "Poppins";
       font-style: bold;
-      justify-content: space-around;
-      display: flex;
-      align-self: center;
       color: rgba(128, 128, 128, 1);
 
-      h2.section-title {
+      .section-title {
         font-size: 1.5rem;
         font-weight: 600;
         padding: 20px 10px 20px 0;
       }
     }
+
+    .no-spacing {
+      margin: -3rem 0 2rem;
+    }
+
     .cards-grid {
       margin-top: -4rem;
       display: flex;
