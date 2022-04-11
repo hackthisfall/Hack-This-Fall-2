@@ -74,6 +74,10 @@ export default {
             {
               url: "https://cowocoli.com/",
               image: require("~/assets/Meetup/Venue/cowocoli.png")
+            },
+            {
+              url: "https://www.91springboard.com/",
+              image: require("~/assets/Meetup/Venue/springboard.png")
             }
           ]
         }

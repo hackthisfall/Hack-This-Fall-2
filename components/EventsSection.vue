@@ -42,11 +42,16 @@
                 Date: {{ event.date }} <br />
                 Time: {{ event.time }} <br />
               </p>
-              <p :class="['venue smooth-transition', event.active ? 'highlight' : null]">
-                <a :href="event.url" target="_blank"
-                  >Venue: {{ event.venue }}</a
+              <a :href="event.url" target="_blank">
+                <p
+                  :class="[
+                    'venue smooth-transition',
+                    event.active ? 'highlight' : null
+                  ]"
                 >
-              </p>
+                  Venue: {{ event.venue }}
+                </p>
+              </a>
             </div>
           </div>
         </div>
@@ -84,9 +89,11 @@ export default {
           details:
             "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person who used the custom content feature in the most creative and unique ways.",
           image: require("~/assets/Meetup/mumbai.png"),
-          venue: "TBD",
+          venue: "74Technopark Hub",
           date: "16th April 2022",
-          time: "TBD"
+          time: "4:00 PM to 9:00 PM",
+          active: true,
+          url: "https://goo.gl/maps/D7VU6guZ8eBu3rJy5"
         },
         {
           name: "Pune City Meetup",
