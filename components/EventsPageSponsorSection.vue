@@ -55,6 +55,10 @@ export default {
               image: require("~/assets/Sponsors/atsign.webp")
             },
             {
+              url: "https://education.github.com/discount_requests/student_application?utm_source=2022-04-2022-06-HackThisFallCityMeetups",
+              image: require("~/assets/Sponsors/github.png")
+            },
+            {
               url: "https://hackclub.com/",
               image: require("~/assets/Sponsors/hackclub.png")
             },
@@ -78,6 +82,10 @@ export default {
             {
               url: "https://www.91springboard.com/",
               image: require("~/assets/Meetup/Venue/springboard.png")
+            },
+            {
+              url: "https://redbrickoffices.com/",
+              image: "https://redbrickoffices.com/public/images/red-brick-logo.svg"
             }
           ]
         }
