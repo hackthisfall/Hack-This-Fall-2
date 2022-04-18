@@ -100,7 +100,7 @@ export default {
           details:
             "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the page that showcases Indian culture, art, traditions, the festivals and its people the best.",
           image: require("~/assets/Meetup/pune.png"),
-          venue: "RedBricks Offices",
+          venue: "Redbrick Offices",
           date: "17th April 2022",
           time: "11:30 AM to 4:30 PM",
           active: true,
