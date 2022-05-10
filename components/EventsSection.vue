@@ -112,7 +112,7 @@ export default {
             "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the best page about their pet(s)",
           image: require("~/assets/Meetup/delhi.png"),
           venue: "TBD",
-          date: "22nd May 2022",
+          date: "28th May 2022",
           time: "TBD"
         },
         {
@@ -121,7 +121,7 @@ export default {
             "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the most nerdy page. We expect the content on this to be super techy!",
           image: require("~/assets/Meetup/bengaluru.png"),
           venue: "TBD",
-          date: "19th June 2022",
+          date: "11th June 2022",
           time: "TBD"
         },
         {
@@ -130,7 +130,7 @@ export default {
             "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the most nerdy page. We expect the content on this to be super techy!",
           image: require("~/assets/Meetup/ahmedabad.png"),
           venue: "TBD",
-          date: "26th June 2022",
+          date: "23rd July 2022",
           time: "TBD"
         }
       ]
