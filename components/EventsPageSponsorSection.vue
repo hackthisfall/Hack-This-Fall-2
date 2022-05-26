@@ -70,6 +70,10 @@ export default {
               url: "https://devhero.shop/",
               image: require("~/assets/Sponsors/devhero.png"),
             },
+            {
+              url: "https://www.esamudaay.com/",
+              image: require("~/assets/Sponsors/eSamudaay.svg"),
+            },
           ]
         },
         {
@@ -86,6 +90,10 @@ export default {
             {
               url: "https://redbrickoffices.com/",
               image: require("~/assets/Meetup/Venue/red-brick-logo.svg")
+            },
+            {
+              url: "https://www.thecircle.work/",
+              image: require("~/assets/Meetup/Venue/the-circle-work.png")
             }
           ]
         },
