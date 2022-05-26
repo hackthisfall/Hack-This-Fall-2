@@ -96,6 +96,15 @@ export default {
               image: require("~/assets/Meetup/Venue/the-circle-work.png")
             }
           ]
+        },
+        {
+          type: "ECOSYSTEM PARTNERS",
+          logos: [
+            {
+              url: "https://www.thecirclefc.com",
+              image: require("~/assets/Meetup/Ecosystem/circle.png"),
+            }
+          ]
         }
       ]
     };
