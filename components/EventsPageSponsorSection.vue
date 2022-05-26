@@ -85,7 +85,7 @@ export default {
             },
             {
               url: "https://redbrickoffices.com/",
-              image: "https://redbrickoffices.com/public/images/red-brick-logo.svg"
+              image: require("~/assets/Meetup/Venue/red-brick-logo.svg")
             }
           ]
         }
