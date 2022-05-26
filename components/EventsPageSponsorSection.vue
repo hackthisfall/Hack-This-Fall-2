@@ -88,6 +88,15 @@ export default {
               image: require("~/assets/Meetup/Venue/red-brick-logo.svg")
             }
           ]
+        },
+        {
+          type: "ECOSYSTEM PARTNERS",
+          logos: [
+            {
+              url: "https://www.thecirclefc.com",
+              image: require("~/assets/Meetup/Ecosystem/circle.png"),
+            }
+          ]
         }
       ]
     };
