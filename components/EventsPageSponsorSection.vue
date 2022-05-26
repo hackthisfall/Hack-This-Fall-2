@@ -74,6 +74,10 @@ export default {
               url: "https://www.esamudaay.com/",
               image: require("~/assets/Sponsors/eSamudaay.svg"),
             },
+            {
+              url: "https://symbl.ai/",
+              image: require("~/assets/Sponsors/symbl.svg"),
+            },
           ]
         },
         {
