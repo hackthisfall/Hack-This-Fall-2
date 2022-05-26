@@ -72,7 +72,7 @@ export default {
             },
             {
               url: "https://www.esamudaay.com/",
-              image: require("~/assets/Sponsors/eSamudaay.png"),
+              image: require("~/assets/Sponsors/eSamudaay.svg"),
             },
           ]
         },
