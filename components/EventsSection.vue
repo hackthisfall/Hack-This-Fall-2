@@ -124,7 +124,7 @@ export default {
           image: require("~/assets/Meetup/bengaluru.png"),
           venue: "91Springboard, J.P. Nagar",
           date: "11th June 2022",
-          time: "11:00 AM to 5:00 PM"
+          time: "11:00 AM to 5:00 PM",
           active: true,
           venue: "https://goo.gl/maps/AV6NrfPcqwW6rct27"
         },
