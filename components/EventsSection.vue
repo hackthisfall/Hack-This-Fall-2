@@ -126,7 +126,7 @@ export default {
           date: "11th June 2022",
           time: "11:00 AM to 5:00 PM",
           active: true,
-          venue: "https://goo.gl/maps/AV6NrfPcqwW6rct27"
+          url: "https://goo.gl/maps/AV6NrfPcqwW6rct27"
         },
         {
           name: "Ahmedabad City Meetup",
