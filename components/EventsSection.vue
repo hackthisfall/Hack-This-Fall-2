@@ -122,9 +122,11 @@ export default {
           details:
             "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the most nerdy page. We expect the content on this to be super techy!",
           image: require("~/assets/Meetup/bengaluru.png"),
-          venue: "TBD",
+          venue: "91Springboard, J.P. Nagar",
           date: "11th June 2022",
-          time: "TBD"
+          time: "11:00 AM to 5:00 PM"
+          active: true,
+          venue: "https://goo.gl/maps/AV6NrfPcqwW6rct27"
         },
         {
           name: "Ahmedabad City Meetup",
