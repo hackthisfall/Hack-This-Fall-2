@@ -111,9 +111,11 @@ export default {
           details:
             "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the best page about their pet(s)",
           image: require("~/assets/Meetup/delhi.png"),
-          venue: "TBD",
+          venue: "The Circle Work",
           date: "28th May 2022",
-          time: "TBD"
+          time: "11:00 AM to 5:00 PM",
+          active: true,
+          url: "https://goo.gl/maps/MtiVc153cHp7R7Bw6"
         },
         {
           name: "Bengaluru City Meetup",
