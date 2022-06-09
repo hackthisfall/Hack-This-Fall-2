@@ -59,18 +59,6 @@ export default {
               image: require("~/assets/Sponsors/github.png")
             },
             {
-              url: "https://hackclub.com/",
-              image: require("~/assets/Sponsors/hackclub.png")
-            },
-            {
-              url: "https://hack2skill.com/",
-              image: require("~/assets/Sponsors/hack2skill.png")
-            },
-            {
-              url: "https://devhero.shop/",
-              image: require("~/assets/Sponsors/devhero.png"),
-            },
-            {
               url: "https://www.esamudaay.com/",
               image: require("~/assets/Sponsors/eSamudaay.svg"),
             },
@@ -78,6 +66,23 @@ export default {
               url: "https://symbl.ai/",
               image: require("~/assets/Sponsors/symbl.svg"),
             },
+            {
+              url: "https://hack2skill.com/",
+              image: require("~/assets/Sponsors/hack2skill.png")
+            },
+            {
+              url: 'https://www.communitycoldcoffee.com/',
+              image: require("~/assets/Sponsors/C3Universe.png")
+            },
+            {
+              url: "https://hackclub.com/",
+              image: require("~/assets/Sponsors/hackclub.png")
+            },
+            {
+              url: "https://devhero.shop/",
+              image: require("~/assets/Sponsors/devhero.png"),
+            },
+            
           ]
         },
         {
