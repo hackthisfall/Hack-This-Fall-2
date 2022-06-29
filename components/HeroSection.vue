@@ -8,15 +8,18 @@
           </div>
           <div class="about">
             <img class="logo" src="~/assets/HTF2/logo.svg" />
-            <span class="date"> We’ll be back with Season 3 soon! </span>
+            <span class="date">
+              We're back with Season 3 <br />
+              4th - 6th November 2022
+            </span>
             <div class="cta-buttons">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://hackthisfall.devpost.com/project-gallery"
+                href="https://forms.gle/fGfkLgq1jgLNTNsm8"
                 class="cta-button smooth-transition register"
               >
-                <img src="~/assets/HTF2/devpost.svg" />PROJECT GALLERY
+                <img src="~/assets/HTF2/clickme.png" />PRE-REGISTER
               </a>
               <a
                 target="_blank"
@@ -40,8 +43,8 @@ import Container from "~/components/Container";
 export default {
   components: {
     HashHeader,
-    Container,
-  },
+    Container
+  }
 };
 </script>
 
@@ -101,9 +104,9 @@ export default {
 
       .date {
         font-family: "Poppins";
-        font-weight: bold;
+        font-weight: 600;
         font-size: 1.5rem;
-        margin-top: -3rem;
+        margin-top: -4.8rem;
       }
 
       .cta-buttons {
