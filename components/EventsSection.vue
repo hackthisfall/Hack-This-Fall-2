@@ -135,7 +135,7 @@ export default {
           image: require("~/assets/Meetup/ahmedabad.png"),
           venue: "DevX, Ahmedabad",
           date: "30th July 2022",
-          time: "03:00 PM to 08:00 PM",
+          time: "3:00 PM to 8:00 PM",
           active: true,
           url: "https://goo.gl/maps/PWhjTUtRPBqWQSNr6"
         }
