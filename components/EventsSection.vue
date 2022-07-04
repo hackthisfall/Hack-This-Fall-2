@@ -133,9 +133,11 @@ export default {
           details:
             "<span style='color: rgba(233, 83, 34, 1)'>INR 7,500</span> awarded to the person with the most nerdy page. We expect the content on this to be super techy!",
           image: require("~/assets/Meetup/ahmedabad.png"),
-          venue: "TBD",
-          date: "23rd July 2022",
-          time: "TBD"
+          venue: "DevX, Ahmedabad",
+          date: "30th July 2022",
+          time: "03:00 PM to 08:00 PM",
+          active: true,
+          url: "https://goo.gl/maps/PWhjTUtRPBqWQSNr6"
         }
       ]
     };

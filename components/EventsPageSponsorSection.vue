@@ -103,6 +103,10 @@ export default {
             {
               url: "https://www.thecircle.work/",
               image: require("~/assets/Meetup/Venue/the-circle-work.png")
+            },
+            {
+              url: "https://www.devx.work/",
+              image: require("~/assets/Meetup/Venue/devx.png")
             }
           ]
         },
