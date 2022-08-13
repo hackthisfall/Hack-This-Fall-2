@@ -12,7 +12,6 @@
       </p>
       <a
         class="cta-button-disabled"
-        style="background-color: #ccc; color: #"
         href="#"
         >See You in 2023</a
       >
@@ -161,7 +160,8 @@ export default {
     }
 
     .cta-button-disabled {
-      color: white;
+      color: #666;
+      background-color: #ccc;
       border: none;
       text-decoration: none;
       margin-bottom: 1rem;
