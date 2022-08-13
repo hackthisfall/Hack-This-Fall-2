@@ -9,27 +9,12 @@
         <span style="color: #d74f4b; font-size: 25px; font-weight: 600"
           >In-Person City Meetup Series 2022</span
         >
-        <br /><br />A hackathon community that started online is now breaking
-        the virtual barrier and aims to help connect the folks with others from
-        the region to create more
-        <span style="color: #d74f4b">Opportunities</span> &
-        <span style="color: #d74f4b">Collaboration</span>!💥 <br /><br />
-        Hack This Fall is excited to host its first
-        <span style="color: #d74f4b">6 Meetups</span> in your city. Get
-        yourselves hyped to experience our community culture and join us in any
-        of the cities listed below!👇 <br /><br />
-        It is going to be completely free of cost, you just need to register for
-        the meetup. <span style="color: #d74f4b">Free Food</span> and
-        <span style="color: #d74f4b">Cool Swags</span> are on us and you know we
-        don't limit ourselves there!🤩 <br /><br />
-        What are you waiting for? Register Now 🚀
       </p>
       <a
-        class="cta-button smooth-transition"
-        style="background-color: #d74f4b;"
-        target="_blank"
-        href="https://bit.ly/htf-city-meetup-2022"
-        >Click Here To Register</a
+        class="cta-button-disabled"
+        style="background-color: #ccc; color: #"
+        href="#"
+        >See You in 2023</a
       >
       <br />
       <div class="cards-grid">
@@ -173,6 +158,18 @@ export default {
       @include respond-below(xs) {
         width: 90%;
       }
+    }
+
+    .cta-button-disabled {
+      color: white;
+      border: none;
+      text-decoration: none;
+      margin-bottom: 1rem;
+      height: 5rem;
+      padding: 0.5rem 1rem;
+      font-family: "Segoe UI Bold";
+      border-radius: 0.5rem;
+      cursor: pointer;
     }
 
     .cta-button {
