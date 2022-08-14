@@ -11,7 +11,7 @@
         >
       </p>
       <a
-        class="cta-button-disabled"
+        class="cta-button"
         href="#"
         >See You in 2023</a
       >
