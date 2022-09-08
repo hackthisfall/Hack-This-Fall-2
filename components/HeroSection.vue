@@ -10,7 +10,7 @@
             <img class="logo" src="~/assets/HTF2/logo.svg" />
             <span class="date">
               We're back with Season 3 <br />
-              11th - 13th November 2022
+              3rd - 5th February 2023
             </span>
             <div class="cta-buttons">
               <a
