@@ -26,10 +26,10 @@
 
 .section {
     position: absolute;
-    width: 90vw;
+    width: 85vw;
     left: 50%;
     transform: translate(-50%, 0);
-    top: -10%;
+    top: 0;
 }
 
 .htf {
