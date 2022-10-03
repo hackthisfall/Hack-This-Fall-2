@@ -70,7 +70,8 @@
   position: absolute;
   @include respond-below(mobile) {
     display: unset;
-    width: 100vw;
+    top: 15%;
+    width: 85vw;
   }
 }
 
