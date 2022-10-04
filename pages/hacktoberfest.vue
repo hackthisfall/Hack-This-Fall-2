@@ -4,7 +4,7 @@
     <img
       class="solana"
       alt="solana"
-      src="~/assets/Hacktoberfest/SolanaLogo.png"
+      src="~/assets/Hacktoberfest/solana.png"
     />
     <img class="grid" alt="grid" src="~/assets/Hacktoberfest/Grid.png" />
     <img
