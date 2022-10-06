@@ -13,13 +13,13 @@
       <span class="only-desktop">
         16th Oct 2022
         <img src="~/assets/Hacktoberfest/star.png" />
-        10:00 A.M - 5:00 P.M
+        10:00 AM - 05:00 PM
         <img src="~/assets/Hacktoberfest/star.png" />
         Delhi NCR
       </span>
 
       <span class="only-mobile">
-        16th Oct 2022, 10:00 A.M - 5:00 P.M
+        16th Oct 2022, 10:00 AM - 05:00 PM
         <br />
         Delhi NCR
       </span>
@@ -28,7 +28,7 @@
         href="https://lu.ma/event/evt-jaolIB5dAflB1NL"
         class="luma-checkout--button"
         data-luma-action="checkout"
-        data-luma-event-id="evt-qGGsEAq2bXhbXIM"
+        data-luma-event-id="evt-jaolIB5dAflB1NL"
       >
         Register Now
       </a>
@@ -209,6 +209,7 @@ body {
   background-size: 100% 100%;
   background-blend-mode: overlay;
   background-attachment: fixed;
+  font-family: "Jetbrains Mono", monospace;
 
   color: white;
   // background-repeat: no-repeat;
@@ -232,7 +233,7 @@ body {
 
     color: white;
 
-    font-family: "Inter";
+    // font-family: "Jetb";
     .hacktoberfest-logo {
       max-width: 50%;
 

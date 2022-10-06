@@ -75,19 +75,19 @@ export default {
               duration: "15",
             },
             {
-              title: "👀 HACKTOBERFEST 👀 [TALK]",
+              title: "ABOUT HACKTOBERFEST [TALK]",
               time: "11:15 AM",
               speaker: "Bishwajeet parhi",
               duration: "15",
             },
             {
-              title: "LET'S STEP INTO OPEN SOURCE",
+              title: "LET'S STEP INTO OPEN SOURCE [TALK]",
               time: "11:30 AM",
               speaker: "Aayush sharma",
               duration: "15",
             },
             {
-              title: "GIT & GITHUB",
+              title: "GIT & GITHUB [WORKSHOP]",
               time: "11:45 AM",
               speaker: "Apoorv Dwivedi and paras gupta",
               duration: "45",
@@ -98,40 +98,40 @@ export default {
               duration: "90",
             },
             {
-              title: "HOW TO CONTRIBUTE TO APPWRITE",
+              title: "HOW TO CONTRIBUTE TO APPWRITE [WORKSHOP]",
               time: "02:00 PM",
               speaker: "Aditya Oberoi & Haimantika Mitra",
               duration: "25",
             },
             {
-              title: "CAREER OPPORTUNITIES WITH OPEN SOURCE",
+              title: "CAREER OPPORTUNITIES WITH OPEN SOURCE [TALK]",
               time: "02:30 PM",
               speaker: "Ishika Kesarwani",
               duration: "25",
             },
             {
-              title: "PROJECT SHOWCASE",
+              title: "TBA",
               time: "03:00 PM",
-              speaker: "participants",
+              // speaker: "participants",
+              duration: "25",
+            },
+            {
+              title: "OPEN SOURCE PROJECT SHOWCASE",
+              time: "03:30 PM",
               duration: "30",
             },
             {
-              title: "BREAKOUT ROOMS",
-              time: "03:30 PM",
-              duration: "45",
+              title: "CONTRIBUTE TOWARDS HACKTOBERFEST [BREAKOUT ROOM]",
+              time: "04:00 PM",
+              duration: "30",
             },
             {
-              title: "OPEN DISCUSSION",
-              time: "04:15 PM",
-              duration: "15",
-            },
-            {
-              title: "PRIZES + GIVEAWAYS",
+              title: "PRIZES & GIVEAWAYS",
               time: "04:30 PM",
               duration: "15",
             },
             {
-              title: "CONCLUSION",
+              title: "CONCLUSION & GROUP PHOTO",
               time: "04:45 PM",
               duration: "15",
             },
@@ -244,7 +244,7 @@ export default {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            line-height: 1.5rem;
+            // line-height: 1.5rem;
 
             .title {
               // font-size: 1.1em;
