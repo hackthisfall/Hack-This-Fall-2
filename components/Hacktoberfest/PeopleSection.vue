@@ -65,7 +65,7 @@ export default {
           picture: require("~/assets/Hacktoberfest/aayush.jpeg"),
         },
         {
-          description: "DEVELOPER",
+          description: "METAPASS/DEVELOPER",
           name: "Apoorv Dwivedi",
           github: "https://github.com/apoorvdwi",
           twitter: "https://twitter.com/Apoorvdwi",
