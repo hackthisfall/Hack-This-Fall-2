@@ -113,6 +113,29 @@
             src="~/assets/Hacktoberfest/solana.png"
           />
         </div>
+        <div class="links">
+          <a
+            class="link first"
+            href="https://hacktoberfest.com/participation/#beginner-resources"
+            target="_blank"
+            >RESOURCES</a
+          >
+          <a
+            class="link"
+            href="https://www.digitalocean.com/legal/terms-of-service-agreement"
+            target="_blank"
+            >TERMS</a
+          >
+          <a
+            class="link"
+            href="https://www.digitalocean.com/legal/privacy-policy"
+            target="_blank"
+            >PRIVACY</a
+          >
+          <a class="link" href="https://hackthisfall.tech/" target="_blank"
+            >HTF SEASON 3</a
+          >
+        </div>
       </div>
 
       <img src="~/assets/Hacktoberfest/astronaut.png" class="astronaut" />
@@ -304,7 +327,7 @@ body {
   }
 
   .about-section {
-    margin-top: 4rem;
+    margin-top: 6rem;
     width: 90%;
     font-family: "Jetbrains Mono", monospace;
     font-weight: 400;
@@ -322,7 +345,7 @@ body {
   }
 
   .agenda-section {
-    margin-top: 4rem;
+    margin-top: 6rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -332,7 +355,7 @@ body {
   }
 
   .speaker-section {
-    margin-top: 4rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -342,7 +365,7 @@ body {
   }
 
   .faq-section {
-    margin-top: 3rem;
+    margin-top: 7rem;
     // display: flex;
     // flex-direction: column;
     align-items: flex-start;
@@ -382,6 +405,21 @@ body {
           width: 12rem;
         }
       }
+
+      .links {
+        .link {
+          font-family: "Jetbrains Mono", monospace;
+
+          font-weight: 500;
+          color: #fff;
+          text-decoration: none;
+          margin-left: 1.5rem;
+
+          &.first {
+            margin-left: 0;
+          }
+        }
+      }
     }
 
     .astronaut {
@@ -410,6 +448,22 @@ body {
           .solana {
             margin-left: 0rem;
             width: 14rem;
+          }
+        }
+
+        .links {
+          margin-top: 2rem;
+          .link {
+            font-family: "Jetbrains Mono", monospace;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1.1rem;
+
+            &.first {
+              margin-left: 0;
+            }
           }
         }
       }

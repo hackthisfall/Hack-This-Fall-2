@@ -48,7 +48,7 @@ export default {
           isOpen: false,
           title: "Is this event free of cost?",
           content:
-            "Yes, this event is absolutely free. Lunch and swags are on us.",
+            "Yes, this event is absolutely free. Lunch and Swags are on us.",
         },
         {
           isOpen: false,
@@ -60,7 +60,7 @@ export default {
           isOpen: false,
           title: "What is the venue?",
           content:
-            "Details about the venue will be shared in the email to the accepted attendees",
+            "Details about the venue will be shared in the email to the accepted attendees.",
         },
         {
           isOpen: false,

@@ -179,6 +179,10 @@ export default {
         }
       }
 
+      @include respond-below(lg) {
+        grid-template-columns: repeat(2, minmax(0, 2fr));
+      }
+
       @include respond-below(sm) {
         grid-template-columns: repeat(1, minmax(0, 2fr));
       }
