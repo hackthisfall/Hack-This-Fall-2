@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "Hack This Fall",
+    title: "Hack This Fall | Hacktoberfest'22",
     htmlAttrs: {
       lang: "en"
     },
@@ -19,11 +19,11 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "Hack This Fall is one of the most thriving hacker communities. It encourages beginner hackers to build unique projects regardless of the tech or field; the only focus is to create something meaningful and enjoy building while also solving the shared struggles of our surroundings."
+          "Hacktoberfest is an annual month-long celebration of open-source software run by DigitalOcean. Hack This Fall and Solana bring you an in-person Hacktoberfest event where you can join the community to learn, explore and contribute towards Open Source!"
       },
       {
         property: "apple-mobile-web-app-title",
-        content: "Hack This Fall"
+        content: "Hack This Fall | Hacktoberfest'22"
       },
       {
         property: "og:url",
@@ -35,12 +35,12 @@ export default {
       },
       {
         property: "og:title",
-        content: "Hack This Fall"
+        content: "Hack This Fall | Hacktoberfest'22"
       },
       {
         property: "og:description",
         content:
-          "Hack This Fall is one of the most thriving hacker communities. It encourages beginner hackers to build unique projects regardless of the tech or field; the only focus is to create something meaningful and enjoy building while also solving the shared struggles of our surroundings."
+          "Hacktoberfest is an annual month-long celebration of open-source software run by DigitalOcean. Hack This Fall and Solana bring you an in-person Hacktoberfest event where you can join the community to learn, explore and contribute towards Open Source!"
       },
       {
         property: "og:image",
@@ -56,7 +56,7 @@ export default {
       },
       {
         name: "twitter:title",
-        content: "Hack This Fall"
+        content: "Hack This Fall | Hacktoberfest'22"
       },
       {
         name: "twitter:image",
@@ -91,7 +91,11 @@ export default {
   modules: ["nuxt-webfontloader"],
   webfontloader: {
     google: {
-      families: ["Poppins:400,600,700,800", "JetBrains Mono:300,400,500,600,700,800", "Inter:300,400,500"]
+      families: [
+        "Poppins:400,600,700,800",
+        "JetBrains Mono:300,400,500,600,700,800",
+        "Inter:300,400,500"
+      ]
     }
   },
 
