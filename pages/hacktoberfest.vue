@@ -51,8 +51,18 @@
       <span>
         Hacktoberfest is DigitalOcean’s annual month-long event that encourages
         everyone to contribute to Open Source throughout the month of October.
-        Hack This Fall brings you an in-person Hacktoberfest event where you can
-        join with the community to learn, explore and contribute!
+        <a
+          href="https://hackthisfall.tech"
+          style="color: #9092ff"
+          target="_blank"
+          >Hack This Fall</a
+        >
+        and
+        <a href="https://solana.com" style="color: #9092ff" target="_blank"
+          >Solana</a
+        >
+        bring you an in-person Hacktoberfest event where you can join with the
+        community to learn, explore and contribute towards Open Source!
         <br /><br />Much of modern tech infrastructure—including some of
         DigitalOcean’s own products—relies on open-source projects built and
         maintained by passionate people who often don’t have the staff or
@@ -424,6 +434,11 @@ body {
 
           &.first {
             margin-left: 0;
+          }
+
+          &:hover {
+            color: #40ddff;
+            opacity: 1;
           }
         }
       }
