@@ -116,13 +116,15 @@ export default {
               duration: "25",
             },
             {
-              title: "OPEN SOURCE PROJECT SHOWCASE",
+              title: "OPEN SOURCE PROJECT SHOWCASE [OPEN STAGE]",
               time: "03:30 PM",
+              speaker: "ATTENDEES",
               duration: "30",
             },
             {
               title: "CONTRIBUTE TOWARDS HACKTOBERFEST [BREAKOUT ROOM]",
               time: "04:00 PM",
+              speaker: "ATTENDEES",
               duration: "30",
             },
             {

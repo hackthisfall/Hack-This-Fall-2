@@ -56,6 +56,7 @@ export default {
         { link: "/hacktoberfest#home", text: "home" },
         { link: "/hacktoberfest#about", text: "about" },
         { link: "/hacktoberfest#agenda", text: "agenda" },
+        { link: "/hacktoberfest#speakers", text: "speakers" },
         { link: "/hacktoberfest#faq", text: "faqs" },
       ],
     };
