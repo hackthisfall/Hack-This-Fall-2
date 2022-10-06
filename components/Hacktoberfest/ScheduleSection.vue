@@ -100,7 +100,7 @@ export default {
             {
               title: "HOW TO CONTRIBUTE TO APPWRITE [WORKSHOP]",
               time: "02:00 PM",
-              speaker: "Aditya Oberoi & Haimantika Mitra",
+              speaker: "Aditya Oberai & Haimantika Mitra",
               duration: "25",
             },
             {
