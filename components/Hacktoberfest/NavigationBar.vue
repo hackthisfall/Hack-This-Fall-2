@@ -4,7 +4,7 @@
       <div class="navigation-contents">
         <!-- Branding area -->
         <div class="branding">
-          <NuxtLink to="/">
+          <NuxtLink to="/hacktoberfest">
             <img class="headerImage" src="~/assets/Hacktoberfest/HTFLogo.png" />
           </NuxtLink>
 

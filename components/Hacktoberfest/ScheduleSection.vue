@@ -75,13 +75,13 @@ export default {
               duration: "15",
             },
             {
-              title: "ABOUT HACKTOBERFEST",
+              title: "👀 HACKTOBERFEST 👀 [TALK]",
               time: "11:15 AM",
               speaker: "Bishwajeet parhi",
               duration: "15",
             },
             {
-              title: "INTRO TO OPEN SOURCE",
+              title: "LET'S STEP INTO OPEN SOURCE",
               time: "11:30 AM",
               speaker: "Aayush sharma",
               duration: "15",
@@ -98,13 +98,13 @@ export default {
               duration: "90",
             },
             {
-              title: "APPWRITE",
+              title: "HOW TO CONTRIBUTE TO APPWRITE",
               time: "02:00 PM",
               speaker: "Aditya Oberoi & Haimantika Mitra",
               duration: "25",
             },
             {
-              title: "SESSION TITLE",
+              title: "CAREER OPPORTUNITIES WITH OPEN SOURCE",
               time: "02:30 PM",
               speaker: "Ishika Kesarwani",
               duration: "25",
@@ -173,6 +173,7 @@ export default {
         // background-color: #feede3;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         padding: 0.75em 0em 0.75em 0em;
         // text-align: flex-start;
         min-width: 8rem;

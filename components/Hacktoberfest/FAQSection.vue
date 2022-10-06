@@ -40,27 +40,43 @@ export default {
       FAQs: [
         {
           isOpen: false,
-          title: "Do you need Laptop for this event?",
+          title: "I am completely new to Open Source, can I register?",
           content:
-            "We will be providing hands on workshops so bringing laptop would be recommended",
+            "Yes, this is a complete beginner-friendly event, we would love to have you!",
         },
         {
           isOpen: false,
-          title: "Is this Event free?",
+          title: "Is this event free of cost?",
           content:
-            "Yes, this event is absolutely free. Lunch and swags is on us",
+            "Yes, this event is absolutely free. Lunch and swags are on us.",
         },
         {
           isOpen: false,
-          title: "Where is the venue?",
+          title: "Do I need a laptop for this event?",
           content:
-            "Details about the venue will shared in the email to the selected attendees",
+            "It would be great if you could bring your laptop, as we will be providing hands-on workshops.",
         },
         {
           isOpen: false,
-          title: "I have more questions!",
+          title: "What is the venue?",
           content:
-            "You can shoot your questions in the <a target='_blank' style='color: rgba(64, 221, 255, 1)' href='https://discord.hackthisfall.tech'>HackThisFall Discord server</a>",
+            "Details about the venue will be shared in the email to the accepted attendees",
+        },
+        {
+          isOpen: false,
+          title: "When does the registration close?",
+          content: "Registration closes on 13th October at 11:59 PM IST!",
+        },
+        {
+          isOpen: false,
+          title: "When will I hear about my acceptance?",
+          content: "The applications will be accepted in batches. Stay tuned!",
+        },
+        {
+          isOpen: false,
+          title: "I have more questions, where can I ask?",
+          content:
+            "You can shoot your questions at the #hacktoberfest-22 channel in our <a target='_blank' style='color: rgba(64, 221, 255, 1)' href='https://discord.hackthisfall.tech'>Discord server</a>.",
         },
       ],
       expandedFAQs: new Set(),

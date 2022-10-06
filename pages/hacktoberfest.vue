@@ -15,13 +15,13 @@
         <img src="~/assets/Hacktoberfest/star.png" />
         10:00 A.M - 5:00 P.M
         <img src="~/assets/Hacktoberfest/star.png" />
-        Delhi, NCR
+        Delhi NCR
       </span>
 
       <span class="only-mobile">
         16th Oct 2022, 10:00 A.M - 5:00 P.M
         <br />
-        Delhi, NCR
+        Delhi NCR
       </span>
 
       <a
@@ -30,7 +30,7 @@
         data-luma-action="checkout"
         data-luma-event-id="evt-qGGsEAq2bXhbXIM"
       >
-        Register
+        Register Now
       </a>
 
       <!-- <img
@@ -42,7 +42,7 @@
 
     <section class="about-section" id="about">
       <div class="parallelograms">
-        <h4>ABOUT US</h4>
+        <h4>ABOUT EVENT</h4>
         <div class="parallelograms-only">
           <div v-for="n in 14" v-bind:key="n" class="parallelogram"></div>
         </div>
@@ -75,6 +75,17 @@
       </div>
 
       <ScheduleSection />
+    </section>
+
+    <section class="speaker-section" id="speakers">
+      <div class="parallelograms">
+        <h4>SPEAKERS</h4>
+        <div class="parallelograms-only">
+          <div v-for="n in 14" v-bind:key="n" class="parallelogram"></div>
+        </div>
+      </div>
+
+      <PeopleSection />
     </section>
 
     <section class="faq-section" id="faq">
@@ -115,19 +126,11 @@
         <a
           rel="noopener noreferrer"
           target="_blank"
-          href="https://www.youtube.com/channel/UCpdsmUIkLpfopjURSYF1gaA"
-        >
-          <img
-            src="~/assets/Hacktoberfest/youtube.png"
-            class="social first"
-          /> </a
-        ><a
-          rel="noopener noreferrer"
-          target="_blank"
           href="https://discord.hackthisfall.tech"
         >
-          <img src="~/assets/Hacktoberfest/discord.png" class="social" /> </a
-        ><a
+          <img src="~/assets/Hacktoberfest/discord.png" class="social first" />
+        </a>
+        <a
           rel="noopener noreferrer"
           target="_blank"
           href="https://twitter.com/hackthisfall/"
@@ -139,6 +142,19 @@
           href="https://instagram.com/hackthisfall"
         >
           <img src="~/assets/Hacktoberfest/instagram.png" class="social" />
+        </a>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://www.linkedin.com/company/hackthisfall/"
+        >
+          <img src="~/assets/Hacktoberfest/linkedin.png" class="social" /> </a
+        ><a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://www.youtube.com/channel/UCpdsmUIkLpfopjURSYF1gaA"
+        >
+          <img src="~/assets/Hacktoberfest/youtube.png" class="social" />
         </a>
       </div>
     </section>
@@ -160,7 +176,7 @@
 
 <script>
 import NavigationBar from "~/components/Hacktoberfest/NavigationBar";
-import PeopleSection from "~/components/PeopleSection";
+import PeopleSection from "~/components/Hacktoberfest/PeopleSection";
 import FAQSection from "~/components/Hacktoberfest/FAQSection";
 import ScheduleSection from "~/components/Hacktoberfest/ScheduleSection";
 
@@ -175,6 +191,16 @@ export default {
 </script>
 
 <style lang="scss" >
+body {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 .container-hacktoberfest {
   min-height: 100vh;
   width: 100vw;
@@ -304,6 +330,16 @@ export default {
     // font-size: 5rem;
   }
 
+  .speaker-section {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+
+    // font-size: 5rem;
+  }
+
   .faq-section {
     margin-top: 3rem;
     // display: flex;
@@ -398,10 +434,10 @@ export default {
     }
 
     @include respond-below(sm) {
-      flex-direction: column;
+      flex-direction: column-reverse;
 
       .socials {
-        margin-top: 1rem;
+        margin-bottom: 1rem;
 
         .social {
           width: 2rem;
