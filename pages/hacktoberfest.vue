@@ -19,7 +19,9 @@
       </span>
 
       <span class="only-mobile">
-        16th Oct 2022, 10:00 AM - 05:00 PM
+        16th Oct 2022
+        <br />
+        10:00 AM - 05:00 PM
         <br />
         Delhi NCR
       </span>
@@ -196,19 +198,6 @@
         </a>
       </div>
     </section>
-
-    <!-- <img class="htf" alt="htf" src="~/assets/Hacktoberfest/HTFLogo.png" /> -->
-    <!-- <img class="grid" alt="grid" src="~/assets/Hacktoberfest/Grid.png" /> -->
-    <!-- <img
-      class="section"
-      alt="middle section"
-      src="~/assets/Hacktoberfest/Section.png"
-    />
-    <img
-      class="section-mobile"
-      alt="middle section"
-      src="~/assets/Hacktoberfest/SectionMobile.png"
-    /> -->
   </div>
 </template>
 
@@ -249,17 +238,11 @@ body {
   background-size: 100% 100%;
   background-blend-mode: overlay;
   background-attachment: fixed;
-  font-family: "Jetbrains Mono", monospace;
-
-  color: white;
-  // background-repeat: no-repeat;
-  // background-attachment: fixed;
-  // overflow: hidden;
-  // background: url(~/assets/Hacktoberfest/Background.png);
-  // background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
+  font-family: "Jetbrains Mono", monospace;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -120,6 +120,19 @@ export default {
         align-self: center;
         width: 12rem;
       }
+
+      @include respond-below(sm) {
+        .headerImage {
+          height: 8rem;
+          margin-bottom: -0.1rem;
+        }
+
+        .solana {
+          margin-left: 1.5rem;
+          align-self: center;
+          width: 10rem;
+        }
+      }
     }
 
     .menu-area {
