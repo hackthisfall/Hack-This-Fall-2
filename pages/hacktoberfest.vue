@@ -29,6 +29,7 @@
         class="luma-checkout--button"
         data-luma-action="checkout"
         data-luma-event-id="evt-jaolIB5dAflB1NL"
+        target="_blank"
       >
         Register Now
       </a>
@@ -61,7 +62,11 @@
         source so special.
       </span>
 
-      <a href="https://hacktoberfest.com/" class="luma-checkout--button">
+      <a
+        href="https://hacktoberfest.com/"
+        class="luma-checkout--button"
+        target="_blank"
+      >
         >> Know More
       </a>
     </section>
@@ -218,6 +223,8 @@ body {
   &::-webkit-scrollbar {
     display: none;
   }
+
+  background: rgba(23, 15, 30, 1);
 
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
@@ -482,8 +489,10 @@ body {
     font-size: 0.9rem;
 
     .socials {
+      display: flex;
       .social {
         width: 2rem;
+        height: 2rem;
         margin-left: 2rem;
       }
     }

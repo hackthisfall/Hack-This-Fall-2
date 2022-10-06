@@ -58,6 +58,12 @@ export default {
         },
         {
           isOpen: false,
+          title: "Are there any pre-requisites?",
+          content:
+            "Yes! <a href='https://git-scm.com/downloads' style='color: rgba(64, 221, 255, 1)' target='_blank'>Install Git</a> on your laptop and create an account on <a style='color: rgba(64, 221, 255, 1)' href='https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home' target='_blank'>GitHub</a>.",
+        },
+        {
+          isOpen: false,
           title: "What is the venue?",
           content:
             "Details about the venue will be shared in the email to the accepted attendees.",

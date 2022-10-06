@@ -178,7 +178,7 @@ export default {
             text-transform: uppercase;
 
             &:hover {
-              color: rgba(226, 62, 37, 1);
+              color: #40ddff;
               opacity: 1;
             }
 

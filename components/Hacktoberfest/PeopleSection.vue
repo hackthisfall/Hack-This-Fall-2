@@ -18,13 +18,13 @@
               <span class="description">{{ speaker.description }}</span>
             </div>
             <div class="socials">
-              <a :href="speaker.twitter">
+              <a :href="speaker.twitter" target="_blank">
                 <img
                   src="~/assets/Hacktoberfest/link-twitter.png"
                   class="social twitter"
                 />
               </a>
-              <a :href="speaker.github">
+              <a :href="speaker.github" target="_blank">
                 <img
                   src="~/assets/Hacktoberfest/link-github.png"
                   class="social github"
