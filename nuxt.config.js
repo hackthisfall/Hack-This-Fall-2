@@ -91,7 +91,7 @@ export default {
   modules: ["nuxt-webfontloader"],
   webfontloader: {
     google: {
-      families: ["Poppins:400,600,700,800"]
+      families: ["Poppins:400,600,700,800", "JetBrains Mono:300,400,500,600,700,800", "Inter:300,400,500"]
     }
   },
 

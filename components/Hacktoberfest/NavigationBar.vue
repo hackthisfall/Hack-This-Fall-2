@@ -4,10 +4,17 @@
       <div class="navigation-contents">
         <!-- Branding area -->
         <div class="branding">
-          <NuxtLink to="/">
-            <img class="headerImage" src="~/assets/HTF2/logo.png" />
+          <NuxtLink to="/hacktoberfest">
+            <img class="headerImage" src="~/assets/Hacktoberfest/HTFLogo.png" />
           </NuxtLink>
+
+          <img
+            class="solana"
+            alt="solana"
+            src="~/assets/Hacktoberfest/solana.png"
+          />
         </div>
+
         <!-- Menu area -->
         <div class="menu-area">
           <ul class="nav-links">
@@ -26,7 +33,7 @@
         </div>
       </div>
     </div>
-    <Slide class="slidingDrawer" :closeOnNavigation="true">
+    <!-- <Slide class="slidingDrawer" :closeOnNavigation="true">
       <a
         v-for="(navlink, index) in navlinks"
         :key="index"
@@ -35,7 +42,7 @@
       >
         <span>{{ navlink.text }}</span>
       </a>
-    </Slide>
+    </Slide> -->
   </div>
 </template>
 
@@ -46,16 +53,10 @@ export default {
   data() {
     return {
       navlinks: [
-        { link: "/#about", text: "about" },
-        // { link: "/#tracks", text: "tracks" },
-        // { link: "/prizes", text: "prizes" },
-        { link: "/#speakers", text: "speakers" },
-        { link: "/#sponsors", text: "sponsors" },
-        { link: "/hacktoberfest", text: "hacktoberfest" },
-        // { link: "/schedule", text: "Schedule", newTab: true },
-        { link: "/swag", text: "swag", newTab: true },
-        { link: "/team", text: "team", newTab: true },
-        // { link: "/#faq", text: "faq" },
+        { link: "/hacktoberfest#home", text: "home" },
+        { link: "/hacktoberfest#about", text: "about" },
+        { link: "/hacktoberfest#agenda", text: "agenda" },
+        { link: "/hacktoberfest#faq", text: "faqs" },
       ],
     };
   },
@@ -67,25 +68,15 @@ export default {
 
 <style lang="scss" scoped>
 .navigation-bar {
-  background-color: rgba(255, 255, 255, 0.7);
-  box-shadow: rgba(157, 157, 157, 0.26) 0px 0px 40px;
   z-index: 500;
-  padding: 0rem 1.5rem;
-  position: sticky;
-  top: 1rem;
-  left: 1rem;
-  width: 97%;
-  border-radius: 1rem;
-  margin: 1rem auto -3rem auto;
+  top: 0.5rem;
+  width: 90%;
   height: auto;
-  backdrop-filter: blur(30px);
+  font-family: "Jetbrains Mono", monospace;
 
   @include respond-below(lg) {
     margin: unset;
-    width: 60px;
-    height: 45px;
     padding: 0px 15px;
-    left: 1rem;
   }
 
   .slidingDrawer {
@@ -106,27 +97,34 @@ export default {
     align-items: center;
     justify-content: space-between;
     margin: 0.25rem 0rem;
-    padding-right: 7rem;
 
-    @include respond-below(lg) {
-      display: none;
-    }
+    // @include respond-below(lg) {
+    //   display: none;
+    // }
 
-    @include respond-below(sm) {
-      justify-content: center;
-    }
+    // @include respond-below(sm) {
+    //   justify-content: center;
+    // }
 
     .branding {
-      padding-top: 0.25rem;
+      display: flex;
+      // padding-top: 0.25rem;
       .headerImage {
-        height: 2.5rem;
+        height: 8.5rem;
         margin-bottom: -0.1rem;
+      }
+
+      .solana {
+        margin-left: 1.5rem;
+        align-self: center;
+        width: 12rem;
       }
     }
 
     .menu-area {
       display: flex;
       align-items: center;
+      align-self: center;
 
       @include respond-below(lg) {
         display: none;
@@ -171,7 +169,7 @@ export default {
           }
 
           a {
-            color: #848484;
+            color: #fff;
             padding: 10px 10px;
             transition: 0.2s all ease-in-out;
             text-decoration: none;
@@ -214,78 +212,6 @@ export default {
         }
       }
     }
-  }
-}
-
-.bm-burger-button {
-  position: sticky;
-  width: 30px;
-  height: 25px;
-  left: 36px;
-  margin-top: 0.6rem;
-  cursor: pointer;
-}
-.bm-burger-bars {
-  background-color: #e85325;
-
-  @include respond-above(lg) {
-    display: none;
-  }
-}
-.line-style {
-  position: absolute;
-  height: 20%;
-  left: 0;
-  right: 0;
-}
-.cross-style {
-  position: absolute;
-  top: 12px;
-  right: 2px;
-  cursor: pointer;
-}
-.bm-cross {
-  background: #e85325;
-}
-.bm-cross-button {
-  margin-top: 4px;
-  height: 24px;
-  width: 24px;
-}
-.bm-menu {
-  height: 95vh; /* 100% Full-height */
-  border-radius: 1rem;
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1000; /* Stay on top */
-  top: 0;
-  left: 0;
-  background-color: #feede3; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /*0.5 second transition effect to slide in the sidenav*/
-}
-
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
-}
-.bm-item-list {
-  color: #848484;
-  margin-left: 10%;
-  font-size: 20px;
-}
-.bm-item-list > * {
-  display: flex;
-  text-decoration: none;
-  padding: 0.7em;
-}
-.bm-item-list > * > span {
-  margin-left: 10px;
-  font-weight: 700;
-  color: #848484;
-
-  &:hover {
-    color: #e85325;
   }
 }
 </style>
