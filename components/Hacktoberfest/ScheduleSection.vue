@@ -75,13 +75,13 @@ export default {
               duration: "15",
             },
             {
-              title: "WORLD OF HACKTOBERFEST & OPEN SOURCE [TALK]",
+              title: "Into the world of Open-Source with Hacktoberfest [TALK]",
               time: "11:15 AM",
               speaker: "Aayush sharma & Bishwajeet parhi",
               duration: "20",
             },
             {
-              title: "GIT & GITHUB [WORKSHOP]",
+              title: "BASICS OF GIT & GITHUB [WORKSHOP]",
               time: "11:40 AM",
               speaker: "Apoorv Dwivedi and paras gupta",
               duration: "50",
@@ -253,6 +253,7 @@ export default {
               font-size: 1.4rem;
               font-weight: 700;
               letter-spacing: 0.1rem;
+              text-transform: uppercase;
 
               @include respond-below(sm) {
                 letter-spacing: initial;

@@ -139,15 +139,9 @@
           >
           <a
             class="link"
-            href="https://www.digitalocean.com/legal/terms-of-service-agreement"
+            href="https://do.co/hacktoberconduct"
             target="_blank"
-            >TERMS</a
-          >
-          <a
-            class="link"
-            href="https://www.digitalocean.com/legal/privacy-policy"
-            target="_blank"
-            >PRIVACY</a
+            >CODE OF CONDUCT</a
           >
           <a class="link" href="https://hackthisfall.tech/" target="_blank"
             >HTF SEASON 3</a
