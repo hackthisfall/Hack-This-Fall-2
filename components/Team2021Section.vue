@@ -65,7 +65,7 @@ export default {
         {
           name: "Apoorv Dwivedi",
           url: "https://www.linkedin.com/in/apoorvdwi",
-          picture: require("~/assets/Team/apoorv.jpeg"),
+          picture: require("~/assets/Team/apoorv.jpg"),
         },
         {
           name: "Vaibhav Toshniwal",

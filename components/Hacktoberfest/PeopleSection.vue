@@ -69,7 +69,7 @@ export default {
           name: "Apoorv Dwivedi",
           github: "https://github.com/apoorvdwi",
           twitter: "https://twitter.com/Apoorvdwi",
-          picture: require("~/assets/Team/apoorv.jpeg"),
+          picture: require("~/assets/Team/apoorv.jpg"),
         },
         {
           description: "SPENNY/DEVELOPER",
