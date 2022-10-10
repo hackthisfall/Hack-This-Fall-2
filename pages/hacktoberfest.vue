@@ -105,6 +105,29 @@
       <PeopleSection />
     </section>
 
+    <section class="partner-section" id="partners">
+      <div class="parallelograms">
+        <h4>PARTNERS</h4>
+        <div class="parallelograms-only">
+          <div v-for="n in 14" v-bind:key="n" class="parallelogram"></div>
+        </div>
+      </div>
+
+      <div class="partners">
+        <div class="partner-card habsida-card">
+          <h5>Ecosystem Partner</h5>
+          <img class="habsida" src="~/assets/Hacktoberfest/habsida.png" />
+        </div>
+        <div class="partner-card tcw-card">
+          <h5>Venue Partner</h5>
+          <img
+            class="theCircleWork"
+            src="~/assets/Hacktoberfest/thecirclework.png"
+          />
+        </div>
+      </div>
+    </section>
+
     <section class="faq-section" id="faq">
       <div class="parallelograms">
         <h4>FAQS</h4>
@@ -137,10 +160,7 @@
             target="_blank"
             >RESOURCES</a
           >
-          <a
-            class="link"
-            href="https://do.co/hacktoberconduct"
-            target="_blank"
+          <a class="link" href="https://do.co/hacktoberconduct" target="_blank"
             >CODE OF CONDUCT</a
           >
           <a class="link" href="https://hackthisfall.tech/" target="_blank"
@@ -358,8 +378,72 @@ body {
     // font-size: 5rem;
   }
 
-  .faq-section {
+  .partner-section {
     margin-top: 7rem;
+    // display: flex;
+    // flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+
+    .partners {
+      display: flex;
+      margin-top: 2rem;
+
+      .partner-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        font-size: 1.6rem;
+
+        &.tcw-card {
+          margin-left: 6rem;
+          margin-top: unset;
+        }
+
+        .habsida {
+          max-width: 12rem;
+          margin-top: 3.5rem;
+        }
+
+        .theCircleWork {
+          max-width: 10rem;
+        }
+      }
+
+      @include respond-below(xs) {
+        flex-direction: column;
+        align-content: center;
+
+        .partner-card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          font-size: 1.8rem;
+          margin-top: 1rem;
+
+          &.tcw-card {
+            margin-left: 0rem;
+            margin-top: 3rem;
+          }
+
+          .habsida {
+            max-width: 16rem;
+            margin-top: 1rem;
+          }
+
+          .theCircleWork {
+            max-width: 10rem;
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .faq-section {
+    margin-top: 5rem;
     // display: flex;
     // flex-direction: column;
     align-items: flex-start;
