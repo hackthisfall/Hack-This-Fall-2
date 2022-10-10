@@ -115,7 +115,7 @@
 
       <div class="partners">
         <div class="partner-card">
-          <h5>Community Member</h5>
+          <h5>Community Partner</h5>
           <img class="superteam" src="~/assets/Hacktoberfest/superteam.png" />
         </div>
         <div class="partner-card habsida-card">
