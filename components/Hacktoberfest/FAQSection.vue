@@ -71,7 +71,7 @@ export default {
         {
           isOpen: false,
           title: "When does the registration close?",
-          content: "Registration closes on 13th October at 11:59 PM IST!",
+          content: "Registration closes on 10th October at 11:59 PM IST!",
         },
         {
           isOpen: false,
