@@ -114,6 +114,10 @@
       </div>
 
       <div class="partners">
+        <div class="partner-card">
+          <h5>Community Member</h5>
+          <img class="superteam" src="~/assets/Hacktoberfest/superteam.png" />
+        </div>
         <div class="partner-card habsida-card">
           <h5>Ecosystem Partner</h5>
           <img class="habsida" src="~/assets/Hacktoberfest/habsida.png" />
@@ -401,9 +405,19 @@ body {
           margin-top: unset;
         }
 
+        &.habsida-card {
+          margin-left: 6rem;
+          margin-top: unset;
+        }        
+
         .habsida {
           max-width: 12rem;
           margin-top: 3.5rem;
+        }
+
+        .superteam {
+          max-width: 12rem;
+          margin-top: 0.5rem;
         }
 
         .theCircleWork {
@@ -411,7 +425,7 @@ body {
         }
       }
 
-      @include respond-below(xs) {
+      @include respond-below(md) {
         flex-direction: column;
         align-content: center;
 
@@ -424,6 +438,11 @@ body {
           margin-top: 1rem;
 
           &.tcw-card {
+            margin-left: 0rem;
+            margin-top: 3rem;
+          }
+
+          &.habsida-card {
             margin-left: 0rem;
             margin-top: 3rem;
           }
