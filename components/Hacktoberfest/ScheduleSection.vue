@@ -98,7 +98,7 @@ export default {
               duration: "75",
             },
             {
-              title: "HOW TO CONTRIBUTE TO APPWRITE [WORKSHOP]",
+              title: "MAKING YOUR FIRST CONTRIBUTION TO APPWRITE [WORKSHOP]",
               time: "02:00 PM",
               speaker: "Aditya Oberai & Haimantika Mitra",
               duration: "25",
