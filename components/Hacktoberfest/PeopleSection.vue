@@ -99,6 +99,13 @@ export default {
           github: "https://github.com/ishikkkkaaaa",
           picture: require("~/assets/Hacktoberfest/ishika.jpg"),
         },
+        {
+          description: "Spheron Protocol/Dev Advocate APAC",
+          name: "Prakarsh Pathak",
+          twitter: "https://twitter.com/blockchainbalak",
+          github: "https://github.com/prakarshpathak",
+          picture: require("~/assets/Hacktoberfest/prakarsh.jpg"),
+        },
         // {
         //   description: "Engineer,Web DataWorks",
         //   name: "Siddharth Dayalwal",
