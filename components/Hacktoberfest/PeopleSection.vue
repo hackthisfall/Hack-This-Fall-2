@@ -19,6 +19,8 @@
               <span class="company">{{ speaker.company }}</span>
             </div>
             <div class="socials">
+              
+              
               <a :href="speaker.twitter" target="_blank">
                 <img
                   src="~/assets/Hacktoberfest/link-twitter.png"
@@ -114,6 +116,13 @@ export default {
           twitter: "https://twitter.com/blockchainbalak",
           github: "https://github.com/prakarshpathak",
           picture: require("~/assets/Hacktoberfest/prakarsh.jpg"),
+        },
+        {
+          designation: "Program Manager",
+          company: "Schoice Habsida Inc",
+          name: "Yana Hong",
+          linkedIn: "www.linkedin.com/in/yana-hong-807859227",
+          picture: require("~/assets/Hacktoberfest/yana.jpg"),
         },
         // {
         //   description: "Engineer,Web DataWorks",
