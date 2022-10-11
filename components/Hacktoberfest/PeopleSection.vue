@@ -15,7 +15,8 @@
           <div class="right">
             <div class="details">
               <h4 class="title">{{ speaker.name }}</h4>
-              <span class="description">{{ speaker.description }}</span>
+              <span class="designation">{{ speaker.designation }}</span>
+              <span class="company">{{ speaker.company }}</span>
             </div>
             <div class="socials">
               <a :href="speaker.twitter" target="_blank">
@@ -51,56 +52,64 @@ export default {
     return {
       speakers: [
         {
-          description: "You Foundation/Developer",
+          designation: "Developer",
+          company: "You Foundation",
           name: "Bishwajeet Parhi",
           github: "https://github.com/2002Bishwajeet",
           twitter: "https://twitter.com/biswa_20p",
           picture: require("~/assets/Hacktoberfest/biswa.png"),
         },
         {
-          description: "Student/DEVELOPER",
+          designation: "DEVELOPER",
+          company: "Student",
           name: "Aayush Sharma",
           twitter: "https://twitter.com/SuperAayush14",
           github: "https://github.com/SuperAayush",
           picture: require("~/assets/Hacktoberfest/aayush.jpeg"),
         },
         {
-          description: "METAPASS/DEVELOPER",
+          designation: "DEVELOPER",
+          company: "METAPASS",
           name: "Apoorv Dwivedi",
           github: "https://github.com/apoorvdwi",
           twitter: "https://twitter.com/Apoorvdwi",
           picture: require("~/assets/Team/apoorv.jpg"),
         },
         {
-          description: "SPENNY/DEVELOPER",
+          designation: "DEVELOPER",
+          company: "SPENNY",
           name: "Paras Gupta",
           github: "https://github.com/parasg1999",
           twitter: "https://twitter.com/parasg1999",
           picture: require("~/assets/Team/paras.jpeg"),
         },
         {
-          description: "APPWRITE/Developer Advocate",
+          designation: "Developer Advocate",
+          company: "APPWRITE",
           name: "Aditya Oberai",
           github: "https://github.com/adityaoberai",
           twitter: "https://twitter.com/adityaoberai1",
           picture: require("~/assets/Hacktoberfest/aditya.jpg"),
         },
         {
-          description: "APPWRITE/Developer Advocate",
+          designation: "Developer Advocate",
+          company: "APPWRITE",
           name: "Haimantika Mitra",
           github: "https://github.com/Haimantika",
           twitter: "https://twitter.com/HaimantikaM",
           picture: require("~/assets/Hacktoberfest/haimantika.jpg"),
         },
         {
-          description: "ALTOGIC/Community Manager",
+          designation: "Community Manager",
+          company: "ALTOGIC",
           name: "Ishika Kesarvani",
           twitter: "https://twitter.com/ishikakesarwan4",
           github: "https://github.com/ishikkkkaaaa",
           picture: require("~/assets/Hacktoberfest/ishika.jpg"),
         },
         {
-          description: "Spheron Protocol/Dev Advocate APAC",
+          designation: "Developer Advocate APAC",
+          company: "Spheron Protocol",
           name: "Prakarsh Pathak",
           twitter: "https://twitter.com/blockchainbalak",
           github: "https://github.com/prakarshpathak",
@@ -166,6 +175,11 @@ export default {
           h4 {
             font-size: 1.2rem;
             font-weight: 700;
+          }
+
+          .details {
+            display:flex;
+            flex-direction: column;
           }
 
           span {
