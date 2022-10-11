@@ -76,7 +76,7 @@ export default {
           name: "Paras Gupta",
           github: "https://github.com/parasg1999",
           twitter: "https://twitter.com/parasg1999",
-          picture: require("~/assets/Team/paras.jpeg"),
+          picture: require("~/assets/Hacktoberfest/paras.jpeg"),
         },
         {
           description: "APPWRITE/Developer Advocate",
