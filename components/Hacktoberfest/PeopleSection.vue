@@ -57,7 +57,7 @@ export default {
           name: "Bishwajeet Parhi",
           github: "https://github.com/2002Bishwajeet",
           twitter: "https://twitter.com/biswa_20p",
-          picture: require("~/assets/Hacktoberfest/biswa.png"),
+          picture: require("~/assets/Hacktoberfest/biswa.jpg"),
         },
         {
           designation: "DEVELOPER",
