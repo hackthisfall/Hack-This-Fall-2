@@ -21,17 +21,20 @@
             <div class="socials">
               
               
-              <a :href="speaker.twitter" target="_blank">
+              <a v-if="speaker.twitter" :href="speaker.twitter" target="_blank">
                 <img
                   src="~/assets/Hacktoberfest/link-twitter.png"
                   class="social twitter"
                 />
               </a>
-              <a :href="speaker.github" target="_blank">
+              <a v-if="speaker.github"  :href="speaker.github" target="_blank">
                 <img
                   src="~/assets/Hacktoberfest/link-github.png"
                   class="social github"
                 />
+              </a>
+              <a v-if="speaker.linkedIn" :href="speaker.linkedIn" target="_blank">
+                <img src="~/assets/Hacktoberfest/link-linkedin.png" class="social" />
               </a>
             </div>
           </div>
@@ -121,7 +124,7 @@ export default {
           designation: "Program Manager",
           company: "Schoice Habsida Inc",
           name: "Yana Hong",
-          linkedIn: "www.linkedin.com/in/yana-hong-807859227",
+          linkedIn: "https://linkedin.com/in/yana-hong-807859227",
           picture: require("~/assets/Hacktoberfest/yana.jpg"),
         },
         // {
