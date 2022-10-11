@@ -104,7 +104,7 @@ export default {
               duration: "25",
             },
             {
-              title: "SOLANA [WORKSHOP]",
+              title: "Contributing and Building on Solana [WORKSHOP]",
               time: "02:30 PM",
               speaker: "Prakarsh Pathak",
               duration: "25",
