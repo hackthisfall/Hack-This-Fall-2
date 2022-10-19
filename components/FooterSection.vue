@@ -37,6 +37,8 @@
             target="_blank"
             href="https://s2.hackthisfall.tech/"
             >Season 2.0</a
+          ><a rel="noopener noreferrer" target="_blank" href="/team"
+            >Know The Team</a
           >
         </div>
 
