@@ -14,10 +14,10 @@
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://hackthisfall.devpost.com/"
+                href="https://hackthisfall.tech/"
                 class="cta-button smooth-transition register"
               >
-                <img src="~/assets/HTF2/devpost.svg" />REGISTER NOW
+                SEASON 3
               </a>
               <a
                 target="_blank"
