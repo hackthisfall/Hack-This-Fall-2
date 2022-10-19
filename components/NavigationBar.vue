@@ -46,15 +46,19 @@ export default {
   data() {
     return {
       navlinks: [
-        { link: "/#about", text: "about" },
+        // { link: "/#about", text: "about" },
         // { link: "/#tracks", text: "tracks" },
         // { link: "/prizes", text: "prizes" },
-        { link: "/#speakers", text: "speakers" },
-        { link: "/#sponsors", text: "sponsors" },
-        { link: "/hacktoberfest", text: "hacktoberfest" },
+        // { link: "/#speakers", text: "speakers" },
+        // { link: "/#sponsors", text: "sponsors" },
+        // { link: "/hacktoberfest", text: "hacktoberfest" },
         // { link: "/schedule", text: "Schedule", newTab: true },
-        { link: "/swag", text: "swag", newTab: true },
-        { link: "/team", text: "team", newTab: true },
+        // { link: "/swag", text: "swag", newTab: true },
+        {
+          link: "https://bit.ly/htf3-sponsor",
+          text: "SPONSOR US",
+          newTab: true,
+        },
         // { link: "/#faq", text: "faq" },
       ],
     };

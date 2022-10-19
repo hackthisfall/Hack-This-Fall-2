@@ -46,6 +46,7 @@
           <!-- <a href="/#speakers">Speakers</a> -->
           <a href="/#sponsors">Sponsors</a>
           <a href="/events">Meetups</a>
+          <a href="/hacktoberfest">Hacktoberfest</a>
           <a href="/swag">Swag Page</a>
           <a
             rel="noopener noreferrer"

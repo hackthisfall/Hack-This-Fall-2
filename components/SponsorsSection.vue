@@ -27,6 +27,16 @@
             </div>
           </div>
         </div>
+        <div class="cta-buttons">
+          <a
+            href="https://bit.ly/htf3-sponsor"
+            class="cta-button smooth-transition discord"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            SPONSOR US
+          </a>
+        </div>
       </div>
     </section>
   </Container>
@@ -89,10 +99,6 @@ export default {
               image: require("~/assets/Sponsors/defhacks.png"),
             },
             {
-              url: "https://sawolabs.com/hackathon/redeemnow/?hackathon_name=HackThisFall2.0",
-              image: require("~/assets/Sponsors/sawolabs.png"),
-            },
-            {
               url: "https://www.quicknode.com/",
               image: require("~/assets/Sponsors/quicknode.png"),
             },
@@ -105,8 +111,8 @@ export default {
               image: require("~/assets/Sponsors/fold.png"),
             },
             {
-              url: "https://matic.network/",
-              image: require("~/assets/Sponsors/matic.png"),
+              url: "https://polygon.technology/",
+              image: require("~/assets/Sponsors/polygon.svg"),
             },
             {
               url: "https://tezos.com/",
@@ -243,16 +249,8 @@ export default {
               image: require("~/assets/Sponsors/streamyard.png"),
             },
             {
-              url: "https://givemycertificate.com/",
-              image: require("~/assets/Sponsors/gmc.png"),
-            },
-            {
               url: "https://raahee.in/",
               image: require("~/assets/Prizes/raahee.png"),
-            },
-            {
-              url: "https://hackon.tech/universe",
-              image: require("~/assets/Sponsors/hackon.svg"),
             },
           ],
         },
@@ -353,6 +351,41 @@ export default {
           @include respond-below(xs) {
             max-width: 80px;
           }
+        }
+      }
+    }
+    .cta-buttons {
+      display: flex;
+      margin-top: 3rem;
+      justify-content: center;
+
+      a {
+        text-decoration: none;
+      }
+
+      .cta-button {
+        background-color: #e85325;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Segoe UI Bold";
+        border-radius: 0.5rem;
+        cursor: pointer;
+        box-shadow: rgba(255, 107, 0, 0.4) 0px 0px 20px 0px;
+
+        &:hover {
+          box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
+        }
+
+        img {
+          margin-right: 0.5rem;
+        }
+
+        &:hover {
+          box-shadow: rgba(232, 82, 37, 0.25) 0px 0px 0px 6px;
         }
       }
     }
