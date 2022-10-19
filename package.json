@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": "12"
+    "node": "16.x"
   },
   "scripts": {
     "dev": "nuxt",
@@ -24,7 +24,7 @@
     "vue-waypoint": "^3.5.2"
   },
   "devDependencies": {
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.1",
     "sass-loader": "^10.1.1"
   }
 }
