@@ -17,7 +17,7 @@
                 href="https://hackthisfall.tech/"
                 class="cta-button smooth-transition register"
               >
-                SEASON 3
+                <img src="~/assets/HTF2/clickme.png" /> SEASON 3
               </a>
               <a
                 target="_blank"
