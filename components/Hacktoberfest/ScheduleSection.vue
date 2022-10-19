@@ -88,9 +88,9 @@ export default {
             },
             {
               title: "UPSKILL & RELOCATE WITH HABSIDA [TALK]",
-              time: "12:30 AM",
+              time: "12:30 PM",
               // speaker: "",
-              duration: "10",
+              duration: "15",
             },
             {
               title: "LUNCH & NETWORKING",

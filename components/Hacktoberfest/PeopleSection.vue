@@ -15,20 +15,26 @@
           <div class="right">
             <div class="details">
               <h4 class="title">{{ speaker.name }}</h4>
-              <span class="description">{{ speaker.description }}</span>
+              <span class="designation">{{ speaker.designation }}</span>
+              <span class="company">{{ speaker.company }}</span>
             </div>
             <div class="socials">
-              <a :href="speaker.twitter" target="_blank">
+              
+              
+              <a v-if="speaker.twitter" :href="speaker.twitter" target="_blank">
                 <img
                   src="~/assets/Hacktoberfest/link-twitter.png"
                   class="social twitter"
                 />
               </a>
-              <a :href="speaker.github" target="_blank">
+              <a v-if="speaker.github"  :href="speaker.github" target="_blank">
                 <img
                   src="~/assets/Hacktoberfest/link-github.png"
                   class="social github"
                 />
+              </a>
+              <a v-if="speaker.linkedIn" :href="speaker.linkedIn" target="_blank">
+                <img src="~/assets/Hacktoberfest/link-linkedin.png" class="social" />
               </a>
             </div>
           </div>
@@ -51,53 +57,75 @@ export default {
     return {
       speakers: [
         {
-          description: "You Foundation/Developer",
+          designation: "Developer",
+          company: "You Foundation",
           name: "Bishwajeet Parhi",
           github: "https://github.com/2002Bishwajeet",
           twitter: "https://twitter.com/biswa_20p",
-          picture: require("~/assets/Hacktoberfest/biswa.png"),
+          picture: require("~/assets/Hacktoberfest/biswa.jpg"),
         },
         {
-          description: "Student/DEVELOPER",
+          designation: "DEVELOPER",
+          company: "Student",
           name: "Aayush Sharma",
           twitter: "https://twitter.com/SuperAayush14",
           github: "https://github.com/SuperAayush",
           picture: require("~/assets/Hacktoberfest/aayush.jpeg"),
         },
         {
-          description: "METAPASS/DEVELOPER",
+          designation: "DEVELOPER",
+          company: "METAPASS",
           name: "Apoorv Dwivedi",
           github: "https://github.com/apoorvdwi",
           twitter: "https://twitter.com/Apoorvdwi",
           picture: require("~/assets/Team/apoorv.jpg"),
         },
         {
-          description: "SPENNY/DEVELOPER",
+          designation: "DEVELOPER",
+          company: "SPENNY",
           name: "Paras Gupta",
           github: "https://github.com/parasg1999",
           twitter: "https://twitter.com/parasg1999",
           picture: require("~/assets/Hacktoberfest/paras.jpg"),
         },
         {
-          description: "APPWRITE/Developer Advocate",
+          designation: "Developer Advocate",
+          company: "APPWRITE",
           name: "Aditya Oberai",
           github: "https://github.com/adityaoberai",
           twitter: "https://twitter.com/adityaoberai1",
           picture: require("~/assets/Hacktoberfest/aditya.jpg"),
         },
         {
-          description: "APPWRITE/Developer Advocate",
+          designation: "Developer Advocate",
+          company: "APPWRITE",
           name: "Haimantika Mitra",
           github: "https://github.com/Haimantika",
           twitter: "https://twitter.com/HaimantikaM",
           picture: require("~/assets/Hacktoberfest/haimantika.jpg"),
         },
         {
-          description: "ALTOGIC/Community Manager",
+          designation: "Community Manager",
+          company: "ALTOGIC",
           name: "Ishika Kesarvani",
           twitter: "https://twitter.com/ishikakesarwan4",
           github: "https://github.com/ishikkkkaaaa",
           picture: require("~/assets/Hacktoberfest/ishika.jpg"),
+        },
+        {
+          designation: "Developer Advocate APAC",
+          company: "Spheron Protocol",
+          name: "Prakarsh Pathak",
+          twitter: "https://twitter.com/blockchainbalak",
+          github: "https://github.com/prakarshpathak",
+          picture: require("~/assets/Hacktoberfest/prakarsh.jpg"),
+        },
+        {
+          designation: "Program Manager",
+          company: "Schoice Habsida Inc",
+          name: "Yana Hong",
+          linkedIn: "https://linkedin.com/in/yana-hong-807859227",
+          picture: require("~/assets/Hacktoberfest/yana.jpg"),
         },
         // {
         //   description: "Engineer,Web DataWorks",
@@ -159,6 +187,11 @@ export default {
           h4 {
             font-size: 1.2rem;
             font-weight: 700;
+          }
+
+          .details {
+            display:flex;
+            flex-direction: column;
           }
 
           span {
