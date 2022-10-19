@@ -116,7 +116,7 @@
       </div>
       <hr />
       <div class="attribution">
-        <span>© 2021, Hack This Fall. All rights reserved. </span>
+        <span>© 2022, Hack This Fall. All rights reserved. </span>
       </div>
     </Container>
   </div>
