@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "Hack This Fall | Hacktoberfest'22",
+    title: "Hack This Fall 3.0",
     htmlAttrs: {
       lang: "en"
     },
@@ -19,11 +19,11 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "Hacktoberfest is an annual month-long celebration of open-source software run by DigitalOcean. Hack This Fall and Solana bring you an in-person Hacktoberfest event where you can join the community to learn, explore and contribute towards Open Source!"
+          "Hack This Fall is one of the most thriving hacker communities. It encourages beginner hackers to build unique projects regardless of the tech or field; the only focus is to create something meaningful and enjoy building while also solving the shared struggles of our surroundings."
       },
       {
         property: "apple-mobile-web-app-title",
-        content: "Hack This Fall | Hacktoberfest'22"
+        content: "Hack This Fall 3.0"
       },
       {
         property: "og:url",
@@ -35,12 +35,12 @@ export default {
       },
       {
         property: "og:title",
-        content: "Hack This Fall | Hacktoberfest'22"
+        content: "Hack This Fall 3.0"
       },
       {
         property: "og:description",
         content:
-          "Hacktoberfest is an annual month-long celebration of open-source software run by DigitalOcean. Hack This Fall and Solana bring you an in-person Hacktoberfest event where you can join the community to learn, explore and contribute towards Open Source!"
+          "Hack This Fall is one of the most thriving hacker communities. It encourages beginner hackers to build unique projects regardless of the tech or field; the only focus is to create something meaningful and enjoy building while also solving the shared struggles of our surroundings."
       },
       {
         property: "og:image",
@@ -56,7 +56,7 @@ export default {
       },
       {
         name: "twitter:title",
-        content: "Hack This Fall | Hacktoberfest'22"
+        content: "Hack This Fall 3.0"
       },
       {
         name: "twitter:image",
