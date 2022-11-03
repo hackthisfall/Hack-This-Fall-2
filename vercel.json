@@ -1,0 +1,3 @@
+{
+  "rewrites": [{ "source": "/prospectus", "destination": "/prospectus.pdf" }]
+}
