@@ -3,6 +3,10 @@
     {
       "source": "/prospectus",
       "destination": "/Hack%20This%20Fall%203.0%20Sponsorship%20Prospectus.pdf"
+    },
+    {
+      "source": "/deck",
+      "destination": "/prospectus"
     }
   ]
 }
