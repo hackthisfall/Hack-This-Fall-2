@@ -16,8 +16,8 @@
             href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
             >Code Of Conduct</a
           >
-          <a rel="noopener noreferrer" target="_blank" href="/blog"
-            >Season 1 Blog</a
+          <a rel="noopener noreferrer" target="_blank" href="https://blog.hackthisfall.tech"
+            >Blog Page</a
           >
           <!-- <a rel="noopener noreferrer" target="_blank" href="/team"
             >Know The Team</a
