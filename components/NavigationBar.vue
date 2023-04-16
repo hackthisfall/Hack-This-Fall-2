@@ -4,7 +4,7 @@
       <div class="navigation-contents">
         <!-- Branding area -->
         <div class="branding">
-          <NuxtLink to="/">
+          <NuxtLink to="/meetups">
             <img class="headerImage" src="~/assets/HTF2/logo.png" />
           </NuxtLink>
         </div>
@@ -55,8 +55,8 @@ export default {
         // { link: "/schedule", text: "Schedule", newTab: true },
         // { link: "/swag", text: "swag", newTab: true },
         {
-          link: "https://bit.ly/htf3-sponsor",
-          text: "SPONSOR US",
+          link: "https://hackthisfall.tech",
+          text: "HOME",
           newTab: true,
         },
         // { link: "/#faq", text: "faq" },

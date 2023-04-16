@@ -10,15 +10,7 @@
 
         <div class="panel">
           <h4 class="title">About</h4>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
-            >Code Of Conduct</a
-          >
-          <a rel="noopener noreferrer" target="_blank" href="https://blog.hackthisfall.tech"
-            >Blog Page</a
-          >
+
           <!-- <a rel="noopener noreferrer" target="_blank" href="/team"
             >Know The Team</a
           > -->
@@ -37,8 +29,22 @@
             target="_blank"
             href="https://s2.hackthisfall.tech/"
             >Season 2.0</a
-          ><a rel="noopener noreferrer" target="_blank" href="/team"
+          ><a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://s3.hackthisfall.tech/"
+            >Season 3.0</a
+          ><a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://hackthisfall.tech/team"
             >Know The Team</a
+          >
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+            >Code Of Conduct</a
           >
         </div>
 
@@ -46,16 +52,21 @@
           <h4 class="title">Explore</h4>
           <!-- <a href="/#tracks">Tracks</a> -->
           <!-- <a href="/#speakers">Speakers</a> -->
-          <a href="/#sponsors">Sponsors</a>
-          <a href="/events">Meetups</a>
-          <a href="/hacktoberfest">Hacktoberfest</a>
-          <a href="/swag">Swag Page</a>
           <a
             rel="noopener noreferrer"
             target="_blank"
             href="https://dev.to/hackthisfall"
             >Dev.to Page</a
           >
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://blog.hackthisfall.tech"
+            >Blog Page</a
+          >
+          <a href="https://hackthisfall.tech/swag">Swag Page</a>
+          <a href="https://hackthisfall.tech/#sponsors">Sponsors</a>
+          <a href="/hacktoberfest">Hacktoberfest</a>
         </div>
 
         <div class="panel">
@@ -116,7 +127,7 @@
       </div>
       <hr />
       <div class="attribution">
-        <span>© 2022, Hack This Fall. All rights reserved. </span>
+        <span>© 2023, Hack This Fall. All rights reserved. </span>
       </div>
     </Container>
   </div>
