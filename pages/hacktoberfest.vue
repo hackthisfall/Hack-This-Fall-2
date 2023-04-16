@@ -168,7 +168,7 @@
             >CODE OF CONDUCT</a
           >
           <a class="link" href="https://hackthisfall.tech/" target="_blank"
-            >HTF SEASON 3</a
+            >HACK THIS FALL</a
           >
         </div>
       </div>
@@ -178,7 +178,7 @@
 
     <section class="footer-section">
       <span class="copyright"
-        >Copyright © 2022 Hack This Fall. All rights reserved</span
+        >Copyright © 2023 Hack This Fall. All rights reserved</span
       >
       <div class="socials">
         <a
@@ -408,7 +408,7 @@ body {
         &.habsida-card {
           margin-left: 6rem;
           margin-top: unset;
-        }        
+        }
 
         .habsida {
           max-width: 12rem;

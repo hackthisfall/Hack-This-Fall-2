@@ -52,6 +52,7 @@
           <h4 class="title">Explore</h4>
           <!-- <a href="/#tracks">Tracks</a> -->
           <!-- <a href="/#speakers">Speakers</a> -->
+          <a href="https://bit.ly/htf3-sponsor">Sponsor Us</a>
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -65,7 +66,6 @@
             >Blog Page</a
           >
           <a href="https://hackthisfall.tech/swag">Swag Page</a>
-          <a href="https://hackthisfall.tech/#sponsors">Sponsors</a>
           <a href="/hacktoberfest">Hacktoberfest</a>
         </div>
 
