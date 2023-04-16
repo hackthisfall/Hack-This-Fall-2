@@ -9,12 +9,22 @@
         <span style="color: #d74f4b; font-size: 25px; font-weight: 600"
           >In-Person City Meetup Series 2022</span
         >
+        <br /><br />A hackathon community that started online is now breaking
+        the virtual barrier and aims to help connect the folks with others from
+        the region to create more
+        <span style="color: #d74f4b">Opportunities</span> &
+        <span style="color: #d74f4b">Collaboration</span>!💥 <br /><br />
+        Hack This Fall is excited to host its first
+        <span style="color: #d74f4b">6 Meetups</span> in your city. Get
+        yourselves hyped to experience our community culture and join us in any
+        of the cities listed below!👇 <br /><br />
+        It is going to be completely free of cost, you just need to register for
+        the meetup. <span style="color: #d74f4b">Free Food</span> and
+        <span style="color: #d74f4b">Cool Swags</span> are on us and you know we
+        don't limit ourselves there!🤩 <br /><br />
+        What are you waiting for? Register Now 🚀
       </p>
-      <a
-        class="cta-button"
-        href="#"
-        >See You in 2023</a
-      >
+      <a class="cta-button" href="#">See You in 2023</a>
       <br />
       <div class="cards-grid">
         <div v-for="(event, index) in events" :key="index" class="card">
@@ -30,7 +40,7 @@
                 <p
                   :class="[
                     'venue smooth-transition',
-                    event.active ? 'highlight' : null
+                    event.active ? 'highlight' : null,
                   ]"
                 >
                   Venue: {{ event.venue }}
@@ -52,7 +62,7 @@ import EventsPageSponsorSection from "~/components/EventsPageSponsorSection.vue"
 export default {
   components: {
     Container,
-    EventsPageSponsorSection
+    EventsPageSponsorSection,
   },
   data() {
     return {
@@ -66,7 +76,7 @@ export default {
           date: "4th April 2022",
           time: "6:00 PM to 8:00 PM",
           url: "https://g.page/Cowocoli-Coworkingspace?share",
-          active: true
+          active: true,
         },
         {
           name: "Mumbai City Meetup",
@@ -77,7 +87,7 @@ export default {
           date: "16th April 2022",
           time: "4:00 PM to 9:00 PM",
           active: true,
-          url: "https://goo.gl/maps/D7VU6guZ8eBu3rJy5"
+          url: "https://goo.gl/maps/D7VU6guZ8eBu3rJy5",
         },
         {
           name: "Pune City Meetup",
@@ -88,7 +98,7 @@ export default {
           date: "17th April 2022",
           time: "11:30 AM to 4:30 PM",
           active: true,
-          url: "https://goo.gl/maps/TjJ4piny2MhNd9a5A"
+          url: "https://goo.gl/maps/TjJ4piny2MhNd9a5A",
         },
         {
           name: "Delhi City Meetup",
@@ -99,7 +109,7 @@ export default {
           date: "28th May 2022",
           time: "11:00 AM to 5:00 PM",
           active: true,
-          url: "https://goo.gl/maps/MtiVc153cHp7R7Bw6"
+          url: "https://goo.gl/maps/MtiVc153cHp7R7Bw6",
         },
         {
           name: "Bengaluru City Meetup",
@@ -110,7 +120,7 @@ export default {
           date: "11th June 2022",
           time: "11:00 AM to 5:00 PM",
           active: true,
-          url: "https://goo.gl/maps/AV6NrfPcqwW6rct27"
+          url: "https://goo.gl/maps/AV6NrfPcqwW6rct27",
         },
         {
           name: "Ahmedabad City Meetup",
@@ -121,11 +131,11 @@ export default {
           date: "30th July 2022",
           time: "3:00 PM to 8:00 PM",
           active: true,
-          url: "https://goo.gl/maps/PWhjTUtRPBqWQSNr6"
-        }
-      ]
+          url: "https://goo.gl/maps/PWhjTUtRPBqWQSNr6",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
