@@ -6,8 +6,10 @@ export default {
   security: {
     headers: {
       crossOriginResourcePolicy: false,
+      referrerPolicy: 'no-referrer'
     },
   },
+  
 
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
